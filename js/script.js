@@ -34,3 +34,32 @@ function closeModal() {
     // Listen for the scroll event
     window.addEventListener('scroll', handleScroll);
 
+document.getElementById("selectIndustryType").addEventListener("change", function () {
+    const selectedValue = this.value; // Get the selected value
+    const existingIndustrySection = document.getElementById("existingIndustryDetails");
+
+    if (selectedValue === "Existing") {
+        // Show the section if 'Existing' is selected
+        existingIndustrySection.style.display = "block";
+    } else {
+        // Hide the section for other selections
+        existingIndustrySection.style.display = "none";
+    }
+});
+
+
+    document.getElementById("unit-outside").addEventListener("change", function () {
+        const selectedValue = this.value;
+        const locationDetailsSection = document.getElementById("location-details-section");
+
+
+        if (selectedValue === "yes") {
+            locationDetailsSection.style.display = "block";
+        } else {
+            locationDetailsSection.style.display = "none";
+        }
+    });
+
+
+
+
