@@ -388,13 +388,20 @@ font-weight: 500;}
 .login-tabs .card-body {
   padding:1.5rem 4rem;
 }
-.otp-login .resendotp {
+.resendotp {
   color: #b41110;
   font-size: .85rem;
+  text-decoration: none;
+}
+.user-label {
+  font-weight: 500;
 }
 .otp-box {
   display: flex;
   gap: 1rem;
+}
+.otp-note {
+  font-size: .85rem;
 }
 .otp-box input[type="text"]{
   width: 3rem;
