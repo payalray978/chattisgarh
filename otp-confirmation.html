@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Invest Chhhattisgar</title>
+</head>
+
+<body>
+    <!-- header-start -->
+    <header>
+        <div class="container-fluid px-md-5 ">
+            <nav class="navbar navbar-expand-xl">
+                <h1 class="mb-0">
+                    <a class="navbar-brand" href="landing.html">
+                        <img src="images/logo.png">
+                    </a>
+                </h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" id="navbarOffcanvas" tabindex="-1"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h1 class="mb-0">
+                            <a class="navbar-brand" routerLink="/">
+                                <img src="images/logo.jpg">
+                            </a>
+                        </h1>
+                        <button type="button" class="btn-close btn-close-dark text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <ul class="navbar-nav gap-4">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Other Links
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="tile-appears.html">Tile Appears</a></li>
+                                        <li><a class="dropdown-item" href="industrial-registration.html">Industrial
+                                                Registration</a></li>
+                                        <li><a class="dropdown-item" href="company-information.html">Aakanksha
+                                                Registration</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Our Network
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Our Expertise
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- header-end -->
+    <div class="page-content-wrapper formbg">
+        <div class="container">
+            <h3 class="page-heading text-center">Industrial User Registration</h3>
+            <div class="step-indicator">
+                <div class="navigation_menu" id="navigation_menu">
+                    <ul class="navigation_tabs mb-0" id="navigation_tabs">
+                        <li class="tab_disabled completed">
+                            Profile Creation
+                        </li>
+                        <li class="tab_disabled active">
+                            OTP Confirmation
+                        </li>
+                        <li class="tab_disabled">
+                            Success
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+            <div class="card">
+                <div class="card-body otp-confirmation">
+                    <div class="row g-3 mb-3 text-center mt-2">
+                        <h6 class="form-sub-heading mt-4 mb-0">Please enter One-Time Password to Verify your Acount</h6>
+                        <p class="otpsent">An OTP has been sent to mobile number 9867382510</p>
+                    </div>
+                    <div class="row justify-content-center mt-4">
+                        <div class="otp-box  justify-content-center">
+                            <input type="text" class="form-control">
+                            <input type="text" class="form-control">
+                            <input type="text" class="form-control">
+                            <input type="text" class="form-control">
+                            <input type="text" class="form-control">
+                            <input type="text" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row mt-5 form-button-box mb-5">
+                        <div class="col-md-12 text-center">
+                            <a class="btn btn-warning" href="index.html">Confirm</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="form-button-box">
+                <a class="btn btn-outline-warning" href="industrial-registration.html">Back</a>
+                <a class="btn btn-warning" href="otp-success.html">Next</a>
+                <!-- <a class="btn btn-outline-warning" href="#">Reset</a> -->
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/bootstrap-5.js"></script>
+</body>
+
+</html>

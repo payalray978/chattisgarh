@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Invest Chhhattisgar</title>
+</head>
+
+<body>
+    <!-- header-start -->
+    <header>
+        <div class="container-fluid px-md-5 ">
+            <nav class="navbar navbar-expand-xl">
+                <h1 class="mb-0">
+                    <a class="navbar-brand" href="landing.html">
+                        <img src="images/logo.png">
+                    </a>
+                </h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" id="navbarOffcanvas" tabindex="-1"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h1 class="mb-0">
+                            <a class="navbar-brand" routerLink="/">
+                                <img src="images/logo.jpg">
+                            </a>
+                        </h1>
+                        <button type="button" class="btn-close btn-close-dark text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <ul class="navbar-nav gap-4">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        About Us
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="tile-appears.html">Tile Appears</a></li>
+                                        <li><a class="dropdown-item" href="industrial-registration.html">Industrial
+                                                Registration</a></li>
+                                        <li><a class="dropdown-item" href="company-information.html">Aakanksha
+                                                Registration</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Our Network
+                                    </a>
+
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Our Expertise
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="btn btn-outline-warning" href="otp-login.html"> Register</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="btn btn-warning" href="user-login.html"> Login</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- header-end -->
+    <div class="page-content-wrapper ">
+        <div class="container">
+            <div class="user-login ">
+                <div class="row justify-content-center">
+                    <!-- <div class="col-md-2">
+                        <h3 class="page-heading login-heading"><span class="d-block fs-6">CG Spark</span> User Login
+                        </h3>
+                    </div> -->
+                    <div class="login-tabs col-md-6">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                    data-bs-target="#Industry-tab-pane" type="button" role="tab"
+                                    aria-controls="Industry-tab-pane" aria-selected="true">Industry</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="Non-Industry-tab" data-bs-toggle="tab"
+                                    data-bs-target="#Non-Industry-tab-pane" type="button" role="tab"
+                                    aria-controls="Non-Industry-tab-pane" aria-selected="false">Non Industry</button>
+                            </li>
+
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="Industry-tab-pane" role="tabpanel"
+                                aria-labelledby="Industry-tab" tabindex="0">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row g-3 mb-3">
+                                            <div class="col-md-12 text-end">
+
+                                                <p class="mb-0">New User <a href="otp-login.html"
+                                                        class="Register_now">Register Now</a>
+                                                </p>
+                                            </div>
+                                            <div class="col-md-12">
+
+                                                <input type="text" class="form-control" placeholder="Username"
+                                                    id="exampleFormControlInput1">
+                                            </div>
+                                            <div class="col-md-12">
+
+                                                <input type="text" class="form-control" placeholder="Password"
+                                                    id="exampleFormControlInput1">
+                                            </div>
+                                            <div class="col-md-6"><a href="javascript:void(0);" target="_blank"
+                                                    class="Register_now">Forgot
+                                                    User
+                                                    ID?</a></div>
+                                            <div class="col-md-6 d-flex justify-content-end align-items-center">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" value=""
+                                                        id="flexCheckChecked">
+                                                    <label class="form-check-label" for="flexCheckChecked">
+                                                        Remeber me
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6"><img src="./images/captcha.png" alt=""></div>
+                                            <div class="col-md-6">
+
+                                                <input type="text" class="form-control" placeholder="Enter Captcha"
+                                                    id="exampleFormControlInput1">
+                                            </div>
+                                            <div class="col-md-12"><a class="d-block btn btn-warning"
+                                                    href="index.html">Login</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="card-footer text-center">For technical support please contact us at
+                                        industry.nic@gmail.com</div>
+                                </div>
+                                <ul class="mt-4 login-instruction">
+                                    <li>All existing technological applications of the Industries Department , Govt. of
+                                        Chhattisgarh including our services
+                                        Portal have been integrated via the Single Sign-on Framework. Access to all
+                                        these
+                                        applications is available through the
+                                        Single Sign-On user credential.</li>
+
+                                    <li> Existing users of these applications can login through their registered email
+                                        id as the
+                                        user id for the login process.
+                                        New Users can create login credential, by clicking on Register Now.
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-pane fade" id="Non-Industry-tab-pane" role="tabpanel"
+                                aria-labelledby="Non-Industry-tab" tabindex="0">
+                                <div class="card">
+                                    <div class="card-body"></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/bootstrap-5.js"></script>
+</body>
+
+</html>
