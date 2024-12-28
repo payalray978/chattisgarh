@@ -540,7 +540,7 @@
                                     </select>
                                 </div>
                             </div>
-                            <div id="location-details-section" style="display: none;">
+                            <div id="location-details-section">
                                 <h6 class="form-sub-heading mt-4 mb-0">Location details of the other units located
                                     within
                                     india</h6>
@@ -658,128 +658,132 @@
                             </div>
                             <div class="row row g-3 mb-3">
                                 <div class="col-md-4">
-                                    <label for="" class="form-label">Is there any unit outside
-                                        India <span class="text-danger">*</span></label>
-                                    <select class="form-select" id="" aria-label="Default select example">
+                                    <label for="unit-outside-india" class="form-label">Is there any unit outside India?
+                                        <span class="text-danger">*</span></label>
+                                    <select class="form-select" id="unit-outside-india" aria-label="">
+                                        <option value=""></option>
                                         <option value="yes">Yes</option>
                                         <option value="no">No</option>
                                     </select>
                                 </div>
                             </div>
+                            <div id="location-details-container">
 
-                            <h6 class="form-sub-heading mt-4 mb-0">Location details of the other units located
-                                within
-                                india</h6>
-                            <div class="row row g-3 mb-3">
-                                <div class="col-md-4">
-                                    <label for="exampleFormControlInput1" class="form-label">Unit Name <span
-                                            class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                <h6 class="form-sub-heading mt-4 mb-0">Location details of the other units located
+                                    within
+                                    india</h6>
+
+                                <div class="row row g-3 mb-3">
+                                    <div class="col-md-4">
+                                        <label for="exampleFormControlInput1" class="form-label">Unit Name <span
+                                                class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="exampleFormControlInput1" class="form-label">Product <span
+                                                class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="exampleFormControlInput1" class="form-label">Total Capacity (With
+                                            Unit) <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="exampleFormControlInput1" class="form-label">State <span
+                                                class="text-danger">*</span></label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option value="andhra-pradesh">Andhra Pradesh</option>
+                                            <option value="arunachal-pradesh">Arunachal Pradesh</option>
+                                            <option value="assam">Assam</option>
+                                            <option value="bihar">Bihar</option>
+                                            <option value="chhattisgarh">Chhattisgarh</option>
+                                            <option value="goa">Goa</option>
+                                            <option value="gujarat">Gujarat</option>
+                                            <option value="haryana">Haryana</option>
+                                            <option value="himachal-pradesh">Himachal Pradesh</option>
+                                            <option value="jammu-and-kashmir">Jammu and Kashmir</option>
+                                            <option value="jharkhand">Jharkhand</option>
+                                            <option value="karnataka">Karnataka</option>
+                                            <option value="kerala">Kerala</option>
+                                            <option value="madhya-pradesh">Madhya Pradesh</option>
+                                            <option value="maharashtra">Maharashtra</option>
+                                            <option value="manipur">Manipur</option>
+                                            <option value="meghalaya">Meghalaya</option>
+                                            <option value="mizoram">Mizoram</option>
+                                            <option value="nagaland">Nagaland</option>
+                                            <option value="odisha">Odisha</option>
+                                            <option value="punjab">Punjab</option>
+                                            <option value="rajasthan">Rajasthan</option>
+                                            <option value="sikkim">Sikkim</option>
+                                            <option value="tamil-nadu">Tamil Nadu</option>
+                                            <option value="tripura">Tripura</option>
+                                            <option value="uttar-pradesh">Uttar Pradesh</option>
+                                            <option value="uttarakhand">Uttarakhand</option>
+                                            <option value="west-bengal">West Bengal</option>
+                                            <option value="telangana">Telangana</option>
+                                            <option value="chandigarh">Chandigarh</option>
+                                            <option value="delhi">Delhi</option>
+                                            <option value="daman-and-diu">Daman and Diu</option>
+                                            <option value="dadra-and-nagar-haveli">Dadra and Nagar Haveli</option>
+                                            <option value="lakshadweep">Lakshadweep</option>
+                                            <option value="puducherry">Puducherry</option>
+                                            <option value="andaman-and-nicobar-islands">Andaman and Nicobar Islands
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="exampleFormControlInput1" class="form-label">District <span
+                                                class="text-danger">*</span></label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option value="balod">Balod</option>
+                                            <option value="balodabazar-bhatapara">Balodabazar-Bhatapara</option>
+                                            <option value="balrampur-ramanujganj">Balrampur Ramanujganj</option>
+                                            <option value="bastar">Bastar</option>
+                                            <option value="bemetara">Bemetara</option>
+                                            <option value="bijapur">Bijapur</option>
+                                            <option value="bilaspur">Bilaspur</option>
+                                            <option value="dakshin-bastar-dantewada">Dakshin Bastar Dantewada</option>
+                                            <option value="dhamtari">Dhamtari</option>
+                                            <option value="durg">Durg</option>
+                                            <option value="gariyaband">Gariyaband</option>
+                                            <option value="gaurela-pendra-marwahi">Gaurela Pendra Marwahi</option>
+                                            <option value="janjgir-champa">Janjgir-Champa</option>
+                                            <option value="jashpur">Jashpur</option>
+                                            <option value="kabeerdham">Kabeerdham</option>
+                                            <option value="khairagarh-chhuikhadan-gandai">Khairagarh Chhuikhadan Gandai
+                                            </option>
+                                            <option value="kondagaon">Kondagaon</option>
+                                            <option value="korba">Korba</option>
+                                            <option value="korea">Korea</option>
+                                            <option value="mahasamund">Mahasamund</option>
+                                            <option value="manendragarh-chirmiri-bharatpur-mcb">Manendragarh Chirmiri
+                                                Bharatpur Mcb</option>
+                                            <option value="mohla-manpur-ambagarh-chouki">Mohla Manpur Ambagarh Chouki
+                                            </option>
+                                            <option value="mungeli">Mungeli</option>
+                                            <option value="narayanpur">Narayanpur</option>
+                                            <option value="raigarh">Raigarh</option>
+                                            <option value="raipur">Raipur</option>
+                                            <option value="rajnandgaon">Rajnandgaon</option>
+                                            <option value="sakti">Sakti</option>
+                                            <option value="sarangarh-bilaigarh">Sarangarh Bilaigarh</option>
+                                            <option value="sukma">Sukma</option>
+                                            <option value="surajpur">Surajpur</option>
+                                            <option value="surguja">Surguja</option>
+                                            <option value="uttar-bastar-kanker">Uttar Bastar Kanker</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="exampleFormControlInput1" class="form-label">Address <span
+                                                class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                                    </div>
                                 </div>
-                                <div class="col-md-4">
-                                    <label for="exampleFormControlInput1" class="form-label">Product <span
-                                            class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                <div class="mb-3">
+                                    <a class="addmore-btn" href="#"><i class="bi bi-plus-circle"></i> <span>Add
+                                            More</span></a>
                                 </div>
-                                <div class="col-md-4">
-                                    <label for="exampleFormControlInput1" class="form-label">Total Capacity (With
-                                        Unit) <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1">
-                                </div>
-                                <div class="col-md-4">
-                                    <label for="exampleFormControlInput1" class="form-label">State <span
-                                            class="text-danger">*</span></label>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option value="andhra-pradesh">Andhra Pradesh</option>
-                                        <option value="arunachal-pradesh">Arunachal Pradesh</option>
-                                        <option value="assam">Assam</option>
-                                        <option value="bihar">Bihar</option>
-                                        <option value="chhattisgarh">Chhattisgarh</option>
-                                        <option value="goa">Goa</option>
-                                        <option value="gujarat">Gujarat</option>
-                                        <option value="haryana">Haryana</option>
-                                        <option value="himachal-pradesh">Himachal Pradesh</option>
-                                        <option value="jammu-and-kashmir">Jammu and Kashmir</option>
-                                        <option value="jharkhand">Jharkhand</option>
-                                        <option value="karnataka">Karnataka</option>
-                                        <option value="kerala">Kerala</option>
-                                        <option value="madhya-pradesh">Madhya Pradesh</option>
-                                        <option value="maharashtra">Maharashtra</option>
-                                        <option value="manipur">Manipur</option>
-                                        <option value="meghalaya">Meghalaya</option>
-                                        <option value="mizoram">Mizoram</option>
-                                        <option value="nagaland">Nagaland</option>
-                                        <option value="odisha">Odisha</option>
-                                        <option value="punjab">Punjab</option>
-                                        <option value="rajasthan">Rajasthan</option>
-                                        <option value="sikkim">Sikkim</option>
-                                        <option value="tamil-nadu">Tamil Nadu</option>
-                                        <option value="tripura">Tripura</option>
-                                        <option value="uttar-pradesh">Uttar Pradesh</option>
-                                        <option value="uttarakhand">Uttarakhand</option>
-                                        <option value="west-bengal">West Bengal</option>
-                                        <option value="telangana">Telangana</option>
-                                        <option value="chandigarh">Chandigarh</option>
-                                        <option value="delhi">Delhi</option>
-                                        <option value="daman-and-diu">Daman and Diu</option>
-                                        <option value="dadra-and-nagar-haveli">Dadra and Nagar Haveli</option>
-                                        <option value="lakshadweep">Lakshadweep</option>
-                                        <option value="puducherry">Puducherry</option>
-                                        <option value="andaman-and-nicobar-islands">Andaman and Nicobar Islands
-                                        </option>
-                                    </select>
-                                </div>
-                                <div class="col-md-4">
-                                    <label for="exampleFormControlInput1" class="form-label">District <span
-                                            class="text-danger">*</span></label>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option value="balod">Balod</option>
-                                        <option value="balodabazar-bhatapara">Balodabazar-Bhatapara</option>
-                                        <option value="balrampur-ramanujganj">Balrampur Ramanujganj</option>
-                                        <option value="bastar">Bastar</option>
-                                        <option value="bemetara">Bemetara</option>
-                                        <option value="bijapur">Bijapur</option>
-                                        <option value="bilaspur">Bilaspur</option>
-                                        <option value="dakshin-bastar-dantewada">Dakshin Bastar Dantewada</option>
-                                        <option value="dhamtari">Dhamtari</option>
-                                        <option value="durg">Durg</option>
-                                        <option value="gariyaband">Gariyaband</option>
-                                        <option value="gaurela-pendra-marwahi">Gaurela Pendra Marwahi</option>
-                                        <option value="janjgir-champa">Janjgir-Champa</option>
-                                        <option value="jashpur">Jashpur</option>
-                                        <option value="kabeerdham">Kabeerdham</option>
-                                        <option value="khairagarh-chhuikhadan-gandai">Khairagarh Chhuikhadan Gandai
-                                        </option>
-                                        <option value="kondagaon">Kondagaon</option>
-                                        <option value="korba">Korba</option>
-                                        <option value="korea">Korea</option>
-                                        <option value="mahasamund">Mahasamund</option>
-                                        <option value="manendragarh-chirmiri-bharatpur-mcb">Manendragarh Chirmiri
-                                            Bharatpur Mcb</option>
-                                        <option value="mohla-manpur-ambagarh-chouki">Mohla Manpur Ambagarh Chouki
-                                        </option>
-                                        <option value="mungeli">Mungeli</option>
-                                        <option value="narayanpur">Narayanpur</option>
-                                        <option value="raigarh">Raigarh</option>
-                                        <option value="raipur">Raipur</option>
-                                        <option value="rajnandgaon">Rajnandgaon</option>
-                                        <option value="sakti">Sakti</option>
-                                        <option value="sarangarh-bilaigarh">Sarangarh Bilaigarh</option>
-                                        <option value="sukma">Sukma</option>
-                                        <option value="surajpur">Surajpur</option>
-                                        <option value="surguja">Surguja</option>
-                                        <option value="uttar-bastar-kanker">Uttar Bastar Kanker</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-4">
-                                    <label for="exampleFormControlInput1" class="form-label">Address <span
-                                            class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1">
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <a class="addmore-btn" href="#"><i class="bi bi-plus-circle"></i> <span>Add
-                                        More</span></a>
                             </div>
 
                         </div>
@@ -796,11 +800,11 @@
         </div>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
     <script src="js/bootstrap-5.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/js/bootstrap-datepicker.min.js"
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/js/bootstrap-datepicker.min.js"
         integrity="sha512-LsnSViqQyaXpD4mBBdRYeP6sRwJiJveh2ZIbW41EBrNmKxgr/LFZIiWT6yr+nycvhvauz8c2nYMhrP80YhG7Cw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" ></script> -->
     <!-- <script>
         $(function () {

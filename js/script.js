@@ -61,5 +61,28 @@ document.getElementById("selectIndustryType").addEventListener("change", functio
     });
 
 
+// document.addEventListener("DOMContentLoaded", function () {
+//     const unitOutsideIndiaDropdown = document.getElementById("unit-outside-india");
+//     const locationDetailsContainer = document.getElementById("location-details-container");
 
+//     unitOutsideIndiaDropdown.addEventListener("change", function () {
+//         if (this.value === "yes") {
+//             locationDetailsContainer.style.display = "block";
+//         } else {
+//             locationDetailsContainer.style.display = "none";
+//         }
+//     });
+// });
+
+// document.getElementById("unit-outside-india").addEventListener("change", function () {
+//     const selectedValue = this.value; // Get the selected value
+//     const locationDetailsContainer = document.getElementById("location-details-container");
+// console.log(selectedValue);
+
+//     if (selectedValue === "yes") {
+//         locationDetailsContainer.style.display = "block";
+//     } else {
+//         locationDetailsContainer.style.display = "none";
+//     }
+// });
 
