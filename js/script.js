@@ -39,50 +39,19 @@ document.getElementById("selectIndustryType").addEventListener("change", functio
     const existingIndustrySection = document.getElementById("existingIndustryDetails");
 
     if (selectedValue === "Existing") {
-        // Show the section if 'Existing' is selected
         existingIndustrySection.style.display = "block";
     } else {
-        // Hide the section for other selections
         existingIndustrySection.style.display = "none";
     }
 });
 
-
-    document.getElementById("unit-outside").addEventListener("change", function () {
-        const selectedValue = this.value;
-        const locationDetailsSection = document.getElementById("location-details-section");
-
-
-        if (selectedValue === "yes") {
-            locationDetailsSection.style.display = "block";
-        } else {
-            locationDetailsSection.style.display = "none";
-        }
-    });
-
-
-// document.addEventListener("DOMContentLoaded", function () {
-//     const unitOutsideIndiaDropdown = document.getElementById("unit-outside-india");
-//     const locationDetailsContainer = document.getElementById("location-details-container");
-
-//     unitOutsideIndiaDropdown.addEventListener("change", function () {
-//         if (this.value === "yes") {
-//             locationDetailsContainer.style.display = "block";
-//         } else {
-//             locationDetailsContainer.style.display = "none";
-//         }
-//     });
-// });
-
-// document.getElementById("unit-outside-india").addEventListener("change", function () {
-//     const selectedValue = this.value; // Get the selected value
-//     const locationDetailsContainer = document.getElementById("location-details-container");
-// console.log(selectedValue);
-
-//     if (selectedValue === "yes") {
-//         locationDetailsContainer.style.display = "block";
-//     } else {
-//         locationDetailsContainer.style.display = "none";
-//     }
-// });
-
+document.getElementById('landRequired').addEventListener('change', function() {
+    var landDetails = document.getElementById('landDetails');
+    
+    // Check if the selected option's value is "Yes"
+    if (this.value === "Yes") {
+        landDetails.classList.remove('d-none'); // Show the land details section
+    } else {
+        landDetails.classList.add('d-none'); // Hide the land details section
+    }
+});

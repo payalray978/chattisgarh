@@ -75,6 +75,13 @@
                                         aria-expanded="false">
                                         <img class="user-icon" src="images/user.png">
                                     </a>
+                                    <ul class="dropdown-menu logout">
+                                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                                        <li><a class="dropdown-item" href="#">
+                                                Change Password</a></li>
+                                        <li><a class="dropdown-item" href="user-login.html">Logout
+                                            </a></li>
+                                    </ul>
                                 </li>
                             </ul>
                         </div>
@@ -98,7 +105,7 @@
                         <li><a href="#">CSR Activities</a></li>
                         <li><a href="#">Incentives</a></li>
                         <li><a href="#">Post Allotment</a></li>
-                        <li><a href="#">Helpdesk</a></li>
+                        <li><a href="#">Grivance</a></li>
                     </ul>
                 </div>
                 <div class="col-md-10">
@@ -534,7 +541,6 @@
                                     <label for="unit-outside" class="form-label">Does the company have
                                         projects at other location in india? <span class="text-danger">*</span></label>
                                     <select class="form-select" id="unit-outside" aria-label="Default select example">
-                                        <option value=""></option>
                                         <option value="yes" id="yes">Yes</option>
                                         <option value="no">No</option>
                                     </select>
@@ -660,14 +666,13 @@
                                 <div class="col-md-4">
                                     <label for="unit-outside-india" class="form-label">Is there any unit outside India?
                                         <span class="text-danger">*</span></label>
-                                    <select class="form-select" id="unit-outside-india" aria-label="">
-                                        <option value=""></option>
-                                        <option value="yes">Yes</option>
+                                    <select class="form-select" id="unitoutsideindia" aria-label="">
+                                        <option value="Yes" id="Yes">Yes</option>
                                         <option value="no">No</option>
                                     </select>
                                 </div>
                             </div>
-                            <div id="location-details-container">
+                            <div id="locationdetailscontainer">
 
                                 <h6 class="form-sub-heading mt-4 mb-0">Location details of the other units located
                                     within

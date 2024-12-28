@@ -11,6 +11,13 @@
     --white:#FFF;
 }
 /* common css */
+.btn-orange1{
+  background-color: rgb(255,193,7);
+  color: #fff;
+}
+.btn-orange1:hover{
+  background-color: rgb(230, 151, 5);
+}
 .page-content-wrapper{
     padding: 1.5rem 0;
 }
@@ -253,8 +260,8 @@ header .btn {
 }
 .rectangle-box, .rectangle-box-fade{
  
-  height: 5px;
-  width: 9px;
+ height: 3px;
+    width: 50px;
   display: inline-block;
   margin: 2px;
 }.rectangle-box{
@@ -312,18 +319,41 @@ padding: 10px;
 }
 .btn-orange{
   background-color: #FFF1E6;
-  border-radius: 0px;
-  font-size: 14px;
+  /* border: 1px solid #f88c3a; */
+  color: var(--orange);
+border-radius: 36px; 
+ font-size: 14px;
+    font-weight: 600;
+    padding: 5px 38px;
+/* color: #fff; */
 }
 .btn-orange:hover{
   background-color: #f88c3a;
-  border-radius: 0px;
+  font-size: 14px;
+  color: #fff;
+}
+.btn-orange2{
+background-color: #FF9F00;
+  /* border: 1px solid #f88c3a; */
+border-radius: 36px; 
+ font-size: 14px;
+    font-weight: 600;
+    padding: 5px 38px;
+color: #fff;
+}
+.btn-orange2:hover{
+ background-color: #FF6A1F;
   font-size: 14px;
   color: #fff;
 }
 /* .btn-warning{
   border-radius: 36px;
 } */
+ .switch-unit .btn-orange2{
+  width: 60%;
+  padding: 5px 20px;
+  text-align: start;
+ }
 
 .payment-made{
   color: #5E5E5E;
@@ -476,4 +506,14 @@ font-weight: 500;}
   font-size: .65rem;
   font-style: normal;
   color: #fff;
+}
+
+.page-tile{
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+padding: 20px;
+border-radius: 15px;
+}
+.navbar-expand .navbar-nav .dropdown-menu.logout {
+    position: absolute;
+    left: -67px;
 }

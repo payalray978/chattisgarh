@@ -28,7 +28,13 @@ a {
   position: relative;
 }
     .banner-img {
-  background: url('../images/banner.png') no-repeat center center;
+ background: linear-gradient(
+    rgba(0, 0, 0, 0.8), 
+    rgba(0, 0, 0, 0.5)
+), 
+url('../images/banner_img.jpg') no-repeat center center;
+background-size: cover;
+
   height: 100vh;
   background-size: cover;
  

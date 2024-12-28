@@ -71,6 +71,13 @@
                                         aria-expanded="false">
                                         <img class="user-icon" src="images/user.png">
                                     </a>
+                                    <ul class="dropdown-menu logout">
+                                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                                        <li><a class="dropdown-item" href="#">
+                                                Change Password</a></li>
+                                        <li><a class="dropdown-item" href="user-login.html">Logout
+                                            </a></li>
+                                    </ul>
                                 </li>
                             </ul>
                         </div>
@@ -85,7 +92,7 @@
     <div class="page-content-wrapper">
         <div class="container-fluid px-md-5">
             <div class="row">
-                <div class="col-md-2 pr-0">
+                <!-- <div class="col-md-2 pr-0">
                     <ul class="nav side-nav">
                         <li><a href="index.html">Dashboard</a></li>
                         <li><a class="active" href="tile-appears.html">Single Window Clearance</a></li>
@@ -96,18 +103,22 @@
                         <li><a href="#">Post Allotment</a></li>
                         <li><a href="#">Helpdesk</a></li>
                     </ul>
-                </div>
-                <div class="col-md-10">
-                    <h3 class="page-heading mb-2">Page Tile Appears here!</h3>
+                </div> -->
+                <div class="col-md-9">
+                    <h3 class="page-heading mb-2">Apextrade</h3>
 
 
                     <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
                             aria-labelledby="pills-home-tab" tabindex="0">
-                            <div class="d-flex justify-content-end gap-2">
-                                <a href="" class="btn btn-orange">View Proposal</a>
-                                <a href="" class="btn btn-orange">Create Proposal(PEAL)</a>
-                                <a href="" class="btn btn-orange">Draft Proposals</a>
+                            <div class="d-flex  gap-2 my-3">
+                                <a href="" class="btn btn-orange"><i class="bi bi-shield-check"></i> Project
+                                    Inspection</a>
+                                <a href="" class="btn btn-orange"><i class="bi bi-card-checklist"></i> CSR
+                                    Activities</a>
+                                <a href="" class="btn btn-orange"><i class="bi bi-bar-chart-line"></i> Incentives</a>
+                                <a href="" class="btn btn-orange"><i class="bi bi-calendar-week"></i> Post Allotment</a>
+                                <a href="" class="btn btn-orange"><i class="bi bi-clipboard-x"></i> Grivence</a>
                             </div>
                             <div class="table-responsive">
                                 <table class="table">
@@ -179,9 +190,29 @@
                             aria-labelledby="pills-profile-tab" tabindex="0">...</div>
                     </div>
                 </div>
+                <div class="col-md-3">
+                    <div class="card switch-unit border-0">
+
+                        <div class="card-header border-0 bg-white">
+
+                            <h3 class="page-heading mb-2">Switch Units</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class=" ">
+                                <a href="index.html" class="btn btn-orange2 mb-3"><i class="bi bi-unity"></i>
+                                    Innovindustrie</a>
+                                <a href="index.html" class="btn btn-orange2"><i class="bi bi-amd"></i> Angel One</a>
+
+                            </div>
+                            <p class="text-center mt-3 mb-0"><a href="index.html" class="Register_now"><i
+                                        class="bi bi-arrow-left-short"></i> Switch to Dashboard</a></p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
 
     <script src="js/bootstrap-5.js"></script>
 </body>
