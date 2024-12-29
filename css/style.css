@@ -535,9 +535,9 @@ border-radius: 15px;
 .switch-unit .card-header::after{
  position: absolute;
  content: '';
- background-color: #F17B1E;
- width: 5px;
- height: 50px;
+    background-color: #ddd;
+    width: 1px;
+    height: 80vh;
  left: 0;
  top: 0;
 }
