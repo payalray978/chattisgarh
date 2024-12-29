@@ -541,3 +541,6 @@ border-radius: 15px;
  left: 0;
  top: 0;
 }
+.table-responsive{
+  margin-bottom: 20px;
+}
