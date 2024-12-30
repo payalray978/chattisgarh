@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap-min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Invest Chhhattisgar</title>
+</head>
+
+<body>
+    <!-- header-start -->
+    <header>
+        <div class="container-fluid px-md-5 ">
+            <nav class="navbar navbar-expand-xl">
+                <h1 class="mb-0">
+                    <a class="navbar-brand" href="landing.html">
+                        <img src="images/logo.png">
+                    </a>
+                </h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" id="navbarOffcanvas" tabindex="-1"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h1 class="mb-0">
+                            <a class="navbar-brand" routerLink="/">
+                                <img src="images/logo.jpg">
+                            </a>
+                        </h1>
+                        <button type="button" class="btn-close btn-close-dark text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="navbar-nav justify-content-end flex-grow-1 pe-3 navbar-expand">
+                            <ul class="navbar-nav gap-3">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <i class="bi bi-gear"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="tile-appears.html">Tile Appears</a></li>
+                                        <li><a class="dropdown-item" href="industrial-registration.html">Industrial
+                                                Registration</a></li>
+                                        <li><a class="dropdown-item" href="company-information.html">Aakanksha
+                                                Registration</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <i class="bi bi-megaphone position-relative">
+                                            <span class="notify">3</span>
+                                        </i>
+                                    </a>
+
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <img class="user-icon" src="images/user.png">
+                                    </a>
+                                    <ul class="dropdown-menu logout">
+                                        <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                                        <li><a class="dropdown-item" href="#">
+                                                Change Password</a></li>
+                                        <li><a class="dropdown-item" href="user-login.html">Logout
+                                            </a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- header-end -->
+    <div class="page-content-wrapper">
+        <div class="container-fluid px-md-5">
+            <div class="row">
+                <!-- <div class="col-md-2 pr-0">
+                    <ul class="nav side-nav">
+                        <li><a href="index.html">Dashboard</a></li>
+                        <li><a class="active" href="tile-appears.html">Single Window Clearance</a></li>
+                        <li><a href="company-information.html">Unit Registration</a></li>
+                        <li><a href="#">Project Inspection</a></li>
+                        <li><a href="#">CSR Activities</a></li>
+                        <li><a href="#">Incentives</a></li>
+                        <li><a href="#">Post Allotment</a></li>
+                        <li><a href="#">Helpdesk</a></li>
+                    </ul>
+                </div> -->
+                <div class="col-md-9">
+                    <h3 class="page-heading mb-2">Incentives</h3>
+
+
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                            aria-labelledby="pills-home-tab" tabindex="0">
+                            <div class="d-flex  gap-2 my-3">
+                                <a href="" class="btn btn-orange"><i class="bi bi-shield-check"></i> Project
+                                    Inspection</a>
+                                <a href="tile-appears.html" class="btn btn-orange active"><i
+                                        class="bi bi-shield-check"></i> Service
+                                    Lists</a>
+                                <a href="csr-activities.html" class="btn btn-orange"><i
+                                        class="bi bi-card-checklist"></i> CSR
+                                    Activities</a>
+                                <a href="incentives.html" class="btn btn-orange"><i class="bi bi-bar-chart-line"></i>
+                                    Incentives</a>
+                                <a href="" class="btn btn-orange"><i class="bi bi-calendar-week"></i> Post Allotment</a>
+                                <a href="" class="btn btn-orange"><i class="bi bi-clipboard-x"></i> Grivence</a>
+                            </div>
+
+                            <!-- Filters -->
+                            <div class="row mb-3">
+                                <div class="col-md-4">
+                                    <label for="filterDepartment" class="form-label">Filter by Department</label>
+                                    <select id="filterDepartment" class="form-select">
+                                        <option value="">All Departments</option>
+                                        <option>Directorate of Industries</option>
+                                        <option>Boiler Inspectorate</option>
+                                        <option>Chhattisgarh Environment Conservation Board (CECB)</option>
+                                        <option>Labour</option>
+                                        <option>Revenue (Land Records)</option>
+                                        <option>Urban</option>
+                                        <option>Town and Country Planning</option>
+                                        <option>Chief Electrical Inspectorate</option>
+                                        <option>Chhattisgarh InfoTech Promotion Society (CHiPS)</option>
+                                        <option>Chhattisgarh State Power Distribution Company Limited (CSPDCL)</option>
+                                        <option>Drug Controller</option>
+                                        <option>Forest Department</option>
+                                        <option>Water Resources Department</option>
+                                        <option>Legal Metrology</option>
+                                        <option>Excise Department</option>
+                                        <option>Home (Fire)</option>
+                                    </select>
+                                </div>
+                                <!-- <div class="col-md-4">
+                                    <label for="searchService" class="form-label">Search Service</label>
+                                    <input type="text" id="searchService" class="form-control"
+                                        placeholder="Enter service name...">
+                                </div> -->
+                                <div class="col-md-2 d-flex align-items-end">
+                                    <button id="applyFilters" class="btn btn-success">Search</button>
+                                </div>
+                            </div>
+
+                            <!-- Table -->
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th>S. No</th>
+                                            <th>Name of the Unit/Department</th>
+                                            <th>Services Name</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Directorate of Industries</td>
+                                            <td>Capital Subsidy</td>
+                                            <td><button class="btn btn-sm btn-primary">Apply</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Directorate of Industries</td>
+                                            <td>Disabled Person Employment Subsidy</td>
+                                            <td><button class="btn btn-sm btn-primary">Apply</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Directorate of Industries</td>
+                                            <td>Electricity Subsidy</td>
+                                            <td><button class="btn btn-sm btn-primary">Apply</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Directorate of Industries</td>
+                                            <td>Entry Tax Exemption</td>
+                                            <td><button class="btn btn-sm btn-primary">Apply</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Directorate of Industries</td>
+                                            <td>Interest Subsidy</td>
+                                            <td><button class="btn btn-sm btn-primary">Apply</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>Directorate of Industries</td>
+                                            <td>Mandi Tax Exemption Certificate</td>
+                                            <td><button class="btn btn-sm btn-primary">Apply</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>Directorate of Industries</td>
+                                            <td>Margin Money Subsidy</td>
+                                            <td><button class="btn btn-sm btn-primary">Apply</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>Directorate of Industries</td>
+                                            <td>Project Report Subsidy</td>
+                                            <td><button class="btn btn-sm btn-primary">Apply</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Directorate of Industries</td>
+                                            <td>Quality Certification Subsidy</td>
+                                            <td><button class="btn btn-sm btn-primary">Apply</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>Directorate of Industries</td>
+                                            <td>Stamp Duty - Directorate of Industries</td>
+                                            <td><button class="btn btn-sm btn-primary">Apply</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>11</td>
+                                            <td>Directorate of Industries</td>
+                                            <td>Technical Patent Subsidy</td>
+                                            <td><button class="btn btn-sm btn-primary">Apply</button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>12</td>
+                                            <td>Directorate of Industries</td>
+                                            <td>Technology Purchase Subsidy</td>
+                                            <td><button class="btn btn-sm btn-primary">Apply</button></td>
+                                        </tr>
+                                    </tbody>
+
+
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                            aria-labelledby="pills-profile-tab" tabindex="0">...</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card switch-unit border-0">
+
+                        <div class="card-header border-0 bg-white">
+
+                            <h3 class="page-heading mb-2">Switch Units</h3>
+                        </div>
+                        <div class="card-body">
+                            <div class=" ">
+                                <a href="tile-appears.html" class="btn btn-orange2 active mb-3"><i
+                                        class="bi bi-unity"></i>
+                                    Apextrade</a>
+                                <a href="Innovindustrie.html" class="btn btn-orange2 mb-3"><i class="bi bi-unity"></i>
+                                    Innovindustrie</a>
+                                <a href="Angel_one.html" class="btn btn-orange2 mb-3"><i class="bi bi-amd"></i> Angel
+                                    One</a>
+                                <a href="index.html" class="btn btn-orange2"><i class="bi bi-boxes"></i> Switch to
+                                    Dashboard</a>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/bootstrap-5.js"></script>
+</body>
+
+</html>

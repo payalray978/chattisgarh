@@ -34,10 +34,10 @@ a {
 }
     .banner-img {
  background: linear-gradient(
-    rgba(0, 0, 0, 0.8), 
-    rgba(0, 0, 0, 0.5)
+    rgba(0, 0, 0, 0.3), 
+    rgba(0, 0, 0, 0.3)
 ), 
-url('../images/banner_img.jpg') no-repeat center center;
+url('../images/image\ 4.png') no-repeat center center;
 background-size: cover;
 
   height: 100vh;
@@ -126,14 +126,11 @@ header nav .dropdown-toggle i {
     border-left: 30px solid var(--orange1);
     border-bottom: 28px solid transparent;
    position: absolute;
-    right: -30px;
+    right: -28px;
     top: 0;  
     text-align: center;
 }
-/* .right-triangle:after {
- 
-  
-} */
+
 .marquee-sec{
   background-color: var(--dark-blue);
   border-bottom-right-radius: 8px;
