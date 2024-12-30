@@ -549,3 +549,8 @@ border-radius: 15px;
 .table-responsive{
   margin-bottom: 20px;
 }
+.filter{
+  background-color: #FFF1E6;
+  padding: 20px;
+  /* border-radius: 10px; */
+}

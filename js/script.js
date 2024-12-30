@@ -45,13 +45,17 @@ document.getElementById("selectIndustryType").addEventListener("change", functio
     }
 });
 
-document.getElementById('landRequired').addEventListener('change', function() {
-    var landDetails = document.getElementById('landDetails');
+// document.getElementById('landRequired').addEventListener('change', function() {
+//     var landDetails = document.getElementById('landDetails');
     
-    // Check if the selected option's value is "Yes"
-    if (this.value === "Yes") {
-        landDetails.classList.remove('d-none'); // Show the land details section
-    } else {
-        landDetails.classList.add('d-none'); // Hide the land details section
-    }
-});
+//     // Check if the selected option's value is "Yes"
+//     if (this.value === "Yes") {
+//         landDetails.classList.remove('d-none'); // Show the land details section
+//     } else {
+//         landDetails.classList.add('d-none'); // Hide the land details section
+//     }
+// });
+
+
+
+    
