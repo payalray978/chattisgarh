@@ -75,6 +75,13 @@
                                         aria-expanded="false">
                                         <img class="user-icon" src="images/user.png">
                                     </a>
+                                    <ul class="dropdown-menu logout">
+                                        <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                                        <li><a class="dropdown-item" href="#">
+                                                Change Password</a></li>
+                                        <li><a class="dropdown-item" href="user-login.html">Logout
+                                            </a></li>
+                                    </ul>
                                 </li>
                             </ul>
                         </div>
@@ -98,7 +105,7 @@
                         <li><a href="#">CSR Activities</a></li>
                         <li><a href="#">Incentives</a></li>
                         <li><a href="#">Post Allotment</a></li>
-                        <li><a href="#">Helpdesk</a></li>
+                        <li><a href="#">Grivance</a></li>
                     </ul>
                 </div>
                 <div class="col-md-10">
@@ -130,7 +137,7 @@
                                 </div>
                                 <div class="col-md-4">
                                     <label for="exampleFormControlInput1" class="form-label">EM-II Issuance Date</label>
-                                    <input type='text' class="form-control datepicker" name="startDate" />
+                                    <input type='date' class="form-control datepicker" name="startDate" />
                                 </div>
                                 <div class="col-md-4">
                                     <label for="formFile" class="form-label">EM-II Document</label>
@@ -142,7 +149,7 @@
                                 </div>
                                 <div class="col-md-4">
                                     <label for="exampleFormControlInput1" class="form-label">PC Issuance Date</label>
-                                    <input type='text' class="form-control datepicker" name="startDate" />
+                                    <input type='date' class="form-control datepicker" name="startDate" />
                                 </div>
                                 <div class="col-md-4">
                                     <label for="formFile" class="form-label">PC Document</label>
@@ -154,7 +161,7 @@
                                 </div>
                                 <div class="col-md-4">
                                     <label for="exampleFormControlInput1" class="form-label">IEM Issuance Date</label>
-                                    <input type='text' class="form-control datepicker" name="startDate" />
+                                    <input type='date' class="form-control datepicker" name="startDate" />
                                 </div>
                                 <div class="col-md-4">
                                     <label for="formFile" class="form-label">IEM Document</label>
@@ -165,17 +172,32 @@
                                 Classification- 2008 defined by Ministry Of Statistics and Implementation)</h6>
                             <div class="row row g-3 mb-3">
                                 <div class="col-md-4">
-                                    <label for="exampleFormControlInput1" class="form-label">Nature of Activity</label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                    <label for="exampleFormControlInput1" class="form-label">Nature of Activity <span
+                                            class="text-danger">*</span></label>
+                                    <div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio1" value="option1">
+                                            <label class="form-check-label" for="inlineRadio1">Manufacturing</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio2" value="option2">
+                                            <label class="form-check-label" for="inlineRadio2">Service</label>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="col-md-4">
                                     <label for="exampleFormControlInput1" class="form-label">Main Manufacturing/Service
-                                        Activity</label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                        Activity <span class="text-danger">*</span></label>
+                                    <select class="form-select" id="" aria-label="Default select example">
+                                        <option value="New">1</option>
+                                        <option value="Existing" id="">2</option>
+                                    </select>
                                 </div>
                                 <div class="col-md-4">
                                     <label for="exampleFormControlInput1" class="form-label">NIC 2008 Code (As per MSME
-                                        Dept. GOI)</label>
+                                        Dept. GOI) <span class="text-danger">*</span></label>
                                     <input type="text" class="form-control" id="exampleFormControlInput1">
                                 </div>
                             </div>
@@ -183,27 +205,83 @@
                                 <a class="addmore-btn" href="#"><i class="bi bi-plus-circle"></i> <span>Add
                                         More</span></a>
                             </div>
+                            <div class="table-responsive">
+                                <table class="table table-bordered  ">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th>Sl#</th>
+                                            <th>Nature Of Activity</th>
+                                            <th>Product Name</th>
+                                            <th>NIC 2008 Code</th>
+                                            <th>Delete</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Manufacturing</td>
+                                            <td>Rice, seed</td>
+                                            <td>113100</td>
+                                            <td>
+                                                <button class="btn btn-danger btn-sm">
+                                                    <i class="bi bi-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Servicing</td>
+                                            <td>Dog Food</td>
+                                            <td>2331102</td>
+                                            <td>
+                                                <button class="btn btn-danger btn-sm">
+                                                    <i class="bi bi-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                             <h6 class="form-sub-heading mt-4 mb-0">Add Product Details (As per National Product
                                 Classification- 20011 defined by Ministry Of Statistics and Implementation)</h6>
                             <div class="row row g-3 mb-3">
                                 <div class="col-md-4">
-                                    <label for="exampleFormControlInput1" class="form-label">Nature of Activity</label>
+                                    <label for="exampleFormControlInput1" class="form-label">Nature of Activity <span
+                                            class="text-danger">*</span></label>
+                                    <div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio1" value="option1">
+                                            <label class="form-check-label" for="inlineRadio1">Manufacturing</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio2" value="option2">
+                                            <label class="form-check-label" for="inlineRadio2">Service</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="exampleFormControlInput1" class="form-label">Product Name <span
+                                            class="text-danger">*</span></label>
+                                    <select class="form-select" id="" aria-label="Default select example">
+                                        <option value="New">1</option>
+                                        <option value="Existing" id="">2</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="exampleFormControlInput1" class="form-label">Activity Code <span
+                                            class="text-danger">*</span></label>
                                     <input type="text" class="form-control" id="exampleFormControlInput1">
                                 </div>
                                 <div class="col-md-4">
-                                    <label for="exampleFormControlInput1" class="form-label">Product Name</label>
+                                    <label for="exampleFormControlInput1" class="form-label">Annual Capacity <span
+                                            class="text-danger">*</span></label>
                                     <input type="text" class="form-control" id="exampleFormControlInput1">
                                 </div>
                                 <div class="col-md-4">
-                                    <label for="exampleFormControlInput1" class="form-label">Activity Code</label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1">
-                                </div>
-                                <div class="col-md-4">
-                                    <label for="exampleFormControlInput1" class="form-label">Annual Capacity</label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1">
-                                </div>
-                                <div class="col-md-4">
-                                    <label for="exampleFormControlInput1" class="form-label">Unit of Measurement</label>
+                                    <label for="exampleFormControlInput1" class="form-label">Unit of Measurement <span
+                                            class="text-danger">*</span></label>
                                     <input type="text" class="form-control" id="exampleFormControlInput1">
                                 </div>
                                 <div class="col-md-4">
@@ -223,15 +301,70 @@
                                 <div class="col-md-4">
                                     <label for="exampleFormControlInput1" class="form-label">Expansion/Diversification
                                         Date</label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                    <input type="date" class="form-control" id="exampleFormControlInput1">
                                 </div>
                             </div>
                             <div class="mb-3">
                                 <a class="addmore-btn" href="#"><i class="bi bi-plus-circle"></i> <span>Add
                                         More</span></a>
                             </div>
+                            <div class="table-responsive">
+                                <table class="table table-bordered  ">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th>Sl#</th>
+                                            <th>Nature Of Activity</th>
+                                            <th>Product Name</th>
+                                            <th>Activity Code</th>
+                                            <th>Annual Capacity</th>
+                                            <th>Unit of Measurement</th>
+                                            <th>Product Description</th>
+                                            <th>Expansion/Diversification Capacity</th>
+                                            <th>Total Capacity After Expansion/Diversification</th>
+                                            <th>Expansion/Diversification Date</th>
+                                            <th>Delete</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Manufacturing</td>
+                                            <td>Rice, seed</td>
+                                            <td>113100</td>
+                                            <td>400</td>
+                                            <td>Kilogram</td>
+                                            <td>Food Product</td>
+                                            <td>10</td>
+                                            <td>100</td>
+                                            <td>12-Aug-2023</td>
+                                            <td>
+                                                <button class="btn btn-danger btn-sm">
+                                                    <i class="bi bi-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Servicing</td>
+                                            <td>Dog Food</td>
+                                            <td>2331102</td>
+                                            <td>756</td>
+                                            <td>Tonne</td>
+                                            <td>Byproducts</td>
+                                            <td>45</td>
+                                            <td>67</td>
+                                            <td>15-Apr-2022</td>
+                                            <td>
+                                                <button class="btn btn-danger btn-sm">
+                                                    <i class="bi bi-trash"></i>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                             <h5 class="form-heading">Proposed/Existing Capital Investment (INR in Lakhs)</h5>
-                            <div class="row row g-3 mb-3">
+                            <!-- <div class="row row g-3 mb-3">
                                 <div class="col-xl-3 col-md-6">
                                     <label for="exampleFormControlInput1" class="form-label">Land</label>
                                     <select class="form-select" aria-label="Default select example">
@@ -287,31 +420,109 @@
                                         Enterprise</label>
                                     <input type="text" class="form-control" id="exampleFormControlInput1">
                                 </div>
+                            </div> -->
+                            <div class="table-responsive">
+                                <table class="table table-bordered text-center align-middle">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th>Category</th>
+                                            <th>Capital Investment made till production date</th>
+                                            <th>Proposed capital investment for Expansion/Diversification of existing
+                                                industrial unit</th>
+                                            <th>Total capital investment after expansion/consolidation of existing
+                                                Industrial unit</th>
+                                            <th>Proposed Increase in capital investment in %</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Land including land development</td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Shed/Building</td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Building & Civil Construction</td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Plant & Machinery</td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Electricity Installation</td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Water Supply</td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Others</td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                        </tr>
+                                        <tr class="table-light">
+                                            <td><strong>Total capital investment</strong></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
+
+
                             <h5 class="form-heading">Means of Finance for Capital Investment (INR in Lakh)</h5>
                             <div class="row row g-3 mb-3">
                                 <div class="col-md-4">
-                                    <label for="exampleFormControlInput1" class="form-label">Equity contribution</label>
+                                    <label for="exampleFormControlInput1" class="form-label">Equity contribution <span
+                                            class="text-danger">*</span></label>
                                     <input type="text" class="form-control" id="exampleFormControlInput1">
                                 </div>
                                 <div class="col-md-4">
                                     <label for="exampleFormControlInput1" class="form-label">Bank/institutional
-                                        finance</label>
+                                        finance <span class="text-danger">*</span></label>
                                     <input type="text" class="form-control" id="exampleFormControlInput1">
                                 </div>
                                 <div class="col-md-4">
-                                    <label for="exampleFormControlInput1" class="form-label">Total</label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                    <label for="exampleFormControlInput1" class="form-label">Total <span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" readonly
+                                        placeholder="234">
                                 </div>
                                 <div class="col-md-4">
                                     <label for="exampleFormControlInput1" class="form-label">Foreign direct investment
-                                        (if any)</label>
+                                        (if any) <span class="text-danger">*</span></label>
                                     <input type="text" class="form-control" id="exampleFormControlInput1">
                                 </div>
 
                                 <div class="col-md-4">
                                     <label for="formFile" class="form-label">In case of FDI, please upload relevant
-                                        document</label>
+                                        document <span class="text-danger">*</span></label>
                                     <input class="form-control" type="file" id="formFile">
                                 </div>
                             </div>
@@ -330,7 +541,7 @@
                                 </div>
                                 <div class="col-md-4">
                                     <label for="exampleFormControlInput1" class="form-label">Period to commence
-                                        commercial production</label>
+                                        commercial production (in months)</label>
                                     <select class="form-select" aria-label="Default select example">
                                         <option selected>Open this select menu</option>
                                         <option value="1">1</option>
@@ -365,7 +576,7 @@
                                 </div>
                             </div>
                             <h5 class="form-heading">Employment potential</h5>
-                            <div class="row row g-3 mb-3">
+                            <!-- <div class="row row g-3 mb-3">
                                 <div class="col-md-6">
                                     <label for="exampleFormControlInput1" class="form-label">Managerial</label>
                                     <input type="text" class="form-control" id="exampleFormControlInput1">
@@ -382,118 +593,389 @@
                                     <label for="exampleFormControlInput1" class="form-label">Total employment</label>
                                     <input type="text" class="form-control" id="exampleFormControlInput1">
                                 </div>
+                            </div> -->
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th scope="col">Category</th>
+                                            <th scope="col">Existing</th>
+                                            <th scope="col">Proposed</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Managerial</td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Skilled</td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Unskilled</td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Total Employment</td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                             <h5 class="form-heading">Project at other locations</h5>
                             <div class="row row g-3 mb-3">
                                 <div class="col-md-6">
-                                    <label for="exampleFormControlInput1" class="form-label">Does the company have
-                                        projects at other location in india?</label>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>Open this select menu</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
+                                    <label for="unit-outside" class="form-label">Does the company have
+                                        projects at other location in india? <span class="text-danger">*</span></label>
+                                    <select class="form-select" id="unit-outside" aria-label="Default select example">
+                                        <option value="yes" id="yes">Yes</option>
+                                        <option value="no">No</option>
                                     </select>
                                 </div>
                             </div>
-                            <h6 class="form-sub-heading mt-4 mb-0">Location details of the other units located within
-                                india</h6>
+                            <div id="location-details-section">
+                                <h6 class="form-sub-heading mt-4 mb-0">Location details of the other units located
+                                    within
+                                    india</h6>
+                                <div class="row row g-3 mb-3">
+                                    <div class="col-md-4">
+                                        <label for="exampleFormControlInput1" class="form-label">Unit Name <span
+                                                class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="exampleFormControlInput1" class="form-label">Product <span
+                                                class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="exampleFormControlInput1" class="form-label">Total Capacity (With
+                                            Unit) <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="exampleFormControlInput1" class="form-label">State <span
+                                                class="text-danger">*</span></label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option value="andhra-pradesh">Andhra Pradesh</option>
+                                            <option value="arunachal-pradesh">Arunachal Pradesh</option>
+                                            <option value="assam">Assam</option>
+                                            <option value="bihar">Bihar</option>
+                                            <option value="chhattisgarh">Chhattisgarh</option>
+                                            <option value="goa">Goa</option>
+                                            <option value="gujarat">Gujarat</option>
+                                            <option value="haryana">Haryana</option>
+                                            <option value="himachal-pradesh">Himachal Pradesh</option>
+                                            <option value="jammu-and-kashmir">Jammu and Kashmir</option>
+                                            <option value="jharkhand">Jharkhand</option>
+                                            <option value="karnataka">Karnataka</option>
+                                            <option value="kerala">Kerala</option>
+                                            <option value="madhya-pradesh">Madhya Pradesh</option>
+                                            <option value="maharashtra">Maharashtra</option>
+                                            <option value="manipur">Manipur</option>
+                                            <option value="meghalaya">Meghalaya</option>
+                                            <option value="mizoram">Mizoram</option>
+                                            <option value="nagaland">Nagaland</option>
+                                            <option value="odisha">Odisha</option>
+                                            <option value="punjab">Punjab</option>
+                                            <option value="rajasthan">Rajasthan</option>
+                                            <option value="sikkim">Sikkim</option>
+                                            <option value="tamil-nadu">Tamil Nadu</option>
+                                            <option value="tripura">Tripura</option>
+                                            <option value="uttar-pradesh">Uttar Pradesh</option>
+                                            <option value="uttarakhand">Uttarakhand</option>
+                                            <option value="west-bengal">West Bengal</option>
+                                            <option value="telangana">Telangana</option>
+                                            <option value="chandigarh">Chandigarh</option>
+                                            <option value="delhi">Delhi</option>
+                                            <option value="daman-and-diu">Daman and Diu</option>
+                                            <option value="dadra-and-nagar-haveli">Dadra and Nagar Haveli</option>
+                                            <option value="lakshadweep">Lakshadweep</option>
+                                            <option value="puducherry">Puducherry</option>
+                                            <option value="andaman-and-nicobar-islands">Andaman and Nicobar Islands
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="exampleFormControlInput1" class="form-label">District <span
+                                                class="text-danger">*</span></label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option value="balod">Balod</option>
+                                            <option value="balodabazar-bhatapara">Balodabazar-Bhatapara</option>
+                                            <option value="balrampur-ramanujganj">Balrampur Ramanujganj</option>
+                                            <option value="bastar">Bastar</option>
+                                            <option value="bemetara">Bemetara</option>
+                                            <option value="bijapur">Bijapur</option>
+                                            <option value="bilaspur">Bilaspur</option>
+                                            <option value="dakshin-bastar-dantewada">Dakshin Bastar Dantewada</option>
+                                            <option value="dhamtari">Dhamtari</option>
+                                            <option value="durg">Durg</option>
+                                            <option value="gariyaband">Gariyaband</option>
+                                            <option value="gaurela-pendra-marwahi">Gaurela Pendra Marwahi</option>
+                                            <option value="janjgir-champa">Janjgir-Champa</option>
+                                            <option value="jashpur">Jashpur</option>
+                                            <option value="kabeerdham">Kabeerdham</option>
+                                            <option value="khairagarh-chhuikhadan-gandai">Khairagarh Chhuikhadan Gandai
+                                            </option>
+                                            <option value="kondagaon">Kondagaon</option>
+                                            <option value="korba">Korba</option>
+                                            <option value="korea">Korea</option>
+                                            <option value="mahasamund">Mahasamund</option>
+                                            <option value="manendragarh-chirmiri-bharatpur-mcb">Manendragarh Chirmiri
+                                                Bharatpur Mcb</option>
+                                            <option value="mohla-manpur-ambagarh-chouki">Mohla Manpur Ambagarh Chouki
+                                            </option>
+                                            <option value="mungeli">Mungeli</option>
+                                            <option value="narayanpur">Narayanpur</option>
+                                            <option value="raigarh">Raigarh</option>
+                                            <option value="raipur">Raipur</option>
+                                            <option value="rajnandgaon">Rajnandgaon</option>
+                                            <option value="sakti">Sakti</option>
+                                            <option value="sarangarh-bilaigarh">Sarangarh Bilaigarh</option>
+                                            <option value="sukma">Sukma</option>
+                                            <option value="surajpur">Surajpur</option>
+                                            <option value="surguja">Surguja</option>
+                                            <option value="uttar-bastar-kanker">Uttar Bastar Kanker</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="exampleFormControlInput1" class="form-label">Address <span
+                                                class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <a class="addmore-btn" href="#"><i class="bi bi-plus-circle"></i> <span>Add
+                                            More</span></a>
+                                </div>
+                                <div class="table-responsive">
+                                    <table class="table table-bordered  ">
+                                        <thead class="table-light">
+                                            <tr>
+                                                <th>Sl#</th>
+                                                <th>Unit Name</th>
+                                                <th>Product</th>
+                                                <th>Total Capacity (With Unit)</th>
+                                                <th>State</th>
+                                                <th>District</th>
+                                                <th>Address</th>
+                                                <th>Delete</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Test Unit-1</td>
+                                                <td>Rice, seed</td>
+                                                <td>400 MT</td>
+                                                <td>Odisha</td>
+                                                <td>Kendrapada</td>
+                                                <td>Patkura, Garadapur</td>
+                                                <td>
+                                                    <button class="btn btn-danger btn-sm">
+                                                        <i class="bi bi-trash"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Test Unit-2</td>
+                                                <td>Dog Food</td>
+                                                <td>756 KG</td>
+                                                <td>Chhattisgarh</td>
+                                                <td>Balod</td>
+                                                <td>Raipur, Telabandhi</td>
+                                                <td>
+                                                    <button class="btn btn-danger btn-sm">
+                                                        <i class="bi bi-trash"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                             <div class="row row g-3 mb-3">
                                 <div class="col-md-4">
-                                    <label for="exampleFormControlInput1" class="form-label">Unit Name</label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1">
-                                </div>
-                                <div class="col-md-4">
-                                    <label for="exampleFormControlInput1" class="form-label">Product</label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1">
-                                </div>
-                                <div class="col-md-4">
-                                    <label for="exampleFormControlInput1" class="form-label">Total Capacity (With
-                                        Unit)</label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1">
-                                </div>
-                                <div class="col-md-4">
-                                    <label for="exampleFormControlInput1" class="form-label">State</label>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>Open this select menu</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-4">
-                                    <label for="exampleFormControlInput1" class="form-label">District</label>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>Open this select menu</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-4">
-                                    <label for="exampleFormControlInput1" class="form-label">Address</label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1">
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <a class="addmore-btn" href="#"><i class="bi bi-plus-circle"></i> <span>Add
-                                        More</span></a>
-                            </div>
-                            <div class="row row g-3 mb-3">
-                                <div class="col-md-4">
-                                    <label for="exampleFormControlInput1" class="form-label">Is there any unit outside
-                                        India</label>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>Open this select menu</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
+                                    <label for="unit-outside-india" class="form-label">Is there any unit outside India?
+                                        <span class="text-danger">*</span></label>
+                                    <select class="form-select" id="unitoutsideindia" aria-label="">
+                                        <option value="Yes" id="Yes">Yes</option>
+                                        <option value="no">No</option>
                                     </select>
                                 </div>
                             </div>
-                            <h6 class="form-sub-heading mt-4 mb-0">Location details of the other units located within
-                                india</h6>
-                            <div class="row row g-3 mb-3">
-                                <div class="col-md-4">
-                                    <label for="exampleFormControlInput1" class="form-label">Unit Name</label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                            <div id="locationdetailscontainer">
+
+                                <h6 class="form-sub-heading mt-4 mb-0">Location details of the other units located
+                                    within
+                                    india</h6>
+
+                                <div class="row row g-3 mb-3">
+                                    <div class="col-md-4">
+                                        <label for="exampleFormControlInput1" class="form-label">Unit Name <span
+                                                class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="exampleFormControlInput1" class="form-label">Product <span
+                                                class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="exampleFormControlInput1" class="form-label">Total Capacity (With
+                                            Unit) <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="exampleFormControlInput1" class="form-label">State <span
+                                                class="text-danger">*</span></label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option value="andhra-pradesh">Andhra Pradesh</option>
+                                            <option value="arunachal-pradesh">Arunachal Pradesh</option>
+                                            <option value="assam">Assam</option>
+                                            <option value="bihar">Bihar</option>
+                                            <option value="chhattisgarh">Chhattisgarh</option>
+                                            <option value="goa">Goa</option>
+                                            <option value="gujarat">Gujarat</option>
+                                            <option value="haryana">Haryana</option>
+                                            <option value="himachal-pradesh">Himachal Pradesh</option>
+                                            <option value="jammu-and-kashmir">Jammu and Kashmir</option>
+                                            <option value="jharkhand">Jharkhand</option>
+                                            <option value="karnataka">Karnataka</option>
+                                            <option value="kerala">Kerala</option>
+                                            <option value="madhya-pradesh">Madhya Pradesh</option>
+                                            <option value="maharashtra">Maharashtra</option>
+                                            <option value="manipur">Manipur</option>
+                                            <option value="meghalaya">Meghalaya</option>
+                                            <option value="mizoram">Mizoram</option>
+                                            <option value="nagaland">Nagaland</option>
+                                            <option value="odisha">Odisha</option>
+                                            <option value="punjab">Punjab</option>
+                                            <option value="rajasthan">Rajasthan</option>
+                                            <option value="sikkim">Sikkim</option>
+                                            <option value="tamil-nadu">Tamil Nadu</option>
+                                            <option value="tripura">Tripura</option>
+                                            <option value="uttar-pradesh">Uttar Pradesh</option>
+                                            <option value="uttarakhand">Uttarakhand</option>
+                                            <option value="west-bengal">West Bengal</option>
+                                            <option value="telangana">Telangana</option>
+                                            <option value="chandigarh">Chandigarh</option>
+                                            <option value="delhi">Delhi</option>
+                                            <option value="daman-and-diu">Daman and Diu</option>
+                                            <option value="dadra-and-nagar-haveli">Dadra and Nagar Haveli</option>
+                                            <option value="lakshadweep">Lakshadweep</option>
+                                            <option value="puducherry">Puducherry</option>
+                                            <option value="andaman-and-nicobar-islands">Andaman and Nicobar Islands
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="exampleFormControlInput1" class="form-label">District <span
+                                                class="text-danger">*</span></label>
+                                        <select class="form-select" aria-label="Default select example">
+                                            <option value="balod">Balod</option>
+                                            <option value="balodabazar-bhatapara">Balodabazar-Bhatapara</option>
+                                            <option value="balrampur-ramanujganj">Balrampur Ramanujganj</option>
+                                            <option value="bastar">Bastar</option>
+                                            <option value="bemetara">Bemetara</option>
+                                            <option value="bijapur">Bijapur</option>
+                                            <option value="bilaspur">Bilaspur</option>
+                                            <option value="dakshin-bastar-dantewada">Dakshin Bastar Dantewada</option>
+                                            <option value="dhamtari">Dhamtari</option>
+                                            <option value="durg">Durg</option>
+                                            <option value="gariyaband">Gariyaband</option>
+                                            <option value="gaurela-pendra-marwahi">Gaurela Pendra Marwahi</option>
+                                            <option value="janjgir-champa">Janjgir-Champa</option>
+                                            <option value="jashpur">Jashpur</option>
+                                            <option value="kabeerdham">Kabeerdham</option>
+                                            <option value="khairagarh-chhuikhadan-gandai">Khairagarh Chhuikhadan Gandai
+                                            </option>
+                                            <option value="kondagaon">Kondagaon</option>
+                                            <option value="korba">Korba</option>
+                                            <option value="korea">Korea</option>
+                                            <option value="mahasamund">Mahasamund</option>
+                                            <option value="manendragarh-chirmiri-bharatpur-mcb">Manendragarh Chirmiri
+                                                Bharatpur Mcb</option>
+                                            <option value="mohla-manpur-ambagarh-chouki">Mohla Manpur Ambagarh Chouki
+                                            </option>
+                                            <option value="mungeli">Mungeli</option>
+                                            <option value="narayanpur">Narayanpur</option>
+                                            <option value="raigarh">Raigarh</option>
+                                            <option value="raipur">Raipur</option>
+                                            <option value="rajnandgaon">Rajnandgaon</option>
+                                            <option value="sakti">Sakti</option>
+                                            <option value="sarangarh-bilaigarh">Sarangarh Bilaigarh</option>
+                                            <option value="sukma">Sukma</option>
+                                            <option value="surajpur">Surajpur</option>
+                                            <option value="surguja">Surguja</option>
+                                            <option value="uttar-bastar-kanker">Uttar Bastar Kanker</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <label for="exampleFormControlInput1" class="form-label">Address <span
+                                                class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                                    </div>
                                 </div>
-                                <div class="col-md-4">
-                                    <label for="exampleFormControlInput1" class="form-label">Product</label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                <div class="mb-3">
+                                    <a class="addmore-btn" href="#"><i class="bi bi-plus-circle"></i> <span>Add
+                                            More</span></a>
+
                                 </div>
-                                <div class="col-md-4">
-                                    <label for="exampleFormControlInput1" class="form-label">Total Capacity (With
-                                        Unit)</label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1">
-                                </div>
-                                <div class="col-md-4">
-                                    <label for="exampleFormControlInput1" class="form-label">State</label>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>Open this select menu</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-4">
-                                    <label for="exampleFormControlInput1" class="form-label">District</label>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>Open this select menu</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-4">
-                                    <label for="exampleFormControlInput1" class="form-label">Address</label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered  ">
+                                        <thead class="table-light">
+                                            <tr>
+                                                <th>Sl#</th>
+                                                <th>Unit Name</th>
+                                                <th>Product</th>
+                                                <th>Total Capacity</th>
+                                                <th>Country</th>
+                                                <th>City</th>
+                                                <th>Address</th>
+                                                <th>Delete</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Test Unit-1</td>
+                                                <td>Rice, seed</td>
+                                                <td>400 MT</td>
+                                                <td>Japan</td>
+                                                <td>Tokyo</td>
+                                                <td>Patkura, Garadapur</td>
+                                                <td>
+                                                    <button class="btn btn-danger btn-sm">
+                                                        <i class="bi bi-trash"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Test Unit-2</td>
+                                                <td>Dog Food</td>
+                                                <td>756 KG</td>
+                                                <td>America</td>
+                                                <td>New York</td>
+                                                <td>Raipur, Telabandhi</td>
+                                                <td>
+                                                    <button class="btn btn-danger btn-sm">
+                                                        <i class="bi bi-trash"></i>
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
-                            <div class="mb-3">
-                                <a class="addmore-btn" href="#"><i class="bi bi-plus-circle"></i> <span>Add
-                                        More</span></a>
-                            </div>
+
                         </div>
 
                     </div>
@@ -508,19 +990,19 @@
         </div>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
     <script src="js/bootstrap-5.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/js/bootstrap-datepicker.min.js"
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/js/bootstrap-datepicker.min.js"
         integrity="sha512-LsnSViqQyaXpD4mBBdRYeP6sRwJiJveh2ZIbW41EBrNmKxgr/LFZIiWT6yr+nycvhvauz8c2nYMhrP80YhG7Cw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js" ></script> -->
-    <script>
+    <!-- <script>
         $(function () {
             $('.datepicker').datepicker();
         });
-    </script>
+    </script> -->
 
-
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

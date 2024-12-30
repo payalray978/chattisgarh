@@ -71,6 +71,13 @@
                                         aria-expanded="false">
                                         <img class="user-icon" src="images/user.png">
                                     </a>
+                                    <ul class="dropdown-menu logout">
+                                        <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                                        <li><a class="dropdown-item" href="#">
+                                                Change Password</a></li>
+                                        <li><a class="dropdown-item" href="user-login.html">Logout
+                                            </a></li>
+                                    </ul>
                                 </li>
                             </ul>
                         </div>
@@ -94,7 +101,7 @@
                         <li><a href="#">CSR Activities</a></li>
                         <li><a href="#">Incentives</a></li>
                         <li><a href="#">Post Allotment</a></li>
-                        <li><a href="#">Helpdesk</a></li>
+                        <li><a href="#">Grivance</a></li>
                     </ul>
                 </div>
                 <div class="col-md-10">
@@ -121,19 +128,59 @@
                             <h5 class="form-heading">Proposed location of land</h5>
                             <div class="row row g-3 mb-3">
                                 <div class="col-md-4">
-                                    <label for="exampleFormControlInput1" class="form-label">Land required from
-                                        government</label>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>Yes</option>
-                                        <option value="1">No</option>
+                                    <label for="landRequired" class="form-label">Land required from
+                                        government <span class="text-danger">*</span></label>
+                                    <select class="form-select" id="landRequired" aria-label="Default select example">
+                                        <option value="ro">Select</option>
+                                        <option value="Yes" id="Yes">Yes</option>
+                                        <option value="No">No</option>
                                     </select>
                                 </div>
                                 <div class="col-md-4">
-                                    <label for="exampleFormControlInput1" class="form-label">District</label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                    <label for="exampleFormControlInput1" class="form-label">District <span
+                                            class="text-danger">*</span></label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option value="balod">Balod</option>
+                                        <option value="balodabazar-bhatapara">Balodabazar-Bhatapara</option>
+                                        <option value="balrampur-ramanujganj">Balrampur Ramanujganj</option>
+                                        <option value="bastar">Bastar</option>
+                                        <option value="bemetara">Bemetara</option>
+                                        <option value="bijapur">Bijapur</option>
+                                        <option value="bilaspur">Bilaspur</option>
+                                        <option value="dakshin-bastar-dantewada">Dakshin Bastar Dantewada</option>
+                                        <option value="dhamtari">Dhamtari</option>
+                                        <option value="durg">Durg</option>
+                                        <option value="gariyaband">Gariyaband</option>
+                                        <option value="gaurela-pendra-marwahi">Gaurela Pendra Marwahi</option>
+                                        <option value="janjgir-champa">Janjgir-Champa</option>
+                                        <option value="jashpur">Jashpur</option>
+                                        <option value="kabeerdham">Kabeerdham</option>
+                                        <option value="khairagarh-chhuikhadan-gandai">Khairagarh Chhuikhadan Gandai
+                                        </option>
+                                        <option value="kondagaon">Kondagaon</option>
+                                        <option value="korba">Korba</option>
+                                        <option value="korea">Korea</option>
+                                        <option value="mahasamund">Mahasamund</option>
+                                        <option value="manendragarh-chirmiri-bharatpur-mcb">Manendragarh Chirmiri
+                                            Bharatpur Mcb</option>
+                                        <option value="mohla-manpur-ambagarh-chouki">Mohla Manpur Ambagarh Chouki
+                                        </option>
+                                        <option value="mungeli">Mungeli</option>
+                                        <option value="narayanpur">Narayanpur</option>
+                                        <option value="raigarh">Raigarh</option>
+                                        <option value="raipur">Raipur</option>
+                                        <option value="rajnandgaon">Rajnandgaon</option>
+                                        <option value="sakti">Sakti</option>
+                                        <option value="sarangarh-bilaigarh">Sarangarh Bilaigarh</option>
+                                        <option value="sukma">Sukma</option>
+                                        <option value="surajpur">Surajpur</option>
+                                        <option value="surguja">Surguja</option>
+                                        <option value="uttar-bastar-kanker">Uttar Bastar Kanker</option>
+                                    </select>
                                 </div>
                                 <div class="col-md-4">
-                                    <label for="exampleFormControlInput1" class="form-label">Block</label>
+                                    <label for="exampleFormControlInput1" class="form-label">Block <span
+                                            class="text-danger">*</span></label>
                                     <select class="form-select" aria-label="Default select example">
                                         <option selected>Open this select menu</option>
                                         <option value="1">One</option>
@@ -141,32 +188,326 @@
                                         <option value="3">Three</option>
                                     </select>
                                 </div>
+                                <!-- <div id="landDetails" class=""> -->
                                 <div class="col-md-4">
-                                    <label for="exampleFormControlInput1" class="form-label">Phone Number</label>
+                                    <label for="exampleFormControlInput1" class="form-label">Phone Number <span
+                                            class="text-danger">*</span></label>
                                     <input type="tel" class="form-control" id="exampleFormControlInput1">
                                 </div>
+
                                 <div class="col-md-4">
-                                    <label for="exampleFormControlInput1" class="form-label">Email Id</label>
+                                    <label for="exampleFormControlInput1" class="form-label">Email Id <span
+                                            class="text-danger">*</span></label>
                                     <input type="email" class="form-control" id="exampleFormControlInput1">
                                 </div>
                                 <div class="col-md-4">
-                                    <label for="exampleFormControlInput1" class="form-label">Area</label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                    <label for="exampleFormControlInput1" class="form-label">Area <span
+                                            class="text-danger">*</span></label>
+                                    <div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio1" value="option1">
+                                            <label class="form-check-label" for="inlineRadio1">Rural</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio2" value="option2">
+                                            <label class="form-check-label" for="inlineRadio2">Urban</label>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="row row g-3 mb-3">
+                                <!-- </div>
+                            <div class="row row g-3 mb-3"> -->
                                 <div class="col-md-6">
-                                    <label for="exampleFormControlInput1" class="form-label">Address 1</label>
+                                    <label for="exampleFormControlInput1" class="form-label">Address 1 <span
+                                            class="text-danger">*</span></label>
                                     <input type="text" class="form-control" id="exampleFormControlInput1">
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="exampleFormControlInput1" class="form-label">Address 2</label>
+                                    <label for="exampleFormControlInput1" class="form-label">Address 2 <span
+                                            class="text-danger">*</span></label>
                                     <input type="text" class="form-control" id="exampleFormControlInput1">
                                 </div>
-                            </div>
-                            <div class="row g-3 mb-3">
+                                <!-- </div>
+                                <div class="row g-3 mb-3"> -->
                                 <div class="col-xl-3 col-md-6">
-                                    <label for="exampleFormControlInput1" class="form-label">Country </label>
+                                    <label for="exampleFormControlInput1" class="form-label">Country <span
+                                            class="text-danger">*</span></label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option value="india">India</option>
+                                        <option value="sudan">Sudan</option>
+                                        <option value="algeria">Algeria</option>
+                                        <option value="american-samoa">American Samoa</option>
+                                        <option value="andorra">Andorra</option>
+                                        <option value="angola">Angola</option>
+                                        <option value="anguilla">Anguilla</option>
+                                        <option value="antarctica">Antarctica</option>
+                                        <option value="antigua-and-barbuda">Antigua and Barbuda</option>
+                                        <option value="argentina">Argentina</option>
+                                        <option value="armenia">Armenia</option>
+                                        <option value="aruba">Aruba</option>
+                                        <option value="australia">Australia</option>
+                                        <option value="austria">Austria</option>
+                                        <option value="azerbaijan">Azerbaijan</option>
+                                        <option value="bahamas">Bahamas</option>
+                                        <option value="bahrain">Bahrain</option>
+                                        <option value="bangladesh">Bangladesh</option>
+                                        <option value="barbados">Barbados</option>
+                                        <option value="belarus">Belarus</option>
+                                        <option value="belgium">Belgium</option>
+                                        <option value="belize">Belize</option>
+                                        <option value="benin">Benin</option>
+                                        <option value="bermuda">Bermuda</option>
+                                        <option value="bhutan">Bhutan</option>
+                                        <option value="bolivia">Bolivia</option>
+                                        <option value="bosnia-and-herzegovina">Bosnia and Herzegovina</option>
+                                        <option value="botswana">Botswana</option>
+                                        <option value="bouvet-island">Bouvet Island</option>
+                                        <option value="brazil">Brazil</option>
+                                        <option value="british-indian-ocean-territory">British Indian Ocean
+                                            Territory
+                                        </option>
+                                        <option value="brunei">Brunei</option>
+                                        <option value="bulgaria">Bulgaria</option>
+                                        <option value="burkina-faso">Burkina Faso</option>
+                                        <option value="burundi">Burundi</option>
+                                        <option value="cambodia">Cambodia</option>
+                                        <option value="cameroon">Cameroon</option>
+                                        <option value="canada">Canada</option>
+                                        <option value="cape-verde">Cape Verde</option>
+                                        <option value="cayman-islands">Cayman Islands</option>
+                                        <option value="central-african-republic">Central African Republic</option>
+                                        <option value="chad">Chad</option>
+                                        <option value="chile">Chile</option>
+                                        <option value="china">China</option>
+                                        <option value="christmas-island">Christmas Island</option>
+                                        <option value="cocos-keeling-islands">Cocos (Keeling) Islands</option>
+                                        <option value="colombia">Colombia</option>
+                                        <option value="comoros">Comoros</option>
+                                        <option value="congo">Congo</option>
+                                        <option value="cook-islands">Cook Islands</option>
+                                        <option value="costa-rica">Costa Rica</option>
+                                        <option value="croatia">Croatia</option>
+                                        <option value="cuba">Cuba</option>
+                                        <option value="cyprus">Cyprus</option>
+                                        <option value="czech-republic">Czech Republic</option>
+                                        <option value="dem-rep-of-congo">Dem Rep of Congo (Zaire)</option>
+                                        <option value="denmark">Denmark</option>
+                                        <option value="DJIBOUTI">DJIBOUTI</option>
+                                        <option value="DOMINICA">DOMINICA</option>
+                                        <option value="DOMINICAN REPUBLIC">DOMINICAN REPUBLIC</option>
+                                        <option value="EAST TIMOR">EAST TIMOR</option>
+                                        <option value="ECUADOR">ECUADOR</option>
+                                        <option value="EGYPT">EGYPT</option>
+                                        <option value="EL SALVADOR">EL SALVADOR</option>
+                                        <option value="ENGLAND">ENGLAND</option>
+                                        <option value="EQUATORIAL GUINEA">EQUATORIAL GUINEA</option>
+                                        <option value="ERITREA">ERITREA</option>
+                                        <option value="ESTONIA">ESTONIA</option>
+                                        <option value="ETHIOPIA">ETHIOPIA</option>
+                                        <option value="FALKLAND ISLANDS">FALKLAND ISLANDS</option>
+                                        <option value="FAROE ISLANDS">FAROE ISLANDS</option>
+                                        <option value="FIJI">FIJI</option>
+                                        <option value="FINLAND">FINLAND</option>
+                                        <option value="FRANCE">FRANCE</option>
+                                        <option value="FRENCH GUIANA">FRENCH GUIANA</option>
+                                        <option value="FRENCH POLYNESIA">FRENCH POLYNESIA</option>
+                                        <option value="FRENCH SOUTHERN TERRITORIES">FRENCH SOUTHERN TERRITORIES
+                                        </option>
+                                        <option value="GABON">GABON</option>
+                                        <option value="GAMBIA">GAMBIA</option>
+                                        <option value="GEORGIA">GEORGIA</option>
+                                        <option value="GERMANY">GERMANY</option>
+                                        <option value="GHANA">GHANA</option>
+                                        <option value="GIBRALTAR">GIBRALTAR</option>
+                                        <option value="GREECE">GREECE</option>
+                                        <option value="GREENLAND">GREENLAND</option>
+                                        <option value="GRENADA">GRENADA</option>
+                                        <option value="GUADELOUPE">GUADELOUPE</option>
+                                        <option value="GUAM">GUAM</option>
+                                        <option value="GUATEMALA">GUATEMALA</option>
+                                        <option value="GUINEA">GUINEA</option>
+                                        <option value="GUINEA-BISSAU">GUINEA-BISSAU</option>
+                                        <option value="GUYANA">GUYANA</option>
+                                        <option value="HAITI">HAITI</option>
+                                        <option value="HEARD AND MCDONALD ISLANDS">HEARD AND MCDONALD ISLANDS
+                                        </option>
+                                        <option value="HONDURAS">HONDURAS</option>
+                                        <option value="HONG KONG">HONG KONG</option>
+                                        <option value="HUNGARY">HUNGARY</option>
+                                        <option value="ICELAND">ICELAND</option>
+                                        <option value="ALBANIA">ALBANIA</option>
+                                        <option value="INDONESIA">INDONESIA</option>
+                                        <option value="IRAN">IRAN</option>
+                                        <option value="IRAQ">IRAQ</option>
+                                        <option value="IRELAND">IRELAND</option>
+                                        <option value="ITALY">ITALY</option>
+                                        <option value="IVORY COAST">IVORY COAST</option>
+                                        <option value="JAMAICA">JAMAICA</option>
+                                        <option value="JAPAN">JAPAN</option>
+                                        <option value="JORDAN">JORDAN</option>
+                                        <option value="KAZAKHSTAN">KAZAKHSTAN</option>
+                                        <option value="KENYA">KENYA</option>
+                                        <option value="KIRIBATI">KIRIBATI</option>
+                                        <option value="KOREA">KOREA</option>
+                                        <option value="KOREA (D.P.R.)">KOREA (D.P.R.)</option>
+                                        <option value="KUWAIT">KUWAIT</option>
+                                        <option value="KYRGYZSTAN">KYRGYZSTAN</option>
+                                        <option value="LAO">LAO</option>
+                                        <option value="LATVIA">LATVIA</option>
+                                        <option value="LEBANON">LEBANON</option>
+                                        <option value="LESOTHO">LESOTHO</option>
+                                        <option value="LIBERIA">LIBERIA</option>
+                                        <option value="LIBYA">LIBYA</option>
+                                        <option value="LIECHTENSTEIN">LIECHTENSTEIN</option>
+                                        <option value="LITHUANIA">LITHUANIA</option>
+                                        <option value="LUXEMBOURG">LUXEMBOURG</option>
+                                        <option value="MACAO">MACAO</option>
+                                        <option value="MACEDONIA">MACEDONIA</option>
+                                        <option value="MADAGASCAR">MADAGASCAR</option>
+                                        <option value="MALAWI">MALAWI</option>
+                                        <option value="MALAYSIA">MALAYSIA</option>
+                                        <option value="MALDIVES">MALDIVES</option>
+                                        <option value="MALI">MALI</option>
+                                        <option value="MALTA">MALTA</option>
+                                        <option value="MARSHALL ISLANDS">MARSHALL ISLANDS</option>
+                                        <option value="MARTINIQUE">MARTINIQUE</option>
+                                        <option value="MAURITANIA">MAURITANIA</option>
+                                        <option value="MAURITIUS">MAURITIUS</option>
+                                        <option value="MAYOTTE">MAYOTTE</option>
+                                        <option value="MEXICO">MEXICO</option>
+                                        <option value="MICRONESIA">MICRONESIA</option>
+                                        <option value="MOLDOVA">MOLDOVA</option>
+                                        <option value="MONACO">MONACO</option>
+                                        <option value="MONGOLIA">MONGOLIA</option>
+                                        <option value="MONTSERRAT">MONTSERRAT</option>
+                                        <option value="MOROCCO">MOROCCO</option>
+                                        <option value="MOZAMBIQUE">MOZAMBIQUE</option>
+                                        <option value="MYANMAR">MYANMAR</option>
+                                        <option value="NAMIBIA">NAMIBIA</option>
+                                        <option value="NAURU">NAURU</option>
+                                        <option value="NEPAL">NEPAL</option>
+                                        <option value="NETHERLANDS">NETHERLANDS</option>
+                                        <option value="NETHERLANDS ANTILLES">NETHERLANDS ANTILLES</option>
+                                        <option value="NEW CALEDONIA">NEW CALEDONIA</option>
+                                        <option value="NEW ZEALAND">NEW ZEALAND</option>
+                                        <option value="NICARAGUA">NICARAGUA</option>
+                                        <option value="NIGER">NIGER</option>
+                                        <option value="NIGERIA">NIGERIA</option>
+                                        <option value="NIUE">NIUE</option>
+                                        <option value="NORFOLK ISLAND">NORFOLK ISLAND</option>
+                                        <option value="NORTHERN MARIANA ISLANDS">NORTHERN MARIANA ISLANDS</option>
+                                        <option value="NORWAY">NORWAY</option>
+                                        <option value="OMAN">OMAN</option>
+                                        <option value="OTHER">OTHER</option>
+                                        <option value="PAKISTAN">PAKISTAN</option>
+                                        <option value="PALAU">PALAU</option>
+                                        <option value="PANAMA">PANAMA</option>
+                                        <option value="PAPUA NEW GUINEA">PAPUA NEW GUINEA</option>
+                                        <option value="PARAGUAY">PARAGUAY</option>
+                                        <option value="PERU">PERU</option>
+                                        <option value="PHILIPPINES">PHILIPPINES</option>
+                                        <option value="PITCAIRN ISLAND">PITCAIRN ISLAND</option>
+                                        <option value="POLAND">POLAND</option>
+                                        <option value="PORTUGAL">PORTUGAL</option>
+                                        <option value="PUERTO RICO">PUERTO RICO</option>
+                                        <option value="QATAR">QATAR</option>
+                                        <option value="REUNION">REUNION</option>
+                                        <option value="ROMANIA">ROMANIA</option>
+                                        <option value="RUSSIA">RUSSIA</option>
+                                        <option value="RWANDA">RWANDA</option>
+                                        <option value="SAINT KITTS AND NEVIS">SAINT KITTS AND NEVIS</option>
+                                        <option value="SAINT LUCIA">SAINT LUCIA</option>
+                                    </select>
+                                </div>
+                                <div class="col-xl-3 col-md-6">
+                                    <label for="exampleFormControlInput1" class="form-label">State <span
+                                            class="text-danger">*</span></label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option value="andhra-pradesh">Andhra Pradesh</option>
+                                        <option value="arunachal-pradesh">Arunachal Pradesh</option>
+                                        <option value="assam">Assam</option>
+                                        <option value="bihar">Bihar</option>
+                                        <option value="chhattisgarh">Chhattisgarh</option>
+                                        <option value="goa">Goa</option>
+                                        <option value="gujarat">Gujarat</option>
+                                        <option value="haryana">Haryana</option>
+                                        <option value="himachal-pradesh">Himachal Pradesh</option>
+                                        <option value="jammu-and-kashmir">Jammu and Kashmir</option>
+                                        <option value="jharkhand">Jharkhand</option>
+                                        <option value="karnataka">Karnataka</option>
+                                        <option value="kerala">Kerala</option>
+                                        <option value="madhya-pradesh">Madhya Pradesh</option>
+                                        <option value="maharashtra">Maharashtra</option>
+                                        <option value="manipur">Manipur</option>
+                                        <option value="meghalaya">Meghalaya</option>
+                                        <option value="mizoram">Mizoram</option>
+                                        <option value="nagaland">Nagaland</option>
+                                        <option value="odisha">Odisha</option>
+                                        <option value="punjab">Punjab</option>
+                                        <option value="rajasthan">Rajasthan</option>
+                                        <option value="sikkim">Sikkim</option>
+                                        <option value="tamil-nadu">Tamil Nadu</option>
+                                        <option value="tripura">Tripura</option>
+                                        <option value="uttar-pradesh">Uttar Pradesh</option>
+                                        <option value="uttarakhand">Uttarakhand</option>
+                                        <option value="west-bengal">West Bengal</option>
+                                        <option value="telangana">Telangana</option>
+                                        <option value="chandigarh">Chandigarh</option>
+                                        <option value="delhi">Delhi</option>
+                                        <option value="daman-and-diu">Daman and Diu</option>
+                                        <option value="dadra-and-nagar-haveli">Dadra and Nagar Haveli</option>
+                                        <option value="lakshadweep">Lakshadweep</option>
+                                        <option value="puducherry">Puducherry</option>
+                                        <option value="andaman-and-nicobar-islands">Andaman and Nicobar Islands
+                                        </option>
+                                    </select>
+                                </div>
+                                <div class="col-xl-3 col-md-6">
+                                    <label for="exampleFormControlInput1" class="form-label">District <span
+                                            class="text-danger">*</span></label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option value="balod">Balod</option>
+                                        <option value="balodabazar-bhatapara">Balodabazar-Bhatapara</option>
+                                        <option value="balrampur-ramanujganj">Balrampur Ramanujganj</option>
+                                        <option value="bastar">Bastar</option>
+                                        <option value="bemetara">Bemetara</option>
+                                        <option value="bijapur">Bijapur</option>
+                                        <option value="bilaspur">Bilaspur</option>
+                                        <option value="dakshin-bastar-dantewada">Dakshin Bastar Dantewada</option>
+                                        <option value="dhamtari">Dhamtari</option>
+                                        <option value="durg">Durg</option>
+                                        <option value="gariyaband">Gariyaband</option>
+                                        <option value="gaurela-pendra-marwahi">Gaurela Pendra Marwahi</option>
+                                        <option value="janjgir-champa">Janjgir-Champa</option>
+                                        <option value="jashpur">Jashpur</option>
+                                        <option value="kabeerdham">Kabeerdham</option>
+                                        <option value="khairagarh-chhuikhadan-gandai">Khairagarh Chhuikhadan Gandai
+                                        </option>
+                                        <option value="kondagaon">Kondagaon</option>
+                                        <option value="korba">Korba</option>
+                                        <option value="korea">Korea</option>
+                                        <option value="mahasamund">Mahasamund</option>
+                                        <option value="manendragarh-chirmiri-bharatpur-mcb">Manendragarh Chirmiri
+                                            Bharatpur Mcb</option>
+                                        <option value="mohla-manpur-ambagarh-chouki">Mohla Manpur Ambagarh Chouki
+                                        </option>
+                                        <option value="mungeli">Mungeli</option>
+                                        <option value="narayanpur">Narayanpur</option>
+                                        <option value="raigarh">Raigarh</option>
+                                        <option value="raipur">Raipur</option>
+                                        <option value="rajnandgaon">Rajnandgaon</option>
+                                        <option value="sakti">Sakti</option>
+                                        <option value="sarangarh-bilaigarh">Sarangarh Bilaigarh</option>
+                                        <option value="sukma">Sukma</option>
+                                        <option value="surajpur">Surajpur</option>
+                                        <option value="surguja">Surguja</option>
+                                        <option value="uttar-bastar-kanker">Uttar Bastar Kanker</option>
+                                    </select>
+                                </div>
+                                <div class="col-xl-3 col-md-6">
+                                    <label for="exampleFormControlInput1" class="form-label">Block/Tehsil <span
+                                            class="text-danger">*</span></label>
                                     <select class="form-select" aria-label="Default select example">
                                         <option selected>Open this select menu</option>
                                         <option value="1">One</option>
@@ -175,7 +516,8 @@
                                     </select>
                                 </div>
                                 <div class="col-xl-3 col-md-6">
-                                    <label for="exampleFormControlInput1" class="form-label">State</label>
+                                    <label for="exampleFormControlInput1" class="form-label">Gram Panchayat <span
+                                            class="text-danger">*</span></label>
                                     <select class="form-select" aria-label="Default select example">
                                         <option selected>Open this select menu</option>
                                         <option value="1">One</option>
@@ -184,7 +526,8 @@
                                     </select>
                                 </div>
                                 <div class="col-xl-3 col-md-6">
-                                    <label for="exampleFormControlInput1" class="form-label">District</label>
+                                    <label for="exampleFormControlInput1" class="form-label">Nagar Nigam <span
+                                            class="text-danger">*</span></label>
                                     <select class="form-select" aria-label="Default select example">
                                         <option selected>Open this select menu</option>
                                         <option value="1">One</option>
@@ -193,42 +536,18 @@
                                     </select>
                                 </div>
                                 <div class="col-xl-3 col-md-6">
-                                    <label for="exampleFormControlInput1" class="form-label">Block/Tehsil</label>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>Open this select menu</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </div>
-                                <div class="col-xl-3 col-md-6">
-                                    <label for="exampleFormControlInput1" class="form-label">Gram Panchayat</label>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>Open this select menu</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </div>
-                                <div class="col-xl-3 col-md-6">
-                                    <label for="exampleFormControlInput1" class="form-label">Nagar Nigam</label>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>Open this select menu</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </div>
-                                <div class="col-xl-3 col-md-6">
-                                    <label for="exampleFormControlInput1" class="form-label">Village/Town</label>
+                                    <label for="exampleFormControlInput1" class="form-label">Village/Town <span
+                                            class="text-danger">*</span></label>
                                     <input type="text" class="form-control" id="exampleFormControlInput1">
                                 </div>
                                 <div class="col-xl-3 col-md-6">
-                                    <label for="exampleFormControlInput1" class="form-label">PIN Code</label>
+                                    <label for="exampleFormControlInput1" class="form-label">PIN Code <span
+                                            class="text-danger">*</span></label>
                                     <input type="text" class="form-control" id="exampleFormControlInput1">
                                 </div>
                                 <div class="col-xl-3 col-md-6">
-                                    <label for="exampleFormControlInput1" class="form-label">Khasra/Plot Number </label>
+                                    <label for="exampleFormControlInput1" class="form-label">Khasra/Plot Number
+                                        <span class="text-danger">*</span> </label>
                                     <input type="text" class="form-control" id="exampleFormControlInput1">
                                 </div>
                                 <div class="col-xl-3 col-md-6">
@@ -236,26 +555,218 @@
                                     <input type="text" class="form-control" id="exampleFormControlInput1">
                                 </div>
                                 <div class="col-xl-3 col-md-6">
-                                    <label for="exampleFormControlInput1" class="form-label">Land Area</label>
+                                    <label for="exampleFormControlInput1" class="form-label">Land Area <span
+                                            class="text-danger">*</span></label>
                                     <input type="text" class="form-control" id="exampleFormControlInput1">
                                 </div>
                                 <div class="col-xl-3 col-md-6">
-                                    <label for="exampleFormControlInput1" class="form-label">Land Unit</label>
+                                    <label for="exampleFormControlInput1" class="form-label">Land Unit <span
+                                            class="text-danger">*</span></label>
                                     <input type="text" class="form-control" id="exampleFormControlInput1">
                                 </div>
                             </div>
+
                             <div class="mb-3">
                                 <a class="addmore-btn" href="#"><i class="bi bi-plus-circle"></i> <span>Add
                                         More</span></a>
                             </div>
-                            <h5 class="form-heading">Power requirement during production</h5>
+                            <div class="table-responsive">
+                                <table class="table table-bordered  ">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th>Sl#</th>
+                                            <th>District</th>
+                                            <th>Block</th>
+                                            <th>Area</th>
+                                            <th>GP/Nagar Nigam/Nagar Palika/Nagar Panchayat</th>
+                                            <th>Khasra Number</th>
+                                            <th>Land Mark</th>
+                                            <th>Land Area</th>
+                                            <th>Land Unit</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Balod</td>
+                                            <td>Durg</td>
+                                            <td>Rural</td>
+                                            <td>GP Name</td>
+                                            <td>7554/984</td>
+                                            <td>Near Durga Temple</td>
+                                            <td>120</td>
+                                            <td>Hector</td>
+                                            <td><button class="btn btn-danger"><i class="bi bi-trash"></i>
+                                                </button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Raipur</td>
+                                            <td>Bhilai</td>
+                                            <td>Urban</td>
+                                            <td>Mahasmund</td>
+                                            <td>112/78</td>
+                                            <td>Near Railway station</td>
+                                            <td>15.6</td>
+                                            <td>Sq. Mt</td>
+                                            <td><button class="btn btn-danger"><i class="bi bi-trash"></i>
+                                                </button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
                             <div class="row g-3 mb-3">
-                                <div class="col-md-4">
-                                    <label for="exampleFormControlInput1" class="form-label">Source of supply</label>
+                                <div class="col-xl-3 col-md-6">
+                                    <label for="exampleFormControlInput1" class="form-label">District <span
+                                            class="text-danger">*</span></label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option value="balod">Balod</option>
+                                        <option value="balodabazar-bhatapara">Balodabazar-Bhatapara</option>
+                                        <option value="balrampur-ramanujganj">Balrampur Ramanujganj</option>
+                                        <option value="bastar">Bastar</option>
+                                        <option value="bemetara">Bemetara</option>
+                                        <option value="bijapur">Bijapur</option>
+                                        <option value="bilaspur">Bilaspur</option>
+                                        <option value="dakshin-bastar-dantewada">Dakshin Bastar Dantewada</option>
+                                        <option value="dhamtari">Dhamtari</option>
+                                        <option value="durg">Durg</option>
+                                        <option value="gariyaband">Gariyaband</option>
+                                        <option value="gaurela-pendra-marwahi">Gaurela Pendra Marwahi</option>
+                                        <option value="janjgir-champa">Janjgir-Champa</option>
+                                        <option value="jashpur">Jashpur</option>
+                                        <option value="kabeerdham">Kabeerdham</option>
+                                        <option value="khairagarh-chhuikhadan-gandai">Khairagarh Chhuikhadan Gandai
+                                        </option>
+                                        <option value="kondagaon">Kondagaon</option>
+                                        <option value="korba">Korba</option>
+                                        <option value="korea">Korea</option>
+                                        <option value="mahasamund">Mahasamund</option>
+                                        <option value="manendragarh-chirmiri-bharatpur-mcb">Manendragarh Chirmiri
+                                            Bharatpur Mcb</option>
+                                        <option value="mohla-manpur-ambagarh-chouki">Mohla Manpur Ambagarh Chouki
+                                        </option>
+                                        <option value="mungeli">Mungeli</option>
+                                        <option value="narayanpur">Narayanpur</option>
+                                        <option value="raigarh">Raigarh</option>
+                                        <option value="raipur">Raipur</option>
+                                        <option value="rajnandgaon">Rajnandgaon</option>
+                                        <option value="sakti">Sakti</option>
+                                        <option value="sarangarh-bilaigarh">Sarangarh Bilaigarh</option>
+                                        <option value="sukma">Sukma</option>
+                                        <option value="surajpur">Surajpur</option>
+                                        <option value="surguja">Surguja</option>
+                                        <option value="uttar-bastar-kanker">Uttar Bastar Kanker</option>
+                                    </select>
+                                </div>
+                                <div class="col-xl-3 col-md-6">
+                                    <label for="exampleFormControlInput1" class="form-label">Block <span
+                                            class="text-danger">*</span></label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Open this select menu</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="col-xl-3 col-md-6">
+                                    <label for="exampleFormControlInput1" class="form-label">Land Area <span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                </div>
+                                <div class="col-xl-3 col-md-6">
+                                    <label for="exampleFormControlInput1" class="form-label">Land Unit <span
+                                            class="text-danger">*</span></label>
                                     <input type="text" class="form-control" id="exampleFormControlInput1">
                                 </div>
                                 <div class="col-md-4">
-                                    <label for="exampleFormControlInput1" class="form-label">CPP Power Source</label>
+                                    <label for="exampleFormControlInput1" class="form-label">Whether land is required in
+                                        CSIDC industrial estate<span class="text-danger">*</span> </label>
+                                    <select name="" id="" class="form-control">
+                                        <option value="1">Yes</option>
+                                        <option value="2">No</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="exampleFormControlInput1" class="form-label">Name of the CSIDC
+                                        industrial estate<span class="text-danger">*</span> </label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option value="balod">Balod</option>
+                                        <option value="balodabazar-bhatapara">Balodabazar-Bhatapara</option>
+                                        <option value="balrampur-ramanujganj">Balrampur Ramanujganj</option>
+                                        <option value="bastar">Bastar</option>
+                                        <option value="bemetara">Bemetara</option>
+                                        <option value="bijapur">Bijapur</option>
+                                        <option value="bilaspur">Bilaspur</option>
+                                        <option value="dakshin-bastar-dantewada">Dakshin Bastar Dantewada</option>
+                                        <option value="dhamtari">Dhamtari</option>
+                                        <option value="durg">Durg</option>
+                                        <option value="gariyaband">Gariyaband</option>
+                                        <option value="gaurela-pendra-marwahi">Gaurela Pendra Marwahi</option>
+                                        <option value="janjgir-champa">Janjgir-Champa</option>
+                                        <option value="jashpur">Jashpur</option>
+                                        <option value="kabeerdham">Kabeerdham</option>
+                                        <option value="khairagarh-chhuikhadan-gandai">Khairagarh Chhuikhadan Gandai
+                                        </option>
+                                        <option value="kondagaon">Kondagaon</option>
+                                        <option value="korba">Korba</option>
+                                        <option value="korea">Korea</option>
+                                        <option value="mahasamund">Mahasamund</option>
+                                        <option value="manendragarh-chirmiri-bharatpur-mcb">Manendragarh Chirmiri
+                                            Bharatpur Mcb</option>
+                                        <option value="mohla-manpur-ambagarh-chouki">Mohla Manpur Ambagarh Chouki
+                                        </option>
+                                        <option value="mungeli">Mungeli</option>
+                                        <option value="narayanpur">Narayanpur</option>
+                                        <option value="raigarh">Raigarh</option>
+                                        <option value="raipur">Raipur</option>
+                                        <option value="rajnandgaon">Rajnandgaon</option>
+                                        <option value="sakti">Sakti</option>
+                                        <option value="sarangarh-bilaigarh">Sarangarh Bilaigarh</option>
+                                        <option value="sukma">Sukma</option>
+                                        <option value="surajpur">Surajpur</option>
+                                        <option value="surguja">Surguja</option>
+                                        <option value="uttar-bastar-kanker">Uttar Bastar Kanker</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="exampleFormControlInput1" class="form-label">Whether land to be acquired
+                                        by CSIDC<span class="text-danger">*</span> </label>
+                                    <select name="" id="" class="form-control">
+                                        <option value="1">Yes</option>
+                                        <option value="2">No</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <!-- </div> -->
+                            <h5 class="form-heading">Power requirement during production</h5>
+
+                            <div class="row g-3 mb-3">
+                                <div class="col-md-4">
+                                    <label for="exampleFormControlInput1" class="form-label">Source of supply<span
+                                            class="text-danger">*</span> </label>
+                                    <div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                                value="option1">
+                                            <label class="form-check-label" for="inlineCheckbox1">GRID</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                                value="option2">
+                                            <label class="form-check-label" for="inlineCheckbox2">CPP</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                                value="option2">
+                                            <label class="form-check-label" for="inlineCheckbox2">IPP</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="exampleFormControlInput1" class="form-label">CPP Power
+                                        Source</label>
                                     <select class="form-select" aria-label="Default select example">
                                         <option selected>Thermal (Coal Based)</option>
                                         <option value="1">Solar Power</option>
@@ -266,22 +777,26 @@
                                     </select>
                                 </div>
                                 <div class="col-md-4">
-                                    <label for="exampleFormControlInput1" class="form-label">Power demand from GRID (in
+                                    <label for="exampleFormControlInput1" class="form-label">Power demand from GRID
+                                        (in
                                         KW)</label>
                                     <input type="tel" class="form-control" id="exampleFormControlInput1">
                                 </div>
                                 <div class="col-md-4">
-                                    <label for="exampleFormControlInput1" class="form-label">Power drawal from CPP (in
+                                    <label for="exampleFormControlInput1" class="form-label">Power drawal from CPP
+                                        (in
                                         KW)</label>
                                     <input type="tel" class="form-control" id="exampleFormControlInput1">
                                 </div>
                                 <div class="col-md-4">
-                                    <label for="exampleFormControlInput1" class="form-label">Capacity of the CPP plant
+                                    <label for="exampleFormControlInput1" class="form-label">Capacity of the CPP
+                                        plant
                                         (in KW)</label>
                                     <input type="tel" class="form-control" id="exampleFormControlInput1">
                                 </div>
                                 <div class="col-md-4">
-                                    <label for="exampleFormControlInput1" class="form-label">Independent Power Producer
+                                    <label for="exampleFormControlInput1" class="form-label">Independent Power
+                                        Producer
                                         (in KW)</label>
                                     <input type="tel" class="form-control" id="exampleFormControlInput1">
                                 </div>
@@ -291,13 +806,28 @@
                                 <div class="col-md-6">
                                     <label for="exampleFormControlInput1" class="form-label">Sources of water for
                                         production </label>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>Surface Water</option>
-                                        <option value="1">CSIDC supply</option>
-                                        <option value="2">Rain water harvesting</option>
-                                        <option value="3">Others</option>
-
-                                    </select>
+                                    <div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="surfaceWater"
+                                                value="Surface Water" checked>
+                                            <label class="form-check-label" for="surfaceWater">Surface Water</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="csidcSupply"
+                                                value="CSIDC supply">
+                                            <label class="form-check-label" for="csidcSupply">CSIDC supply</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="rainWaterHarvesting"
+                                                value="Rain water harvesting">
+                                            <label class="form-check-label" for="rainWaterHarvesting">Rain water
+                                                harvesting</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="others" value="Others">
+                                            <label class="form-check-label" for="others">Others</label>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="col-md-6">
                                     <label for="formFile" class="form-label">If Others Please specify</label>
@@ -309,7 +839,8 @@
                                     <input class="form-control" type="text" id="">
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="formFile" class="form-label">Total Water requirement (in cusec) </label>
+                                    <label for="formFile" class="form-label">Total Water requirement (in
+                                        cusec) </label>
                                     <input class="form-control" type="text" id="">
                                 </div>
 
@@ -317,7 +848,8 @@
                             <h5 class="form-heading">Waste Water Management</h5>
                             <div class="row g-3 mb-3">
                                 <div class="col-md-6">
-                                    <label for="exampleFormControlInput1" class="form-label">Quaantum of recycling of
+                                    <label for="exampleFormControlInput1" class="form-label">Quaantum of recycling
+                                        of
                                         water (in cusec)</label>
                                     <input type="text" class="form-control" id="exampleFormControlInput1">
                                 </div>
@@ -327,7 +859,7 @@
                                 </div>
                             </div>
                             <div class="row g-3 mb-3">
-                                <div class="col-md-12">
+                                <div class="col-md-6">
                                     <label for="formFile" class="form-label">Waste water treatment technology and
                                         management of solid/hazardous waste</label>
                                     <input class="form-control" type="file" id="formFile">
@@ -335,8 +867,9 @@
                             </div>
                             <h5 class="form-heading">Natural Gas Requirement</h5>
                             <div class="row g-3 mb-3">
-                                <div class="col-md-12">
-                                    <label for="exampleFormControlInput1" class="form-label">Natural Gas Requirement (in
+                                <div class="col-md-6">
+                                    <label for="exampleFormControlInput1" class="form-label">Natural Gas Requirement
+                                        (in
                                         cubic meter)</label>
                                     <input type="text" class="form-control" id="exampleFormControlInput1">
                                 </div>
@@ -347,7 +880,7 @@
                     </div>
                     <div class="form-button-box">
                         <a class="btn btn-outline-warning" href="project-information.html">Back</a>
-                        <a class="btn btn-warning" href="#">Next</a>
+                        <a class="btn btn-warning" href="index.html">Next</a>
                         <a class="btn btn-outline-warning" href="#">Reset</a>
                     </div>
                 </div>
@@ -358,6 +891,7 @@
 
 
     <script src="js/bootstrap-5.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

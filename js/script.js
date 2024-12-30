@@ -34,3 +34,24 @@ function closeModal() {
     // Listen for the scroll event
     window.addEventListener('scroll', handleScroll);
 
+document.getElementById("selectIndustryType").addEventListener("change", function () {
+    const selectedValue = this.value; // Get the selected value
+    const existingIndustrySection = document.getElementById("existingIndustryDetails");
+
+    if (selectedValue === "Existing") {
+        existingIndustrySection.style.display = "block";
+    } else {
+        existingIndustrySection.style.display = "none";
+    }
+});
+
+document.getElementById('landRequired').addEventListener('change', function() {
+    var landDetails = document.getElementById('landDetails');
+    
+    // Check if the selected option's value is "Yes"
+    if (this.value === "Yes") {
+        landDetails.classList.remove('d-none'); // Show the land details section
+    } else {
+        landDetails.classList.add('d-none'); // Hide the land details section
+    }
+});
