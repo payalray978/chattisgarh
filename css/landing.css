@@ -843,8 +843,12 @@ border-radius: 50%;
   padding: .4rem 1rem;
   border-radius: 5px 5px 0 0;
 }
+/* .banner-card div{
+  flex:;
+} */
 .four-cards {
   flex-wrap: wrap;
+  flex: 0 0 50%;
 }
 .four-cards div{
 flex: 0 0 50%;

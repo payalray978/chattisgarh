@@ -230,7 +230,7 @@ header .btn {
 }
 
 /*payal============*/
-.card{
+.card:not(.accordion-body .card){
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
@@ -555,3 +555,13 @@ border-radius: 15px;
   /* border-radius: 10px; */
 }
 
+.btn.btn-blue{
+  border-radius: 0;
+  background-color: #bbdcf7;
+color: #022949;
+}
+.btn.btn-blue:hover, .btn.btn-blue.active{
+  border-radius: 0;
+  background-color: #0c5ea1;
+color: #fff;
+}

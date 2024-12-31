@@ -126,7 +126,8 @@
                             <input type="date" class="form-control" id="exampleFormControlInput1">
                         </div>
                         <div class="col-md-12 text-end">
-                            <a class="btn btn-warning" href="javascript:void(0);">Validate</a>
+                            <a class="btn btn-warning" href="javascript:void(0);" data-bs-toggle="modal"
+                                data-bs-target="#validate">Validate</a>
                         </div>
                     </div>
                     <h5 class="form-heading mt-4">Investors Details</h5>
@@ -150,12 +151,12 @@
                     <h5 class="form-heading mt-4">Office Address</h5>
                     <div class="row g-3 mb-3">
                         <div class="col-md-6">
-                            <label for="exampleFormControlInput1" class="form-label">Address 1 <span
+                            <label for="exampleFormControlInput1" class="form-label">Lane 1 <span
                                     class="text-danger">*</span></label>
                             <input type="text" class="form-control" id="exampleFormControlInput1">
                         </div>
                         <div class="col-md-6">
-                            <label for="exampleFormControlInput1" class="form-label">Address 2 <span
+                            <label for="exampleFormControlInput1" class="form-label">Lane 2 <span
                                     class="text-danger">*</span></label>
                             <input type="text" class="form-control" id="exampleFormControlInput1">
                         </div>
@@ -511,7 +512,23 @@
             </div>
         </div>
     </div>
-
+    <div class="modal fade" id="validate" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header pb-0 border-0">
+                    <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1> -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-success p-0 gap-2 mb-3 d-grid text-center">
+                    <i class="bi bi-check-circle  fs-1"></i>
+                    <h5 class=""> Your PAN has been validate successfully.</h5>
+                </div>
+                <div class="text-center pb-4">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="js/bootstrap-5.js"></script>
 </body>

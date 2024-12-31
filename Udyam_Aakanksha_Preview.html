@@ -1,0 +1,1444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Invest Chhhattisgar</title>
+</head>
+
+<body>
+    <!-- header-start -->
+    <header>
+        <div class="container-fluid px-md-5 ">
+            <nav class="navbar navbar-expand-xl">
+                <h1 class="mb-0">
+                    <a class="navbar-brand" href="landing.html">
+                        <img src="images/logo.png">
+                    </a>
+                </h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" id="navbarOffcanvas" tabindex="-1"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h1 class="mb-0">
+                            <a class="navbar-brand" routerLink="/">
+                                <img src="images/logo.jpg">
+                            </a>
+                        </h1>
+                        <button type="button" class="btn-close btn-close-dark text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="navbar-nav justify-content-end flex-grow-1 pe-3 navbar-expand">
+                            <ul class="navbar-nav gap-3">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <i class="bi bi-gear"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="tile-appears.html">Tile Appears</a></li>
+                                        <li><a class="dropdown-item" href="industrial-registration.html">Industrial
+                                                Registration</a></li>
+                                        <li><a class="dropdown-item" href="company-information.html">Aakanksha
+                                                Registration</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <i class="bi bi-megaphone position-relative">
+                                            <span class="notify">3</span>
+                                        </i>
+                                    </a>
+
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <img class="user-icon" src="images/user.png">
+                                    </a>
+                                    <ul class="dropdown-menu logout">
+                                        <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                                        <li><a class="dropdown-item" href="#">
+                                                Change Password</a></li>
+                                        <li><a class="dropdown-item" href="user-login.html">Logout
+                                            </a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- header-end -->
+    <div class="page-content-wrapper formbg">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2 pr-0">
+                    <ul class="nav side-nav">
+                        <li><a href="index.html">Dashboard</a></li>
+                        <li><a href="tile-appears.html">Single Window Clearance</a></li>
+                        <li><a class="active" href="company-information.html">Unit Registration</a></li>
+                        <li><a href="#">Project Inspection</a></li>
+                        <li><a href="#">CSR Activities</a></li>
+                        <li><a href="#">Incentives</a></li>
+                        <li><a href="#">Post Allotment</a></li>
+                        <li><a href="#">Grivance</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-10">
+                    <h3 class="page-heading text-center">Udyam Aakanksha / Unit Registration</h3>
+
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Company Information
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="card border-0 ">
+                                        <div class="card-body p-0">
+                                            <h5 class="form-heading">Basic Details of Enterprise</h5>
+                                            <div class="row">
+                                                <div class="col-md-4">
+                                                    <label class="form-label mb-0">
+                                                        Name of the Company/Enterprise <span
+                                                            class="text-danger">*</span>
+                                                    </label>
+                                                    <p class="fw-bold">Tech Innovators Pvt. Ltd.</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label class="form-label mb-0">
+                                                        Industry Type <span class="text-danger">*</span>
+                                                    </label>
+                                                    <p class="fw-bold">Information Technology</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label class="form-label mb-0">
+                                                        Type of Organization <span class="text-danger">*</span>
+                                                    </label>
+                                                    <p class="fw-bold">Private Limited Company</p>
+                                                </div>
+                                            </div>
+
+                                            <h5 class="form-heading mt-4">Corporate/Office Address Details</h5>
+                                            <div class="row g-3 mb-3">
+                                                <div class="col-md-6">
+                                                    <label class="form-label mb-0">
+                                                        Lane 1 <span class="text-danger">*</span>
+                                                    </label>
+                                                    <p class="fw-bold">123 Innovation Street</p>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label class="form-label mb-0">
+                                                        Lane 2 <span class="text-danger">*</span>
+                                                    </label>
+                                                    <p class="fw-bold">Suite 456, Tech Park</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="row g-3 mb-3">
+                                                <div class="col-md-3">
+                                                    <label for="countrySelect" class="form-label mb-0">Country <span
+                                                            class="text-danger">*</span></label>
+                                                    <p class="fw-bold">India</p>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <label for="stateSelect" class="form-label mb-0">State <span
+                                                            class="text-danger">*</span></label>
+                                                    <p class="fw-bold">Andhra Pradesh</p>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <label for="districtSelect" class="form-label mb-0">District <span
+                                                            class="text-danger">*</span></label>
+                                                    <p class="fw-bold">Balod</p>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <label for="blockSelect" class="form-label mb-0">Block / Tehsil
+                                                        <span class="text-danger">*</span></label>
+                                                    <p class="fw-bold">Bakavand</p>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <label for="villageSelect" class="form-label mb-0">Village / Town
+                                                        <span class="text-danger">*</span></label>
+                                                    <p class="fw-bold">Aasana</p>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <label for="pinCodeInput" class="form-label mb-0">PIN Code <span
+                                                            class="text-danger">*</span></label>
+                                                    <p class="fw-bold">123456</p>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <label for="phoneInput" class="form-label mb-0">Phone Number <span
+                                                            class="text-danger">*</span></label>
+                                                    <p class="fw-bold">9876543210</p>
+                                                </div>
+                                                <div class="col-md-3">
+                                                    <label for="emailInput" class="form-label mb-0">Email Id <span
+                                                            class="text-danger">*</span></label>
+                                                    <p class="fw-bold">example@example.com</p>
+                                                </div>
+                                            </div>
+
+                                            <h5 class="form-heading">Enterpreneur Registration Details</h5>
+                                            <div class="row g-3 mb-3">
+                                                <div class="col-xl-3 col-md-6">
+                                                    <label for="yearSelect" class="form-label mb-0">Year of
+                                                        Establishment</label>
+                                                    <p class="fw-bold">2022</p>
+                                                </div>
+                                                <div class="col-xl-3 col-md-6">
+                                                    <label for="placeOfIncorporation" class="form-label mb-0">Place of
+                                                        Incorporation</label>
+                                                    <p class="fw-bold">New Delhi</p>
+                                                </div>
+                                                <div class="col-xl-3 col-md-6">
+                                                    <label for="panDocument" class="form-label mb-0">PAN Document <span
+                                                            class="text-danger">*</span></label>
+                                                    <p class="fw-bold">Uploaded</p>
+                                                </div>
+                                                <div class="col-xl-3 col-md-6">
+                                                    <label for="gstin" class="form-label mb-0">GSTIN</label>
+                                                    <p class="fw-bold">1234567890</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="row g-3 mb-2">
+                                                <div class="col-xl-4">
+                                                    <label for="gstinDocument" class="form-label mb-0">GSTIN
+                                                        Document</label>
+                                                    <p class="fw-bold">
+                                                        <i class="bi bi-file-earmark-pdf text-danger"></i>
+                                                        gstin_document_2023.pdf
+                                                    </p>
+                                                </div>
+                                                <div class="col-xl-4">
+                                                    <label for="moaDocument" class="form-label mb-0">Memorandum &
+                                                        Articles of
+                                                        Association <span class="text-danger">*</span></label>
+                                                    <p class="fw-bold">
+                                                        <i class="bi bi-file-earmark-pdf text-danger"></i>
+                                                        moa_articles_association.pdf
+                                                    </p>
+                                                </div>
+                                                <div class="col-xl-4">
+                                                    <label for="cinDocument" class="form-label mb-0">CIN / Registration
+                                                        / Partnership
+                                                        Deed <span class="text-danger">*</span></label>
+                                                    <p class="fw-bold">
+                                                        <i class="bi bi-file-earmark-pdf text-danger"></i>
+                                                        cin_registration_deed.pdf
+                                                    </p>
+                                                </div>
+                                            </div>
+
+
+                                            <h6 class="form-sub-heading mt-4 mb-0">Entrepreneur Details</h6>
+                                            <div class="row g-3 mb-3">
+                                                <div class="col-xl-3 col-md-6">
+                                                    <label for="entrepreneurName" class="form-label mb-0">Entrepreneur
+                                                        Name <span class="text-danger">*</span></label>
+                                                    <p class="fw-bold">John Doe</p>
+                                                </div>
+                                                <div class="col-xl-3 col-md-6">
+                                                    <label for="genderSelect" class="form-label mb-0">Gender <span
+                                                            class="text-danger">*</span></label>
+                                                    <p class="fw-bold">Male</p>
+                                                </div>
+                                                <div class="col-xl-3 col-md-6">
+                                                    <label for="categorySelect" class="form-label mb-0">Category <span
+                                                            class="text-danger">*</span></label>
+                                                    <p class="fw-bold">General</p>
+                                                </div>
+                                                <div class="col-xl-3 col-md-6">
+                                                    <label for="equityInput" class="form-label mb-0">Equity
+                                                        Participation (In
+                                                        Percentage) <span class="text-danger">*</span></label>
+                                                    <p class="fw-bold">25%</p>
+                                                </div>
+                                            </div>
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered  ">
+                                                    <thead class="table-light">
+                                                        <tr>
+                                                            <th>Sl#</th>
+                                                            <th>Entrepreneur Name</th>
+                                                            <th>Gender</th>
+                                                            <th>Category</th>
+                                                            <th>Equity Participation in Percent</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>XYZ Industry</td>
+                                                            <td>Male</td>
+                                                            <td>SC</td>
+                                                            <td>10.00%</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>Text Industry</td>
+                                                            <td>Female</td>
+                                                            <td>General</td>
+                                                            <td>18.25%</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                            <div id="existingIndustryDetails" class="mt-4">
+
+                                                <h5 class="form-heading">Existing Industry Details</h5>
+                                                <div class="row g-3 mb-3">
+                                                    <div class="col-md-4">
+                                                        <label for="existingIndustryName"
+                                                            class="form-label mb-0">Existing Industry Name
+                                                            <span class="text-danger">*</span></label>
+                                                        <p class="fw-bold">Tech Innovators Pvt. Ltd.</p>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label for="districtSelect" class="form-label mb-0">District
+                                                            <span class="text-danger">*</span></label>
+                                                        <p class="fw-bold">Raipur</p>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label for="blockSelect" class="form-label mb-0">Block <span
+                                                                class="text-danger">*</span></label>
+                                                        <p class="fw-bold">Durg</p>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label for="landAllottedSelect" class="form-label mb-0">Whether
+                                                            Land allotted by
+                                                            DOI/CSIDC/DTIC <span class="text-danger">*</span></label>
+                                                        <p class="fw-bold">Yes</p>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label for="landAllottedBySelect" class="form-label mb-0">Land
+                                                            Allotted
+                                                            By</label>
+                                                        <p class="fw-bold">DOI</p>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label for="landAreaInput" class="form-label mb-0">Land
+                                                            Area</label>
+                                                        <p class="fw-bold">5000 sq.m</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row g-3 mb-3">
+                                                    <div class="col-md-4">
+                                                        <label for="landUnitSelect" class="form-label mb-0">Land
+                                                            Unit</label>
+                                                        <p class="fw-bold">Square Mt</p>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <label for="natureOfActivityInput"
+                                                            class="form-label mb-0">Nature of
+                                                            Activity</label>
+                                                        <p class="fw-bold">Manufacturing</p>
+                                                    </div>
+                                                </div>
+
+                                                <h6 class="form-sub-heading mt-4 mb-0">Existing Industries Product
+                                                    Details</h6>
+                                                <div class="row g-3 mb-3">
+                                                    <div class="col-xl-3 col-md-6">
+                                                        <label for="productName" class="form-label mb-0">Product Name
+                                                            <span class="text-danger">*</span></label>
+                                                        <p class="fw-bold">Product A</p>
+                                                    </div>
+                                                    <div class="col-xl-3 col-md-6">
+                                                        <label for="activityCode" class="form-label mb-0">Activity Code
+                                                            <span class="text-danger">*</span></label>
+                                                        <p class="fw-bold">AC123</p>
+                                                    </div>
+                                                    <div class="col-xl-3 col-md-6">
+                                                        <label for="annualCapacity" class="form-label mb-0">Annual
+                                                            Capacity <span class="text-danger">*</span></label>
+                                                        <p class="fw-bold">5000 Units</p>
+                                                    </div>
+                                                    <div class="col-xl-3 col-md-6">
+                                                        <label for="unitOfMeasurement" class="form-label mb-0">Unit of
+                                                            Measurement <span class="text-danger">*</span></label>
+                                                        <p class="fw-bold">Quantity</p>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered  ">
+                                                        <thead class="table-light">
+                                                            <tr>
+                                                                <th>Sl#</th>
+                                                                <th>Product Name</th>
+                                                                <th>Activity Code</th>
+                                                                <th>Annual Capacity</th>
+                                                                <th>Unit of Measurement</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td>Rice, seed</td>
+                                                                <td>113100</td>
+                                                                <td>400</td>
+                                                                <td>Kilogram</td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2</td>
+                                                                <td>Dog Food</td>
+                                                                <td>2331102</td>
+                                                                <td>756</td>
+                                                                <td>Tonne</td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Project Information
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="card border-0">
+                                        <div class="card-body p-0">
+                                            <h5 class="form-heading">Project Details</h5>
+                                            <div class="row row g-3 mb-3">
+                                                <div class="col-md-4">
+                                                    <label for="emiiNumber" class="form-label mb-0">EM-II Number</label>
+                                                    <p class="fw-bold">EM-II-12345</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="emiiIssuanceDate" class="form-label mb-0">EM-II Issuance
+                                                        Date</label>
+                                                    <p class="fw-bold">2024-01-01</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="emiiDocument" class="form-label mb-0">EM-II
+                                                        Document</label>
+                                                    <p class="fw-bold"><i
+                                                            class="bi bi-file-earmark-pdf text-danger"></i> Document.pdf
+                                                    </p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="pcNumber" class="form-label mb-0">PC Number</label>
+                                                    <p class="fw-bold">PC-98765</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="pcIssuanceDate" class="form-label mb-0">PC Issuance
+                                                        Date</label>
+                                                    <p class="fw-bold">2024-02-01</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="pcDocument" class="form-label mb-0">PC Document</label>
+                                                    <p class="fw-bold"><i
+                                                            class="bi bi-file-earmark-pdf text-danger"></i>
+                                                        PC_Document.pdf</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="iemNumber" class="form-label mb-0">IEM Number</label>
+                                                    <p class="fw-bold">IEM-112233</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="iemIssuanceDate" class="form-label mb-0">IEM Issuance
+                                                        Date</label>
+                                                    <p class="fw-bold">2024-03-01</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="iemDocument" class="form-label mb-0">IEM
+                                                        Document</label>
+                                                    <p class="fw-bold"><i
+                                                            class="bi bi-file-earmark-pdf text-danger"></i>
+                                                        IEM_Document.pdf</p>
+                                                </div>
+                                            </div>
+
+                                            <h6 class="form-sub-heading mt-4 mb-0">Add Product Details (As per National
+                                                Product
+                                                Classification- 2008 defined by Ministry Of Statistics and
+                                                Implementation)</h6>
+                                            <div class="row row g-3 mb-3">
+                                                <div class="col-md-4">
+                                                    <label for="exampleFormControlInput1" class="form-label mb-0">Nature
+                                                        of
+                                                        Activity <span class="text-danger">*</span></label>
+                                                    <p class="fw-bold">Manufacturing</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="exampleFormControlInput1" class="form-label mb-0">Main
+                                                        Manufacturing/Service Activity <span
+                                                            class="text-danger">*</span></label>
+                                                    <p class="fw-bold">2</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="exampleFormControlInput1" class="form-label mb-0">NIC
+                                                        2008
+                                                        Code (As per MSME Dept. GOI) <span
+                                                            class="text-danger">*</span></label>
+                                                    <p class="fw-bold">12345</p>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered  ">
+                                                    <thead class="table-light">
+                                                        <tr>
+                                                            <th>Sl#</th>
+                                                            <th>Nature Of Activity</th>
+                                                            <th>Product Name</th>
+                                                            <th>NIC 2008 Code</th>
+
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>Manufacturing</td>
+                                                            <td>Rice, seed</td>
+                                                            <td>113100</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>Servicing</td>
+                                                            <td>Dog Food</td>
+                                                            <td>2331102</td>
+
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <h6 class="form-sub-heading mt-4 mb-0">Add Product Details (As per National
+                                                Product
+                                                Classification- 20011 defined by Ministry Of Statistics and
+                                                Implementation)</h6>
+                                            <div class="row row g-3 mb-3">
+                                                <div class="col-md-4">
+                                                    <label for="exampleFormControlInput1" class="form-label mb-0">Nature
+                                                        of
+                                                        Activity <span class="text-danger">*</span></label>
+                                                    <p class="fw-bold">Manufacturing</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="exampleFormControlInput1"
+                                                        class="form-label mb-0">Product
+                                                        Name <span class="text-danger">*</span></label>
+                                                    <p class="fw-bold">New</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="exampleFormControlInput1"
+                                                        class="form-label mb-0">Activity
+                                                        Code <span class="text-danger">*</span></label>
+                                                    <p class="fw-bold">12345</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="exampleFormControlInput1" class="form-label mb-0">Annual
+                                                        Capacity <span class="text-danger">*</span></label>
+                                                    <p class="fw-bold">1000</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="exampleFormControlInput1" class="form-label mb-0">Unit
+                                                        of
+                                                        Measurement <span class="text-danger">*</span></label>
+                                                    <p class="fw-bold">Kg</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="exampleFormControlInput1"
+                                                        class="form-label mb-0">Product
+                                                        Description</label>
+                                                    <p class="fw-bold">Sample Product</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="exampleFormControlInput1"
+                                                        class="form-label mb-0">Expansion/Diversification
+                                                        Capacity</label>
+                                                    <p class="fw-bold">500</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="exampleFormControlInput1" class="form-label mb-0">Total
+                                                        Capacity After Expansion/Diversification</label>
+                                                    <p class="fw-bold">1500</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="exampleFormControlInput1"
+                                                        class="form-label mb-0">Expansion/Diversification Date</label>
+                                                    <p class="fw-bold">2024-12-31</p>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered  ">
+                                                    <thead class="table-light">
+                                                        <tr>
+                                                            <th>Sl#</th>
+                                                            <th>Nature Of Activity</th>
+                                                            <th>Product Name</th>
+                                                            <th>Activity Code</th>
+                                                            <th>Annual Capacity</th>
+                                                            <th>Unit of Measurement</th>
+                                                            <th>Product Description</th>
+                                                            <th>Expansion/Diversification Capacity</th>
+                                                            <th>Total Capacity After Expansion/Diversification</th>
+                                                            <th>Expansion/Diversification Date</th>
+
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>Manufacturing</td>
+                                                            <td>Rice, seed</td>
+                                                            <td>113100</td>
+                                                            <td>400</td>
+                                                            <td>Kilogram</td>
+                                                            <td>Food Product</td>
+                                                            <td>10</td>
+                                                            <td>100</td>
+                                                            <td>12-Aug-2023</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>Servicing</td>
+                                                            <td>Dog Food</td>
+                                                            <td>2331102</td>
+                                                            <td>756</td>
+                                                            <td>Tonne</td>
+                                                            <td>Byproducts</td>
+                                                            <td>45</td>
+                                                            <td>67</td>
+                                                            <td>15-Apr-2022</td>
+
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <h5 class="form-heading">Proposed/Existing Capital Investment (INR in Lakhs)
+                                            </h5>
+
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered text-center align-middle">
+                                                    <thead class="table-light">
+                                                        <tr>
+                                                            <th>Category</th>
+                                                            <th>Capital Investment made till production date</th>
+                                                            <th>Proposed capital investment for
+                                                                Expansion/Diversification of existing industrial unit
+                                                            </th>
+                                                            <th>Total capital investment after expansion/consolidation
+                                                                of existing Industrial unit</th>
+                                                            <th>Proposed Increase in capital investment in %</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Land including land development</td>
+                                                            <td>
+                                                                <p class="fw-bold">500,000</p>
+                                                            <td>
+                                                                <p class="fw-bold">200,000</p>
+                                                            <td>
+                                                                <p class="fw-bold">700,000</p>
+                                                            <td>
+                                                                <p class="fw-bold">40%</p>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Shed/Building</td>
+                                                            <td>
+                                                                <p class="fw-bold">300,000</p>
+                                                            <td>
+                                                                <p class="fw-bold">100,000</p>
+                                                            <td>
+                                                                <p class="fw-bold">400,000</p>
+                                                            <td>
+                                                                <p class="fw-bold">33.33%</p>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Building & Civil Construction</td>
+                                                            <td>
+                                                                <p class="fw-bold">150,000</p>
+                                                            <td>
+                                                                <p class="fw-bold">50,000</p>
+                                                            <td>
+                                                                <p class="fw-bold">200,000</p>
+                                                            <td>
+                                                                <p class="fw-bold">25%</p>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Plant & Machinery</td>
+                                                            <td>
+                                                                <p class="fw-bold">800,000</p>
+                                                            <td>
+                                                                <p class="fw-bold">400,000</p>
+                                                            <td>
+                                                                <p class="fw-bold">1,200,000</p>
+                                                            <td>
+                                                                <p class="fw-bold">50%</p>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Electricity Installation</td>
+                                                            <td>
+                                                                <p class="fw-bold">100,000</p>
+                                                            <td>
+                                                                <p class="fw-bold">50,000</p>
+                                                            <td>
+                                                                <p class="fw-bold">150,000</p>
+                                                            <td>
+                                                                <p class="fw-bold">50%</p>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Water Supply</td>
+                                                            <td>
+                                                                <p class="fw-bold">50,000</p>
+                                                            <td>
+                                                                <p class="fw-bold">20,000</p>
+                                                            <td>
+                                                                <p class="fw-bold">70,000</p>
+                                                            <td>
+                                                                <p class="fw-bold">40%</p>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Others</td>
+                                                            <td>
+                                                                <p class="fw-bold">50,000</p>
+                                                            <td>
+                                                                <p class="fw-bold">30,000</p>
+                                                            <td>
+                                                                <p class="fw-bold">80,000</p>
+                                                            <td>
+                                                                <p class="fw-bold">60%</p>
+                                                        </tr>
+                                                        <tr class="table-light">
+                                                            <td><strong>Total capital investment</strong></td>
+                                                            <td>
+                                                                <p class="fw-bold">2,950,000</p>
+                                                            <td>
+                                                                <p class="fw-bold">1,300,000</p>
+                                                            <td>
+                                                                <p class="fw-bold">4,250,000</p>
+                                                            <td>
+                                                                <p class="fw-bold">44.44%</p>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+
+
+                                            <h5 class="form-heading">Means of Finance for Capital Investment (INR in
+                                                Lakh)</h5>
+                                            <div class="row row g-3 mb-3">
+                                                <div class="col-md-4">
+                                                    <label for="exampleFormControlInput1" class="form-label mb-0">Equity
+                                                        contribution <span class="text-danger">*</span></label>
+                                                    <p class="fw-bold">500,000</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="exampleFormControlInput1"
+                                                        class="form-label mb-0">Bank/institutional finance <span
+                                                            class="text-danger">*</span></label>
+                                                    <p class="fw-bold">1,000,000</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="exampleFormControlInput1" class="form-label mb-0">Total
+                                                        <span class="text-danger">*</span></label>
+                                                    <p class="fw-bold">1,500,000</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="exampleFormControlInput1"
+                                                        class="form-label mb-0">Foreign
+                                                        direct investment (if any) <span
+                                                            class="text-danger">*</span></label>
+                                                    <p class="fw-bold">200,000</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="formFile" class="form-label mb-0">In case of FDI, please
+                                                        upload relevant document <span
+                                                            class="text-danger">*</span></label>
+                                                    <p class="fw-bold">Document.pdf</p>
+                                                </div>
+                                            </div>
+
+
+                                            <h5 class="form-heading">Project Implementation Schedule</h5>
+                                            <div class="row row g-3 mb-3">
+                                                <div class="col-md-4">
+                                                    <label for="exampleFormControlInput1"
+                                                        class="form-label mb-0">Pollution
+                                                        Category</label>
+                                                    <p class="fw-bold">Green</p>
+
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="exampleFormControlInput1" class="form-label mb-0">Period
+                                                        to
+                                                        commence commercial production (in
+                                                        months)</label>
+                                                    <p class="fw-bold">3</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="exampleFormControlInput1" class="form-label mb-0">Ground
+                                                        breaking</label>
+                                                    <p class="fw-bold">January 2024</p>
+
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="exampleFormControlInput1" class="form-label mb-0">Civil
+                                                        and
+                                                        structural completion</label>
+                                                    <p class="fw-bold">March 2024</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="exampleFormControlInput1" class="form-label mb-0">Major
+                                                        equipment erection</label>
+                                                    <p class="fw-bold">April 2024</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="exampleFormControlInput1" class="form-label mb-0">Start
+                                                        of
+                                                        commercial production</label>
+                                                    <p class="fw-bold">July 2024</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="formFile" class="form-label mb-0">Detailed project
+                                                        report</label>
+                                                    <p class="fw-bold">Project_Report.pdf</p>
+                                                </div>
+                                            </div>
+
+                                            <h5 class="form-heading">Employment potential</h5>
+
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered">
+                                                    <thead class="table-light">
+                                                        <tr>
+                                                            <th scope="col">Category</th>
+                                                            <th scope="col">Existing</th>
+                                                            <th scope="col">Proposed</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>Managerial</td>
+                                                            <td>
+                                                                <p class="fw-bold">50</p>
+                                                            <td>
+                                                                <p class="fw-bold">60</p>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Skilled</td>
+                                                            <td>
+                                                                <p class="fw-bold">100</p>
+                                                            <td>
+                                                                <p class="fw-bold">120</p>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Unskilled</td>
+                                                            <td>
+                                                                <p class="fw-bold">150</p>
+                                                            <td>
+                                                                <p class="fw-bold">180</p>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Total Employment</td>
+                                                            <td>
+                                                                <p class="fw-bold">300</p>
+                                                            <td>
+                                                                <p class="fw-bold">360</p>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                            <h5 class="form-heading">Project at other locations</h5>
+                                            <div class="row row g-3 mb-3">
+                                                <div class="col-md-6">
+                                                    <label for="unit-outside" class="form-label mb-0">Does the company
+                                                        have
+                                                        projects at other locations in India? <span
+                                                            class="text-danger">*</span></label>
+                                                    <p class="fw-bold">Yes</p>
+                                                </div>
+                                            </div>
+
+                                            <div id="location-details-section">
+                                                <h6 class="form-sub-heading mt-4 mb-0">Location details of the other
+                                                    units located
+                                                    within
+                                                    india</h6>
+                                                <div class="row row g-3 mb-3">
+                                                    <div class="col-md-4">
+                                                        <label for="exampleFormControlInput1"
+                                                            class="form-label mb-0">Unit
+                                                            Name <span class="text-danger">*</span></label>
+                                                        <p class="fw-bold">Unit 1</p>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label for="exampleFormControlInput1"
+                                                            class="form-label mb-0">Product
+                                                            <span class="text-danger">*</span></label>
+                                                        <p class="fw-bold">Product A</p>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label for="exampleFormControlInput1"
+                                                            class="form-label mb-0">Total
+                                                            Capacity (With Unit) <span
+                                                                class="text-danger">*</span></label>
+                                                        <p class="fw-bold">1000 Units</p>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label for="exampleFormControlInput1"
+                                                            class="form-label mb-0">State
+                                                            <span class="text-danger">*</span></label>
+                                                        <p class="fw-bold">Andhra Pradesh</p>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label for="exampleFormControlInput1"
+                                                            class="form-label mb-0">District <span
+                                                                class="text-danger">*</span></label>
+                                                        <p class="fw-bold">Raipur</p>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label for="exampleFormControlInput1"
+                                                            class="form-label mb-0">Address
+                                                            <span class="text-danger">*</span></label>
+                                                        <p class="fw-bold">1234 Street Name, City</p>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered  ">
+                                                        <thead class="table-light">
+                                                            <tr>
+                                                                <th>Sl#</th>
+                                                                <th>Unit Name</th>
+                                                                <th>Product</th>
+                                                                <th>Total Capacity (With Unit)</th>
+                                                                <th>State</th>
+                                                                <th>District</th>
+                                                                <th>Address</th>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td>Test Unit-1</td>
+                                                                <td>Rice, seed</td>
+                                                                <td>400 MT</td>
+                                                                <td>Odisha</td>
+                                                                <td>Kendrapada</td>
+                                                                <td>Patkura, Garadapur</td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2</td>
+                                                                <td>Test Unit-2</td>
+                                                                <td>Dog Food</td>
+                                                                <td>756 KG</td>
+                                                                <td>Chhattisgarh</td>
+                                                                <td>Balod</td>
+                                                                <td>Raipur, Telabandhi</td>
+
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                            <div class="row row g-3 mb-3">
+                                                <div class="col-md-4">
+                                                    <label for="unit-outside-india" class="form-label mb-0">Is there any
+                                                        unit
+                                                        outside India? <span class="text-danger">*</span></label>
+                                                    <p class="fw-bold">Yes</p>
+
+                                                </div>
+                                            </div>
+
+                                            <div id="locationdetailscontainer">
+
+                                                <h6 class="form-sub-heading mt-4 mb-0">Location details of the other
+                                                    units located
+                                                    within
+                                                    india</h6>
+
+                                                <div class="row row g-3 mb-3">
+                                                    <div class="col-md-4">
+                                                        <label for="exampleFormControlInput1"
+                                                            class="form-label mb-0">Unit
+                                                            Name <span class="text-danger">*</span></label>
+                                                        <p class="fw-bold">Unit ABC</p>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label for="exampleFormControlInput1"
+                                                            class="form-label mb-0">Product
+                                                            <span class="text-danger">*</span></label>
+                                                        <p class="fw-bold">Product XYZ</p>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label for="exampleFormControlInput1"
+                                                            class="form-label mb-0">Total
+                                                            Capacity (With Unit) <span
+                                                                class="text-danger">*</span></label>
+                                                        <p class="fw-bold">1000 Units</p>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label for="exampleFormControlInput1"
+                                                            class="form-label mb-0">State
+                                                            <span class="text-danger">*</span></label>
+                                                        <p class="fw-bold">Andhra Pradesh</p>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label for="exampleFormControlInput1"
+                                                            class="form-label mb-0">District <span
+                                                                class="text-danger">*</span></label>
+                                                        <p class="fw-bold">Raipur</p>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label for="exampleFormControlInput1"
+                                                            class="form-label mb-0">Address
+                                                            <span class="text-danger">*</span></label>
+                                                        <p class="fw-bold">123, Main Street, Raipur</p>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered  ">
+                                                        <thead class="table-light">
+                                                            <tr>
+                                                                <th>Sl#</th>
+                                                                <th>Unit Name</th>
+                                                                <th>Product</th>
+                                                                <th>Total Capacity</th>
+                                                                <th>Country</th>
+                                                                <th>City</th>
+                                                                <th>Address</th>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td>Test Unit-1</td>
+                                                                <td>Rice, seed</td>
+                                                                <td>400 MT</td>
+                                                                <td>Japan</td>
+                                                                <td>Tokyo</td>
+                                                                <td>Patkura, Garadapur</td>
+
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2</td>
+                                                                <td>Test Unit-2</td>
+                                                                <td>Dog Food</td>
+                                                                <td>756 KG</td>
+                                                                <td>America</td>
+                                                                <td>New York</td>
+                                                                <td>Raipur, Telabandhi</td>
+
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Land and Utility Requirement
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="card border-0">
+                                        <div class="card-body p-0">
+                                            <h5 class="form-heading">Proposed location of land</h5>
+                                            <div class="row row g-3 mb-3">
+                                                <div class="col-md-4">
+                                                    <label for="landRequired" class="form-label mb-0">Land required from
+                                                        government <span class="text-danger">*</span></label>
+                                                    <p class="fw-bold">Yes</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="exampleFormControlInput1"
+                                                        class="form-label mb-0">District
+                                                        <span class="text-danger">*</span></label>
+                                                    <p class="fw-bold">Balod</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="exampleFormControlInput1" class="form-label mb-0">Block
+                                                        <span class="text-danger">*</span></label>
+                                                    <p class="fw-bold">Bakavand</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="exampleFormControlInput1" class="form-label mb-0">Phone
+                                                        Number <span class="text-danger">*</span></label>
+                                                    <p class="fw-bold">9876543210</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="exampleFormControlInput1" class="form-label mb-0">Email
+                                                        Id
+                                                        <span class="text-danger">*</span></label>
+                                                    <p class="fw-bold">example@email.com</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="exampleFormControlInput1" class="form-label mb-0">Area
+                                                        <span class="text-danger">*</span></label>
+                                                    <p class="fw-bold">Rural</p>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="exampleFormControlInput1" class="form-label mb-0">Lane 1
+                                                        <span class="text-danger">*</span></label>
+                                                    <p class="fw-bold">123 Main Street</p>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="exampleFormControlInput1" class="form-label mb-0">Lane 2
+                                                        <span class="text-danger">*</span></label>
+                                                    <p class="fw-bold">Near City Park</p>
+                                                </div>
+                                                <div class="col-xl-3 col-md-6">
+                                                    <label for="exampleFormControlInput1"
+                                                        class="form-label mb-0">Country
+                                                        <span class="text-danger">*</span></label>
+                                                    <p class="fw-bold">India</p>
+                                                </div>
+                                                <div class="col-xl-3 col-md-6">
+                                                    <label for="exampleFormControlInput1" class="form-label mb-0">State
+                                                        <span class="text-danger">*</span></label>
+                                                    <p class="fw-bold">Andhra Pradesh</p>
+                                                </div>
+                                                <div class="col-xl-3 col-md-6">
+                                                    <label for="exampleFormControlInput1"
+                                                        class="form-label mb-0">District
+                                                        <span class="text-danger">*</span></label>
+                                                    <p class="fw-bold">Bilaspur</p>
+                                                </div>
+                                                <div class="col-xl-3 col-md-6">
+                                                    <label for="exampleFormControlInput1"
+                                                        class="form-label mb-0">Block/Tehsil <span
+                                                            class="text-danger">*</span></label>
+                                                    <p class="fw-bold">Bakavand</p>
+                                                </div>
+                                                <div class="col-xl-3 col-md-6">
+                                                    <label for="exampleFormControlInput1" class="form-label mb-0">Gram
+                                                        Panchayat <span class="text-danger">*</span></label>
+                                                    <p class="fw-bold">One</p>
+                                                </div>
+                                                <div class="col-xl-3 col-md-6">
+                                                    <label for="exampleFormControlInput1" class="form-label mb-0">Nagar
+                                                        Nigam
+                                                        <span class="text-danger">*</span></label>
+                                                    <p class="fw-bold">One</p>
+                                                </div>
+                                                <div class="col-xl-3 col-md-6">
+                                                    <label for="exampleFormControlInput1"
+                                                        class="form-label mb-0">Village/Town <span
+                                                            class="text-danger">*</span></label>
+                                                    <p class="fw-bold">Jagdalpur</p>
+                                                </div>
+                                                <div class="col-xl-3 col-md-6">
+                                                    <label for="exampleFormControlInput1" class="form-label mb-0">PIN
+                                                        Code
+                                                        <span class="text-danger">*</span></label>
+                                                    <p class="fw-bold">494001</p>
+                                                </div>
+                                                <div class="col-xl-3 col-md-6">
+                                                    <label for="exampleFormControlInput1"
+                                                        class="form-label mb-0">Khasra/Plot
+                                                        Number <span class="text-danger">*</span></label>
+                                                    <p class="fw-bold">1234</p>
+                                                </div>
+                                                <div class="col-xl-3 col-md-6">
+                                                    <label for="exampleFormControlInput1" class="form-label mb-0">Land
+                                                        Mark</label>
+                                                    <p class="fw-bold">Near Main Road</p>
+                                                </div>
+                                                <div class="col-xl-3 col-md-6">
+                                                    <label for="exampleFormControlInput1" class="form-label mb-0">Land
+                                                        Area
+                                                        <span class="text-danger">*</span></label>
+                                                    <p class="fw-bold">5000 sq. ft.</p>
+                                                </div>
+                                                <div class="col-xl-3 col-md-6">
+                                                    <label for="exampleFormControlInput1" class="form-label mb-0">Land
+                                                        Unit
+                                                        <span class="text-danger">*</span></label>
+                                                    <p class="fw-bold">Square Feet</p>
+                                                </div>
+                                            </div>
+
+
+
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered  ">
+                                                    <thead class="table-light">
+                                                        <tr>
+                                                            <th>Sl#</th>
+                                                            <th>District</th>
+                                                            <th>Block</th>
+                                                            <th>Area</th>
+                                                            <th>GP/Nagar Nigam/Nagar Palika/Nagar Panchayat</th>
+                                                            <th>Khasra Number</th>
+                                                            <th>Land Mark</th>
+                                                            <th>Land Area</th>
+                                                            <th>Land Unit</th>
+
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>1</td>
+                                                            <td>Balod</td>
+                                                            <td>Durg</td>
+                                                            <td>Rural</td>
+                                                            <td>GP Name</td>
+                                                            <td>7554/984</td>
+                                                            <td>Near Durga Temple</td>
+                                                            <td>120</td>
+                                                            <td>Hector</td>
+
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2</td>
+                                                            <td>Raipur</td>
+                                                            <td>Bhilai</td>
+                                                            <td>Urban</td>
+                                                            <td>Mahasmund</td>
+                                                            <td>112/78</td>
+                                                            <td>Near Railway station</td>
+                                                            <td>15.6</td>
+                                                            <td>Sq. Mt</td>
+
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
+                                            <div class="row g-3 mb-3">
+                                                <div class="col-xl-3 col-md-6">
+                                                    <label for="exampleFormControlInput1"
+                                                        class="form-label mb-0">District
+                                                        <span class="text-danger">*</span></label>
+                                                    <p class="fw-bold">Balod</p>
+                                                </div>
+                                                <div class="col-xl-3 col-md-6">
+                                                    <label for="exampleFormControlInput1" class="form-label mb-0">Block
+                                                        <span class="text-danger">*</span></label>
+                                                    <p class="fw-bold">Bakavand</p>
+                                                </div>
+                                                <div class="col-xl-3 col-md-6">
+                                                    <label for="exampleFormControlInput1" class="form-label mb-0">Land
+                                                        Area
+                                                        <span class="text-danger">*</span></label>
+                                                    <p class="fw-bold">100 Acres</p>
+                                                </div>
+                                                <div class="col-xl-3 col-md-6">
+                                                    <label for="exampleFormControlInput1" class="form-label mb-0">Land
+                                                        Unit
+                                                        <span class="text-danger">*</span></label>
+                                                    <p class="fw-bold">Hector</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="exampleFormControlInput1"
+                                                        class="form-label mb-0">Whether
+                                                        land is required in CSIDC industrial estate
+                                                        <span class="text-danger">*</span></label>
+                                                    <p class="fw-bold">Yes</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="exampleFormControlInput1" class="form-label mb-0">Name
+                                                        of the
+                                                        CSIDC industrial estate <span
+                                                            class="text-danger">*</span></label>
+                                                    <p class="fw-bold">Balod</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="exampleFormControlInput1"
+                                                        class="form-label mb-0">Whether
+                                                        land to be acquired by CSIDC <span
+                                                            class="text-danger">*</span></label>
+                                                    <p class="fw-bold">No</p>
+                                                </div>
+                                            </div>
+
+                                            <!-- </div> -->
+                                            <h5 class="form-heading">Power requirement during production</h5>
+
+                                            <div class="row g-3 mb-3">
+                                                <div class="col-md-4">
+                                                    <label for="exampleFormControlInput1" class="form-label mb-0">Source
+                                                        of
+                                                        supply<span class="text-danger">*</span>
+                                                    </label>
+                                                    <p class="fw-bold">GRID</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="exampleFormControlInput1" class="form-label mb-0">CPP
+                                                        Power
+                                                        Source</label>
+                                                    <p class="fw-bold">Biomass</p>
+
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="exampleFormControlInput1" class="form-label mb-0">Power
+                                                        demand from GRID (in KW)</label>
+                                                    <p class="fw-bold">343</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="exampleFormControlInput1" class="form-label mb-0">Power
+                                                        drawal from CPP (in KW)</label>
+                                                    <p class="fw-bold">5673</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="exampleFormControlInput1"
+                                                        class="form-label mb-0">Capacity of
+                                                        the CPP plant (in KW)</label>
+                                                    <p class="fw-bold">567654</p>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <label for="exampleFormControlInput1"
+                                                        class="form-label mb-0">Independent
+                                                        Power Producer (in KW)</label>
+                                                    <p class="fw-bold">3456</p>
+                                                </div>
+                                            </div>
+
+                                            <h5 class="form-heading">Water Requirement</h5>
+                                            <div class="row g-3 mb-3">
+                                                <div class="col-md-6">
+                                                    <label for="exampleFormControlInput1"
+                                                        class="form-label mb-0">Sources of
+                                                        water for production</label>
+                                                    <p class="fw-bold">Surface Water</p>
+
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="formFile" class="form-label mb-0">If Others Please
+                                                        specify</label>
+                                                    <p class="fw-bold">Groundwater</p>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="formFile" class="form-label mb-0">Water required for
+                                                        production (in cusec)</label>
+                                                    <p class="fw-bold">50</p>
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="formFile" class="form-label mb-0">Total Water
+                                                        requirement (in
+                                                        cusec)</label>
+                                                    <p class="fw-bold">100</p>
+                                                </div>
+                                            </div>
+
+                                            <h5 class="form-heading">Waste Water Management</h5>
+                                            <div class="row g-3 mb-3">
+                                                <div class="col-md-6">
+                                                    <label for="exampleFormControlInput1"
+                                                        class="form-label mb-0">Quantum of
+                                                        recycling of water (in cusec)</label>
+                                                    <p class="fw-bold">5 cusec</p>
+                                                    <!-- Static value for Quantum of recycling of water -->
+                                                </div>
+                                                <div class="col-md-6">
+                                                    <label for="formFile" class="form-label mb-0">Waste conservation
+                                                        measures</label>
+                                                    <p class="fw-bold">Conservation Document.pdf</p>
+                                                    <!-- Static value for Waste conservation measures -->
+                                                </div>
+                                            </div>
+                                            <div class="row g-3 mb-3">
+                                                <div class="col-md-6">
+                                                    <label for="formFile" class="form-label mb-0">Waste water treatment
+                                                        technology and management of solid/hazardous
+                                                        waste</label>
+                                                    <p class="fw-bold">Treatment Document.pdf</p>
+                                                    <!-- Static value for Waste water treatment technology -->
+                                                </div>
+                                            </div>
+
+                                            <h5 class="form-heading">Natural Gas Requirement</h5>
+                                            <div class="row g-3 mb-3">
+                                                <div class="col-md-6">
+                                                    <label for="exampleFormControlInput1"
+                                                        class="form-label mb-0">Natural Gas
+                                                        Requirement
+                                                        (in
+                                                        cubic meter)</label>
+                                                    <p class="fw-bold">145</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-button-box">
+                        <!-- <a class="btn btn-outline-warning" href="#">Back</a> -->
+                        <a class="btn btn-primary" href="project-information.html">Payment</a>
+                        <!-- <a class="btn btn-outline-warning" href="#">Reset</a> -->
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="js/bootstrap-5.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
