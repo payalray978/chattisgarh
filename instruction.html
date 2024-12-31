@@ -86,83 +86,76 @@
 
 
     <!-- header-end -->
-    <div class="page-content-wrapper ">
+    <div class="page-content-wrapper formbg">
         <div class="container">
-            <div class="user-login ">
-                <div class="row justify-content-center">
-                    <!-- <div class="col-md-2">
-                        <h3 class="page-heading login-heading"><span class="d-block fs-6">CG Spark</span> User Login
-                        </h3>
-                    </div> -->
-                    <div class="login-tabs col-md-6">
-                        <ul class="nav nav-tabs" id="myTab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
-                                    data-bs-target="#Industry-tab-pane" type="button" role="tab"
-                                    aria-controls="Industry-tab-pane" aria-selected="true">Industry</button>
-                            </li>
+            <h3 class="page-heading text-center">Industrial User Registration</h3>
+            <div class="step-indicator">
+                <div class="navigation_menu" id="navigation_menu">
+                    <ul class="navigation_tabs mb-0" id="navigation_tabs">
+                        <li class="tab_disabled active">
+                            Profile Creation
+                        </li>
+                        <li class="tab_disabled">
+                            OTP Confirmation
+                        </li>
+                        <li class="tab_disabled">
+                            Success
+                        </li>
 
-                        </ul>
-                        <div class="tab-content" id="myTabContent">
-                            <div class="tab-pane fade show active" id="Industry-tab-pane" role="tabpanel"
-                                aria-labelledby="Industry-tab" tabindex="0">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="row g-3 mb-3 mt-1">
-                                            <div class="col-md-12">
-                                                <label class="form-label">User Name :- </label>
-                                                <label class="user-label">SupAdmin</label>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <a class="d-block btn btn-primary" href="user-login-password.html">Login
-                                                    with Password</a>
-                                            </div>
-                                            <div class="col-md-12 text-center mt-1">OR</div>
-                                            <div class="col-md-12 mt-1">
-                                                <a class="d-block btn btn-primary"
-                                                    href="user-login-password-otp.html">Login with OTP</a>
-                                            </div>
+                    </ul>
+                </div>
 
-                                            <div class="col-md-6"><a href="user-login.html" class="Register_now"><i
-                                                        class="bi bi-arrow-left-short"></i> Back</a></div>
-                                            <div class="col-md-6 d-flex justify-content-end align-items-center">
-                                                <a href="forget_password.html" target="_blank"
-                                                    class="Register_now">Forgot Password?</a>
-                                            </div>
+            </div>
+            <div class="card bg-light">
+                <div class="card-body">
 
-
-
-                                        </div>
-                                    </div>
-                                    <div class="card-footer text-center">For technical support please contact us at
-                                        industry.nic@gmail.com</div>
-                                </div>
-                                <ul class="mt-4 login-instruction">
-                                    <li>All existing technological applications of the Industries Department , Govt. of
-                                        Chhattisgarh including our services
-                                        Portal have been integrated via the Single Sign-on Framework. Access to all
-                                        these
-                                        applications is available through the
-                                        Single Sign-On user credential.</li>
-
-                                    <li> Existing users of these applications can login through their registered email
-                                        id as the
-                                        user id for the login process.
-                                        New Users can create login credential, by clicking on Register Now.
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </div>
-
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <span>Date: <strong id="currentDate">27/12/2024 04:59 PM</strong></span>
+                        <h5 class="text-success m-0">Documents to be uploaded</h5>
+                        <span>Your IP Address: <strong>49.47.10.165</strong></span>
                     </div>
+                    <ul class="list-group mb-4">
+                        <li class="list-group-item">1. एम.ओ.यू (यदि लागू हो)</li>
+                        <li class="list-group-item">2. संगठन का प्रमाण</li>
+                        <li class="list-group-item">3. शपथ पत्र (नोटरीकृत)
+                            <a href="#" class="text-primary">प्रारूप (2014-2019)</a>,
+                            <a href="#" class="text-primary">प्रारूप (2019-2024)</a>
+                        </li>
+                        <li class="list-group-item">4. भूमि का-अधिकार</li>
+                        <li class="list-group-item">5. अनुबंध शर्तों के हलफनामा</li>
+                    </ul>
+                    <div class="d-flex justify-content-center mb-3">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="agree" name="agreement" value="agree">
+                            <label class="form-check-label" for="agree">I Agree</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" id="disagree" name="agreement"
+                                value="disagree">
+                            <label class="form-check-label" for="disagree">I Don't Agree</label>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button class="btn btn-primary" id="proceedButton" disabled>Proceed</button>
+                    </div>
+
+
+
+
                 </div>
             </div>
+
         </div>
     </div>
 
 
     <script src="js/bootstrap-5.js"></script>
+    <script>document.querySelectorAll('input[name="agreement"]').forEach((radio) => {
+            radio.addEventListener('change', () => {
+                const proceedButton = document.getElementById('proceedButton');
+                proceedButton.disabled = !document.getElementById('agree').checked;
+            });
+        });</script>
 </body>
 
 </html>

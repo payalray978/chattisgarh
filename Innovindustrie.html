@@ -203,34 +203,56 @@
                             <h3 class="page-heading mb-2">Switch Units</h3>
                         </div>
                         <div class="card-body">
-                            <div class=" ">
-                                <a href="tile-appears.html" class="btn btn-orange2  d-flex gap-2 mb-3"><i
-                                        class="bi bi-unity fs-3"></i>
-                                    <span> Apextrade <small class="d-block">11101136770197</small></span></a>
-                                <a href="Innovindustrie.html" class="btn btn-orange2 mb-3 active d-flex gap-2"><i
-                                        class="bi bi-unity fs-3"></i>
-                                    <span> Innovindustrie <small class="d-block">11503606935108</small></span></a>
-                                <a href="Angel_one.html" class="btn btn-orange2  d-flex gap-2 mb-3"><i
-                                        class="bi bi-amd fs-3"></i> <span>
-                                        Angel
-                                        One <small class="d-block">11503606937708</small></span></a>
-                                <a href="index.html" class="btn btn-orange2  d-flex gap-2 align-items-center"><i
-                                        class="bi bi-boxes fs-3"></i>
-                                    Switch to
-                                    Dashboard</a>
-
-                            </div>
-                            <!-- <p class="text-center mt-3 mb-0"><a href="index.html" class="Register_now"><i
-                                        class="bi bi-arrow-left-short"></i> </a></p> -->
+                            <a href="#" class="btn btn-orange2  d-flex gap-2 mb-3"
+                                onclick="openModal('tile-appears.html')">
+                                <i class="bi bi-unity fs-3"></i>
+                                <span> Apextrade <small class="d-block">11101136770197</small></span>
+                            </a>
+                            <a href="#" class="btn btn-orange2 active mb-3 d-flex gap-2"
+                                onclick="openModal('Innovindustrie.html')">
+                                <i class="bi bi-unity fs-3"></i>
+                                <span> Innovindustrie <small class="d-block">11503606935108</small></span>
+                            </a>
+                            <a href="#" class="btn btn-orange2 d-flex gap-2 mb-3" onclick="openModal('csm1.html')">
+                                <i class="bi bi-amd fs-3"></i>
+                                <span> CSM 1 <small class="d-block">12503666935106</small></span>
+                            </a>
+                            <a href="#" class="btn btn-orange2 d-flex gap-2 mb-3" onclick="openModal('Angel_one.html')">
+                                <i class="bi bi-amd fs-3"></i>
+                                <span> Angel One <small class="d-block">11503606937708</small></span>
+                            </a>
+                            <a href="#" class="btn btn-orange2 d-flex gap-2 align-items-center"
+                                onclick="openModal('index.html')">
+                                <i class="bi bi-boxes fs-3"></i> Switch to Dashboard
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header pb-0 border-0">
 
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body  p-0 mb-3 text-center">
+                    <i class="bi bi-exclamation-octagon fs-1 text-primary"></i>
+                    <h5 class=""> Are you sure you want to switch to this unit?</h5>
+                </div>
+                <div class="text-center pb-4">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-primary" onclick="confirmSwitch()">Confirm</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="js/bootstrap-5.js"></script>
+    <script src="./js/common.js"></script>
 </body>
 
 </html>

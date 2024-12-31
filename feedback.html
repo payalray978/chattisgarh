@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Invest Chhhattisgar</title>
+</head>
+
+<body>
+    <!-- header-start -->
+    <header>
+        <div class="container-fluid px-md-5 ">
+            <nav class="navbar navbar-expand-xl">
+                <h1 class="mb-0">
+                    <a class="navbar-brand" href="landing.html">
+                        <img src="images/logo.png">
+                    </a>
+                </h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" id="navbarOffcanvas" tabindex="-1"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h1 class="mb-0">
+                            <a class="navbar-brand" routerLink="/">
+                                <img src="images/logo.jpg">
+                            </a>
+                        </h1>
+                        <button type="button" class="btn-close btn-close-dark text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <ul class="navbar-nav gap-4">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        About Us
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="tile-appears.html">Tile Appears</a></li>
+                                        <li><a class="dropdown-item" href="industrial-registration.html">Industrial
+                                                Registration</a></li>
+                                        <li><a class="dropdown-item" href="company-information.html">Aakanksha
+                                                Registration</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Our Network
+                                    </a>
+
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Our Expertise
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="btn btn-outline-primary" href="industrial-registration.html"> Register</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="btn btn-primary" href="user-login.html"> Login</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- header-end -->
+    <div class="page-content-wrapper ">
+        <div class="container">
+            <div class="user-login ">
+                <div class="row justify-content-center">
+                    <!-- <div class="col-md-2">
+                        <h3 class="page-heading login-heading"><span class="d-block fs-6">CG Spark</span> User Login
+                        </h3>
+                    </div> -->
+                    <div class="feedback col-md-6">
+
+
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="form-heading1">Feedback</h4>
+                                <div class="row g-3 mb-3 mt-1">
+                                    <div class="col-md-12">
+
+                                        <form>
+                                            <!-- Question 1 -->
+                                            <div class="mb-3">
+                                                <p class="">1. How smooth was the application
+                                                    process?</p>
+                                                <div class="star-rating">
+                                                    <span class="star" data-value="1"></span>
+                                                    <span class="star" data-value="2"></span>
+                                                    <span class="star" data-value="3"></span>
+                                                    <span class="star" data-value="4"></span>
+                                                    <span class="star" data-value="5"></span>
+                                                </div>
+                                            </div>
+                                            <!-- Question 2 -->
+                                            <div class="mb-3">
+                                                <p class="">2. How was the overall GO – SWIFT
+                                                    Experience?</p>
+                                                <div class="star-rating">
+                                                    <span class="star1" data-value="1"></span>
+                                                    <span class="star1" data-value="2"></span>
+                                                    <span class="star1" data-value="3"></span>
+                                                    <span class="star1" data-value="4"></span>
+                                                    <span class="star1" data-value="5"></span>
+                                                </div>
+                                            </div>
+                                            <!-- Question 3 -->
+                                            <div class="mb-3">
+                                                <p class="">3. Have you used the other features of GO
+                                                    SWIFT?</p>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="feature1">
+                                                    <label class="form-check-label" for="feature1">State Project
+                                                        Monitoring Group (SPMG) portal for grievance
+                                                        redressal</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="feature2">
+                                                    <label class="form-check-label" for="feature2">Automated Post
+                                                        Allotment Application (APAA) for IDCO land
+                                                        allottees</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="feature3">
+                                                    <label class="form-check-label" for="feature3">Govt. of Odisha CSR
+                                                        Administration and Responsive Engagement
+                                                        (GO CARE)</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="feature4">
+                                                    <label class="form-check-label" for="feature4">Govt. of Odisha
+                                                        Synchronized Mechanism for Inspections of
+                                                        Licensed Enterprises (GO SMILE)</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="feature5">
+                                                    <label class="form-check-label" for="feature5">Info wizard for
+                                                        details on incentives and approvals</label>
+                                                </div>
+                                            </div>
+                                            <!-- Question 4 -->
+                                            <div class="mb-3">
+                                                <p class="">4. Would you recommend GO – SWIFT to another
+                                                    investor/friend?</p>
+                                                <div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="recommend"
+                                                            id="recommendYes" value="yes">
+                                                        <label class="form-check-label" for="recommendYes">Yes</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="recommend"
+                                                            id="recommendNo" value="no">
+                                                        <label class="form-check-label" for="recommendNo">No</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Question 5 -->
+                                            <div class="mb-3">
+                                                <p class="">5. How can we improve GO – SWIFT experience?
+                                                    Please share your ideas and
+                                                    suggestions</p>
+                                                <textarea class="form-control" rows="3"></textarea>
+                                            </div>
+                                            <!-- Submit Button -->
+                                            <button type="submit" class="btn btn-primary">Submit</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/bootstrap-5.js"></script>
+    <script>   document.addEventListener('DOMContentLoaded', () => {
+            const stars = document.querySelectorAll('.star');
+            const ratingValue = document.getElementById('rating-value');
+            let selectedRating = 0;
+
+            // Highlight stars on hover
+            stars.forEach((star, index) => {
+                star.addEventListener('mouseover', () => {
+                    highlightStars(index + 1);
+                });
+
+                star.addEventListener('mouseout', () => {
+                    highlightStars(selectedRating);
+                });
+
+                star.addEventListener('click', () => {
+                    selectedRating = index + 1;
+                    ratingValue.textContent = selectedRating;
+                });
+            });
+
+            function highlightStars(rating) {
+                stars.forEach((star, index) => {
+                    if (index + 1 <= rating) {
+                        star.classList.add('active');
+                        star.classList.remove('half');
+                    } else if (index + 0.5 === rating) {
+                        star.classList.add('half');
+                        star.classList.remove('active');
+                    } else {
+                        star.classList.remove('active', 'half');
+                    }
+                });
+            }
+        });
+        document.addEventListener('DOMContentLoaded', () => {
+            const stars = document.querySelectorAll('.star1');
+            const ratingValue = document.getElementById('rating-value');
+            let selectedRating = 0;
+
+            // Highlight stars on hover
+            stars.forEach((star, index) => {
+                star.addEventListener('mouseover', () => {
+                    highlightStars(index + 1);
+                });
+
+                star.addEventListener('mouseout', () => {
+                    highlightStars(selectedRating);
+                });
+
+                star.addEventListener('click', () => {
+                    selectedRating = index + 1;
+                    ratingValue.textContent = selectedRating;
+                });
+            });
+
+            function highlightStars(rating) {
+                stars.forEach((star, index) => {
+                    if (index + 1 <= rating) {
+                        star.classList.add('active');
+                        star.classList.remove('half');
+                    } else if (index + 0.5 === rating) {
+                        star.classList.add('half');
+                        star.classList.remove('active');
+                    } else {
+                        star.classList.remove('active', 'half');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
