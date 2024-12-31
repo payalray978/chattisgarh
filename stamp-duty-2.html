@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Invest Chhhattisgar</title>
+</head>
+
+<body>
+    <!-- header-start -->
+    <header>
+        <div class="container-fluid px-md-5 ">
+            <nav class="navbar navbar-expand-xl">
+                <h1 class="mb-0">
+                    <a class="navbar-brand" href="landing.html">
+                        <img src="images/logo.png">
+                    </a>
+                </h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" id="navbarOffcanvas" tabindex="-1"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h1 class="mb-0">
+                            <a class="navbar-brand" routerLink="/">
+                                <img src="images/logo.jpg">
+                            </a>
+                        </h1>
+                        <button type="button" class="btn-close btn-close-dark text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <ul class="navbar-nav gap-4">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        About Us
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="tile-appears.html">Tile Appears</a></li>
+                                        <li><a class="dropdown-item" href="industrial-registration.html">Industrial
+                                                Registration</a></li>
+                                        <li><a class="dropdown-item" href="company-information.html">Aakanksha
+                                                Registration</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Our Network
+                                    </a>
+
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Our Expertise
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="btn btn-outline-primary" href="industrial-registration.html"> Register</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="btn btn-primary" href="user-login.html"> Login</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- header-end -->
+    <div class="page-content-wrapper formbg">
+        <div class="container">
+            <h3 class="page-heading text-center">Application for Stamp Duty Exemption</h3>
+           
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="form-heading">Basic Information</h5>
+                    <div class="row g-3 mb-3">
+                        <div class="col-md-12">
+                            <label for="exampleFormControlInput1" class="form-label">
+                                Udyam Aakanksha Number <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1">
+                        </div>
+                       
+                        <div class="col-md-12 text-end">
+                            <a class="btn btn-primary" href="javascript:void(0);">Check</a>
+                        </div>
+                    </div>
+                   
+                    <div class="row g-3 mb-3">
+                        <div class="col-xl-3 col-md-6">
+                            <label for="exampleFormControlInput1" class="form-label">Stamp duty Exemptions required for <span
+                                    class="text-danger">*</span></label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="india">Select</option>
+                                <option value="sudan">Purchase/Lease of Land/shed/Building</option>
+                                <option value="algeria">Bank Loan</option>
+                            </select>
+                        </div>
+                        <div class="col-xl-3 col-md-6">
+                            <label for="exampleFormControlInput1" class="form-label">Factory Location <span
+                                    class="text-danger">*</span></label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="andhra-pradesh">Select</option>
+                            </select>
+                        </div>
+                        <div class="col-xl-3 col-md-6">
+                            <label for="exampleFormControlInput1" class="form-label">Purchased/lease through NCLT/SARFAESI/IBC <span
+                                    class="text-danger">*</span></label>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">No</label>
+                                </div>
+                        </div>
+
+                        <div class="col-xl-3 col-md-6">
+                            <label for="exampleFormControlInput1" class="form-label">Name of Unit<span class="text-danger">*</span></label>
+                            <input type="text" disabled class="form-control" placeholder="Apextrade" id="exampleFormControlInput1">
+                        </div>
+
+                    </div>
+                    <h5 class="form-heading mt-4">Unit Address</h5>
+                    <div class="row g-3 mb-3">
+                        <div class="col-xl-3 col-md-6">
+                            <label for="exampleFormControlInput1" class="form-label">District   <span
+                                    class="text-danger">*</span></label>
+                            <select disabled class="form-select" aria-label="Default select example">
+                                <option value="1">Chattisgarh</option>
+                            </select>
+                        </div>
+                        <div class="col-xl-3 col-md-6">
+                            <label for="exampleFormControlInput1" class="form-label">Block  <span
+                                    class="text-danger">*</span></label>
+                            <select disabled class="form-select" aria-label="Default select example">
+                                <option value="1">Chattisgarh</option>
+                            </select>
+                        </div>
+                        <div class="col-xl-3 col-md-6">
+                            <label for="formFile" class="form-label">Land Area</label>
+                            <input disabled class="form-control" type="text" placeholder="18.2">
+                        </div>
+                        <div class="col-xl-3 col-md-6">
+                            <label for="formFile" class="form-label">Land Unit</label>
+                            <input disabled class="form-control" type="text" placeholder="Unit Name">
+                        </div>
+
+                    </div>
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-4">
+                            <label for="formFile" class="form-label">Whether land is required in CSIDC industrial estate  <span class="text-danger">*</span></label>
+                            <input disabled class="form-control" type="text" placeholder="Yes ">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="formFile" class="form-label">Name of the CSIDC industrial estate  <span class="text-danger">*</span></label>
+                            <input disabled class="form-control" type="text" placeholder="Urla Industrial Area">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="formFile" class="form-label">Whether land to be acquired by CSIDC  <span
+                                    class="text-danger">*</span></label>
+                            <input disabled class="form-control" type="text" id="formFile" placeholder="No">
+                        </div>
+                    </div>
+                    <div class="row g-3 mb-2">
+                        <table class="table table-striped">
+                            <thead>
+                              <tr>
+                                <th>Sl#</th>
+                                <th>District</th>
+                                <th>Block</th>
+                                <th>Area</th>
+                                <th>Khasra Number</th>
+                                <th>Land Mark</th>
+                                <th>Land Area</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>Balod</td>
+                                <td>Durg</td>
+                                <td>Rural</td>
+                                <td>7554/984</td>
+                                <td>Near Durga Temple</td>
+                                <td>120</td>
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td>Raipur</td>
+                                <td>Bhilai</td>
+                                <td>Urban</td>
+                                <td>112/78</td>
+                                <td>Near Railway station</td>
+                                <td>15.6</td>
+                              </tr>
+                              <tr>
+                                <td>3</td>
+                                <td>Raipur</td>
+                                <td>Bhilai</td>
+                                <td>Urban</td>
+                                <td>112/78</td>
+                                <td>Pandri</td>
+                                <td>20.6</td>
+                              </tr>
+                             </tbody>
+                          </table>
+                    </div>
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-4">
+                            <label for="formFile" class="form-label">Industry Type  <span class="text-danger">*</span></label>
+                            <input disabled class="form-control" type="text" placeholder="New">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="formFile" class="form-label">Category of Enterprise  <span class="text-danger">*</span></label>
+                            <input disabled class="form-control" type="text" placeholder="Micro">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="formFile" class="form-label">Type of Organization  <span
+                                    class="text-danger">*</span></label>
+                            <input disabled class="form-control" type="text" id="formFile" placeholder="Partnership">
+                        </div>
+                    </div>
+                    <h5 class="form-heading mt-4">Product/Service Information</h5>
+                    <h6 class="form-sub-heading">Product Details (As per National Industrial Classification- 2008 defined by Ministry Of Statistics and Program Implementation )</h6>
+                    <div class="row g-3 mb-2">
+                        <table class="table table-striped">
+                            <thead>
+                              <tr>
+                                <th>Sl#</th>
+                                <th>Nature Of Activity</th>
+                                <th>Product Name</th>
+                                <th>NIC 2008 Code</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>Manufacturing</td>
+                                <td>Rice, seed</td>
+                                <td>113100</td>
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td>Servicing</td>
+                                <td>Dog Food</td>
+                                <td>2331102</td>
+                              </tr>
+                             
+                             </tbody>
+                          </table>
+                    </div>
+                    <h6 class="form-sub-heading"> Product Details (As per National Product Classification- 2011 defined by Ministry Of Statistics and Program Implementation )</h6>
+                    <div class="row g-3 mb-2">
+                        <table class="table table-striped">
+                            <thead>
+                              <tr>
+                                <th>Sl#</th>
+                                <th>Nature Of Activity</th>
+                                <th>Product Name</th>
+                                <th>Activity Code</th>
+                                <th>Annual Capacity</th>
+                                <th>Unit of Measurement</th>
+                                <th>Product Description</th>
+                                <th>Expansion/Diversification Capacity</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>Manufacturing</td>
+                                <td>Rice, seed</td>
+                                <td>113100</td>
+                                <td>400</td>
+                                <td>Kilogram</td>
+                                <td>Food Product</td>
+                                <td>10</td>
+                              </tr>
+                              <tr>
+                                <td>2</td>
+                                <td>Servicing</td>
+                                <td>Dog Food</td>
+                                <td>2331102</td>
+                                <td>756</td>
+                                <td>Tonne</td>
+                                <td>byproducts </td>
+                                <td>45</td>
+                              </tr>
+                             
+                             </tbody>
+                          </table>
+                    </div>
+                    <div class="row g-3 mb-2">
+                        <table class="table table-striped">
+                            <thead>
+                              <tr>
+                                <th>Entrepreneur Name</th>
+                                <th>Gender</th>
+                                <th>Category</th>
+                                <th>Equity participation in Percent </th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>XYZ Industry</td>
+                                <td>Male</td>
+                                <td>SC</td>
+                                <td>10%</td>
+                              </tr>
+                              <tr>
+                                <td>Text Industry</td>
+                                <td>Female</td>
+                                <td>General</td>
+                                <td>18.25%</td>
+                              </tr>
+                             
+                             </tbody>
+                          </table>
+                    </div>
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-4">
+                            <label for="formFile" class="form-label">EM-II Number  </label>
+                            <input disabled class="form-control" type="text" placeholder="EM-0988786">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="formFile" class="form-label">EM-II Issuance Date</label>
+                            <input disabled class="form-control" type="text" placeholder="12/8/2024">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="formFile" class="form-label">EM-II Document</label>
+                            <input disabled class="form-control" type="text" id="formFile" placeholder="EM-II Document">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="formFile" class="form-label">PC Number</label>
+                            <input disabled class="form-control" type="text" id="formFile" placeholder="89709875">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="formFile" class="form-label">PC Issuance Date</label>
+                            <input disabled class="form-control" type="text" id="formFile" placeholder="23/2/2024">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="formFile" class="form-label">PC Document</label>
+                            <input disabled class="form-control" type="text" id="formFile" placeholder="PC Document">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="formFile" class="form-label">IEM Number</label>
+                            <input disabled class="form-control" type="text" id="formFile" placeholder="89709875">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="formFile" class="form-label">IEM Issuance Date</label>
+                            <input disabled class="form-control" type="text" id="formFile" placeholder="23/2/2024">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="formFile" class="form-label">IEM Document</label>
+                            <input disabled class="form-control" type="text" id="formFile" placeholder="IEM Document">
+                        </div>
+                       
+                    </div>
+                </div>
+
+            </div>
+            <div class="form-button-box">
+                <!-- <a class="btn btn-outline-primary" href="industrial-registration.html">Back</a> -->
+                <a class="btn btn-primary" href="otp-confirmation.html">Next</a>
+                <!-- <a class="btn btn-outline-primary" href="#">Reset</a> -->
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/bootstrap-5.js"></script>
+</body>
+
+</html>

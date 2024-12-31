@@ -4,11 +4,16 @@
     box-sizing: border-box;
 }
 :root {
-    --orange:#b41110;
-    --orenge100:#ffbb00;
-    --iron:#763534;
-    --bglight:#f3f3f3;
-    --white:#FFF;
+  --orange:#b41110;
+  --orange1:#F17B1E;
+  --orenge100:#ffbb00;
+  --iron:#763534;
+  --bglight:#f3f3f3;
+  --white:#FFF;
+  --blue:#025599;
+  --dark-blue:#022949;
+  --light-blue:#2B88D4;
+  --grey:#D5D5D5;
 }
 /* common css */
 .btn-orange1{
@@ -22,9 +27,18 @@
     padding: 1.5rem 0;
 }
 .page-heading{
-    color:var(--orange) ;
+    color:var(--blue) ;
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
+}
+.btn-primary {
+  border-color: var(--blue);
+  background-color: var(--blue);
+  color: var(--white);
+}
+.btn-outline-primary {
+  color: var(--blue) ;
+  border-color: var(--blue) ;
 }
 .btn-outline-warning {
     color: var(--orange) ;
@@ -33,7 +47,7 @@
 .btn-warning {
     border-color: var(--orange) ;
     background-color: var(--orange);
-  color: var(--white) ;
+    color: var(--white) ;
 }
 
 .formbg {
@@ -74,7 +88,7 @@ header .btn {
      margin-bottom: 1rem;
  }
  .form-heading {
-     color: var(--orange);
+     color: var(--blue);
      font-size: 1.1rem;
      font-weight: 700;
      position: relative;
@@ -87,10 +101,10 @@ header .btn {
      content: "";
      width: 90px;
      height: 2px;
-     background-color: var(--orange);
+     background-color: var(--blue);
  }
  .form-sub-heading {
-    color: var(--orange);
+    color: var(--blue);
     font-size: .85rem;
     font-weight: 700;
     position: relative;
@@ -163,23 +177,23 @@ header .btn {
   }
  
   .navigation_tabs li.active{
-    color: var(--orange);
+    color: var(--blue);
   }
  
   .navigation_tabs li.completed {
-    color: var(--orange);
+    color: var(--blue);
   }
  
   .navigation_tabs li.active:before {
      /* border-color: green; */
-    background: var(--orange);
+    background: var(--blue);
     /* color: #fff; */
-    border: var(--orange);
+    border: var(--blue);
   }
  
   .navigation_tabs li.completed:before {
-    border-color: var(--orange);
-    background-color:var(--orange);
+    border-color: var(--blue);
+    background-color:var(--blue);
     color: #fff;
     content: "\F633";
     font-family: "bootstrap-icons" !important;
@@ -206,7 +220,7 @@ header .btn {
    font-size: .85rem;
  }
   .navigation_tabs li.completed + li:after {
-    background-color: var(--orange);
+    background-color: var(--blue);
     height: 0.1rem;
   }
   @media(max-width:1440px){
@@ -404,9 +418,9 @@ background-color: #fff;}
   background-color: #fff;
 }
 .login-tabs .nav-link.active{
-  border: 1px solid #ffafaf;
-  background-color: #FFF1E6;
-  color: var(--orange);
+  border: 1px solid #c1dff7;
+  background-color: #eff8ff;
+  color: var(--blue);
 
   border-bottom: 0;}
 .login-tabs .nav-tabs{
@@ -414,7 +428,7 @@ background-color: #fff;}
   border-bottom: 0;
 gap:7px;}
 
-.Register_now{color:#b41110;
+.Register_now{color:var(--blue);
 text-decoration: none;
 font-weight: 500;}
 .login-instruction{
@@ -489,7 +503,7 @@ font-weight: 500;}
     
 }
 .side-nav li a.active {
-  color: var(--orange);
+  color: var(--blue);
 }
 .business-unit .card {
   min-height: 300px;
