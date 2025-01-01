@@ -592,7 +592,7 @@ border-radius: 15px;
   margin-bottom: 20px;
 }
 .filter{
-  background-color: #FFF1E6;
+  background-color: #ebf6ff;
   padding: 20px;
   /* border-radius: 10px; */
 }
@@ -647,4 +647,7 @@ color: #fff;
 color: #bbdcf7;
 background-color: #022949;
 
+}
+.accordion-button.collapsed {
+  background: #f0f4f9 !important;
 }
