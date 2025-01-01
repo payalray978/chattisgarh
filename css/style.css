@@ -349,41 +349,41 @@ padding: 10px;
   color: #fff;
 }
 .btn-orange{
-  background-color: #e2ecf7;
+  background-color: #FFF1E6;
   /* border: 1px solid #f88c3a; */
-  color: #025599;
+  color: var(--orange);
 border-radius: 36px; 
  font-size: 14px;
     font-weight: 600;
     padding: 5px 13px;
 }
 .btn-orange.active{
-  background-color: var(--blue);
+  background-color: #f88c3a;
   font-size: 14px;
   color: #fff;
 }
 .btn-orange:hover{
-  background-color: var(--blue);
+  background-color: #f88c3a;
   font-size: 14px;
   color: #fff;
 }
 .btn-orange2{
-border:1px solid var(--blue);
+border:1px solid #FF9F00;
   /* border: 1px solid #f88c3a; */
 border-radius: 36px; 
  font-size: 14px;
     font-weight: 600;
     padding: 5px 38px;
-color: var(--blue);
+color: #FF9F00;
 /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
 }
 .btn-orange2.active{
- background-color: var(--blue);
+ background-color: #ff8d00f2;
   font-size: 14px;
   color: #fff;
 }
 .btn-orange2:hover{
- background-color: var(--blue);
+ background-color: #ff8d00f2;
   font-size: 14px;
   color: #fff;
 }
@@ -462,6 +462,13 @@ font-weight: 500;}
 }
 .login-tabs .card-body {
   padding:1.5rem 4rem;
+}
+.change_password .card{
+  border-color: var(--light-blue);
+}
+.change_password .card-body {
+  padding:1.5rem 2.5rem 1rem;
+
 }
 .resendotp {
   color: #b41110;
@@ -545,7 +552,7 @@ font-weight: 500;}
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background-color: var(--blue);
+  background-color: #f56c89;
   line-height: 20px;
   text-align: center;
   font-size: .65rem;
@@ -594,6 +601,7 @@ border-radius: 15px;
   border-radius: 0;
   background-color: #bbdcf7;
 color: #022949;
+    border-bottom-width: 0px;
 }
 .btn.btn-blue:hover, .btn.btn-blue.active{
   border-radius: 0;
@@ -634,4 +642,9 @@ color: #fff;
 
 .link-wrapper a{
    text-decoration: none;
+}
+.btn-blue.active{
+color: #bbdcf7;
+background-color: #022949;
+
 }

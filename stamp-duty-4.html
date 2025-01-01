@@ -41,12 +41,12 @@
                             aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
-                        <div class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <ul class="navbar-nav gap-4">
+                        <div class="navbar-nav justify-content-end flex-grow-1 pe-3 navbar-expand">
+                            <ul class="navbar-nav gap-3">
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">
-                                        About Us
+                                        <i class="bi bi-gear"></i>
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="tile-appears.html">Tile Appears</a></li>
@@ -57,24 +57,27 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">
-                                        Our Network
+                                        <i class="bi bi-megaphone position-relative">
+                                            <span class="notify">3</span>
+                                        </i>
                                     </a>
 
                                 </li>
 
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">
-                                        Our Expertise
+                                        <img class="user-icon" src="images/user.png">
                                     </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="btn btn-outline-primary" href="industrial-registration.html"> Register</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="btn btn-primary" href="user-login.html"> Login</a>
+                                    <ul class="dropdown-menu logout">
+                                        <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                                        <li><a class="dropdown-item" href="#">
+                                                Change Password</a></li>
+                                        <li><a class="dropdown-item" href="user-login.html">Logout
+                                            </a></li>
+                                    </ul>
                                 </li>
                             </ul>
                         </div>
@@ -89,25 +92,26 @@
     <div class="page-content-wrapper formbg">
         <div class="container">
             <h3 class="page-heading text-center">Application for Stamp Duty Exemption</h3>
-           
+
             <div class="card">
                 <div class="card-body">
                     <h5 class="form-heading">Details of the Land in the Industrial Area</h5>
                     <div class="row g-3 mb-3">
                         <div class="col-xl-3 col-md-6">
                             <label for="exampleFormControlInput1" class="form-label">Industrial Area Name <span
-                                class="text-danger">*</span></label>
-                            <input type="text" disabled class="form-control" placeholder="Apextrade" id="exampleFormControlInput1">
+                                    class="text-danger">*</span></label>
+                            <input type="text" disabled class="form-control" placeholder="Apextrade"
+                                id="exampleFormControlInput1">
                         </div>
                         <div class="col-xl-3 col-md-6">
                             <label for="exampleFormControlInput1" class="form-label">Plot Number <span
-                                class="text-danger">*</span></label>
-                            <input type="text"  class="form-control"  id="exampleFormControlInput1">
+                                    class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1">
                         </div>
                         <div class="col-xl-3 col-md-6">
                             <label for="exampleFormControlInput1" class="form-label">Land Area <span
-                                class="text-danger">*</span></label>
-                            <input type="text"  class="form-control"  id="exampleFormControlInput1">
+                                    class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1">
                         </div>
                         <div class="col-xl-3 col-md-6">
                             <label for="exampleFormControlInput1" class="form-label">Land Area Unit
@@ -120,19 +124,22 @@
                         </div>
                         <div class="col-xl-3 col-md-6">
                             <label for="exampleFormControlInput1" class="form-label">Land Allotment Order Number <span
-                                class="text-danger">*</span></label>
-                            <input type="text"  class="form-control" id="exampleFormControlInput1">
+                                    class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1">
                         </div>
                         <div class="col-xl-3 col-md-6">
-                            <label for="formFile" class="form-label">Land Allotment Order Documents <span class="text-danger">*</span></label>
+                            <label for="formFile" class="form-label">Land Allotment Order Documents <span
+                                    class="text-danger">*</span></label>
                             <input class="form-control" type="file" id="formFile">
                         </div>
                         <div class="col-xl-3 col-md-6">
-                            <label for="exampleFormControlInput1" class="form-label">Lease Deed Date <span class="text-danger">*</span></label>
+                            <label for="exampleFormControlInput1" class="form-label">Lease Deed Date <span
+                                    class="text-danger">*</span></label>
                             <input type='date' class="form-control datepicker" name="startDate" />
                         </div>
                         <div class="col-xl-3 col-md-6">
-                            <label for="formFile" class="form-label">Lease Deed Documents <span class="text-danger">*</span></label>
+                            <label for="formFile" class="form-label">Lease Deed Documents <span
+                                    class="text-danger">*</span></label>
                             <input class="form-control" type="file" id="formFile">
                         </div>
 
@@ -140,27 +147,29 @@
                     <div class="row g-3 mb-3">
                         <div class="col-md-6">
                             <label for="exampleFormControlInput1" class="form-label">Address 1 <span
-                                class="text-danger">*</span></label>
-                            <input type="text"  class="form-control"  id="exampleFormControlInput1">
+                                    class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1">
                         </div>
                         <div class="col-md-6">
                             <label for="exampleFormControlInput1" class="form-label">Address 2 <span
-                                class="text-danger">*</span></label>
-                            <input type="text"  class="form-control"  id="exampleFormControlInput1">
+                                    class="text-danger">*</span></label>
+                            <input type="text" class="form-control" id="exampleFormControlInput1">
                         </div>
                     </div>
                     <div class="row g-3 mb-3">
                         <div class="col-xl-3 col-md-6">
-                           <div> <label for="exampleFormControlInput1" class="form-label">Area <span
-                            class="text-danger">*</span></label></div>
+                            <div> <label for="exampleFormControlInput1" class="form-label">Area <span
+                                        class="text-danger">*</span></label></div>
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                    value="option1">
                                 <label class="form-check-label" for="inlineRadio1">Rural</label>
-                                </div>
-                                <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                    value="option2">
                                 <label class="form-check-label" for="inlineRadio2">Urban</label>
-                                </div>
+                            </div>
                         </div>
                         <div class="col-xl-3 col-md-6">
                             <label for="exampleFormControlInput1" class="form-label">Country <span
@@ -586,7 +595,7 @@
                                 <option value="Bastar">Bastar</option>
                                 <option value="Bhanpuri">Bhanpuri</option>
                                 <option value="Darbha">Darbha</option>
-                                
+
                             </select>
                         </div>
                         <div class="col-xl-3 col-md-6">
@@ -748,48 +757,48 @@
                     <div class="row g-3 mb-2">
                         <table class="table table-striped table-bordered">
                             <thead>
-                              <tr>
-                                <th>Sl#</th>
-                                <th>District</th>
-                                <th>Block</th>
-                                <th>Area</th>
-                                <th>GP/Nagar Nigam/Nagar Palika/Nagar Panchayat</th>
-                                <th>Khasra Number</th>
-                                <th>Land Mark</th>
-                                <th>Land Area</th>
-                                <th>Land Unit</th>
-                                <th>Delete</th>
-                              </tr>
+                                <tr>
+                                    <th>Sl#</th>
+                                    <th>District</th>
+                                    <th>Block</th>
+                                    <th>Area</th>
+                                    <th>GP/Nagar Nigam/Nagar Palika/Nagar Panchayat</th>
+                                    <th>Khasra Number</th>
+                                    <th>Land Mark</th>
+                                    <th>Land Area</th>
+                                    <th>Land Unit</th>
+                                    <th>Delete</th>
+                                </tr>
                             </thead>
                             <tbody>
-                              <tr>
-                                <td>1</td>
-                                <td>Balod</td>
-                                <td>Durg</td>
-                                <td>Rural</td>
-                                <td>GP Name</td>
-                                <td>7554/984</td>
-                                <td>Near Durga Temple</td>
-                                <td>120</td>
-                                <td>Hector</td>
-                                <td><button class="btn btn-danger btn-sm"><i class="bi bi-trash"></i></button></td>
-                              </tr>
-                              <tr>
-                                <td>1</td>
-                                <td>Balod</td>
-                                <td>Durg</td>
-                                <td>Urban</td>
-                                <td>Mahasmund</td>
-                                <td>112/78</td>
-                                <td>Near Railway station</td>
-                                <td>15.6</td>
-                                <td>Sq. Mt</td>
-                                <td><button class="btn btn-danger btn-sm"><i class="bi bi-trash"></i></button></td>
-                              </tr>
-                             </tbody>
-                          </table>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Balod</td>
+                                    <td>Durg</td>
+                                    <td>Rural</td>
+                                    <td>GP Name</td>
+                                    <td>7554/984</td>
+                                    <td>Near Durga Temple</td>
+                                    <td>120</td>
+                                    <td>Hector</td>
+                                    <td><button class="btn btn-danger btn-sm"><i class="bi bi-trash"></i></button></td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Balod</td>
+                                    <td>Durg</td>
+                                    <td>Urban</td>
+                                    <td>Mahasmund</td>
+                                    <td>112/78</td>
+                                    <td>Near Railway station</td>
+                                    <td>15.6</td>
+                                    <td>Sq. Mt</td>
+                                    <td><button class="btn btn-danger btn-sm"><i class="bi bi-trash"></i></button></td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                   
+
                     <h5 class="form-heading mt-4">Details of documents relating to loan advance</h5>
                     <h6 class="form-sub-heading mt-4">Loan approval information</h6>
                     <div class="row g-3 mb-2">
@@ -802,7 +811,8 @@
                             </select>
                         </div>
                         <div class="col-md-4">
-                            <label for="exampleFormControlInput1" class="form-label">Name of the funding institution / bank </label>
+                            <label for="exampleFormControlInput1" class="form-label">Name of the funding institution /
+                                bank </label>
                             <input type="text" class="form-control" id="exampleFormControlInput1">
                         </div>
                         <div class="col-md-4">
@@ -825,11 +835,13 @@
                             <input type="text" class="form-control" id="exampleFormControlInput1">
                         </div>
                         <div class="col-md-4">
-                            <label for="exampleFormControlInput1" class="form-label">Loan sanction order no. of the financial institution / bank  </label>
+                            <label for="exampleFormControlInput1" class="form-label">Loan sanction order no. of the
+                                financial institution / bank </label>
                             <input type="text" class="form-control" id="exampleFormControlInput1">
                         </div>
                         <div class="col-md-4">
-                            <label for="exampleFormControlInput1" class="form-label">Loan sanction order date of the financial institution / bank </label>
+                            <label for="exampleFormControlInput1" class="form-label">Loan sanction order date of the
+                                financial institution / bank </label>
                             <input type='date' class="form-control datepicker" name="startDate" />
                         </div>
                         <div class="col-md-4">
@@ -839,54 +851,57 @@
                     </div>
                     <h5 class="form-heading mt-4">Document Details</h5>
                     <div class="row g-3 mb-3">
-                        <div class="col-md-7"><label for="exampleFormControlInput1" class="form-label pr-2">If  MOU has been signed with the Government for the applied industry,the provide its details  </label></div>
+                        <div class="col-md-7"><label for="exampleFormControlInput1" class="form-label pr-2">If MOU has
+                                been signed with the Government for the applied industry,the provide its details
+                            </label></div>
                         <div class="col-md-5">
                             <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                    value="option1">
                                 <label class="form-check-label" for="inlineRadio1">Yes</label>
-                              </div>
-                              <div class="form-check form-check-inline">
-                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                    value="option2">
                                 <label class="form-check-label" for="inlineRadio2">No</label>
-                              </div>
+                            </div>
                         </div>
-                       
+
                     </div>
                     <div class="row g-3 mb-2">
                         <div class="col-md-4">
-                            <label for="formFile" class="form-label">EM-II <span
-                                class="text-danger">*</span></label>
+                            <label for="formFile" class="form-label">EM-II <span class="text-danger">*</span></label>
                             <input class="form-control" type="file" id="formFile">
                         </div>
                         <div class="col-md-4">
                             <label for="formFile" class="form-label">Production Certificate <span
-                                class="text-danger">*</span></label>
+                                    class="text-danger">*</span></label>
                             <input class="form-control" type="file" id="formFile">
                         </div>
                         <div class="col-md-4">
-                            <label for="formFile" class="form-label">Type of Organisation  <span
-                                class="text-danger">*</span></label>
+                            <label for="formFile" class="form-label">Type of Organisation <span
+                                    class="text-danger">*</span></label>
                             <input class="form-control" type="file" id="formFile">
                         </div>
                         <div class="col-md-4">
                             <label for="formFile" class="form-label">Affidavit (Notarized) <span
-                                class="text-danger">*</span></label>
+                                    class="text-danger">*</span></label>
                             <input class="form-control" type="file" id="formFile">
                         </div>
-                       
+
                         <div class="col-md-4">
                             <label for="formFile" class="form-label">NCTL/SARFAESI/IBC Documents <span
-                                class="text-danger">*</span></label>
+                                    class="text-danger">*</span></label>
                             <input class="form-control" type="file" id="formFile">
                         </div>
                         <div class="col-md-4">
                             <label for="formFile" class="form-label">Authorisied Signatory Signature <span
-                                class="text-danger">*</span></label>
+                                    class="text-danger">*</span></label>
                             <input class="form-control" type="file" id="formFile">
                         </div>
                         <div class="col-md-6">
-                            <label for="formFile" class="form-label">Certificate w.r.t. closed/sick Industry(all doc releted to close/sick industry) <span
-                                class="text-danger">*</span></label>
+                            <label for="formFile" class="form-label">Certificate w.r.t. closed/sick Industry(all doc
+                                releted to close/sick industry) <span class="text-danger">*</span></label>
                             <input class="form-control" type="file" id="formFile">
                         </div>
                     </div>
@@ -900,11 +915,11 @@
 
                 <!-- <a class="btn btn-outline-primary" href="#">Reset</a>
             </div> -->
+            </div>
         </div>
-    </div>
 
 
-    <script src="js/bootstrap-5.js"></script>
+        <script src="js/bootstrap-5.js"></script>
 </body>
 
 </html>
