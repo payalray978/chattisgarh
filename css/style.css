@@ -248,10 +248,12 @@ header .btn {
 }
 
 /*payal============*/
-.card:not(.accordion-body):not(.switch-unit) {
+.card:not(.switch-unit) {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 } 
-
+.accordion-body .card {
+    box-shadow: none ;
+}
 .card-header{
   /* position: relative; */
   padding-top: 20px ; 
