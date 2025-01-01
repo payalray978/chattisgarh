@@ -41,12 +41,12 @@
                             aria-label="Close"></button>
                     </div>
                     <div class="offcanvas-body">
-                        <div class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <ul class="navbar-nav gap-4">
+                        <div class="navbar-nav justify-content-end flex-grow-1 pe-3 navbar-expand">
+                            <ul class="navbar-nav gap-3">
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">
-                                        About Us
+                                        <i class="bi bi-gear"></i>
                                     </a>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="tile-appears.html">Tile Appears</a></li>
@@ -57,24 +57,27 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">
-                                        Our Network
+                                        <i class="bi bi-megaphone position-relative">
+                                            <span class="notify">3</span>
+                                        </i>
                                     </a>
 
                                 </li>
 
                                 <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">
-                                        Our Expertise
+                                        <img class="user-icon" src="images/user.png">
                                     </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="btn btn-outline-primary" href="industrial-registration.html"> Register</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="btn btn-primary" href="user-login.html"> Login</a>
+                                    <ul class="dropdown-menu logout">
+                                        <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                                        <li><a class="dropdown-item" href="#">
+                                                Change Password</a></li>
+                                        <li><a class="dropdown-item" href="user-login.html">Logout
+                                            </a></li>
+                                    </ul>
                                 </li>
                             </ul>
                         </div>
