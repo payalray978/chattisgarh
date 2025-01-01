@@ -8,10 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./css/bootstrap-min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Invest Chhhattisgar</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 
 <body>
@@ -89,7 +89,7 @@
 
 
     <!-- header-end -->
-    <div class="page-content-wrapper formbg">
+    <div class="page-content-wrapper">
         <div class="container-fluid px-md-5">
             <div class="row">
                 <div class="col-md-2 pr-0">
@@ -102,65 +102,78 @@
                     </ul>
                 </div>
                 <div class="col-md-10">
-                    <h3 class="page-heading">Documents to be uploaded</h3>
-            <div class="card ">
-                <div class="card-body">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row g-3 mb-3 mt-1">
+                                <h3 class="form-heading1 mb-3">Create Alternative User Name</h3>
+                                <div class="col-md-12 mt-0">
+                                    <label class="form-label mb-0">Name of Applicant </label>
+                                    <p class="fw-bold">Bijay Rajprakash</p>
+                                </div>
+                                <div class="col-md-12 mt-0">
+                                    <label class="form-label mb-0">Mobile Number  </label>
+                                    <p class="fw-bold">9437542345</p>
+                                </div>
+                                <div class="col-md-12 mt-0">
+                                    <label class="form-label mb-0">Email Id   </label>
+                                    <p class="fw-bold">bijay.rajprakash@gmail.com</p>
+                                </div>
+                                <div class="col-md-12 mt-0">
+                                    <label class="form-label mb-0">User Id   </label>
+                                    <p class="fw-bold">SupAdmin</p>
+                                </div>
+                                <div class="col-md-4 mt-0">
+                                    <label class="form-label mb-0">Enter Alternate User Name</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6"><a href="add-unit.html" class="btn btn-primary"
+                                    style="padding: 6px 40px;" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">Submit</a>
+                                    <a href="#" class="Register_now"><i
+                                        class="bi bi-arrow-left-short"></i> Cancel</a>
+                                
+                                </div>
+                            
+                            </div>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header border-0 pb-0 ">
+                                    <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1> -->
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row g-3 mb-3 text-center "><i
+                                            class="success-text-color fs-1 bi bi-check-circle"></i>
+                                        <h5 class="mt-2 mb-2">Alternative user name added successfully</h5>
+                                        <div>
 
-                    <div class="d-flex justify-content-between align-items-center mb-3">
-                        <span>Date: <strong id="currentDate">27/12/2024 04:59 PM</strong></span>
-                        <h5 class="text-success m-0"></h5>
-                        <span>Your IP Address: <strong>49.47.10.165</strong></span>
-                    </div>
-                    <ul class="list-group mb-4">
-                        <li class="list-group-item">1. एम.ओ.यू (यदि लागू हो)</li>
-                        <li class="list-group-item">2. संगठन का प्रमाण</li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            <span class="text-start">3. शपथ पत्र (नोटरीकृत)</span>
-                            <span class="link-wrapper">
-                                <a href="#" class="text-primary">प्रारूप (2014-2019)</a>,
-                                <a href="#" class="text-primary">प्रारूप (2019-2024)</a>
-                            </span>
-                        </li>
-                        <li class="list-group-item">4. भूमि का-अधिकार</li>
-                        <li class="list-group-item">5. अनुबंध शर्तों के हलफनामा</li>
-                    </ul>
-                    <div class="d-flex justify-content-center mb-3">
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" id="agree" name="agreement" value="agree">
-                            <label class="form-check-label" for="agree">I Agree</label>
+                                            <a href="create-alternate-user-preview.html" class="btn btn-primary">Submit</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" id="disagree" name="agreement"
-                                value="disagree">
-                            <label class="form-check-label" for="disagree">I Don't Agree</label>
+                    </div>
                         </div>
+                       
                     </div>
-
-                    <div class="form-button-box text-center justify-content-center">
-                        <!-- <a class="btn btn-outline-primary" href="industrial-registration.html">Back</a> -->
-                        <a class="btn btn-primary" id="proceedButton" disabled href="stamp-duty.html">Proceed</a>
-                        <!-- <a class="btn btn-outline-primary" href="#">Reset</a> -->
-                    </div>
-
-
-
                 </div>
             </div>
-                </div>
-            </div>
-            
-
         </div>
     </div>
 
 
+
+
+
+
+
     <script src="js/bootstrap-5.js"></script>
-    <script>document.querySelectorAll('input[name="agreement"]').forEach((radio) => {
-            radio.addEventListener('change', () => {
-                const proceedButton = document.getElementById('proceedButton');
-                proceedButton.disabled = !document.getElementById('agree').checked;
-            });
-        });</script>
 </body>
 
 </html>

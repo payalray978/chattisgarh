@@ -90,8 +90,19 @@
 
     <!-- header-end -->
     <div class="page-content-wrapper formbg">
-        <div class="container">
-            <h3 class="page-heading text-center">Application for Stamp Duty Exemption</h3>
+        <div class="container-fluid px-md-5">
+            <div class="row">
+                <div class="col-md-2 pr-0">
+                    <ul class="nav side-nav">
+                        <li><a class="" href="index.html">Dashboard</a></li>
+                        <li><a href="profile.html">View Profile</a></li>
+                        <li><a href="create-alternate-user.html">Create Alternate User Id</a></li>
+                        <li><a href="change_password.html">Change Password</a></li>
+                        <li><a href="user-login.html">Logout</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-10">
+                    <h3 class="page-heading">Application for Stamp Duty Exemption</h3>
             <div class="accordion" id="accordionExample">
                 <div class="accordion-item">
                     <h2 class="accordion-header">
@@ -830,6 +841,9 @@
                     data-bs-target="#exampleModal">Submit</a>
                 <!-- <a class="btn btn-outline-primary" href="#">Reset</a> -->
             </div>
+                </div>
+            </div>
+            
         </div>
     </div>
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -840,8 +854,8 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <div class="row g-3 mb-3 text-center "><i class="form-heading1 fs-1 bi bi-check-circle"></i>
-                        <h5 class="form-heading1  mt-2">Successfully Filled</h5>
+                    <div class="row g-3 mb-3 text-center "><i class="success-text-color fs-1 bi bi-check-circle"></i>
+                        <h5 class="mt-2">Successfully Filled</h5>
                         <p class="m-0">Application has been filled successfully.</p>
 
                         <div>

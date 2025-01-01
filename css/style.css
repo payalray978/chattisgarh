@@ -527,7 +527,7 @@ font-weight: 500;}
     top: 0;
     height: 30px;
     width: 4px;
-    background-color: var(--orange);
+    background-color: var(--blue);
     
 }
 .side-nav li a.active {
@@ -650,4 +650,7 @@ background-color: #022949;
 }
 .accordion-button.collapsed {
   background: #f0f4f9 !important;
+}
+.success-text-color {
+  color: #198754;
 }
