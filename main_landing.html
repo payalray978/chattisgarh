@@ -18,7 +18,7 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="./css/landing.css">
+    <link rel="stylesheet" href="./css/main_landing.css">
 
 </head>
 
@@ -35,7 +35,13 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                    <ul class="navbar-nav gap-2">
+                    <ul class="navbar-nav gap-2 align-items-center">
+                        <li class="nav-item ">
+                            <a class="nav-link " href="#" role="button" aria-expanded="false">
+                                Home
+                            </a>
+
+                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
@@ -50,7 +56,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                Our Network <i class="fa-solid fa-chevron-down"></i>
+                                Services <i class="fa-solid fa-chevron-down"></i>
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="#">Action</a></li>
@@ -61,23 +67,84 @@
 
                         <li class="nav-item ">
                             <a class="nav-link " href="#" role="button" aria-expanded="false">
-                                Our Expertise
+                                Incentives & Policies
                             </a>
 
+                        </li>
+                        <!-- <li class="nav-item ">
+                            <a class="nav-link " href="#" role="button" aria-expanded="false">
+                                <i class="bi bi-text-left fs-4"></i>
+                            </a>
+
+                        </li> -->
+                        <li class="nav-item ">
+                            <a class="nav-link " href="#" role="button" aria-expanded="false">
+                                <i class="bi bi-search"></i>
+                            </a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-red Login" href="user-login.html"> Login</a>
                         </li>
 
                         <li class="nav-item">
                             <a class="btn btn-border-red Register" href="industrial-registration.html">
                                 Register</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="btn btn-red Login" href="user-login.html"> Login</a>
-                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
+    <section><img src="./images/banner.jpg" alt=""></section>
+    <section class="about-sec">
+        <div class="container">
+            <div class="row about  pb-5">
+                <div class="col-md-6">
+                    <h2 class="mb-4">About</h2>
+                    <p>The Department of Commerce and Industries is Nodal Department for overall development of
+                        industrial
+                        sector in the state.</p>
+                    <p>
+                        The department plays developmental & facilitation role to attract industrial investments in the
+                        state. It focuses on
+                        creating an industry friendly environment and formulating suitable policies in the state aimed
+                        at
+                        propelling fast pace
+                        modernisation & strengthening of the industrial units.
+                    </p>
+                    <button type="button" class="btn btn-red">Read More <i class="bi bi-arrow-right"></i></button>
+                </div>
+                <div class="col-md-6 align-self-center">
+                    <h2 class="mb-4">Benifits</h2>
+                    <img src="./images/benefits.jpg" alt="">
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section><img src="./images/process (1).jpg" alt=""></section>
+    <section>
+        <section class="my-5">
+            <div class="container">
+                <!-- <div class="container"> -->
+                <swiper-container class="mySwiper external-links text-center" pagination="true"
+                    pagination-clickable="true" space-between="30" slides-per-view="4">
+                    <swiper-slide><img src="./images/govt of odisha.png" alt=""></swiper-slide>
+                    <swiper-slide><img src="./images/digital_india.png" alt=""></swiper-slide>
+                    <swiper-slide><img src="./images/india.gov.png" alt=""></swiper-slide>
+                    <swiper-slide><img
+                            src="./images/thequint_2016-01_5fe4b302-c270-4b8a-8c02-db7cf3ef93ed_Make-in-India.webp"
+                            alt=""></swiper-slide>
+
+                </swiper-container>
+
+                <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+            </div>
+        </section>
+    </section>
+    <section><img src="./images/footer.jpg" alt=""></section>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
