@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Invest Chhhattisgar</title>
+</head>
+
+<body>
+    <!-- header-start -->
+    <header>
+        <div class="container-fluid px-md-5 ">
+            <nav class="navbar navbar-expand-xl">
+                <h1 class="mb-0">
+                    <a class="navbar-brand" href="landing.html">
+                        <img src="images/logo.png">
+                    </a>
+                </h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" id="navbarOffcanvas" tabindex="-1"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h1 class="mb-0">
+                            <a class="navbar-brand" routerLink="/">
+                                <img src="images/logo.jpg">
+                            </a>
+                        </h1>
+                        <button type="button" class="btn-close btn-close-dark text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="navbar-nav justify-content-end flex-grow-1 pe-3 navbar-expand">
+                            <ul class="navbar-nav gap-3">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <i class="bi bi-gear"></i>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="tile-appears.html">Tile Appears</a></li>
+                                        <li><a class="dropdown-item" href="industrial-registration.html">Industrial
+                                                Registration</a></li>
+                                        <li><a class="dropdown-item" href="company-information.html">Aakanksha
+                                                Registration</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <i class="bi bi-megaphone position-relative">
+                                            <span class="notify">3</span>
+                                        </i>
+                                    </a>
+
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <img class="user-icon" src="images/user.png">
+                                    </a>
+                                    <ul class="dropdown-menu logout">
+                                        <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                                        <li><a class="dropdown-item" href="change_password.html">
+                                                Change Password</a></li>
+                                        <li><a class="dropdown-item" href="user-login.html">Logout
+                                            </a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- header-end -->
+    <div class="page-content-wrapper formbg">
+        <div class="container-fluid px-md-5">
+            <div class="row">
+                <div class="col-md-2 pr-0">
+                    <ul class="nav side-nav">
+                        <li><a class="" href="index.html">Dashboard</a></li>
+                        <li><a href="profile.html">View Profile</a></li>
+                        <li><a href="create-alternate-user.html">Create Alternate User Id</a></li>
+                        <li><a href="change_password.html">Change Password</a></li>
+                        <li><a href="user-login.html">Logout</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-10">
+                    <h3 class="page-heading">Application for Margin Money Subsidy</h3>
+                    <!-- <div class="step-indicator">
+                        <div class="navigation_menu" id="navigation_menu">
+                            <ul class="navigation_tabs mb-0" id="navigation_tabs">
+                                <li class="tab_disabled active">
+                                    Company Information
+                                </li>
+                                <li class="tab_disabled">
+                                    Project Information
+                                </li>
+                                <li class="tab_disabled">
+                                    Land and Utility Requirement
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div> -->
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="form-heading">Unit Details</h5>
+                            <div class="row g-3">
+                                <div class="row g-3 mb-3">
+                                    <div class="col-md-5">
+                                        <label for="exampleFormControlInput1" class="form-label">
+                                            Udyam Aakanksha Number <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" id="exampleFormControlInput1">
+                                    </div>
+
+                                    <div class="col-md-7" style="padding-top: 30px;">
+                                        <a class="btn btn-primary" href="javascript:void(0);">Check</a>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-4">
+                                    <label for="selectIndustryType" class="form-label">Industrial Policy</label>
+                                    <select class="form-select" id="selectIndustryType"
+                                        aria-label="Default select example">
+                                        <option value="">Select Industry Type</option>
+                                        <option value="New">New</option>
+                                        <option value="Existing" id="Existing">Existing</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="exampleFormControlInput1" class="form-label">Industrial Unit
+                                        Name</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" disabled>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="exampleFormControlInput1" class="form-label">Nature of Industrial
+                                        Unit</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" disabled>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="exampleFormControlInput1" class="form-label">Type of
+                                        Organization</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" disabled>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="exampleFormControlInput1" class="form-label">Enterprise Type</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" disabled>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="exampleFormControlInput1" class="form-label">Enterprise Category</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" disabled>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="exampleFormControlInput1" class="form-label">Plan of Industrial Unit(In
+                                        Lakh)</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="exampleFormControlInput1" class="form-label">Area</label>
+                                    <div class="d-flex gap-3">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                                Yes
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                                id="flexRadioDefault2" checked>
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                No
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="exampleFormControlInput1" class="form-label">Electricity Company</label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1" disabled>
+                                </div>
+                            </div>
+                            <h5 class="form-heading mt-4">Unit Address</h5>
+                            <div class="row g-3 mb-3">
+                                <div class="col-md-4">
+                                    <label for="exampleFormControlInput1" class="form-label">District<span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="Chattisgarh" disabled>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="exampleFormControlInput1" class="form-label">Block<span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="Chattisgarh" disabled>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="exampleFormControlInput1" class="form-label">Land Area<span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="18.2" disabled>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="exampleFormControlInput1" class="form-label">Land Unit<span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="Unit name" disabled>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="exampleFormControlInput1" class="form-label">Whether land is required in
+                                        CSIDC industrial estate <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="yes" disabled>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="exampleFormControlInput1" class="form-label">Name of the CSIDC
+                                        industrial estate <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="Urla Industrial area" disabled>
+                                </div>
+                                <div class="col-md-4">
+                                    <label for="exampleFormControlInput1" class="form-label">Whether land to be acquired
+                                        by CSIDC <span class="text-danger">*</span> </label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="No" disabled>
+                                </div>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table table-striped  ">
+                                    <thead class="">
+                                        <tr>
+                                            <th>Sl#</th>
+                                            <th>District</th>
+                                            <th>Block</th>
+                                            <th>Area</th>
+                                            <th>Khasra Number</th>
+                                            <th>Land Mark</th>
+                                            <th>Land Area</th>
+                                            <th>Land Unit</th>
+                                            <!-- <th class="text-center">Action</th> -->
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Balod</td>
+                                            <td>Durg</td>
+                                            <td>Rural</td>
+                                            <td>7554/984</td>
+                                            <td>Near Durga Temple</td>
+                                            <td>120</td>
+                                            <td>Hector</td>
+                                            <!-- <td class="text-center"><button class="btn btn-danger btn-sm"><i
+                                                        class="bi bi-trash"></i> -->
+                                            </button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Raipur</td>
+                                            <td>Bhilai</td>
+                                            <td>Urban</td>
+                                            <td>112/78</td>
+                                            <td>Near Railway station</td>
+                                            <td>15.6</td>
+                                            <td>Sq. Mt</td>
+                                            <!-- <td class="text-center"><button class="btn btn-danger btn-sm"><i
+                                                        class="bi bi-trash"></i>
+                                                </button></td> -->
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Raipur</td>
+                                            <td>Bhilai</td>
+                                            <td>Urban</td>
+                                            <td>112/78</td>
+                                            <td>Pandri</td>
+                                            <td>15.6</td>
+                                            <td>Sq. Mt</td>
+                                            <!-- <td class="text-center"><button class="btn btn-danger btn-sm"><i
+                                                        class="bi bi-trash"></i>
+                                                </button></td> -->
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <h5 class="form-heading">Product/Service Information</h5>
+                            <h6 class="form-sub-heading mt-4 mb-0">Product Details (As per National Industrial
+                                Classification- 2008 defined by Ministry Of Statistics and Program Implementation )</h6>
+                            <div class="table-responsive">
+                                <table class="table table-striped  ">
+                                    <thead class="">
+                                        <tr>
+                                            <th>Sl#</th>
+                                            <th>Nature Of Activity</th>
+                                            <th>Product Name</th>
+                                            <th>NIC 2008 Code</th>
+
+                                            <!-- <th class="text-center">Action</th> -->
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Manufacturing</td>
+                                            <td>Rice, seed</td>
+                                            <td>113100</td>
+
+                                            <!-- <td class="text-center"><button class="btn btn-danger btn-sm"><i
+                                                        class="bi bi-trash"></i> -->
+                                            </button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Servicing</td>
+                                            <td>Dog Food</td>
+                                            <td>2331102</td>
+
+                                            <!-- <td class="text-center"><button class="btn btn-danger btn-sm"><i
+                                                        class="bi bi-trash"></i>
+                                                </button></td> -->
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <h6 class="form-sub-heading mt-4 mb-0"> Product Details (As per National Product
+                                Classification- 2011 defined by Ministry Of Statistics and Program Implementation )</h6>
+                            <div class="table-responsive">
+                                <table class="table table-striped  ">
+                                    <thead class="">
+                                        <tr>
+                                            <th>Sl#</th>
+                                            <th>Nature Of Activity</th>
+                                            <th>Product Name</th>
+                                            <th>Activity Code</th>
+                                            <th>Annual Capacity</th>
+                                            <th>Unit of Measurement </th>
+                                            <th>Product Description</th>
+                                            <th>Expansion/Diversification Capacity</th>
+                                            <th>Total Capacity After Expansion/Diversification</th>
+                                            <th>Expansion/Diversification Date</th>
+
+
+                                            <!-- <th class="text-center">Action</th> -->
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Manufacturing</td>
+                                            <td>Rice, seed</td>
+                                            <td>113100</td>
+                                            <td>400</td>
+                                            <td>Kilogram</td>
+                                            <td>Food Product</td>
+                                            <td>10</td>
+                                            <td>100</td>
+                                            <td>12-Aug-2023</td>
+
+                                            <!-- <td class="text-center"><button class="btn btn-danger btn-sm"><i
+                                                        class="bi bi-trash"></i> -->
+                                            </button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Servicing</td>
+                                            <td>Dog Food</td>
+                                            <td>2331102</td>
+                                            <td>400</td>
+                                            <td>Tonne</td>
+                                            <td>byproducts </td>
+                                            <td>10</td>
+                                            <td>100</td>
+                                            <td>15-Apr-2023</td>
+
+                                            <!-- <td class="text-center"><button class="btn btn-danger btn-sm"><i
+                                                        class="bi bi-trash"></i>
+                                                </button></td> -->
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <h5 class="form-heading">Entrepreneur Details </h5>
+
+                            <div class="table-responsive">
+                                <table class="table table-striped  ">
+                                    <thead class="">
+                                        <tr>
+                                            <th>Sl#</th>
+                                            <th>Entrepreneur Name</th>
+                                            <th>Gender</th>
+                                            <th>Category</th>
+                                            <th>Equity participation in Percent </th>
+
+                                            <!-- <th class="text-center">Action</th> -->
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>XYZ Industry</td>
+                                            <td>Male</td>
+                                            <td>SC</td>
+                                            <td>10%</td>
+
+                                            <!-- <td class="text-center"><button class="btn btn-danger btn-sm"><i
+                                                        class="bi bi-trash"></i> -->
+                                            </button></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Text Industry</td>
+                                            <td>Female</td>
+                                            <td>General</td>
+                                            <td>18.25%</td>
+
+                                            <!-- <td class="text-center"><button class="btn btn-danger btn-sm"><i
+                                                        class="bi bi-trash"></i>
+                                                </button></td> -->
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <h5 class="form-heading">Registration Number </h5>
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead class="">
+                                        <tr>
+                                            <th>S.No.</th>
+                                            <th>Registration No.</th>
+                                            <th>No</th>
+                                            <th>Application Number</th>
+                                            <th>Date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>E.M. Part-I</td>
+                                            <td><input type="checkbox"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="date" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Acknowledgement regarding receipt of Manufacturing Memorandum (IEM) by
+                                                Government of India</td>
+                                            <td><input type="checkbox"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="date" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Letter of Intent (if Applicable)</td>
+                                            <td><input type="checkbox"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="date" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Industrial License (if Applicable)</td>
+                                            <td><input type="checkbox"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="date" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>M.O.U (if Applicable)</td>
+                                            <td><input type="checkbox"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="date" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>Enterprise Aspiration Number</td>
+                                            <td><input type="checkbox"></td>
+                                            <td><input type="text" class="form-control"></td>
+                                            <td><input type="date" class="form-control"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <h5 class="form-heading">Gross Capital Investment (Amount in Lakh) </h5>
+                            <div class="table-responsive">
+                                <table class="table table-striped ">
+
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th>S.No.</th>
+                                            <th>Gross Capital Investment as per Project Report</th>
+                                            <th>Amount (In Lakh)</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="5" class="bg-light align-middle text-center">1</td>
+                                            <td>Land</td>
+                                            <td><input type="text" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>Actual purchase price / premium</td>
+                                            <td><input type="text" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>Stamp Duty</td>
+                                            <td><input type="text" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>Registration fee</td>
+                                            <td><input type="text" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+
+                                            <td class="fw-bold text-end">Total Investment</td>
+                                            <td><input type="text" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td colspan="2" class="form-sub-heading">Shed-building</td>
+
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="11" class="bg-light align-middle text-center">2</td>
+                                            <td>Factory-Building</td>
+                                            <td><input type="text" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>Shed</td>
+                                            <td><input type="text" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>Laboratory Building</td>
+                                            <td><input type="text" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>Research Building</td>
+                                            <td><input type="text" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>Administrative Building</td>
+                                            <td><input type="text" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>Canteen</td>
+                                            <td><input type="text" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>Workers relaxation room</td>
+                                            <td><input type="text" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>Vehicle Stand</td>
+                                            <td><input type="text" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>Security Post</td>
+                                            <td><input type="text" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>Warehouse</td>
+                                            <td><input type="text" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+
+                                            <td class="fw-bold text-end">Total Investment</td>
+                                            <td><input type="text" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+
+                                            <td></td>
+                                            <td class="form-sub-heading">Plant and Machinery (including leasing
+                                                machinery)</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="6" class="bg-light align-middle text-center">3</td>
+                                            <td>Plant & Machinery</td>
+                                            <td><input type="text" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>Plant and equipment used in pollution control plant and research lab
+                                            </td>
+                                            <td><input type="text" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>Intangible Assets</td>
+                                            <td><input type="text" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>Test Equipment</td>
+                                            <td><input type="text" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>Establishment related expenses</td>
+                                            <td><input type="text" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+
+                                            <td class="form-sub-heading text-end">Total Investment</td>
+                                            <td><input type="text" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td class="form-sub-heading" colspan="2">Power Supply Input</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="3" class="bg-light align-middle text-center">4</td>
+                                            <td>CG State Electricity Boards / Power Distribution Payment to a private
+                                                company (excluding security deposit and the old
+                                                dues)</td>
+                                            <td><input type="text" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+
+                                            <td>Investments made on a captive power plant</td>
+                                            <td><input type="text" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+
+                                            <td class="text-end form-sub-heading">Total Investment</td>
+                                            <td><input type="text" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td class="form-sub-heading" colspan="2">Water Supply Investment</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2" class="bg-light align-middle text-center">5</td>
+                                            <td>Required water supply systems</td>
+                                            <td><input type="text" class="form-control"></td>
+                                        </tr>
+
+                                        <tr>
+
+                                            <td class="text-end form-sub-heading">Total Investment</td>
+                                            <td><input type="text" class="form-control"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="bg-light align-middle text-center">6</td>
+                                            <td class="text-end form-sub-heading">Grand Total</td>
+                                            <td><input type="text" class="form-control"></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <h5 class="form-heading">Source of Capital Investment</h5>
+                            <div class="row g-3 mb-2">
+                                <div class="col-xl-4">
+                                    <label for="formFile" class="form-label">Own Source</label>
+                                    <input class="form-control" type="file" id="formFile">
+                                </div>
+                                <div class="col-xl-4">
+                                    <label for="formFile" class="form-label">Equity Capital<span
+                                            class="text-danger">*</span></label>
+                                    <input class="form-control" type="file" id="formFile">
+                                </div>
+                                <div class="col-xl-4">
+                                    <label for="formFile" class="form-label">Loan from Financial institutions <span
+                                            class="text-danger">*</span></label>
+                                    <input class="form-control" type="file" id="formFile">
+                                </div>
+                                <div class="col-xl-4">
+                                    <label for="formFile" class="form-label">Loan from Bank<span
+                                            class="text-danger">*</span></label>
+                                    <input class="form-control" type="file" id="formFile">
+                                </div>
+                                <div class="col-xl-4">
+                                    <label for="formFile" class="form-label">Total <span
+                                            class="text-danger">*</span></label>
+                                    <input class="form-control" type="file" id="formFile">
+                                </div>
+                            </div>
+                            <div class="row g-3 mb-2">
+                                <div class="col-xl-4">
+                                    <label for="formFile" class="form-label">Type of Financial Institution(s)</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option value="india">Select </option>
+
+                                    </select>
+                                </div>
+                                <div class="col-xl-4">
+                                    <label for="formFile" class="form-label">Financial Institution Name <span
+                                            class="text-danger">*</span></label>
+                                    <input class="form-control" type="file" id="formFile">
+                                </div>
+                                <div class="col-xl-4">
+                                    <label for="formFile" class="form-label">Bank Name <span
+                                            class="text-danger">*</span></label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option value="india">Select </option>
+
+                                    </select>
+                                </div>
+                                <div class="col-xl-4">
+                                    <label for="formFile" class="form-label">Branch Name<span
+                                            class="text-danger">*</span></label>
+                                    <input class="form-control" type="file" id="formFile">
+                                </div>
+                                <div class="col-xl-4">
+                                    <label for="formFile" class="form-label">Loan Account No <span
+                                            class="text-danger">*</span></label>
+                                    <input class="form-control" type="file" id="formFile">
+                                </div>
+                                <div class="col-xl-4">
+                                    <label for="formFile" class="form-label">Loan Account No <span
+                                            class="text-danger">*</span></label>
+                                    <input class="form-control" type="file" id="formFile">
+                                </div>
+
+                            </div>
+                            <div class="mb-3">
+                                <a class="addmore-btn" href="#"><i class="bi bi-plus-circle"></i> <span>Add
+                                        More</span></a>
+                            </div>
+                            <h6 class="form-sub-heading mt-4 mb-0">Employment Proposed</h6>
+                            <div class="row g-3 mb-3">
+                                <div class="col-xl-3 col-md-6">
+                                    <label for="exampleFormControlInput1" class="form-label">Unskilled (Male
+                                        /Female/Transgender/Total) <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                </div>
+                                <div class="col-xl-3 col-md-6">
+                                    <label for="exampleFormControlInput1" class="form-label">Skilled (Male
+                                        /Female/Transgender/Total) <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                </div>
+                                <div class="col-xl-3 col-md-6">
+                                    <label for="exampleFormControlInput1" class="form-label">Managerial/Administrative
+                                        (Male /Female/Transgender/Total) <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                </div>
+                                <div class="col-xl-3 col-md-6">
+                                    <label for="exampleFormControlInput1" class="form-label">Total <span
+                                            class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                </div>
+
+
+                            </div>
+                            <div class="mb-3">
+                                <a class="addmore-btn" href="#"><i class="bi bi-plus-circle"></i> <span>Add
+                                        More</span></a>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="form-button-box">
+                        <a class="btn btn-outline-primary" href="#">Back</a>
+                        <a class="btn btn-primary" href="project-information.html">Next</a>
+                        <a class="btn btn-outline-primary" href="#">Reset</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <button class="btn btn-primary save-draft-btn">Save Draft</button>
+    <a href="#" class="btn btn-primary save-draft-btn1"><i class="bi bi-chevron-double-up"></i></a>
+    <footer>
+        Copyright © 2025, All Rights Reserved.
+    </footer>
+
+
+    <script src="js/bootstrap-5.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
