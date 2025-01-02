@@ -25,6 +25,8 @@
 }
 .page-content-wrapper{
     padding: 1.5rem 0;
+   min-height: 100vh;
+    /* margin-bottom:4rem; */
 }
 .page-heading{
     color:var(--blue) ;
@@ -654,3 +656,24 @@ background-color: #022949;
 .success-text-color {
   color: #198754;
 }
+ .save-draft-btn {
+        position: fixed;
+        bottom: 20px;
+        right: 80px;
+        z-index: 1000; 
+    }
+ .save-draft-btn1 {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000; 
+    }
+    footer{
+      background-color: #022949;
+      color: var(--white);
+      text-align: center;
+      padding: 20px;
+      /* position: fixed;
+      bottom: 0;
+      width: 100%; */
+    }

@@ -103,57 +103,61 @@
                 </div>
                 <div class="col-md-10">
                     <h3 class="page-heading">Documents to be uploaded</h3>
-            <div class="card ">
-                <div class="card-body">
+                    <div class="card ">
+                        <div class="card-body">
 
-                    <div class="d-flex justify-content-between align-items-center mb-3">
-                        <span>Date: <strong id="currentDate">27/12/2024 04:59 PM</strong></span>
-                        <h5 class="text-success m-0"></h5>
-                        <span>Your IP Address: <strong>49.47.10.165</strong></span>
-                    </div>
-                    <ul class="list-group mb-4">
-                        <li class="list-group-item">1. एम.ओ.यू (यदि लागू हो)</li>
-                        <li class="list-group-item">2. संगठन का प्रमाण</li>
-                        <li class="list-group-item d-flex justify-content-between align-items-center">
-                            <span class="text-start">3. शपथ पत्र (नोटरीकृत)</span>
-                            <span class="link-wrapper">
-                                <a href="#" class="text-primary">प्रारूप (2014-2019)</a>,
-                                <a href="#" class="text-primary">प्रारूप (2019-2024)</a>
-                            </span>
-                        </li>
-                        <li class="list-group-item">4. भूमि का-अधिकार</li>
-                        <li class="list-group-item">5. अनुबंध शर्तों के हलफनामा</li>
-                    </ul>
-                    <div class="d-flex justify-content-center mb-3">
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" id="agree" name="agreement" value="agree">
-                            <label class="form-check-label" for="agree">I Agree</label>
+                            <div class="d-flex justify-content-between align-items-center mb-3">
+                                <span>Date: <strong id="currentDate">27/12/2024 04:59 PM</strong></span>
+                                <h5 class="text-success m-0"></h5>
+                                <span>Your IP Address: <strong>49.47.10.165</strong></span>
+                            </div>
+                            <ul class="list-group mb-4">
+                                <li class="list-group-item">1. एम.ओ.यू (यदि लागू हो)</li>
+                                <li class="list-group-item">2. संगठन का प्रमाण</li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center">
+                                    <span class="text-start">3. शपथ पत्र (नोटरीकृत)</span>
+                                    <span class="link-wrapper">
+                                        <a href="#" class="text-primary">प्रारूप (2014-2019)</a>,
+                                        <a href="#" class="text-primary">प्रारूप (2019-2024)</a>
+                                    </span>
+                                </li>
+                                <li class="list-group-item">4. भूमि का-अधिकार</li>
+                                <li class="list-group-item">5. अनुबंध शर्तों के हलफनामा</li>
+                            </ul>
+                            <div class="d-flex justify-content-center mb-3">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" id="agree" name="agreement"
+                                        value="agree">
+                                    <label class="form-check-label" for="agree">I Agree</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" id="disagree" name="agreement"
+                                        value="disagree">
+                                    <label class="form-check-label" for="disagree">I Don't Agree</label>
+                                </div>
+                            </div>
+
+                            <div class="form-button-box text-center justify-content-center">
+                                <!-- <a class="btn btn-outline-primary" href="industrial-registration.html">Back</a> -->
+                                <a class="btn btn-primary" id="proceedButton" disabled
+                                    href="stamp-duty.html">Proceed</a>
+                                <!-- <a class="btn btn-outline-primary" href="#">Reset</a> -->
+                            </div>
+
+
+
                         </div>
-                        <div class="form-check form-check-inline">
-                            <input class="form-check-input" type="radio" id="disagree" name="agreement"
-                                value="disagree">
-                            <label class="form-check-label" for="disagree">I Don't Agree</label>
-                        </div>
                     </div>
-
-                    <div class="form-button-box text-center justify-content-center">
-                        <!-- <a class="btn btn-outline-primary" href="industrial-registration.html">Back</a> -->
-                        <a class="btn btn-primary" id="proceedButton" disabled href="stamp-duty.html">Proceed</a>
-                        <!-- <a class="btn btn-outline-primary" href="#">Reset</a> -->
-                    </div>
-
-
-
                 </div>
             </div>
-                </div>
-            </div>
-            
+
 
         </div>
     </div>
 
-
+    <footer>
+        Copyright © 2025 Invest Odisha, All Rights Reserved.
+    </footer>
     <script src="js/bootstrap-5.js"></script>
     <script>document.querySelectorAll('input[name="agreement"]').forEach((radio) => {
             radio.addEventListener('change', () => {
