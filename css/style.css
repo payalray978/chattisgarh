@@ -85,10 +85,10 @@ header {
     padding: .15rem 0;
 }
 header .nav-link {
-    font-weight: 700;
-    color: var(--iron);
-    text-transform: uppercase;
-    font-size: .9rem;
+    /* font-weight: 700; */
+    color: #000;
+    /* text-transform: uppercase; */
+    /* font-size: .9rem; */
 }
 header .btn {
   padding: .3rem 1.4rem;
@@ -677,3 +677,15 @@ background-color: #022949;
       bottom: 0;
       width: 100%; */
     }
+    .btn-border-red, .btn-red:hover {
+  border-color: var(--blue);
+  color: var(--blue);
+  border-radius: 20px;
+  /* padding: 5px 25px; */
+}
+
+.btn-border-red:hover, .btn-red {
+  background-color: var(--blue);
+  color: #fff; border-radius: 20px; 
+  /* padding: 5px 25px; */
+}
