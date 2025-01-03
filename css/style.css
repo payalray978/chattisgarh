@@ -29,7 +29,8 @@ body header {
 }
 .page-content-wrapper{
     padding: 1.5rem 0;
-   min-height: 100vh;
+      min-height: calc(100vh - 155px) ;
+   /* height: 100vh; */
     /* margin-bottom:4rem; */
 }
 .page-heading{
@@ -50,10 +51,15 @@ body header {
     color: var(--orange) ;
     border-color: var(--orange) ;
 }
+/* .btn-warning, .btn-danger, .btn-primary{
+     border-radius: 20px;
+     padding: 5px 20px;
+} */
 .btn-warning {
-    border-color: var(--orange) ;
+    /* border-color: var(--orange) ;
     background-color: var(--orange);
-    color: var(--white) ;
+    color: var(--white) ; */
+ 
 }
 
 .formbg {
@@ -346,12 +352,12 @@ padding: 10px;
   border-radius: 36px;
 }
 .btn-green{
-  background-color: #ABFAC0;
+  background-color: #0c5ea1;
   border-radius: 36px;
-  font-size: 14px;
+  font-size: 14px;color: #fff;
 }
 .btn-green:hover{
-  background-color:#56ab6d ;
+  background-color:#4494d5 ;
   color: #fff;
 }
 .btn-orange{
@@ -412,8 +418,12 @@ table thead{
 
 
 /* payal login css */
-.user-login{
-  filter: drop-shadow(0 0 0.75rem #00000014);
+.page-content-wrapper.user-login{
+  /* filter: drop-shadow(0 0 0.75rem #00000014); */
+  display: grid;
+  place-content: center;
+ min-height: calc(100vh - 80px) ;
+
 }
 .login-heading span{
   color: #5E5E5E;
@@ -519,12 +529,15 @@ font-weight: 500;}
 }
 .side-nav li a {
   text-decoration: none;
-  font-size: .8rem;
+  font-size: 1rem;
   color: #5E5E5E;
-  font-weight: 700;
+  /* font-weight: 700; */
   padding: .55rem 0;
   display: block;
   position: relative;
+}
+.side-nav li a:hover {
+  color: var(--blue);
 }
 .side-nav li a.active:after {
   position: absolute;
@@ -604,13 +617,18 @@ border-radius: 15px;
 }
 
 .btn.btn-blue{
-  border-radius: 0;
+  /* border-radius: 0; */
   background-color: #bbdcf7;
 color: #022949;
     border-bottom-width: 0px;
+      border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-left-radius: 0;
+border-bottom-right-radius: 0;
 }
 .btn.btn-blue:hover, .btn.btn-blue.active{
-  border-radius: 0;
+  /* border-radius: 10px; */
+
   background-color: #0c5ea1;
 color: #fff;
 }
@@ -699,3 +717,16 @@ background-color: #022949;
 header .dropdown-toggle::after{
   display: none;
 }
+/* @media(max-width:1366px){
+  .page-content-wrapper.user-login {
+   
+    height: calc(100vh - 80px);
+}
+} */
+ .btn-success{
+  background-color: rgb(0, 140, 70) !important;
+  /* border-radius: 20px; */
+ }
+ .btn-success:hover{
+  background-color: rgb(0, 120, 60) !important;
+ }
