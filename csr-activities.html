@@ -10,7 +10,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="./css/bootstrap-min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/dashboard.css">
     <title>Invest Chhhattisgar</title>
 </head>
 
@@ -73,7 +73,7 @@
                                     </a>
                                     <ul class="dropdown-menu logout">
                                         <li><a class="dropdown-item" href="profile.html">Profile</a></li>
-                                        <li><a class="dropdown-item" href="#">
+                                        <li><a class="dropdown-item" href="change_password.html">
                                                 Change Password</a></li>
                                         <li><a class="dropdown-item" href="user-login.html">Logout
                                             </a></li>
@@ -94,25 +94,39 @@
             <div class="row">
 
                 <div class="col-md-9">
-                    <h3 class="page-heading mb-1">Apextrade </h3><small>11101136770197</small>
+                    <div class="d-flex gap-3 align-items-center">
+                        <span class="card-img">
+                            <img src="./images/Group.png" class="" alt="...">
+                        </span>
+                        <span>
+                            <h3 class="page-heading mb-0">Apextrade </h3><span class="unit-code">Unit Id:
+                                11101136770197</span>
+                        </span>
+                    </div>
 
                     <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
                             aria-labelledby="pills-home-tab" tabindex="0">
-                            <div class="d-flex  gap-2 my-3">
-                                <a href="incentives.html" class="btn btn-orange "><i class="bi bi-bar-chart-line"></i>
+                            <div class="d-flex table-top-nav justify-content-evenly my-3">
+                                <a href="incentives.html" class=" ">
+                                    <!-- <i class="bi bi-bar-chart-line"></i> -->
                                     Incentives</a>
-                                <a href="servicelist.html" class="btn btn-orange "><i class="bi bi-shield-check"></i>
+                                <a href="servicelist.html" class=" ">
+                                    <!-- <i class="bi bi-shield-check"></i> -->
                                     Service
                                     Lists</a>
-                                <a href="csr-activities.html" class="btn btn-orange active"><i
-                                        class="bi bi-card-checklist"></i> CSR
+                                <a href="csr-activities.html" class="active">
+                                    <!-- <i class="bi bi-card-checklist"></i> CSR -->
                                     Activities</a>
-                                <a href="" class="btn btn-orange"><i class="bi bi-shield-check"></i> Project
+                                <a href="" class="">
+                                    <!-- <i class="bi bi-shield-check"></i> Project -->
                                     Inspection</a>
-                                <a href="" class="btn btn-orange"><i class="bi bi-calendar-week"></i> Post
+                                <a href="" class="">
+                                    <!-- <i class="bi bi-calendar-week"></i> Post -->
                                     Allotment</a>
-                                <a href="" class="btn btn-orange"><i class="bi bi-clipboard-x"></i> Grivance</a>
+                                <a href="" class="">
+                                    <!-- <i class="bi bi-clipboard-x"></i> -->
+                                    Grivance</a>
                             </div>
                             <div class="table-responsive">
                                 <table class="table">
@@ -185,39 +199,47 @@
                     </div>
                 </div>
                 <div class="col-md-3">
-                    <div class="card switch-unit border-0">
 
-                        <div class="card-header border-0 bg-white">
 
-                            <h3 class="page-heading mb-2">Switch Units</h3>
-                        </div>
-                        <div class="card-body">
-                            <a href="#" class="btn btn-orange2 active d-flex gap-2 mb-3"
-                                onclick="openModal('incentives.html')">
-                                <i class="bi bi-unity fs-3"></i>
-                                <span> Apextrade <small class="d-block">11101136770197</small></span>
-                            </a>
-                            <a href="#" class="btn btn-orange2 mb-3 d-flex gap-2"
-                                onclick="openModal('invoin_incentives.html')">
-                                <i class="bi bi-unity fs-3"></i>
-                                <span> Innovindustrie <small class="d-block">11503606935108</small></span>
-                            </a>
-                            <a href="#" class="btn btn-orange2 d-flex gap-2 mb-3"
-                                onclick="openModal('incentives.html')">
-                                <i class="bi bi-amd fs-3"></i>
-                                <span> CSM 1 <small class="d-block">12503666935106</small></span>
-                            </a>
-                            <a href="#" class="btn btn-orange2 d-flex gap-2 mb-3"
-                                onclick="openModal('incentives.html')">
-                                <i class="bi bi-amd fs-3"></i>
-                                <span> Angel One <small class="d-block">11503606937708</small></span>
-                            </a>
-                            <a href="#" class="btn btn-orange2 d-flex gap-2 align-items-center"
-                                onclick="openModal('index.html')">
-                                <i class="bi bi-boxes fs-3"></i> Switch to Dashboard
-                            </a>
-                        </div>
-                    </div>
+                    <h3 class="page-heading mb-3">Switch Units</h3>
+
+                    <div class=" side-unit pb-3">
+                        <a href="#" class="btn btn-white  d-flex gap-2 active text-start align-items-center mb-3"
+                            onclick="openModal('incentives.html')">
+                            <span class="card-img">
+                                <img src="./images/Group.png" class="" alt="...">
+                            </span>
+                            <span> Apextrade <small class="d-block unit-code">Unit Id: 11101136770197</small></span>
+                        </a>
+                        <a href="#" class="btn btn-white  mb-3 d-flex gap-2 text-start align-items-center"
+                            onclick="openModal('invoin_incentives.html')">
+                            <span class="card-img">
+                                <img src="./images/Group.png" class="" alt="...">
+                            </span>
+                            <span> Innovindustrie <small class="d-block unit-code">Unit Id:
+                                    11503606935108</small></span>
+                        </a>
+                        <a href="#" class="btn btn-white d-flex gap-2 text-start align-items-center mb-3"
+                            onclick="openModal('incentives.html')">
+                            <span class="card-img">
+                                <img src="./images/Group.png" class="" alt="...">
+                            </span>
+                            <span> CSM 1 <small class="d-block unit-code">Unit Id: 12503666935106</small></span>
+                        </a>
+                        <a href="#" class="btn btn-white d-flex gap-2 text-start align-items-center mb-3"
+                            onclick="openModal('incentives.html')">
+                            <span class="card-img">
+                                <img src="./images/Group.png" class="" alt="...">
+                            </span>
+                            <span> Angel One <small class="d-block unit-code">Unit Id: 11503606937708</small></span>
+                        </a>
+                    </div><a href="#"
+                        class="mt-4 text-decoration-none justify-content-center  fs-5 go-back d-flex gap-2 text-start align-items-center align-items-center"
+                        onclick="openModal('index.html')">
+                        <i class="bi bi-grid"></i> Switch to Dashboard
+                    </a>
+
+
                 </div>
             </div>
         </div>
