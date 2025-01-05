@@ -156,7 +156,7 @@ box-shadow: 0px 3px 6px #00000029;
      color: #fff;
     }
    .page-content-wrapper{
-    padding: 1.5rem 0 0;
+    padding: 1.5rem 0 ;
       min-height: calc(100vh - 160px) ;
       background: #F9F9F9;
 
@@ -275,9 +275,7 @@ box-shadow: 0px 3px 6px #00000029;
     border-radius: 15px;
 
 }
-.left-content{
-margin-bottom: 30px;
-}
+
  .box{
    color: #484848;box-shadow: 0px 3px 20px #3C69A81A;
 }
