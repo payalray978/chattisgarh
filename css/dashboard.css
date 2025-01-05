@@ -138,6 +138,11 @@ color: #a2b8d5;
 }
 .user-icon{
     width: 40px;
+    border-radius: 50%;
+}
+header .navbar-expand .navbar-nav .dropdown-menu {
+    position: absolute;
+    left: -70px;
 }
 .filter{
   background-color: #ebf6ff;
