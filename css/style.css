@@ -30,8 +30,7 @@ body header {
 .page-content-wrapper{
     padding: 1.5rem 0;
       min-height: calc(100vh - 155px) ;
-   /* height: 100vh; */
-    /* margin-bottom:4rem; */
+
 }
 .page-heading{
     color:var(--blue) ;
@@ -695,9 +694,7 @@ background-color: #022949;
       color: var(--white);
       text-align: center;
       padding: 20px;
-      /* position: fixed;
-      bottom: 0;
-      width: 100%; */
+     
     }
     .btn-border-red, .btn-red:hover {
   border-color: var(--blue);

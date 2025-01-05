@@ -1,0 +1,76 @@
+ @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --orange:#f17b1e;
+    --orenge100:#ffbb00;
+    --iron:#763534;
+    --bglight:#f3f3f3;
+    --white:#FFF;
+    --blue:#3C69A8;
+    --light-grey:#333333;
+}
+
+   .left-section {
+            background:  url('/images/5ead1551-56dc-4483-a0eb-411e1bd30708.png') no-repeat center center;
+    background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 30px 50px;
+            border-radius: 30px;
+        }
+
+        .left-section img {
+            max-width: 100px;
+            /* margin-bottom: 20px; */
+        }
+        .left-section div div:nth-child(2) {
+         width: 50%;
+        }
+        .left-section ul li {
+         /* font-size: .8rem; */
+         font-size: clamp(0.8rem, 1vw, 1.2rem);
+        }
+
+        .right-section {
+            background: #ffffff;
+            /* box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1); */
+            padding: 50px;
+        }
+
+        .form-control:focus {
+            box-shadow: none;
+            border-color: #1E1E40;
+        }
+
+        .btn-blue {
+            background-color:var(--blue);
+            color: var(--white);
+            border: none;
+        }
+
+        .btn-blue:hover {
+            background-color: #1f4d8d;
+            color:#fff;
+        }
+
+        .text-link a {
+            color: #1E1E40;
+            text-decoration: none;
+        }
+
+        .text-link a:hover {
+            text-decoration: underline;
+        }
+
+        .otp-box {
+  display: flex;
+  gap: 1rem;
+}
+.resendotp, .otp-note{
+    color: var(--light-grey) ; font: italic normal normal 14px/26px DM Sans;
+    text-decoration: none;
+}

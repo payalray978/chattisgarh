@@ -10,14 +10,12 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./css/bootstrap-min.css">
-    <!-- <link rel="stylesheet" href="./css/style.css"> -->
     <link rel="stylesheet" href="./css/dashboard.css">
     <title>Invest Chhhattisgar</title>
 </head>
 
 <body>
-    <!-- header-start -->
-    <header>
+    <header class="dashboard-header">
         <div class="container-fluid px-md-5 ">
             <nav class="navbar navbar-expand-xl">
                 <h1 class="mb-0">
@@ -43,7 +41,7 @@
                     </div>
                     <div class="offcanvas-body">
                         <div class="navbar-nav justify-content-end flex-grow-1 pe-3 navbar-expand">
-                            <ul class="navbar-nav gap-3">
+                            <ul class="navbar-nav gap-3 align-items-center">
                                 <li class="nav-item dropdown">
                                     <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">
@@ -60,8 +58,12 @@
                                 <li class="nav-item dropdown">
                                     <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">
-                                        <i class="bi bi-megaphone position-relative">
-                                            <span class="notify">3</span>
+                                        <i class="bi bi-bell-fill  position-relative">
+
+                                            <span
+                                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+                                                3
+                                            </span>
                                         </i>
                                     </a>
 
@@ -70,14 +72,14 @@
                                 <li class="nav-item dropdown">
                                     <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">
-                                        <img class="user-icon" src="images/user.png">
+                                        <img class="user-icon rounded-circle" src="./images/user.png" alt="User Icon"
+                                            width="30">
                                     </a>
-                                    <ul class="dropdown-menu logout">
+                                    <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="profile.html">Profile</a></li>
-                                        <li><a class="dropdown-item" href="#">
-                                                Change Password</a></li>
-                                        <li><a class="dropdown-item" href="user-login.html">Logout
-                                            </a></li>
+                                        <li><a class="dropdown-item" href="change_password.html">Change Password</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="user-login.html">Logout</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -87,12 +89,10 @@
             </nav>
         </div>
     </header>
-
-
-    <!-- header-end -->
     <div class="page-content-wrapper">
-        <div class="container-fluid px-md-5">
+        <div class="container">
             <div class="row">
+                <!-- Sidebar -->
                 <div class="col-lg-3 sidebar ">
 
                     <ul class="nav flex-column">
@@ -120,101 +120,47 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-9">
 
-                    <h3 class="page-heading mb-4">Change Password</h3>
+                <!-- Main Content -->
+                <div class="col-lg-9">
+                    <h4>Dashboard</h4>
+                    <a class="add-unit mt-4" href="company-information.html">
+                        <i class="bi bi-plus-circle fs-2"></i>
+                        <span>Add a New Business Unit</span>
+                    </a>
 
-                    <div class="left-content">
-                        <div class="row  mb-3">
-
-                            <div class="col-md-4">
-
-
-                                <div class="mb-3">
-                                    <label class="form-label ">Old Password</label>
-                                    <div class="input-group mb-3">
-                                        <input type="text" class="form-control" placeholder="Old Password"
-                                            id="exampleFormControlInput1">
-                                        <span toggle="#password-field"
-                                            class="input-group-text field-icon toggle-password"><i
-                                                class="bi bi-eye "></i></span>
-                                    </div>
-                                </div>
-                                <div class="mb-3">
-                                    <label class="form-label ">New Password</label>
-                                    <div class="input-group mb-3">
-                                        <input type="text" class="form-control" placeholder="New Password"
-                                            id="exampleFormControlInput1">
-                                        <span toggle="#password-field"
-                                            class="input-group-text field-icon toggle-password"><i
-                                                class="bi bi-eye "></i></span>
-                                    </div>
-                                </div>
-                                <div class="mb-3"><label class="form-label ">Confirm Password</label>
-                                    <div class="input-group ">
-                                        <input type="text" class="form-control" placeholder="Confirm Password"
-                                            id="exampleFormControlInput1">
-                                        <span toggle="#password-field"
-                                            class="input-group-text field-icon toggle-password"><i
-                                                class="bi bi-eye "></i></span>
-                                    </div>
-                                </div>
-
+                    <div class="instructions mt-4">
+                        <h5>For New/Existing Unit General Instructions</h5>
+                        <ol class="mt-3">
+                            <li>Udyam Akanksha (UA)/Unit Registration (UR) is applicable only for Micro, Small, Medium,
+                                Large, Mega,
+                                Ultra Mega Enterprises.</li>
+                            <li>There is no fee for processing the application.</li>
+                            <li>Mandatory fields are marked with an asterisk (*).</li>
+                            <li>UA/UR is computer-generated acknowledgment and does not require a signature.</li>
+                            <li>Udyam Akanksha is issued as per notification Number F20-4/2016/(1)/6 dated 06/02/2016.
+                            </li>
+                        </ol>
+                        <div class="d-flex align-items-center instruct-radio mt-4">
+                            <div class="form-check me-3">
+                                <input class="form-check-input" type="radio" name="agreement" id="agree">
+                                <label class="form-check-label" for="agree">I Agree</label>
                             </div>
-
-                            <small><strong>Password Policy:</strong> Password should have
-                                combination of at least 1
-                                special character (@, $, !, *, &, #), 1 capital letter,
-                                1 small letter, 1 number and minimum 8 characters long!</small>
-
-                            <div class="col-md-12 mt-3 d-flex  gap-2">
-                                <a href="#" class="btn btn-warning">
-                                    Reset</a><a href="user-login-password.html" class="btn btn-primary"
-                                    style="padding: 6px 40px;" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal">Submit</a>
+                            <div class="form-check me-3">
+                                <input class="form-check-input" type="radio" name="agreement" id="disagree">
+                                <label class="form-check-label" for="disagree">I Don't Agree</label>
                             </div>
-                            <!-- <div class="col-md-6"></div> -->
+                            <a href="company-information.html" class="btn btn-primary ms-auto">Proceed</a>
                         </div>
                     </div>
-
-
-
                 </div>
-
-
             </div>
+
         </div>
     </div>
-
     <footer>
-        Copyright © 2025 Invest Odisha, All Rights Reserved.
+        Copyright © 2025, All Rights Reserved.
     </footer>
-
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header border-0 pb-0 ">
-                    <!-- <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1> -->
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="row g-3 mb-3 text-center "><i class=" success-text-color fs-1 bi bi-check-circle"></i>
-                        <h4 class="  mt-2 ">Password Changed!</h4>
-                        <p class="m-0">Password has been changed successfully.</p>
-                        <div>
-
-                            <a href="user-login.html" class="btn btn-primary"><i class="bi bi-arrow-left-short"></i>
-                                Back To Login</a>
-                        </div>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <script src="js/bootstrap-5.js"></script>
 </body>
 
 </html>

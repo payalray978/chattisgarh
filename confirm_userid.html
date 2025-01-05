@@ -10,155 +10,100 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./css/bootstrap-min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/login.css">
     <title>Invest Chhhattisgar</title>
 </head>
 
 <body>
-    <!-- header-start -->
-    <header>
-        <nav class="navbar navbar-expand-lg ">
-            <div class="container">
-                <a class="navbar-brand" href="landing.html">
-                    <img src="images/logo.png" alt="Logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                    <ul class="navbar-nav gap-2 align-items-center">
-                        <li class="nav-item ">
-                            <a class="nav-link " href="#" role="button" aria-expanded="false">
-                                Home
-                            </a>
 
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                About Us <i class="fa-solid fa-chevron-down"></i>
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="javascript:void(0);">Tile Appears</a></li>
-                                <li><a class="dropdown-item" href="#">Industrial
-                                        Registration</a></li>
-                                <li><a class="dropdown-item" href="#">Aakanksha
-                                        Registration</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item ">
-                            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Services
-                            </a>
-
-                        </li>
-
-                        <li class="nav-item ">
-                            <a class="nav-link " href="#" role="button" aria-expanded="false">
-                                Incentives & Policies
-                            </a>
-
-                        </li>
-                        <!-- <li class="nav-item ">
-                            <a class="nav-link " href="#" role="button" aria-expanded="false">
-                                <i class="bi bi-text-left fs-4"></i>
-                            </a>
-
-                        </li> -->
-                        <li class="nav-item ">
-                            <a class="nav-link " href="#" role="button" aria-expanded="false">
-                                <i class="bi bi-search"></i>
-                            </a>
-
-                        </li>
-                        <li class="nav-item">
-                            <a class="btn btn-red Login" href="user-login.html"> Login</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="btn btn-border-red Register" href="industrial-registration.html">
-                                Register</a>
+    <div class="container-fluid vh-100 d-flex">
+        <!-- Left Section -->
+        <div class="row w-100  p-4">
+            <div class="col-lg-6  left-section ">
+                <div class="d-flex flex-column justify-content-between h-100 align-items-center">
+                    <div></div>
+                    <div>
+                        <img src="./images/1f7dbf58-74bb-45ad-a6dd-bef03ff2df9c.png" alt="Logo">
+                        <h1 class="h4 mt-3">Department of Commerce & Industries</h1>
+                        <small class=" text-light">Government of Chhattisgarh</small>
+                    </div>
+                    <!-- <div></div> -->
+                    <ul class=" text-start  " type="square">
+                        <li class="mb-3">All existing technological applications of the Industries Department, Govt. of
+                            Chhattisgarh
+                            including our services Portal have been integrated via the Single Sign-on Framework. Access
+                            to all these applications is available through the Single Sign-on user credential.</li>
+                        <li>Existing users of these applications can login through their registered email id as the user
+                            id
+                            for the login process. New Users can create login credentials, by clicking on Register Now.
                         </li>
                     </ul>
                 </div>
             </div>
-        </nav>
-    </header>
 
 
-    <!-- header-end -->
-    <div class="page-content-wrapper ">
-        <div class="container">
-            <div class="user-login ">
-                <div class="row justify-content-center">
-                    <!-- <div class="col-md-2">
-                        <h3 class="page-heading login-heading"><span class="d-block fs-6">CG Spark</span> User Login
-                        </h3>
-                    </div> -->
-                    <div class="change_password col-md-6">
-
-
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="form-heading1 mb-3">OTP
-                                </h3>
-                                <div class="row d-flex align-items-center">
-                                    <div class="col-md-12 text-center">
-                                        <p>Enter One Time Password (OTP) sent to your registered mobile number
-                                            and email id.</p>
-                                        <span class="fw-bold">******3166 & supa*****@gmail.com.</span>
-                                    </div>
-                                    <div class="col-md-12 mt-3 mb-2 ">
-                                        <div class="otp-box justify-content-center">
-                                            <input type="text" class="form-control">
-                                            <input type="text" class="form-control">
-                                            <input type="text" class="form-control">
-                                            <input type="text" class="form-control">
-                                            <input type="text" class="form-control">
-                                            <input type="text" class="form-control">
-
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12 mt-0 mb-2 text-center">
-                                        <a href="#" class="resendotp"><em>Resend OTP after </em><small>30
-                                                sec</small></a>
-                                    </div>
-                                </div>
-                                <div class="row g-3  mt-2">
-                                    <div class="col-md-6"><a href="userid_reset_success.html" class="btn btn-primary"
-                                            style="padding: 6px 40px;">Submit</a></div>
-                                    <div class="col-md-6 d-flex justify-content-end align-items-center">
-                                        <a href="forget_userid.html" class="Register_now"><i
-                                                class="bi bi-arrow-left-short"></i> Back</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card-footer text-center">For technical support please contact us at
-                                industry.nic@gmail.com</div>
+            <div class="col-lg-6 d-flex align-items-center justify-content-center right-section">
+                <div class="w-100" style="max-width: 400px;">
+                    <h2 class="mb-4 text-center">Login</h2>
+                    <form>
+                        <div class="col-md-12 text-center">
+                            <p>Enter One Time Password (OTP) sent to your registered mobile number
+                                and email id.</p>
+                            <span class="fw-bold">******3166 & supa*****@gmail.com.</span>
                         </div>
-                        <ul class="mt-4 login-instruction">
-                            <li>All existing technological applications of the Industries Department , Govt. of
-                                Chhattisgarh including our services
-                                Portal have been integrated via the Single Sign-on Framework. Access to all
-                                these
-                                applications is available through the
-                                Single Sign-On user credential.</li>
+                        <div class="col-md-12 mt-3 mb-2 ">
+                            <div class="otp-box justify-content-center">
+                                <input type="text" class="form-control">
+                                <input type="text" class="form-control">
+                                <input type="text" class="form-control">
+                                <input type="text" class="form-control">
+                                <input type="text" class="form-control">
+                                <input type="text" class="form-control">
 
-                            <li> Existing users of these applications can login through their registered email
-                                id as the
-                                user id for the login process.
-                                New Users can create login credential, by clicking on Register Now.
-                            </li>
-                        </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-12 mt-0 mb-2 text-center">
+                            <a href="#" class="resendotp"><em>Resend OTP after </em><small>30
+                                    sec</small></a>
+                        </div>
+                        <a href="#exampleModal" class="btn btn-blue w-100 mb-3" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal"> Submit</a>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <div class="row g-3 mb-3 text-center mt-2"><i
+                            class="fs-1 bi  bi-check-circle-fill text-success"></i>
+                        <h4 class="  mx-2 ">OTP Verified Successfully!</h4>
+                        <p class="mt-0">Your user id has been sent to your email id and Mobile
+                            Number,Please check.</p>
                     </div>
 
+                    <div class="row mt-3 form-button-box ">
+                        <div class="col-md-12 text-center mb-3">
+                            <a class="btn btn-primary" href="user-login.html">Login</a>
 
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <a href="landing.html" class="Register_now"><i class="bi bi-arrow-left-short"></i>
+                                Back to Home</a>
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </div>
     </div>
+
 
 
     <script src="js/bootstrap-5.js"></script>
