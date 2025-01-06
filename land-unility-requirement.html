@@ -2101,6 +2101,27 @@
 
 
     <script src="./js/script.js"></script>
+    <script>
+        document.getElementById("landRequired").addEventListener("change", function () {
+            const selectedValue = this.value;
+            const firstDiv = document.getElementById("firstDiv");
+            const secondDiv = document.getElementById("secondDiv");
+
+            if (selectedValue === "Yes") {
+                secondDiv.style.display = "block";
+                firstDiv.style.display = "none";
+            } else if (selectedValue === "No") {
+                firstDiv.style.display = "block";
+                secondDiv.style.display = "none";
+            } else {
+                firstDiv.style.display = "none";
+                secondDiv.style.display = "none";
+            }
+        });
+
+
+
+    </script>
 </body>
 
 </html>
