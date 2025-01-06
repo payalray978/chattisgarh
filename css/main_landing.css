@@ -987,7 +987,7 @@ border-radius: 50%;
     box-sizing: border-box;
 }
 .explore_process{
-  background: url('/images/explore_process.png');
+  background: url('../images/explore_process.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
