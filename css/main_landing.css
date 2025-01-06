@@ -141,18 +141,28 @@ img{
     width: 100%;
     object-fit: cover;
 }
-.btn-border-red, .btn-red:hover {
+.btn-border-red{
   border-color: var(--blue);
   color: var(--blue);
   border-radius: 20px;
   padding: 5px 25px;
 }
-
-.btn-border-red:hover, .btn-red {
+.btn-red {
   background-color: var(--blue);
-  color: #fff; border-radius: 20px; padding: 5px 25px;
+  color: #fff; 
+  border-radius: 20px;
+  padding: 5px 20px; 
 }
+.btn-border-red:hover {
+  background-color: var(--blue);
+  color: #fff; 
+  border-radius: 20px; 
+}
+.btn-red:hover {
+  border-color: var(--blue);
+  color: var(--blue);
 
+}
 .banner-text {
   font-size: 48px;
 }
@@ -212,6 +222,13 @@ img{
   padding-top: 4rem;
   padding-bottom: 3rem;
   background-color: var(--);
+}
+.about  p {
+  font-size: .85rem;
+}
+.about h2 {
+  color: #3a3a5b;
+  font-weight: 600;
 }
 .vr-line{
     height: 100px;

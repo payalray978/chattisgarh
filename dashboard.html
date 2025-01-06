@@ -131,13 +131,48 @@
                 <!-- Main Content -->
                 <div class="col-lg-9">
                     <h4>Dashboard</h4>
-                    <a class="add-unit mt-4" href="company-information.html">
-                        <i class="bi bi-plus-circle fs-2"></i>
-                        <span>Add a New Business Unit</span>
+                    <a class="add-unit mt-4" href="company-information.html" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"><i class="bi bi-plus-circle fs-2"></i>
+                        <span>Add a New Unit</span>
                     </a>
-
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content">
+                
+                                <div class="modal-body pt-0">
+                                    <div class="row g-3 mb-3 mt-2">
+                                        <div class="instructions mt-4 shadow-none">
+                                            <h5>Instruction for add new unit</h5>
+                                            <ol class="mt-3">
+                                                <li>Udyam Akanksha (UA)/Unit Registration (UR) is applicable only for Micro, Small, Medium,
+                                                    Large, Mega,
+                                                    Ultra Mega Enterprises.</li>
+                                                <li>There is no fee for processing the application.</li>
+                                                <li>Mandatory fields are marked with an asterisk (*).</li>
+                                                <li>UA/UR is computer-generated acknowledgment and does not require a signature.</li>
+                                                <li>Udyam Akanksha is issued as per notification Number F20-4/2016/(1)/6 dated 06/02/2016.
+                                                </li>
+                                            </ol>
+                                            <div class="d-flex align-items-center instruct-radio mt-4">
+                                                <div class="form-check me-3">
+                                                    <input class="form-check-input" type="radio" name="agreement" id="agree">
+                                                    <label class="form-check-label" for="agree">I Agree</label>
+                                                </div>
+                                                <div class="form-check me-3">
+                                                    <input class="form-check-input" type="radio" name="agreement" id="disagree">
+                                                    <label class="form-check-label" for="disagree">I Don't Agree</label>
+                                                </div>
+                                                <a href="company-information.html" class="btn btn-light-blue ms-auto">Proceed</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                
+                            </div>
+                        </div>
+                    </div>
                     <div class="instructions mt-4">
-                        <h5>For New/Existing Unit General Instructions</h5>
+                        <h5>Instruction for add new unit</h5>
                         <ol class="mt-3">
                             <li>Udyam Akanksha (UA)/Unit Registration (UR) is applicable only for Micro, Small, Medium,
                                 Large, Mega,
@@ -148,7 +183,7 @@
                             <li>Udyam Akanksha is issued as per notification Number F20-4/2016/(1)/6 dated 06/02/2016.
                             </li>
                         </ol>
-                        <div class="d-flex align-items-center instruct-radio mt-4">
+                        <!-- <div class="d-flex align-items-center instruct-radio mt-4">
                             <div class="form-check me-3">
                                 <input class="form-check-input" type="radio" name="agreement" id="agree">
                                 <label class="form-check-label" for="agree">I Agree</label>
@@ -158,7 +193,7 @@
                                 <label class="form-check-label" for="disagree">I Don't Agree</label>
                             </div>
                             <a href="company-information.html" class="btn btn-light-blue ms-auto">Proceed</a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
