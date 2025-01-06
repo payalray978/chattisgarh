@@ -151,7 +151,7 @@ color: #a2b8d5;
     /* padding: 0; */
 }
 .user-icon{
-    width: 40px;
+    width: 50px;
     border-radius: 50%;
 }
 header .navbar-expand .navbar-nav .dropdown-menu {
@@ -177,7 +177,7 @@ box-shadow: 0px 3px 6px #00000029;
    .page-content-wrapper{
     padding: 1.5rem 0 ;
       min-height: calc(100vh - 160px) ;
-      background: #F9F9F9;
+      background: #F4F5FF;
 
 }
 .sidebar {
@@ -378,17 +378,32 @@ box-shadow: 0px 3px 6px #00000029;
 text-decoration: none;
 color: #333333;
 position: relative; padding-bottom: 15px;
+font-size: .85rem;
 }
 .services a.active::after, .table-top-nav a.active::after{
 position: absolute;
 content: '';
-width: 70%;
+width: 85%;
 height: 3px;
 background: #3C69A8;
 transform: translate(-50%);
 bottom: 0;
 left: 50%;
 }
+.services a.active::before {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -8px;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #3C69A8;
+    z-index: 99;
+}
+
 /* .services a.active::before{
 
 position: absolute;
@@ -447,14 +462,84 @@ left: 50%;
     width: 20px;
     background: #8aa5cb;
 }
+.instructions h5 {
+    color: #2d2d50;
+    font-weight: 600;
+}
+.instructions ol li {
+    margin-bottom: 1rem;
+}
+.instruct-radio .form-check-label {
+    color: #2d2d50;
+}
+.page-heading {
+    color: #2d2d50;
+    font-weight: 600;
+}
+.btn-primary {
+    border-color: #3C69A8;
+    background-color: #3C69A8;
+    color: var(--white);
+  }
+  .btn-outline-primary {
+    color: #3C69A8 ;
+    border-color: #3C69A8 ;
+  }
+  .btn-outline-primary:hover {
+    background-color: #3C69A8;
+    border-color: #3C69A8 ;
+  }
+  .offcanvas-body .bi-gear {
+    font-size: 1.5rem;
+    color: #2d2d50;
+  }
+  .offcanvas-body .bi-bell-fill {
+    font-size: 1.5rem;
+    color: #2d2d50;
+  }
+  .offcanvas-body .notofication {
+    font-size: .55rem;
+    font-style: normal;
+    border: #fff solid 2px;
+    left: 21px !important;
+    top: 7px !important;
+    background: #3c69a8 !important;
+  }
+  .user-profile {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+  }
+  .user-profile .user-title {
+      font-size: 1rem;
+      color: #2d2d50;
+      display: block;
+      font-weight: 600;
+      line-height: 1;
+  }
+  .user-profile .user-msg {
+    font-size: .75rem;
+    color: #929291;
+    line-height: 1;
+}
 @media screen and (max-width:1366px) {
     .form-heading {
         font-size: 1rem;
     }
-    .form-label {
+    .form-label, .form-check-label {
         font-size: .851rem;
     }
     .form-select {
         font-size: .851rem;
+    }
+    .instructions h5 {
+        color: #2d2d50;
+        font-size: 1rem;
+    }
+    .instructions ol li {
+        font-size: .751rem;
+    }
+    .page-heading {
+        font-size: 1.5rem;
     }
 }

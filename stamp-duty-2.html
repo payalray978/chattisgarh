@@ -42,7 +42,7 @@
                     </div>
                     <div class="offcanvas-body">
                         <div class="navbar-nav justify-content-end flex-grow-1 pe-3 navbar-expand">
-                            <ul class="navbar-nav gap-3">
+                            <ul class="navbar-nav gap-3 align-items-center">
                                 <li class="nav-item dropdown">
                                     <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">
@@ -59,8 +59,12 @@
                                 <li class="nav-item dropdown">
                                     <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">
-                                        <i class="bi bi-megaphone position-relative">
-                                            <span class="notify">3</span>
+                                        <i class="bi bi-bell-fill  position-relative">
+
+                                            <span
+                                                class="notofication position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
+                                                3
+                                            </span>
                                         </i>
                                     </a>
 
@@ -69,14 +73,20 @@
                                 <li class="nav-item dropdown">
                                     <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">
-                                        <img class="user-icon" src="images/user.png">
+                                       <div class="user-profile">
+                                           <div> <img class="user-icon rounded-circle" src="./images/user.png" alt="User Icon"
+                                            width="30"></div>
+                                            <div>
+                                                <span class="user-title">Sushant Rajprakash</span>
+                                                <span class="user-msg">Hello, Welcome Back!</span>
+                                            </div>
+                                       </div>
                                     </a>
-                                    <ul class="dropdown-menu logout">
+                                    <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="profile.html">Profile</a></li>
-                                        <li><a class="dropdown-item" href="change_password.html">
-                                                Change Password</a></li>
-                                        <li><a class="dropdown-item" href="user-login.html">Logout
-                                            </a></li>
+                                        <li><a class="dropdown-item" href="change_password.html">Change Password</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="user-login.html">Logout</a></li>
                                     </ul>
                                 </li>
                             </ul>
@@ -85,7 +95,7 @@
                 </div>
             </nav>
         </div>
-    </header>s
+    </header>
 
 
     <!-- header-end -->
