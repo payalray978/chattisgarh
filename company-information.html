@@ -3549,30 +3549,66 @@
     <script src="js/bootstrap-5.js"></script>
     <script src="./js/script.js"></script>
     <script>
+      // Function to update the icon and color of the current tab
+        function updateTabIconAndColor(tabId) {
+            var tab = document.getElementById(tabId);
+            var icon = tab.querySelector('i');
+
+            // Remove the circle icon and add the check-circle icon
+            icon.classList.remove('bi-circle-fill');
+            icon.classList.add('bi-check-circle-fill');
+
+            // Add active class to change the color of the tab
+            tab.classList.add('active');
+        }
+
+        // Function to update the previous tabs as well
+        function updatePreviousTabs(currentTabId) {
+            if (currentTabId === 'land-tab') {
+                updateTabIconAndColor('company-tab');
+                updateTabIconAndColor('project-tab');
+            } else if (currentTabId === 'project-tab') {
+                updateTabIconAndColor('company-tab');
+            }
+        }
+
         // Next Button: Company to Project
         document.getElementById("nextToProject").addEventListener("click", function () {
             var projectTab = new bootstrap.Tab(document.getElementById("project-tab"));
-            projectTab.show();
+            projectTab.show();  // Show the Project tab
+            updateTabIconAndColor("company-tab");  // Change the icon and color of the Company tab to checked
         });
 
         // Back Button: Project to Company
         document.getElementById("backToCompany").addEventListener("click", function () {
             var companyTab = new bootstrap.Tab(document.getElementById("company-tab"));
-            companyTab.show();
+            companyTab.show();  // Show the Company tab
+            updateTabIconAndColor("project-tab");  // Change the icon and color of the Project tab to checked
         });
 
         // Next Button: Project to Land
         document.getElementById("nextToLand").addEventListener("click", function () {
             var landTab = new bootstrap.Tab(document.getElementById("land-tab"));
-            landTab.show();
+            landTab.show();  // Show the Land tab
+            updatePreviousTabs("land-tab");  // Update icons and colors of Company and Project tabs
+            updateTabIconAndColor("project-tab");  // Change the icon and color of the Project tab to checked
         });
 
         // Back Button: Land to Project
         document.getElementById("backToProject").addEventListener("click", function () {
             var projectTab = new bootstrap.Tab(document.getElementById("project-tab"));
-            projectTab.show();
+            projectTab.show();  // Show the Project tab
+            updateTabIconAndColor("land-tab");  // Change the icon and color of the Land tab to checked
         });
 
+        // Save & Continue Button: Project to Land
+        document.getElementById("nextToLand").addEventListener("click", function () {
+            // Navigate to the Land tab after saving
+            var landTab = new bootstrap.Tab(document.getElementById("land-tab"));
+            landTab.show();  // Show the Land tab
+            updatePreviousTabs("land-tab");  // Update icons and colors of Company and Project tabs
+            updateTabIconAndColor("project-tab");  // Change the icon and color of the Project tab to checked
+        });
 
     </script>
     <script>
