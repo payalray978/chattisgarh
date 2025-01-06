@@ -148,7 +148,7 @@ color: #a2b8d5;
     /* padding: 0; */
 }
 .user-icon{
-    width: 40px;
+    width: 50px;
     border-radius: 50%;
 }
 header .navbar-expand .navbar-nav .dropdown-menu {
@@ -413,14 +413,84 @@ left: 50%;
     width: 20px;
     background: #8aa5cb;
 }
+.instructions h5 {
+    color: #2d2d50;
+    font-weight: 600;
+}
+.instructions ol li {
+    margin-bottom: 1rem;
+}
+.instruct-radio .form-check-label {
+    color: #2d2d50;
+}
+.page-heading {
+    color: #2d2d50;
+    font-weight: 600;
+}
+.btn-primary {
+    border-color: #3C69A8;
+    background-color: #3C69A8;
+    color: var(--white);
+  }
+  .btn-outline-primary {
+    color: #3C69A8 ;
+    border-color: #3C69A8 ;
+  }
+  .btn-outline-primary:hover {
+    background-color: #3C69A8;
+    border-color: #3C69A8 ;
+  }
+  .offcanvas-body .bi-gear {
+    font-size: 1.5rem;
+    color: #2d2d50;
+  }
+  .offcanvas-body .bi-bell-fill {
+    font-size: 1.5rem;
+    color: #2d2d50;
+  }
+  .offcanvas-body .notofication {
+    font-size: .55rem;
+    font-style: normal;
+    border: #fff solid 2px;
+    left: 21px !important;
+    top: 7px !important;
+    background: #3c69a8 !important;
+  }
+  .user-profile {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+  }
+  .user-profile .user-title {
+      font-size: 1rem;
+      color: #2d2d50;
+      display: block;
+      font-weight: 600;
+      line-height: 1;
+  }
+  .user-profile .user-msg {
+    font-size: .75rem;
+    color: #929291;
+    line-height: 1;
+}
 @media screen and (max-width:1366px) {
     .form-heading {
         font-size: 1rem;
     }
-    .form-label {
+    .form-label, .form-check-label {
         font-size: .851rem;
     }
     .form-select {
         font-size: .851rem;
+    }
+    .instructions h5 {
+        color: #2d2d50;
+        font-size: 1rem;
+    }
+    .instructions ol li {
+        font-size: .751rem;
+    }
+    .page-heading {
+        font-size: 1.5rem;
     }
 }
