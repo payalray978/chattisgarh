@@ -100,7 +100,7 @@ font-size: .9rem;
             text-decoration: none;
             transition: all .25s;
         }
-        .text-link a:hover, .footer-form a:hover {
+        .text-link a:hover {
             color: #5d96e7;
        text-decoration: underline;
         }
@@ -137,7 +137,7 @@ input::placeholder {
     left: 50%;
     transform: translate(-50%);
     text-align: center;
- color: #9c9c9c;
+ color: #9c9c9c;   font-size: 0.9rem;
 
 }
 .footer-form a{
@@ -145,6 +145,9 @@ input::placeholder {
   color:#5b5b5b;
   font-weight: bold;
    text-underline-offset: 2px;   transition: all .25s;
+   text-decoration: none;
+font-style: italic;
+
 }
 .input-group-text{
 background-color: #fff;
