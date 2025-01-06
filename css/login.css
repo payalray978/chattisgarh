@@ -104,6 +104,9 @@ font-size: .9rem;
             color: #5d96e7;
        text-decoration: underline;
         }
+input::placeholder {
+  font-weight: 600;
+}
 
 
         .otp-box {
