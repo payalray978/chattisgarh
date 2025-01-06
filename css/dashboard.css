@@ -103,6 +103,17 @@ color: #a2b8d5;
 }
 .table thead tr th{
     background-color: #F1F7FF;    font-weight: 500;
+    font-size: .851rem;
+}
+.table thead tr th:first-child{
+       border-top-left-radius: 15px !important;
+}
+.table thead tr th:last-child{
+       border-top-right-radius: 15px !important;
+}
+.table tbody tr td{
+
+    font-size: .851rem;
 }
 .border-bottom {
     border-bottom: 1px solid #ddd;
