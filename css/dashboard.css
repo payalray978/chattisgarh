@@ -119,7 +119,10 @@ color: #a2b8d5;
     border-bottom: 1px solid #ddd;
 }
 .accordion{
-    display: grid;
+    /* display: grid;
+    gap:20px; */
+    display: flex;
+    flex-direction: column;
     gap:20px;
 }
 .accordion-item:last-of-type>.accordion-header .accordion-button.collapsed, .accordion-item:first-of-type>.accordion-header .accordion-button{
