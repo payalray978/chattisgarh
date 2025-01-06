@@ -1122,7 +1122,7 @@ color: #BCD4FB;
             --bs-card-inner-border-radius: 0;
             height: calc(100px + 100*(100vw - 375px) / 1545);
             /* background: url(inner-banner.png), rgb(9 70 122); */
-            background-color: rgb(9 70 122);
+            background: url('../images/background.png');
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
