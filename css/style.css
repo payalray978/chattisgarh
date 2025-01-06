@@ -105,10 +105,11 @@ header .btn {
 } 
  /* header-end  */
  .step-indicator{
-     padding: 2rem 0 1rem 0;
-     border: 1px solid #c1dff7;
+     padding: 2.5rem  0;
+     /* border: 1px solid #c1dff7; */
      background-color: #ffffff;
      margin-bottom: 1rem;
+     border-radius: 15px;box-shadow: 0px 3px 20px #3C69A81A;
  }
  .form-heading {
      color: var(--blue);
@@ -168,7 +169,7 @@ header .btn {
     color: #5e5e5e;
   }
  
-  .navigation_tabs li:before {
+  /* .navigation_tabs li:before {
     content: "\F633";
     font-family: "bootstrap-icons" !important;
     width: 25px;
@@ -185,15 +186,15 @@ header .btn {
     position: relative;
    
  
-  }
+  } */
   .navigation_tabs li:after {
     content: "";
     position: absolute;
-    width: 100%;
+   width: 50%;
     height: 5px;
     background-color: #ddd;
     top: 13px;
-    left: -50%;
+    right: 75%;
     z-index : 0;
     height: 0.1rem;
    
@@ -211,22 +212,21 @@ header .btn {
     color: var(--blue);
   }
  
-  .navigation_tabs li.active:before {
-     /* border-color: green; */
+  /* .navigation_tabs li.active:before {
+
     background: var(--blue);
-    /* color: #fff; */
+  
     border: var(--blue);
-  }
+  } */
  
-  .navigation_tabs li.completed:before {
+  /* .navigation_tabs li.completed:before {
     border-color: var(--blue);
     background-color:var(--blue);
     color: #fff;
     content: "\F633";
     font-family: "bootstrap-icons" !important;
-    /* border: #fff solid 4px;
-    outline: 1px solid #ccc; */
-  }
+  
+  } */
   .form-button-box .btn {
     padding: .5rem 3rem;
   }
@@ -728,3 +728,18 @@ header .dropdown-toggle::after{
  .btn-success:hover{
   background-color: rgb(0, 120, 60) !important;
  }
+.inner-page-layout__breadcrumb {
+            --bs-card-border-radius: 0;
+            --bs-card-inner-border-radius: 0;
+            height: calc(100px + 100*(100vw - 375px) / 1545);
+            /* background: url(inner-banner.png), rgb(9 70 122); */
+            background: url('../images/background.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            color: #fff;
+
+        }
+        .breadcrumb-item+.breadcrumb-item::before{
+          color: #fff;
+        }
