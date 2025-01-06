@@ -347,17 +347,32 @@ box-shadow: 0px 3px 6px #00000029;
 text-decoration: none;
 color: #333333;
 position: relative; padding-bottom: 15px;
+font-size: .85rem;
 }
 .services a.active::after, .table-top-nav a.active::after{
 position: absolute;
 content: '';
-width: 70%;
+width: 85%;
 height: 3px;
 background: #3C69A8;
 transform: translate(-50%);
 bottom: 0;
 left: 50%;
 }
+.services a.active::before {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -8px;
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #3C69A8;
+    z-index: 99;
+}
+
 /* .services a.active::before{
 
 position: absolute;
