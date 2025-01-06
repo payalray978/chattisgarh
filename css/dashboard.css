@@ -544,3 +544,47 @@ left: 50%;
         font-size: 1.5rem;
     }
 }
+.steps-indicator{
+     padding: 2.5rem  0;
+    
+     background-color: #ffffff;
+     margin-bottom: 1rem;
+     border-radius: 15px;box-shadow: 0px 3px 20px #3C69A81A;
+ }
+ .navigation_tabs {
+    counter-reset: step;
+   display: flex
+;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+}.navigation_tabs li {
+    list-style: none;
+    display: flex
+;
+    position: relative;
+    text-align: center;
+    padding: 0 1.25rem;
+    display: table-cell;
+    font-weight: 700;
+    color: #5e5e5e;
+}
+.navigation_tabs li:not(:first-child) ::after {
+    content: "";
+    position: absolute;
+   width: 40%;
+    height: 2px;
+    background-color: #ddd;
+    top: 50%;
+    left: -20%;
+    transform: translateX(-50%);
+
+    z-index: 0;
+
+}
+.navigation_tabs li.active {
+    color: var(--blue);
+}
+.navigation_tabs li.completed {
+    color: var(--blue);
+}
