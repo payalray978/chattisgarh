@@ -34,13 +34,16 @@ padding: 10px;
 }
 img{
 object-fit: cover;
-width: 100%;
+max-width: 100%;
 }
 .btn-white{
     background-color: #fff;border: 1px solid #C7C7C7;
 border-radius: 13px;
 /* padding: 15px; */
     
+}
+.form-check-input{
+    border: #3C69A8 solid 1px;
 }
 .btn-white:hover, .btn-white.active{
     background-color: #3C69A8;
@@ -528,7 +531,7 @@ left: 50%;
         font-size: 1.2rem;
     }
     .form-label, .form-check-label {
-        font-size: .851rem;
+        /* font-size: .851rem; */
     }
     .form-select {
         font-size: .851rem;
@@ -538,7 +541,7 @@ left: 50%;
         font-size: 1rem;
     }
     .instructions ol li {
-        font-size: .751rem;
+        font-size: 1rem;
     }
     .page-heading {
         font-size: 1.5rem;
