@@ -42,6 +42,9 @@ border-radius: 13px;
 /* padding: 15px; */
     
 }
+.form-check-input{
+    border: #3C69A8 solid 1px;
+}
 .btn-white:hover, .btn-white.active{
     background-color: #3C69A8;
     color: #fff;
