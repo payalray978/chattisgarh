@@ -502,7 +502,8 @@ font-weight: 500;}
   font-size: .85rem;
 }
 .otp-box input[type="text"]{
-  width: 3rem;
+  width: 45px;
+  height: 45px;
 }
 .otp-confirmation .form-sub-heading {
   font-size: 1rem;
