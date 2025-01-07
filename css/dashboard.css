@@ -106,7 +106,7 @@ color: #a2b8d5;
 }
 .table thead tr th{
     background-color: #F1F7FF;    font-weight: 500;
-    font-size: .851rem;
+    font-size: .9rem;
 }
 .table thead tr th:first-child{
        border-top-left-radius: 15px !important;
@@ -116,7 +116,7 @@ color: #a2b8d5;
 }
 .table tbody tr td{
 
-    font-size: .851rem;
+    font-size: .9rem;
 }
 .border-bottom {
     border-bottom: 1px solid #ddd;
@@ -382,7 +382,7 @@ box-shadow: 0px 3px 6px #00000029;
 text-decoration: none;
 color: #333333;
 position: relative; padding-bottom: 15px;
-font-size: .85rem;
+font-size: .9rem;
 }
 .services a.active::after, .table-top-nav a.active::after{
 position: absolute;
@@ -531,10 +531,14 @@ left: 50%;
         font-size: 1.2rem;
     }
     .form-label, .form-check-label {
-        font-size: 0.938rem;
+        font-size: 0.9rem;
     }
     .accordion-body p {
-        font-size: 0.938rem;
+        font-size: 0.9rem;
+        margin-bottom: 0rem;
+    }
+    p.fw-bold {
+        font-size: 0.9rem;
     }
     .form-select {
         font-size: .851rem;
