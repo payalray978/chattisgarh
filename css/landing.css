@@ -887,3 +887,22 @@ border-radius: 50%;
   padding: 4rem 0;
   margin: 6rem 0;
 }
+.navbar-brand {
+  display: flex;
+    align-items: center;
+    gap: .85rem;
+}
+.navbar-brand img {
+  width: 4.688rem;
+}
+.navbar-brand h6 {
+  color: #333333;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.navbar-brand h6 span {
+  display: block;
+  font-size: .85rem;
+  color: #878787;
+  font-weight: normal;
+}

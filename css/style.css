@@ -122,6 +122,25 @@ header .btn {
      color: var(--blue);  font-size: 1.5rem;
      font-weight: 700;
  }
+ .navbar-brand {
+  display: flex;
+    align-items: center;
+    gap: .85rem;
+}
+.navbar-brand img {
+  width: 4.688rem;
+}
+.navbar-brand h6 {
+  color: #333333;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.navbar-brand h6 span {
+  display: block;
+  font-size: .85rem;
+  color: #878787;
+  font-weight: normal;
+}
  .form-heading:after {
      position: absolute;
      left: 0;
