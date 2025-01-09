@@ -12,81 +12,18 @@
     <link rel="stylesheet" href="./css/bootstrap-min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>Invest Chhhattisgar</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+        });
+    </script>
 </head>
 
 <body>
     <!-- header-start -->
-    <header>
-        <div class="container-fluid px-md-5 ">
-            <nav class="navbar navbar-expand-xl">
-                <h1 class="mb-0">
-                    <a class="navbar-brand" href="landing.html">
-                        <img src="images/logo.png" alt="Logo">
-                        <h6>Single Window Portal<span>Departments of Commerce & Industries</span></h6>
-                    </a>
-                </h1>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end" id="navbarOffcanvas" tabindex="-1"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h1 class="mb-0">
-                            <a class="navbar-brand" routerLink="/">
-                                <img src="images/logo.jpg">
-                            </a>
-                        </h1>
-                        <button type="button" class="btn-close btn-close-dark text-reset" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <div class="navbar-nav justify-content-end flex-grow-1 pe-3 navbar-expand">
-                            <ul class="navbar-nav gap-3">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <i class="bi bi-gear"></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="tile-appears.html">Tile Appears</a></li>
-                                        <li><a class="dropdown-item" href="industrial-registration.html">Industrial
-                                                Registration</a></li>
-                                        <li><a class="dropdown-item" href="company-information.html">Aakanksha
-                                                Registration</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <i class="bi bi-megaphone position-relative">
-                                            <span class="notify">3</span>
-                                        </i>
-                                    </a>
-
-                                </li>
-
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <img class="user-icon" src="images/user.png">
-                                    </a>
-                                    <ul class="dropdown-menu logout">
-                                        <li><a class="dropdown-item" href="profile.html">Profile</a></li>
-                                        <li><a class="dropdown-item" href="#">
-                                                Change Password</a></li>
-                                        <li><a class="dropdown-item" href="user-login.html">Logout
-                                            </a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
+    <div id="header"></div>
 
 
     <!-- header-end -->
@@ -159,7 +96,7 @@
     </div>
 
     <footer>
-        Copyright © 2025 Invest Odisha, All Rights Reserved.
+        Copyright © 2025 SWP Chhattisgarh, All Rights Reserved.
     </footer>
     <script src="js/bootstrap-5.js"></script>
     <script>document.querySelectorAll('input[name="agreement"]').forEach((radio) => {

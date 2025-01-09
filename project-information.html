@@ -12,97 +12,25 @@
     <link rel="stylesheet" href="./css/bootstrap-min.css">
     <!-- <link rel="stylesheet" href="./css/style.css"> -->
     <link rel="stylesheet" href="./css/dashboard.css">
+    <!-- <link rel="stylesheet" href="./css/datepicker.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker.min.css"
         integrity="sha512-34s5cpvaNG3BknEWSuOncX28vz97bRI59UnVtEEpFX536A7BtZSJHsDyFoCl8S7Dt2TPzcrCEoHBGeM4SUBDBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Invest Chhhattisgar</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+        });
+    </script>
 </head>
 
 <body>
     <!-- header-start -->
-    <header>
-        <div class="container-fluid px-md-5 ">
-            <nav class="navbar navbar-expand-xl">
-                <h1 class="mb-0">
-                    <a class="navbar-brand" href="landing.html">
-                        <img src="images/logo.png" alt="Logo">
-                        <h6>Single Window Portal<span>Departments of Commerce & Industries</span></h6>
-                    </a>
-                </h1>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end" id="navbarOffcanvas" tabindex="-1"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h1 class="mb-0">
-                            <a class="navbar-brand" routerLink="/">
-                                <img src="images/logo.jpg">
-                            </a>
-                        </h1>
-                        <button type="button" class="btn-close btn-close-dark text-reset" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <div class="navbar-nav justify-content-end flex-grow-1 pe-3 navbar-expand">
-                            <ul class="navbar-nav gap-3 align-items-center">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <i class="bi bi-gear"></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="tile-appears.html">Tile Appears</a></li>
-                                        <li><a class="dropdown-item" href="industrial-registration.html">Industrial
-                                                Registration</a></li>
-                                        <li><a class="dropdown-item" href="company-information.html">Aakanksha
-                                                Registration</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <i class="bi bi-bell-fill  position-relative">
-
-                                            <span
-                                                class="notofication position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
-                                                3
-                                            </span>
-                                        </i>
-                                    </a>
-
-                                </li>
-
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <div class="user-profile">
-                                            <div> <img class="user-icon rounded-circle" src="./images/user.png"
-                                                    alt="User Icon" width="30">
-                                            </div>
-                                            <div>
-                                                <span class="user-title">Sushant Rajprakash</span>
-                                                <span class="user-msg">Hello, Welcome Back!</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="profile.html">Profile</a></li>
-                                        <li><a class="dropdown-item" href="change_password.html">Change Password</a>
-                                        </li>
-                                        <li><a class="dropdown-item" href="user-login.html">Logout</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
+    <div id="header"></div>
 
 
     <!-- header-end -->
@@ -137,7 +65,11 @@
                     </ul>
                 </div>
                 <div class="col-md-9">
-                    <h3 class="page-heading mb-3">Udyam Aakanksha / Unit Registration</h3>
+                    <div class="d-flex justify-content-between mb-3 align-items-center">
+                        <h3 class="page-heading">Udyam Aakanksha / Unit Registration</h3>
+                        <p class="m-0 mandatory-text">(<span class="text-danger">*</span>) <i>Indicated fields are
+                                mandatory</i></p>
+                    </div>
 
                     <div class="steps-indicator">
                         <div class="navigation_menu" id="navigation_menu">
@@ -160,7 +92,7 @@
                     <div class="left-content" id="project" role="tabpanel" aria-labelledby="project-tab">
                         <h5 class="form-heading">Project Details</h5>
 
-                        <div class="bg-light p-3 mb-3 rounded">
+                        <!-- <div class="bg-light p-3 mb-3 rounded">
 
                             <div class="row">
                                 <div class="col-md-4  mb-3">
@@ -172,7 +104,7 @@
                                 <div class="col-md-4  mb-3">
                                     <label for="exampleFormControlInput1" class="form-label">EM-II Issuance
                                         Date</label>
-                                    <input type='date' class="form-control datepicker" name="startDate" />
+                                    <input type="text" class="form-control" id="datePicker" placeholder="dd-mmm-yyyy">
                                 </div>
 
                                 <div class="col-md-4  mb-3">
@@ -189,7 +121,7 @@
                                 <div class="col-md-4  mb-3">
                                     <label for="exampleFormControlInput1" class="form-label">PC Issuance
                                         Date</label>
-                                    <input type='date' class="form-control datepicker" name="startDate" />
+                                    <input type="text" class="form-control" id="datePicker" placeholder="dd-mmm-yyyy">
                                 </div>
                                 <div class="col-md-4  mb-3">
                                     <label for="formFile" class="form-label">PC Document</label>
@@ -203,7 +135,7 @@
                                 <div class="col-md-4  mb-3">
                                     <label for="exampleFormControlInput1" class="form-label">IEM Issuance
                                         Date</label>
-                                    <input type='date' class="form-control datepicker" name="startDate" />
+                                    <input type="text" class="form-control" id="datePicker" placeholder="dd-mmm-yyyy">
                                 </div>
                                 <div class="col-md-4  mb-3">
                                     <label for="formFile" class="form-label">IEM Document</label>
@@ -211,7 +143,7 @@
                                 </div>
 
                             </div>
-                        </div>
+                        </div> -->
 
                         <div class="row">
                             <div class="col-md-4  mb-3">
@@ -232,22 +164,52 @@
                             </div>
                         </div>
                         <h6 class="form-sub-heading ">Add Product Details <small><i> (As per National
-                                    Product
-                                    Classification- 2008 defined by Ministry of Statistics and
-                                    Implementation)</i></small>
+                                    Industrial
+                                    Classification - 2008 defined by Ministry of Statistics and
+                                    Implementation)</i><a target="_blank" href="pdf/Product Classification NIC -2008.pdf" class="d-block"><i class="bi bi-filetype-pdf"></i> Product Details</a></small>
+                                    
                         </h6>
                         <div class="row">
 
 
                             <div class="col-md-5  mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Main
-                                    Manufacturing / Service
-                                    Activity <span class="text-danger">*</span></label>
+                                <label for="exampleFormControlInput1" class="form-label">Product Name <span
+                                        class="text-danger">*</span></label>
+                               <div class="d-flex">
                                 <select class="form-select" id="" aria-label="Default select example">
-                                    <option value="india">Select </option>
-                                    <option value="New">1</option>
-                                    <option value="Existing" id="">2</option>
+                                    <option value="Select">Select </option>
+                                    <option value="Rice">Rice</option>
+                                    <option value="Seed" id="">Seed</option>
+                                    <option value="Dog_Food" id="">Dog Food</option>
                                 </select>
+                                <span class="search-pruduct-name" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"><i class="bi bi-search"></i></span>
+                               </div>
+                            </div>
+                            <div class="modal fade modal-lg" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                        
+                                        <div class="modal-body p-5">
+                                            <div class="row">
+                                                <div class="text-center mb-5"><h5 class="text-center  login-text">Main Product / Services</h5></div>
+                                                <div class="col-md-5"><h5>Product / Services Name</h5></div>
+                                                <div class="col-md-6"><input type="text" readonly class="form-control" id="staticEmail" value=""></div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-5"></div>
+                                                <div class="col-md-6">
+                                                    <div class="form-button-box gap-3  d-flex mt-3 text-center">
+                                                        <a class="btn btn-primary" href="land-unility-requirement.html" id="nextToLand">Search</a>
+                                                        <a class="btn btn-outline-primary" id="backToCompany" href="company-information.html">Cancel</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                        
+                                    </div>
+                                </div>
                             </div>
                             <div class="col-md-1"></div>
                             <div class="col-md-5  mb-3">
@@ -268,7 +230,7 @@
                                 <table class="table   ">
                                     <thead class="">
                                         <tr>
-                                            <th>Sl#</th>
+                                            <th width="5%">Sl#</th>
                                             <!-- <th>Nature Of Activity</th> -->
                                             <th>Product Name</th>
                                             <th>NIC 2008 Code</th>
@@ -279,7 +241,7 @@
                                         <tr>
                                             <td>1</td>
                                             <!-- <td>Manufacturing</td> -->
-                                            <td>Rice, seed</td>
+                                            <td>Rice</td>
                                             <td>113100</td>
                                             <td>
                                                 <a class="text-danger" href="javascript:void(0);">
@@ -304,8 +266,9 @@
                         </div>
                         <h6 class="form-sub-heading mt-4">Add Product Details<small><i> (As per National
                                     Product
-                                    Classification- 2011 defined by Ministry of Statistics and
-                                    Implementation)</i></small>
+                                    Classification - 2011 defined by Ministry of Statistics and
+                                    Implementation)</i><a target="_blank" href="pdf/Product Classification NPC- 2011.pdf" class="d-block"><i class="bi bi-filetype-pdf"></i> Product Details</a></small>
+                                    
                         </h6>
                         <div class="row mb-4">
                             <!-- <div class="col-md-5  mb-3">
@@ -328,11 +291,16 @@
                             <div class="col-md-5  mb-3">
                                 <label for="exampleFormControlInput1" class="form-label">Product Name
                                     <span class="text-danger">*</span></label>
+                                    <div class="d-flex">
                                 <select class="form-select" id="" aria-label="Default select example">
-                                    <option value="india">Select Product</option>
-                                    <option value="New">1</option>
-                                    <option value="Existing" id="">2</option>
+                                    <option value="Select">Select </option>
+                                    <option value="Rice">Rice</option>
+                                    <option value="Seed" id="">Seed</option>
+                                    <option value="Dog_Food" id="">Dog Food</option>
                                 </select>
+                                <span class="search-pruduct-name" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal"><i class="bi bi-search"></i></span>
+                            </div>
                             </div>
                             <div class="col-md-1"></div>
                             <div class="col-md-5  mb-3">
@@ -350,7 +318,12 @@
                             <div class="col-md-5  mb-3">
                                 <label for="exampleFormControlInput1" class="form-label">Unit of
                                     Measurement <span class="text-danger">*</span></label>
-                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                <select name="" id="" class="form-select">
+                                    <option value="india">Select </option>
+                                    <option value="1">Ton </option>
+                                    <option value="2">Quintal</option>
+                                    <!-- <option value="2">Sq. Mtr.</option> -->
+                                </select>
                             </div>
                             <div class="col-md-1"></div>
                             <div class="col-md-5  mb-3">
@@ -375,7 +348,7 @@
                             <div class="col-md-5  mb-3">
                                 <label for="exampleFormControlInput1" class="form-label">Expansion / Diversification
                                     Date</label>
-                                <input type="date" class="form-control" id="exampleFormControlInput1">
+                                <input type="text" class="form-control" id="datePicker" placeholder="dd-mmm-yyyy">
                             </div>
                             <div class="col-md-1"></div>
 
@@ -388,16 +361,16 @@
                                 <table class="table   ">
                                     <thead class="">
                                         <tr>
-                                            <th>Sl#</th>
+                                            <th width="5%">Sl#</th>
                                             <!-- <th>Nature Of Activity</th> -->
                                             <th>Product Name</th>
                                             <th>Activity Code</th>
                                             <th>Annual Capacity</th>
                                             <th>Unit of Measurement</th>
                                             <th>Product Description</th>
-                                            <th>Expansion/Diversification Capacity</th>
-                                            <th>Total Capacity After Expansion/Diversification</th>
-                                            <th>Expansion/Diversification Date</th>
+                                            <th>Expansion / Diversification Capacity</th>
+                                            <th>Total Capacity After Expansion / Diversification</th>
+                                            <th>Expansion / Diversification Date</th>
                                             <th>Delete</th>
                                         </tr>
                                     </thead>
@@ -405,7 +378,7 @@
                                         <tr>
                                             <td>1</td>
                                             <!-- <td>Manufacturing</td> -->
-                                            <td>Rice, seed</td>
+                                            <td>Rice</td>
                                             <td>113100</td>
                                             <td>400</td>
                                             <td>Kilogram</td>
@@ -451,7 +424,8 @@
                                             <th>Category</th>
                                             <th width="20%">Proposed Capital Investment (New) / Capital Investment in
                                                 Existing industry</th>
-                                            <th width="20%">Proposed capital investment for Expansion / Diversification of
+                                            <th width="20%">Proposed capital investment for Expansion / Diversification
+                                                of
                                                 existing industrial unit</th>
                                             <th width="20%">Total capital investment after proposed
                                                 expansion / consolidation
@@ -624,12 +598,11 @@
                         <div class="row">
                             <div class="col-md-5 my-3">
                                 <label for="exampleFormControlInput1" class="form-label mb-0">Category of
-                                    Enterprise</label>
-                                <input type="text" class="form-control-plaintext" id="exampleFormControlInput1"
-                                    placeholder="Micro" readonly>
+                                    Enterprise</label> <span><strong>:- Micro</strong></span>
+
                             </div>
                         </div>
-                        <h5 class="form-heading">Employment potential</h5>
+                        <h5 class="form-heading">Employment Potential</h5>
                         <div class="row">
                             <div class="table-responsive col-md-11">
                                 <table class="table ">
@@ -729,7 +702,7 @@
                                         <option value="meghalaya">Meghalaya</option>
                                         <option value="mizoram">Mizoram</option>
                                         <option value="nagaland">Nagaland</option>
-                                        <option value="odisha">Odisha</option>
+                                        <option value="Chhattisgarh">Chhattisgarh</option>
                                         <option value="punjab">Punjab</option>
                                         <option value="rajasthan">Rajasthan</option>
                                         <option value="sikkim">Sikkim</option>
@@ -819,7 +792,7 @@
                                     <table class="table   ">
                                         <thead class="">
                                             <tr>
-                                                <th>Sl#</th>
+                                                <th width="5%">Sl#</th>
                                                 <th>Unit Name</th>
                                                 <th>Product</th>
                                                 <th>Total Capacity (With Unit)</th>
@@ -835,7 +808,7 @@
                                                 <td>Test Unit-1</td>
                                                 <td>Rice, seed</td>
                                                 <td>400 MT</td>
-                                                <td>Odisha</td>
+                                                <td>Chhattisgarh</td>
                                                 <td>Kendrapada</td>
                                                 <td>Patkura, Garadapur</td>
                                                 <td>
@@ -927,7 +900,7 @@
                                         <option value="meghalaya">Meghalaya</option>
                                         <option value="mizoram">Mizoram</option>
                                         <option value="nagaland">Nagaland</option>
-                                        <option value="odisha">Odisha</option>
+                                        <option value="Chhattisgarh">Chhattisgarh</option>
                                         <option value="punjab">Punjab</option>
                                         <option value="rajasthan">Rajasthan</option>
                                         <option value="sikkim">Sikkim</option>
@@ -1018,7 +991,7 @@
                                     <table class="table   ">
                                         <thead class="">
                                             <tr>
-                                                <th>Sl#</th>
+                                                <th width="5%">Sl#</th>
                                                 <th>Unit Name</th>
                                                 <th>Product</th>
                                                 <th>Total Capacity</th>
@@ -1086,12 +1059,31 @@
     <!-- <button class="btn btn-primary save-draft-btn">Save Draft</button>
     <a href="#" class="btn btn-primary save-draft-btn1"><i class="bi bi-chevron-double-up"></i></a> -->
     <footer>
-        Copyright © 2025 Invest Odisha, All Rights Reserved.
+        Copyright © 2025 SWP Chhattisgarh, All Rights Reserved.
     </footer>
 
     <script src="js/bootstrap-5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+        // Initialize Flatpickr on the input field
+        flatpickr("#datePicker", {
+            dateFormat: "d-M-Y", // Format: dd-MMM-yyyy
+            altInput: true, // Shows an alternative input with formatted value
+            altFormat: "d-M-Y", // Display format in the input field
+            allowInput: true, // Allows manual input
+        });
+    </script>
 
-
+    <!-- <script src="./js/bootstrap-datepicker.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.date-picker').datepicker({
+                autoclose: true,
+                todayHighlight: true
+            });
+        });
+ 
+    </script> -->
     <script src="./js/script.js"></script>
 </body>
 

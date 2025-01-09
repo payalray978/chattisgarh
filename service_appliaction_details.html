@@ -14,91 +14,18 @@
     <link rel="stylesheet" href="./css/dashboard.css">
 
     <title>Invest Chhhattisgar</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+        });
+    </script>
 </head>
 
 <body>
     <!-- header-start -->
-    <header>
-        <div class="container-fluid px-md-5 ">
-            <nav class="navbar navbar-expand-xl">
-                <h1 class="mb-0">
-                    <a class="navbar-brand" href="landing.html">
-                        <img src="images/logo.png" alt="Logo">
-                        <h6>Single Window Portal<span>Departments of Commerce & Industries</span></h6>
-                    </a>
-                </h1>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end" id="navbarOffcanvas" tabindex="-1"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h1 class="mb-0">
-                            <a class="navbar-brand" routerLink="/">
-                                <img src="images/logo.jpg">
-                            </a>
-                        </h1>
-                        <button type="button" class="btn-close btn-close-dark text-reset" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <div class="navbar-nav justify-content-end flex-grow-1 pe-3 navbar-expand">
-                            <ul class="navbar-nav gap-3 align-items-center">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <i class="bi bi-gear"></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="tile-appears.html">Tile Appears</a></li>
-                                        <li><a class="dropdown-item" href="industrial-registration.html">Industrial
-                                                Registration</a></li>
-                                        <li><a class="dropdown-item" href="company-information.html">Aakanksha
-                                                Registration</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <i class="bi bi-bell-fill  position-relative">
-
-                                            <span
-                                                class="notofication position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
-                                                3
-                                            </span>
-                                        </i>
-                                    </a>
-
-                                </li>
-
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <div class="user-profile">
-                                            <div> <img class="user-icon rounded-circle" src="./images/user.png"
-                                                    alt="User Icon" width="30"></div>
-                                            <div>
-                                                <span class="user-title">Sushant Rajprakash</span>
-                                                <span class="user-msg">Hello, Welcome Back!</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="profile.html">Profile</a></li>
-                                        <li><a class="dropdown-item" href="change_password.html">Change Password</a>
-                                        </li>
-                                        <li><a class="dropdown-item" href="user-login.html">Logout</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
+    <div id="header"></div>
 
 
 
@@ -115,7 +42,7 @@
                         <span>
                             <h3 class="page-heading mb-0">Innovindustrie
                             </h3>
-                            </h3><span class="unit-code">Unit Id:
+                            </h3><span class="unit-code">
                                 11101136770197</span>
                         </span>
                     </div>
@@ -127,10 +54,10 @@
 
                             <!-- Table -->
                             <div class="d-flex table-top-nav justify-content-evenly my-3">
-                                <a href="incentives.html" class=" active">
+                                <a href="incentives.html" class=" ">
                                     <!-- <i class="bi bi-bar-chart-line"></i> -->
                                     Incentives</a>
-                                <a href="servicelist.html" class=" ">
+                                <a href="servicelist.html" class=" active">
                                     <!-- <i class="bi bi-shield-check"></i> -->
                                     Service
                                     Lists</a>
@@ -147,197 +74,212 @@
                                     <!-- <i class="bi bi-clipboard-x"></i> -->
                                     Grivance</a>
                             </div>
-                            <div class="table-responsive left-content">
+                            <div class="left-content">
                                 <div class="services d-flex gap-5 justify-content-start">
-                                    <a href="draft_services.html" class="">Draft Applications</a>
-                                    <a href="servicelist.html" class=" ">Apply Incentive</a>
-                                    <a href="service_appliaction_details.html" class=" active">Application
+                                    <a href="draft_services.html" class="">Draft Services</a>
+                                    <a href="servicelist.html" class=" ">Apply Service</a>
+                                    <a href="incentives_appliaction_details.html" class=" active">Application
                                         Details</a>
                                 </div>
-                                <table class="table mt-3">
-                                    <thead class="">
-                                        <tr>
-                                            <th>S. No</th>
-                                            <th>Department Name</th>
-                                            <th>Service Name</th>
-                                            <th>Applicant Name</th>
-                                            <th>Application No </th>
-                                            <th>Submitted On</th>
-                                            <th>Query Status</th>
-                                            <th style="width: 14%;">Payment Detail </th>
-                                            <th>Application Status (Last updated)</th>
-                                            <th>View Details</th>
-                                            <th>Download Certificate</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
+                                <div class="table-responsive ">
 
-                                        <tr>
-                                            <td>1</td>
-                                            <td>Department of Water Resources</td>
-                                            <td>Permission to draw Water</td>
-                                            <td>Aditya Jewel</td>
-                                            <td>2024051641000657</td>
-                                            <td>16/05/2024</td>
-                                            <td></td>
-                                            <td><button class="btn btn-sm btn-success px-3">Pay&nbsp;Now</button></td>
-                                            <td>
-                                                <p class="text-warning">Not Paid</p>
-                                            </td>
-                                            <td><a href="stamp-duty-preview.html" type="button"
-                                                    class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
-                                            </td>
-                                            <td><button type="button" class="btn btn-primary btn-sm" disabled><i
-                                                        class="bi bi-file-earmark-pdf"></i></button></td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>Department of Water Resources</td>
-                                            <td>Permission to draw Water</td>
-                                            <td>Aditya Jewel</td>
-                                            <td>2024021741000620</td>
-                                            <td>17/02/2024</td>
-                                            <td></td>
+                                    <table class="table mt-3" style="width: 1400px;">
+                                        <thead class="">
+                                            <tr>
+                                                <th width="5%">Sl#</th>
+                                                <th>Application No </th>
+                                                <th>Department Name</th>
+                                                <th>Service Name</th>
+                                                <th>Applicant Name</th>
 
-                                            <td><button class="btn btn-sm text-success px-3">Paid</button></td>
-                                            <td>
-                                                <p class="text-success">Applied</p>
-                                            </td>
-                                            <td><a href="stamp-duty-preview.html" type="button"
-                                                    class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
-                                            </td>
-                                            <td><button type="button" class="btn btn-primary btn-sm"><i
-                                                        class="bi bi-file-earmark-pdf"></i></button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>Forest and Environment Department</td>
-                                            <td>NOC for Tree Felling and Tree Transit Permit</td>
-                                            <td>GoiPlus</td>
-                                            <td>2023062725000040</td>
-                                            <td>27/06/2023 </td>
-                                            <td></td>
-                                            <td><button class="btn btn-sm btn-success px-3">Pay&nbsp;Now</button></td>
-                                            <td>
-                                                <p class="text-warning">Not Paid</p>
-                                            </td>
-                                            <td><a href="stamp-duty-preview.html" type="button"
-                                                    class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
-                                            </td>
-                                            <td><button type="button" class="btn btn-primary btn-sm" disabled><i
-                                                        class="bi bi-file-earmark-pdf"></i></button></td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>Revenue & Disaster Management (R&DM) Department</td>
-                                            <td>Registration of Societies under The Societies Registration Act, 1860
-                                                and
-                                                The Society Registration (Odisha Amendment) Act,1969</td>
-                                            <td>Sukanya enterprises</td>
-                                            <td>2023062747000013</td>
-                                            <td>27/06/2023</td>
-                                            <td></td>
-                                            <td><button class="btn btn-sm btn-success px-3">Pay&nbsp;Now</button>
-                                            </td>
-                                            <td>
-                                                <p class="text-warning">Not Paid</p>
-                                            </td>
-                                            <td><a href="stamp-duty-preview.html" type="button"
-                                                    class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
-                                            </td>
-                                            <td><button type="button" class="btn btn-primary btn-sm" disabled><i
-                                                        class="bi bi-file-earmark-pdf"></i></button></td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td>Food Supplies and Consumer Welfare (FS&CW) Department</td>
-                                            <td>License as manufacturer of Weights and Measures under The Legal
-                                                Metrology Act, 2009</td>
-                                            <td>Utkal Steel</td>
-                                            <td>2023062718000019</td>
-                                            <td>27/06/2023 </td>
-                                            <td></td>
-                                            <td><button class="btn btn-sm text-success px-3">Paid</button></td>
-                                            <td>
-                                                <p class="text-success">Applied</p>
-                                            </td>
-                                            <td><a href="stamp-duty-preview.html" type="button"
-                                                    class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
-                                            </td>
-                                            <td><button type="button" class="btn btn-primary btn-sm"><i
-                                                        class="bi bi-file-earmark-pdf"></i></button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>6</td>
-                                            <td>Department of Water Resources</td>
-                                            <td>Permission to draw Water</td>
-                                            <td>Utkal Steel </td>
-                                            <td>2023062741000544 </td>
-                                            <td>27/06/2023 </td>
-                                            <td></td>
-                                            <td><button class="btn btn-sm text-success px-3">Paid</button></td>
-                                            <td>
-                                                <p class="text-success">Applied</p>
-                                            </td>
-                                            <td><a href="stamp-duty-preview.html" type="button"
-                                                    class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
-                                            </td>
-                                            <td><button type="button" class="btn btn-primary btn-sm"><i
-                                                        class="bi bi-file-earmark-pdf"></i></button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>7</td>
-                                            <td>Directorate of Labour</td>
-                                            <td>Registration of Establishment under The Building and Other
-                                                Construction
-                                                Workers (Regulation of Employment and Conditions of Service) Act,
-                                                1996
-                                            </td>
-                                            <td>Sambhav Multimedia</td>
-                                            <td>202406074000401</td>
-                                            <td>07/06/2024</td>
-                                            <td></td>
-                                            <td><button class="btn btn-sm text-success px-3">Paid</button></td>
-                                            <td>
-                                                <p class="text-success">Applied</p>
-                                            </td>
-                                            <td><a href="stamp-duty-preview.html" type="button"
-                                                    class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
-                                            </td>
-                                            <td><button type="button" class="btn btn-primary btn-sm"><i
-                                                        class="bi bi-file-earmark-pdf"></i></button>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>8</td>
-                                            <td>Directorate of Labour </td>
-                                            <td>Registration of Establishment under The Building and Other
-                                                Construction
-                                                Workers (Regulation of Employment and Conditions of Service) Act,
-                                                1996
-                                            </td>
-                                            <td>Sukanya enterprises</td>
-                                            <td>202405304000400 </td>
-                                            <td>30/05/2024 </td>
-                                            <td></td>
-                                            <td><button class="btn btn-sm btn-success px-3">Pay&nbsp;Now</button>
-                                            </td>
-                                            <td>
-                                                <p class="text-warning">Not Paid</p>
-                                            </td>
-                                            <td><a href="stamp-duty-preview.html" type="button"
-                                                    class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
-                                            </td>
-                                            <td><button type="button" class="btn btn-primary btn-sm" disabled><i
-                                                        class="bi bi-file-earmark-pdf"></i></button></td>
-                                        </tr>
-                                    </tbody>
+                                                <th width="15%">Submitted on</th>
+                                                <th>Query Status</th>
+                                                <th>Payment Detail </th>
+                                                <th>Application Status (Last updated)</th>
+                                                <th>View Details</th>
+                                                <th>Download Certificate</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+                                            <tr>
+                                                <td>1</td>
+                                                <td>2024051641000657</td>
+                                                <td>Department of Water Resources</td>
+                                                <td>Permission to draw Water</td>
+                                                <td>Aditya Jewel</td>
+
+                                                <td>01-Aug-2024 </td>
+                                                <td></td>
+                                                <td><button class="btn btn-sm btn-success px-3">Pay&nbsp;Now</button>
+                                                </td>
+                                                <td>
+                                                    <p class="text-warning">Not Paid</p>
+                                                </td>
+                                                <td><a href="stamp-duty-preview.html" type="button"
+                                                        class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
+                                                </td>
+                                                <td><button type="button" class="btn btn-primary btn-sm" disabled><i
+                                                            class="bi bi-download"></i></button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>2024021741000620</td>
+                                                <td>Department of Water Resources</td>
+                                                <td>Permission to draw Water</td>
+                                                <td>Aditya Jewel</td>
+
+                                                <td>01-Sep-2024 </td>
+                                                <td></td>
+
+                                                <td><button class="btn btn-sm text-success px-3">Paid</button></td>
+                                                <td>
+                                                    <p class="text-success">Applied</p>
+                                                </td>
+                                                <td><a href="stamp-duty-preview.html" type="button"
+                                                        class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
+                                                </td>
+                                                <td><button type="button" class="btn btn-primary btn-sm"><i
+                                                            class="bi bi-download"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>2023062725000040</td>
+                                                <td>Forest and Environment Department</td>
+                                                <td>NOC for Tree Felling and Tree Transit Permit</td>
+                                                <td>GoiPlus</td>
+
+                                                <td>01-Oct-2024 </td>
+                                                <td></td>
+                                                <td><button class="btn btn-sm btn-success px-3">Pay&nbsp;Now</button>
+                                                </td>
+                                                <td>
+                                                    <p class="text-warning">Not Paid</p>
+                                                </td>
+                                                <td><a href="stamp-duty-preview.html" type="button"
+                                                        class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
+                                                </td>
+                                                <td><button type="button" class="btn btn-primary btn-sm" disabled><i
+                                                            class="bi bi-download"></i></button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>2023062747000013</td>
+                                                <td>Revenue & Disaster Management (R&DM) Department</td>
+                                                <td>Registration of Societies under The Societies Registration Act, 1860
+                                                    and
+                                                    The Society Registration (Chhattisgarh Amendment) Act,1969</td>
+                                                <td>Sukanya enterprises</td>
+
+                                                <td>01-Jun-2024 </td>
+                                                <td></td>
+                                                <td><button class="btn btn-sm btn-success px-3">Pay&nbsp;Now</button>
+                                                </td>
+                                                <td>
+                                                    <p class="text-warning">Not Paid</p>
+                                                </td>
+                                                <td><a href="stamp-duty-preview.html" type="button"
+                                                        class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
+                                                </td>
+                                                <td><button type="button" class="btn btn-primary btn-sm" disabled><i
+                                                            class="bi bi-download"></i></button></td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>2023062718000019</td>
+                                                <td>Food Supplies and Consumer Welfare (FS&CW) Department</td>
+                                                <td>License as manufacturer of Weights and Measures under The Legal
+                                                    Metrology Act, 2009</td>
+                                                <td>Utkal Steel</td>
+
+                                                <td>01-May-2024 </td>
+                                                <td></td>
+                                                <td><button class="btn btn-sm text-success px-3">Paid</button></td>
+                                                <td>
+                                                    <p class="text-success">Applied</p>
+                                                </td>
+                                                <td><a href="stamp-duty-preview.html" type="button"
+                                                        class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
+                                                </td>
+                                                <td><button type="button" class="btn btn-primary btn-sm"><i
+                                                            class="bi bi-download"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>6</td>
+                                                <td>2023062741000544 </td>
+                                                <td>Department of Water Resources</td>
+                                                <td>Permission to draw Water</td>
+                                                <td>Utkal Steel </td>
+
+                                                <td>01-Apr-2024 </td>
+                                                <td></td>
+                                                <td><button class="btn btn-sm text-success px-3">Paid</button></td>
+                                                <td>
+                                                    <p class="text-success">Applied</p>
+                                                </td>
+                                                <td><a href="stamp-duty-preview.html" type="button"
+                                                        class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
+                                                </td>
+                                                <td><button type="button" class="btn btn-primary btn-sm"><i
+                                                            class="bi bi-download"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>7</td>
+                                                <td>202406074000401</td>
+                                                <td>Directorate of Labour</td>
+                                                <td>Registration of Establishment under The Building and Other
+                                                    Construction
+                                                    Workers (Regulation of Employment and Conditions of Service) Act,
+                                                    1996
+                                                </td>
+                                                <td>Sambhav Multimedia</td>
+
+                                                <td>01-Mar-2024 </td>
+                                                <td></td>
+                                                <td><button class="btn btn-sm text-success px-3">Paid</button></td>
+                                                <td>
+                                                    <p class="text-success">Applied</p>
+                                                </td>
+                                                <td><a href="stamp-duty-preview.html" type="button"
+                                                        class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
+                                                </td>
+                                                <td><button type="button" class="btn btn-primary btn-sm"><i
+                                                            class="bi bi-download"></i></button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>8</td>
+                                                <td>202405304000400 </td>
+                                                <td>Directorate of Labour </td>
+                                                <td>Registration of Establishment under The Building and Other
+                                                    Construction
+                                                    Workers (Regulation of Employment and Conditions of Service) Act,
+                                                    1996
+                                                </td>
+                                                <td>Sukanya enterprises</td>
+
+                                                <td>01-Feb-2024 </td>
+                                                <td></td>
+                                                <td><button class="btn btn-sm btn-success px-3">Pay&nbsp;Now</button>
+                                                </td>
+                                                <td>
+                                                    <p class="text-warning">Not Paid</p>
+                                                </td>
+                                                <td><a href="stamp-duty-preview.html" type="button"
+                                                        class="btn btn-primary btn-sm"><i class="bi bi-eye"></i></a>
+                                                </td>
+                                                <td><button type="button" class="btn btn-primary btn-sm" disabled><i
+                                                            class="bi bi-download"></i></button></td>
+                                            </tr>
+                                        </tbody>
 
 
-                                </table>
+                                    </table>
+
+                                </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="pills-profile" role="tabpanel"
@@ -348,19 +290,19 @@
                     <h3 class="page-heading mb-3">Switch Units</h3>
 
                     <div class=" side-unit pb-3">
-                        <a href="#" class="btn btn-white  d-flex gap-2  text-start align-items-center mb-3"
+                        <a href="#" class="btn btn-white  d-flex gap-2  active text-start align-items-center mb-3"
                             onclick="openModal('incentives.html')">
                             <span class="card-img">
                                 <img src="./images/Group.png" class="" alt="...">
                             </span>
-                            <span> Apextrade <small class="d-block unit-code">Unit Id: 11101136770197</small></span>
+                            <span> Apextrade <small class="d-block unit-code"> 11101136770197</small></span>
                         </a>
-                        <a href="#" class="btn btn-white  mb-3 d-flex active gap-2 text-start align-items-center"
+                        <a href="#" class="btn btn-white  mb-3 d-flex  gap-2 text-start align-items-center"
                             onclick="openModal('invoin_incentives.html')">
                             <span class="card-img">
                                 <img src="./images/Group.png" class="" alt="...">
                             </span>
-                            <span> Innovindustrie <small class="d-block unit-code">Unit Id:
+                            <span> Innovindustrie <small class="d-block unit-code">
                                     11503606935108</small></span>
                         </a>
                         <a href="#" class="btn btn-white d-flex gap-2 text-start align-items-center mb-3"
@@ -368,14 +310,14 @@
                             <span class="card-img">
                                 <img src="./images/Group.png" class="" alt="...">
                             </span>
-                            <span> CSM 1 <small class="d-block unit-code">Unit Id: 12503666935106</small></span>
+                            <span> Adani Power <small class="d-block unit-code"> 12503666935106</small></span>
                         </a>
                         <a href="#" class="btn btn-white d-flex gap-2 text-start align-items-center mb-3"
                             onclick="openModal('incentives.html')">
                             <span class="card-img">
                                 <img src="./images/Group.png" class="" alt="...">
                             </span>
-                            <span> Angel One <small class="d-block unit-code">Unit Id: 11503606937708</small></span>
+                            <span> Angel One <small class="d-block unit-code"> 11503606937708</small></span>
                         </a>
                     </div><a href="#"
                         class="mt-4 text-decoration-none justify-content-center  fs-5 go-back d-flex gap-2 text-start align-items-center align-items-center"
@@ -388,7 +330,7 @@
     </div>
 
     <footer>
-        Copyright © 2025 Invest Odisha, All Rights Reserved.
+        Copyright © 2025 SWP Chhattisgarh, All Rights Reserved.
     </footer>
     <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel"
         aria-hidden="true">

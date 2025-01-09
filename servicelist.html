@@ -13,91 +13,18 @@
     <link rel="stylesheet" href="./css/dashboard.css">
     <!-- <link rel="stylesheet" href="./"> -->
     <title>Invest Chhhattisgar</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+        });
+    </script>
 </head>
 
 <body>
     <!-- header-start -->
-    <header>
-        <div class="container-fluid px-md-5 ">
-            <nav class="navbar navbar-expand-xl">
-                <h1 class="mb-0">
-                    <a class="navbar-brand" href="landing.html">
-                        <img src="images/logo.png" alt="Logo">
-                        <h6>Single Window Portal<span>Departments of Commerce & Industries</span></h6>
-                    </a>
-                </h1>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end" id="navbarOffcanvas" tabindex="-1"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h1 class="mb-0">
-                            <a class="navbar-brand" routerLink="/">
-                                <img src="images/logo.jpg">
-                            </a>
-                        </h1>
-                        <button type="button" class="btn-close btn-close-dark text-reset" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <div class="navbar-nav justify-content-end flex-grow-1 pe-3 navbar-expand">
-                            <ul class="navbar-nav gap-3 align-items-center">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <i class="bi bi-gear"></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="tile-appears.html">Tile Appears</a></li>
-                                        <li><a class="dropdown-item" href="industrial-registration.html">Industrial
-                                                Registration</a></li>
-                                        <li><a class="dropdown-item" href="company-information.html">Aakanksha
-                                                Registration</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <i class="bi bi-bell-fill  position-relative">
-
-                                            <span
-                                                class="notofication position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
-                                                3
-                                            </span>
-                                        </i>
-                                    </a>
-
-                                </li>
-
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <div class="user-profile">
-                                            <div> <img class="user-icon rounded-circle" src="./images/user.png"
-                                                    alt="User Icon" width="30"></div>
-                                            <div>
-                                                <span class="user-title">Sushant Rajprakash</span>
-                                                <span class="user-msg">Hello, Welcome Back!</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="profile.html">Profile</a></li>
-                                        <li><a class="dropdown-item" href="change_password.html">Change Password</a>
-                                        </li>
-                                        <li><a class="dropdown-item" href="user-login.html">Logout</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
+    <div id="header"></div>
 
 
     <!-- header-end -->
@@ -114,7 +41,7 @@
                         <span>
                             <h3 class="page-heading mb-0">Innovindustrie
                             </h3>
-                            </h3><span class="unit-code">Unit Id:
+                            </h3><span class="unit-code">
                                 11101136770197</span>
                         </span>
                     </div>
@@ -189,16 +116,16 @@
                             <!-- Table -->
                             <div class="table-responsive left-content mt-3">
                                 <div class="services d-flex gap-5 justify-content-start">
-                                    <a href="draft_services.html" class="">Draft Applications</a>
-                                    <a href="incentives.html" class=" active">Apply Services</a>
+                                    <a href="draft_services.html" class="">Draft Services</a>
+                                    <a href="incentives.html" class=" active">Apply Service</a>
                                     <a href="service_appliaction_details.html" class=" ">Application
                                         Details</a>
                                 </div>
                                 <table class="table mt-3">
                                     <thead class="">
                                         <tr>
-                                            <th>S.&nbsp;No</th>
-                                            <th>Name of the Unit/ Department</th>
+                                            <th width="5%">Sl#</th>
+                                            <th>Name of the Unit / Department</th>
                                             <th>Services Name</th>
                                             <th>Action</th>
                                         </tr>
@@ -213,25 +140,25 @@
                                         <tr>
                                             <td>2</td>
                                             <td>Directorate of Industries</td>
-                                            <td>Production Certificate- DTIC/Directorate</td>
+                                            <td>Production Certificate- DTIC / Directorate</td>
                                             <td><a href="javascript:void(0);">Apply</a>
                                         </tr>
                                         <tr>
                                             <td>3</td>
                                             <td>Directorate of Industries</td>
-                                            <td>Directorate-Land Allotment</td>
+                                            <td>Directorate - Land Allotment</td>
                                             <td><a href="javascript:void(0);">Apply</a>
                                         </tr>
                                         <tr>
                                             <td>4</td>
                                             <td>Boiler Inspectorate</td>
-                                            <td>Registration/ Renewal under Boiler Act</td>
+                                            <td>Registration / Renewal under Boiler Act</td>
                                             <td><a href="javascript:void(0);">Apply</a>
                                         </tr>
                                         <tr>
                                             <td>5</td>
                                             <td>Boiler Inspectorate</td>
-                                            <td>Boiler Manufacturer Registration/Renewal</td>
+                                            <td>Boiler Manufacturer Registration / Renewal</td>
                                             <td><a href="javascript:void(0);">Apply</a>
                                         </tr>
                                         <tr>
@@ -408,31 +335,31 @@
                                         <tr>
                                             <td>34</td>
                                             <td>Chhattisgarh Environment Conservation Board (CECB)</td>
-                                            <td>Verify Registration/renewal under E- waste Rules, 2011</td>
+                                            <td>Verify Registration / renewal under E- waste Rules, 2011</td>
                                             <td><a href="javascript:void(0);">Apply</a>
                                         </tr>
                                         <tr>
                                             <td>35</td>
                                             <td>Chhattisgarh Environment Conservation Board (CECB)</td>
-                                            <td>Verify Registration/renewal under Plastic waste Rules, 2011</td>
+                                            <td>Verify Registration / renewal under Plastic waste Rules, 2011</td>
                                             <td><a href="javascript:void(0);">Apply</a>
                                         </tr>
                                         <tr>
                                             <td>36</td>
                                             <td>Chhattisgarh Environment Conservation Board (CECB)</td>
-                                            <td>Verify Registration/renewal under Battery waste Management</td>
+                                            <td>Verify Registration / renewal under Battery waste Management</td>
                                             <td><a href="javascript:void(0);">Apply</a>
                                         </tr>
                                         <tr>
                                             <td>37</td>
                                             <td>Chhattisgarh Environment Conservation Board (CECB)</td>
-                                            <td>Verify Registration/renewal under Solid waste Management</td>
+                                            <td>Verify Registration / renewal under Solid waste Management</td>
                                             <td><a href="javascript:void(0);">Apply</a>
                                         </tr>
                                         <tr>
                                             <td>38</td>
                                             <td>Labour</td>
-                                            <td>Factory building plan approval’ (under the Factories Act, 1948)</td>
+                                            <td>Factory building plan approval (under the Factories Act, 1948)</td>
                                             <td><a href="javascript:void(0);">Apply</a>
                                         </tr>
                                         <tr>
@@ -506,7 +433,7 @@
                                         <tr>
                                             <td>50</td>
                                             <td>Urban</td>
-                                            <td>New/Renewal Trade License</td>
+                                            <td>New / Renewal Trade License</td>
                                             <td><a href="javascript:void(0);">Apply</a>
                                         </tr>
                                         <tr>
@@ -558,13 +485,13 @@
                                         <tr>
                                             <td>58</td>
                                             <td>Chief Electrical Inspectorate</td>
-                                            <td>Approval for lift/escalator installation</td>
+                                            <td>Approval for lift / escalator installation</td>
                                             <td><a href="javascript:void(0);">Apply</a>
                                         </tr>
                                         <tr>
                                             <td>59</td>
                                             <td>Chhattisgarh InfoTech Promotion Society (CHiPS)</td>
-                                            <td>Registration/Renewal of Mobile Tower Installation</td>
+                                            <td>Registration / Renewal of Mobile Tower Installation</td>
                                             <td><a href="javascript:void(0);">Apply</a>
                                         </tr>
                                         <tr>
@@ -618,14 +545,15 @@
                                         <tr>
                                             <td>68</td>
                                             <td>Water Resources Department</td>
-                                            <td>Permission to draw water from river/public tanks NOC for Ground Water
+                                            <td>Permission to draw water from river / public tanks NOC for Ground Water
                                                 Extraction</td>
                                             <td><a href="javascript:void(0);">Apply</a>
                                         </tr>
                                         <tr>
                                             <td>69</td>
                                             <td>Legal Metrology</td>
-                                            <td>Registration, renewals, and verification under Legal metrology/Weights &
+                                            <td>Registration, renewals, and verification under Legal metrology / Weights
+                                                &
                                                 Measures</td>
                                             <td><a href="javascript:void(0);">Apply</a>
                                         </tr>
@@ -670,31 +598,33 @@
                                         <tr>
                                             <td>76</td>
                                             <td>Excise Department</td>
-                                            <td>Registration for FL-3/3A/4/4A License</td>
+                                            <td>Registration for FL-3 / 3A / 4 / 4A License</td>
                                             <td><a href="javascript:void(0);">Apply</a>
                                         </tr>
                                         <tr>
                                             <td>77</td>
                                             <td>Excise Department</td>
-                                            <td>Registration for FL-5/5A License</td>
+                                            <td>Registration for FL-5 / 5A License</td>
                                             <td><a href="javascript:void(0);">Apply</a>
                                         </tr>
                                         <tr>
                                             <td>78</td>
                                             <td>Excise Department</td>
-                                            <td>Registration for FL-9/FL-9(A)/D-1/CS-1/CS-1B/B-1/W-3 License</td>
+                                            <td>Registration for FL-9 / FL-9(A) / D-1 / CS-1 / CS-1B / B-1 / W-3 License
+                                            </td>
                                             <td><a href="javascript:void(0);">Apply</a>
                                         </tr>
                                         <tr>
                                             <td>79</td>
                                             <td>Excise Department</td>
-                                            <td>Retail Shops Registration for FL10,FL 10-A, FL 10-B, CS1-C License</td>
+                                            <td>Retail Shops Registration for FL10, FL 10-A, FL 10-B, CS1-C License</td>
                                             <td><a href="javascript:void(0);">Apply</a>
                                         </tr>
                                         <tr>
                                             <td>80</td>
                                             <td>Excise Department</td>
-                                            <td>Registration for FL-6/FL-7/FL-8/ND-1/ND-2/RS-1/RS-2A License</td>
+                                            <td>Registration for FL-6 / FL-7 / FL-8 / ND-1 / ND-2 / RS-1 / RS-2A License
+                                            </td>
                                             <td><a href="javascript:void(0);">Apply</a>
                                         </tr>
                                         <tr>
@@ -706,7 +636,7 @@
                                         <tr>
                                             <td>82</td>
                                             <td>Excise Department</td>
-                                            <td>License for Change of director/owner in Bar/Club</td>
+                                            <td>License for Change of director / owner in Bar / Club</td>
                                             <td><a href="javascript:void(0);">Apply</a>
                                         </tr>
                                         <tr>
@@ -718,13 +648,13 @@
                                         <tr>
                                             <td>84</td>
                                             <td>Excise Department</td>
-                                            <td>NOC/Permit</td>
+                                            <td>NOC / Permit</td>
                                             <td><a href="javascript:void(0);">Apply</a>
                                         </tr>
                                         <tr>
                                             <td>85</td>
                                             <td>Excise Department</td>
-                                            <td>Import/Export (ENA/RS etc) NOC/Permit</td>
+                                            <td>Import / Export (ENA / RS etc) NOC / Permit</td>
                                             <td><a href="javascript:void(0);">Apply</a>
                                         </tr>
                                         <tr>
@@ -736,13 +666,13 @@
                                         <tr>
                                             <td>87</td>
                                             <td>Excise Department</td>
-                                            <td>CL NOC/Permit</td>
+                                            <td>CL NOC / Permit</td>
                                             <td><a href="javascript:void(0);">Apply</a>
                                         </tr>
                                         <tr>
                                             <td>88</td>
                                             <td>Home (Fire)</td>
-                                            <td>Registration, renewals of Fire License/ NOC</td>
+                                            <td>Registration, renewals of Fire License / NOC</td>
                                             <td><a href="javascript:void(0);">Apply</a>
                                         </tr>
                                     </tbody>
@@ -758,19 +688,19 @@
                     <h3 class="page-heading mb-3">Switch Units</h3>
 
                     <div class=" side-unit pb-3">
-                        <a href="#" class="btn btn-white  d-flex gap-2  text-start align-items-center mb-3"
+                        <a href="#" class="btn btn-white  d-flex gap-2 active text-start align-items-center mb-3"
                             onclick="openModal('incentives.html')">
                             <span class="card-img">
                                 <img src="./images/Group.png" class="" alt="...">
                             </span>
-                            <span> Apextrade <small class="d-block unit-code">Unit Id: 11101136770197</small></span>
+                            <span> Apextrade <small class="d-block unit-code"> 11101136770197</small></span>
                         </a>
-                        <a href="#" class="btn btn-white  mb-3 d-flex active gap-2 text-start align-items-center"
+                        <a href="#" class="btn btn-white  mb-3 d-flex  gap-2 text-start align-items-center"
                             onclick="openModal('invoin_incentives.html')">
                             <span class="card-img">
                                 <img src="./images/Group.png" class="" alt="...">
                             </span>
-                            <span> Innovindustrie <small class="d-block unit-code">Unit Id:
+                            <span> Innovindustrie <small class="d-block unit-code">
                                     11503606935108</small></span>
                         </a>
                         <a href="#" class="btn btn-white d-flex gap-2 text-start align-items-center mb-3"
@@ -778,14 +708,14 @@
                             <span class="card-img">
                                 <img src="./images/Group.png" class="" alt="...">
                             </span>
-                            <span> CSM 1 <small class="d-block unit-code">Unit Id: 12503666935106</small></span>
+                            <span> Adani Power <small class="d-block unit-code"> 12503666935106</small></span>
                         </a>
                         <a href="#" class="btn btn-white d-flex gap-2 text-start align-items-center mb-3"
                             onclick="openModal('incentives.html')">
                             <span class="card-img">
                                 <img src="./images/Group.png" class="" alt="...">
                             </span>
-                            <span> Angel One <small class="d-block unit-code">Unit Id: 11503606937708</small></span>
+                            <span> Angel One <small class="d-block unit-code"> 11503606937708</small></span>
                         </a>
                     </div>
                     <a href="#"
@@ -799,7 +729,7 @@
     </div>
 
     <footer>
-        Copyright © 2025 Invest Odisha, All Rights Reserved.
+        Copyright © 2025 SWP Chhattisgarh, All Rights Reserved.
     </footer>
     <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel"
         aria-hidden="true">

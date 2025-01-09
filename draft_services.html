@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,91 +14,18 @@
     <link rel="stylesheet" href="./css/dashboard.css">
 
     <title>Invest Chhhattisgar</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+        });
+    </script>
 </head>
 
 <body>
     <!-- header-start -->
-    <header>
-        <div class="container-fluid px-md-5 ">
-            <nav class="navbar navbar-expand-xl">
-                <h1 class="mb-0">
-                    <a class="navbar-brand" href="landing.html">
-                        <img src="images/logo.png" alt="Logo">
-                        <h6>Single Window Portal<span>Departments of Commerce & Industries</span></h6>
-                    </a>
-                </h1>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end" id="navbarOffcanvas" tabindex="-1"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h1 class="mb-0">
-                            <a class="navbar-brand" routerLink="/">
-                                <img src="images/logo.jpg">
-                            </a>
-                        </h1>
-                        <button type="button" class="btn-close btn-close-dark text-reset" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <div class="navbar-nav justify-content-end flex-grow-1 pe-3 navbar-expand">
-                            <ul class="navbar-nav gap-3 align-items-center">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <i class="bi bi-gear"></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="tile-appears.html">Tile Appears</a></li>
-                                        <li><a class="dropdown-item" href="industrial-registration.html">Industrial
-                                                Registration</a></li>
-                                        <li><a class="dropdown-item" href="company-information.html">Aakanksha
-                                                Registration</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <i class="bi bi-bell-fill  position-relative">
-
-                                            <span
-                                                class="notofication position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
-                                                3
-                                            </span>
-                                        </i>
-                                    </a>
-
-                                </li>
-
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <div class="user-profile">
-                                            <div> <img class="user-icon rounded-circle" src="./images/user.png"
-                                                    alt="User Icon" width="30"></div>
-                                            <div>
-                                                <span class="user-title">Sushant Rajprakash</span>
-                                                <span class="user-msg">Hello, Welcome Back!</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="profile.html">Profile</a></li>
-                                        <li><a class="dropdown-item" href="change_password.html">Change Password</a>
-                                        </li>
-                                        <li><a class="dropdown-item" href="user-login.html">Logout</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
+    <div id="header"></div>
 
 
     <!-- header-end -->
@@ -113,7 +41,7 @@
                         <span>
                             <h3 class="page-heading mb-0">Innovindustrie
                             </h3>
-                            </h3><span class="unit-code">Unit Id:
+                            </h3><span class="unit-code">
                                 11101136770197</span>
                         </span>
                     </div>
@@ -127,10 +55,10 @@
                             <!-- Table -->
 
                             <div class="d-flex table-top-nav justify-content-evenly my-3">
-                                <a href="incentives.html" class=" active">
+                                <a href="incentives.html" class=" ">
                                     <!-- <i class="bi bi-bar-chart-line"></i> -->
                                     Incentives</a>
-                                <a href="servicelist.html" class=" ">
+                                <a href="servicelist.html" class=" active">
                                     <!-- <i class="bi bi-shield-check"></i> -->
                                     Service
                                     Lists</a>
@@ -149,8 +77,8 @@
                             </div>
                             <div class="table-responsive left-content">
                                 <div class="services d-flex gap-5 justify-content-start">
-                                    <a href="draft_services.html" class=" active">Draft Applications</a>
-                                    <a href="servicelist.html" class=" ">Apply Incentive</a>
+                                    <a href="draft_services.html" class=" active">Draft Services</a>
+                                    <a href="servicelist.html" class=" ">Apply Service</a>
                                     <a href="service_appliaction_details.html" class=" ">Application
                                         Details</a>
                                 </div>
@@ -159,9 +87,9 @@
                                         <tr>
                                             <th width="30px">Sl#</th>
                                             <th>Application No</th>
-                                            <th>Incentive Name</th>
+                                            <th>Service Name</th>
                                             <th>Unit name</th>
-                                            <th>Last Update on</th>
+                                            <th width="15%">Last Update on</th>
                                             <th>Draft</th>
                                         </tr>
                                     </thead>
@@ -174,8 +102,7 @@
                                             </td>
                                             <td>Sambhav Multimedia</td>
                                             <td>22/05/2024</td>
-                                            <td><a href="company-information.html"
-                                                    class="btn btn-sm btn-green px-3">Continue</a></td>
+                                            <td><a href="company-information.html" class=" px-3">Continue</a></td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
@@ -183,17 +110,15 @@
                                             <td>Permission for Road Cutting </td>
                                             <td>Sukanya enterprises </td>
                                             <td>25/09/2023</td>
-                                            <td><a href="company-information.html"
-                                                    class="btn btn-sm btn-green px-3">Continue</a></td>
+                                            <td><a href="company-information.html" class=" px-3">Continue</a></td>
                                         </tr>
                                         <tr>
                                             <td>3</td>
                                             <td>2023062780000021</td>
-                                            <td>Land for setting up corporate office in Odisha </td>
+                                            <td>Land for setting up corporate office in Chhattisgarh </td>
                                             <td>Utkal Steel </td>
                                             <td>27/06/2023</td>
-                                            <td><a href="company-information.html"
-                                                    class="btn btn-sm btn-green px-3">Continue</a></td>
+                                            <td><a href="company-information.html" class=" px-3">Continue</a></td>
                                         </tr>
                                         <tr>
                                             <td>4</td>
@@ -201,8 +126,7 @@
                                             <td>Application for Change of Land Use </td>
                                             <td>Utkal Steel </td>
                                             <td>21/06/2023 </td>
-                                            <td><a href="company-information.html"
-                                                    class="btn btn-sm btn-green px-3">Continue</a></td>
+                                            <td><a href="company-information.html" class=" px-3">Continue</a></td>
                                         </tr>
                                         <tr>
                                             <td>5</td>
@@ -210,8 +134,7 @@
                                             <td>Trade Licence and Shop Establishment </td>
                                             <td>Sukanya enterprises </td>
                                             <td>27/10/2021 </td>
-                                            <td><a href="company-information.html"
-                                                    class="btn btn-sm btn-green px-3">Continue</a></td>
+                                            <td><a href="company-information.html" class=" px-3">Continue</a></td>
                                         </tr>
                                         <tr>
                                             <td>6</td>
@@ -220,8 +143,7 @@
                                             <td>Sukanya enterprises </td>
                                             <td>19/11/2020
                                             </td>
-                                            <td><a href="company-information.html"
-                                                    class="btn btn-sm btn-green px-3">Continue</a></td>
+                                            <td><a href="company-information.html" class=" px-3">Continue</a></td>
                                         </tr>
                                         <tr>
                                             <td>7</td>
@@ -230,8 +152,7 @@
                                             <td>Utkal Steel </td>
                                             <td>21/08/2020
                                             </td>
-                                            <td><a href="company-information.html"
-                                                    class="btn btn-sm btn-green px-3">Continue</a></td>
+                                            <td><a href="company-information.html" class=" px-3">Continue</a></td>
                                         </tr>
                                         <tr>
                                             <td>8</td>
@@ -240,8 +161,7 @@
                                             <td>Sambhav Multimedia </td>
                                             <td>22/07/2020
                                             </td>
-                                            <td><a href="company-information.html"
-                                                    class="btn btn-sm btn-green px-3">Continue</a></td>
+                                            <td><a href="company-information.html" class=" px-3">Continue</a></td>
                                         </tr>
                                     </tbody>
 
@@ -257,19 +177,19 @@
                     <h3 class="page-heading mb-3">Switch Units</h3>
 
                     <div class=" side-unit pb-3">
-                        <a href="#" class="btn btn-white  d-flex gap-2  text-start align-items-center mb-3"
+                        <a href="#" class="btn btn-white  d-flex gap-2 active  text-start align-items-center mb-3"
                             onclick="openModal('incentives.html')">
                             <span class="card-img">
                                 <img src="./images/Group.png" class="" alt="...">
                             </span>
-                            <span> Apextrade <small class="d-block unit-code">Unit Id: 11101136770197</small></span>
+                            <span> Apextrade <small class="d-block unit-code"> 11101136770197</small></span>
                         </a>
-                        <a href="#" class="btn btn-white  mb-3 d-flex active gap-2 text-start align-items-center"
+                        <a href="#" class="btn btn-white  mb-3 d-flex  gap-2 text-start align-items-center"
                             onclick="openModal('invoin_incentives.html')">
                             <span class="card-img">
                                 <img src="./images/Group.png" class="" alt="...">
                             </span>
-                            <span> Innovindustrie <small class="d-block unit-code">Unit Id:
+                            <span> Innovindustrie <small class="d-block unit-code">
                                     11503606935108</small></span>
                         </a>
                         <a href="#" class="btn btn-white d-flex gap-2 text-start align-items-center mb-3"
@@ -277,14 +197,14 @@
                             <span class="card-img">
                                 <img src="./images/Group.png" class="" alt="...">
                             </span>
-                            <span> CSM 1 <small class="d-block unit-code">Unit Id: 12503666935106</small></span>
+                            <span> Adani Power <small class="d-block unit-code"> 12503666935106</small></span>
                         </a>
                         <a href="#" class="btn btn-white d-flex gap-2 text-start align-items-center mb-3"
                             onclick="openModal('incentives.html')">
                             <span class="card-img">
                                 <img src="./images/Group.png" class="" alt="...">
                             </span>
-                            <span> Angel One <small class="d-block unit-code">Unit Id: 11503606937708</small></span>
+                            <span> Angel One <small class="d-block unit-code"> 11503606937708</small></span>
                         </a>
                     </div>
                     <a href="#"
@@ -299,7 +219,7 @@
 
 
     <footer>
-        Copyright © 2025 Invest Odisha, All Rights Reserved.
+        Copyright © 2025 SWP Chhattisgarh, All Rights Reserved.
     </footer>
     <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel"
         aria-hidden="true">

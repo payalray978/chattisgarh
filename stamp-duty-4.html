@@ -11,92 +11,20 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./css/bootstrap-min.css">
     <link rel="stylesheet" href="./css/dashboard.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <title>Invest Chhhattisgar</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+        });
+    </script>
 </head>
 
 <body>
     <!-- header-start -->
-    <header>
-        <div class="container-fluid px-md-5 ">
-            <nav class="navbar navbar-expand-xl">
-                <h1 class="mb-0">
-                    <a class="navbar-brand" href="landing.html">
-                        <img src="images/logo.png" alt="Logo">
-                        <h6>Single Window Portal<span>Departments of Commerce & Industries</span></h6>
-                    </a>
-                </h1>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end" id="navbarOffcanvas" tabindex="-1"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h1 class="mb-0">
-                            <a class="navbar-brand" routerLink="/">
-                                <img src="images/logo.jpg">
-                            </a>
-                        </h1>
-                        <button type="button" class="btn-close btn-close-dark text-reset" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <div class="navbar-nav justify-content-end flex-grow-1 pe-3 navbar-expand">
-                            <ul class="navbar-nav gap-3 align-items-center">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <i class="bi bi-gear"></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="tile-appears.html">Tile Appears</a></li>
-                                        <li><a class="dropdown-item" href="industrial-registration.html">Industrial
-                                                Registration</a></li>
-                                        <li><a class="dropdown-item" href="company-information.html">Aakanksha
-                                                Registration</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <i class="bi bi-bell-fill  position-relative">
-
-                                            <span
-                                                class="notofication position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
-                                                3
-                                            </span>
-                                        </i>
-                                    </a>
-
-                                </li>
-
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <div class="user-profile">
-                                            <div> <img class="user-icon rounded-circle" src="./images/user.png"
-                                                    alt="User Icon" width="30"></div>
-                                            <div>
-                                                <span class="user-title">Sushant Rajprakash</span>
-                                                <span class="user-msg">Hello, Welcome Back!</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="profile.html">Profile</a></li>
-                                        <li><a class="dropdown-item" href="change_password.html">Change Password</a>
-                                        </li>
-                                        <li><a class="dropdown-item" href="user-login.html">Logout</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
+    <div id="header"></div>
 
 
     <!-- header-end -->
@@ -131,7 +59,11 @@
                     </ul>
                 </div>
                 <div class="col-md-9">
-                    <h3 class="page-heading">Application for Stamp Duty Exemption</h3>
+                    <div class="d-flex justify-content-between mb-3 align-items-center">
+                        <h3 class="page-heading">Application for Stamp Duty Exemption</h3>
+                        <p class="m-0 mandatory-text">(<span class="text-danger">*</span>) <i>Indicated fields are
+                                mandatory</i></p>
+                    </div>
 
 
                     <div class="left-content">
@@ -140,7 +72,7 @@
                             <div class="col-md-5 mb-3">
                                 <label for="exampleFormControlInput1" class="form-label">Industrial Area Name <span
                                         class="text-danger">*</span></label>
-                                <input type="text" disabled class="form-control" placeholder="Apextrade"
+                                <input type="text" disabled class="form-control" placeholder="Aurethi, Bhatapara"
                                     id="exampleFormControlInput1">
                             </div>
                             <div class="col-md-1"></div>
@@ -157,12 +89,13 @@
                             </div>
                             <div class="col-md-1"></div>
                             <div class="col-md-5 mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Land Area Unit
+                                <label for="exampleFormControlInput1" class="form-label">Area Unit
                                     <span class="text-danger">*</span></label>
-                                <select class="form-select" aria-label="Default select example">
+                                <select name="" id="" class="form-select">
                                     <option value="india">Select </option>
-                                    <option value="1">50</option>
-                                    <option value="2">100</option>
+                                    <option value="1">Acre</option>
+                                    <option value="2">Hector</option>
+                                    <option value="2">Sq. Mtr.</option>
                                 </select>
                             </div>
                             <div class="col-md-1"></div>
@@ -170,24 +103,29 @@
                                 <label for="exampleFormControlInput1" class="form-label">Land Allotment Order Number
                                     <span class="text-danger">*</span></label>
                                 <input type="text" class="form-control" id="exampleFormControlInput1">
+
                             </div>
                             <div class="col-md-1"></div>
                             <div class="col-md-5 mb-3">
                                 <label for="formFile" class="form-label">Land Allotment Order Documents <span
                                         class="text-danger">*</span></label>
-                                <input class="form-control" type="file" id="formFile">
+                                <input class="form-control" type="file" id="formFile"><small class="text-danger">
+                                    <i>(File type allowed is pdf, .jpg,.png , Max Size 2
+                                        MB)</i></small>
                             </div>
                             <div class="col-md-1"></div>
                             <div class="col-md-5 mb-3">
                                 <label for="exampleFormControlInput1" class="form-label">Lease Deed Date <span
                                         class="text-danger">*</span></label>
-                                <input type='date' class="form-control datepicker" name="startDate" />
+                                <input type="text" class="form-control" id="datePicker" placeholder="dd-mmm-yyyy">
                             </div>
                             <div class="col-md-1"></div>
                             <div class="col-md-5 mb-3">
                                 <label for="formFile" class="form-label">Lease Deed Documents <span
                                         class="text-danger">*</span></label>
-                                <input class="form-control" type="file" id="formFile">
+                                <input class="form-control" type="file" id="formFile"><small class="text-danger">
+                                    <i>(File type allowed is pdf, .jpg,.png , Max Size 2
+                                        MB)</i></small>
                             </div>
                             <div class="col-md-1"></div>
 
@@ -435,7 +373,7 @@
                                     <option value="meghalaya">Meghalaya</option>
                                     <option value="mizoram">Mizoram</option>
                                     <option value="nagaland">Nagaland</option>
-                                    <option value="odisha">Odisha</option>
+                                    <option value="Chhattisgarh">Chhattisgarh</option>
                                     <option value="punjab">Punjab</option>
                                     <option value="rajasthan">Rajasthan</option>
                                     <option value="sikkim">Sikkim</option>
@@ -641,10 +579,11 @@
                             </div>
                             <div class="col-md-1"></div>
                             <div class="col-md-5 mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Nigam/Palika/Panchayat<span
-                                        class="text-danger">*</span></label>
+                                <label for="exampleFormControlInput1" class="form-label">Nagar Nigam / Nagar Palika /
+                                    Nagar Panchayat
+                                    <span class="text-danger">*</span></label>
                                 <select class="form-select" aria-label="Default select example">
-                                    <option value="india">Nagar Nigam/Nagar Palika/Nagar Panchayat</option>
+                                    <option value="india">Nagar Nigam / Nagar Palika / Nagar Panchayat</option>
                                     <option value="Bakavand">Bakavand</option>
                                     <option value="Bastanar">Bastanar</option>
                                     <option value="Bastar">Bastar</option>
@@ -784,7 +723,7 @@
                             </div>
                             <div class="col-md-1"></div>
                             <div class="col-md-5 mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Khasra/Plot Number <span
+                                <label for="exampleFormControlInput1" class="form-label">Khasra / Plot Number <span
                                         class="text-danger">*</span></label>
                                 <input type="text" class="form-control" id="exampleFormControlInput1">
                             </div>
@@ -800,13 +739,14 @@
                                 <input type="text" class="form-control" id="exampleFormControlInput1">
                             </div>
                             <div class="col-md-1"></div>
-                            <div class="col-md-5 mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Land Unit<span
+                            <div class="col-md-5  mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Area Unit <span
                                         class="text-danger">*</span></label>
-                                <select class="form-select" aria-label="Default select example">
-                                    <option value="india">Select Land Unit</option>
-                                    <option value="Bakavand">100</option>
-                                    <option value="Bastanar">234</option>
+                                <select name="" id="" class="form-select">
+                                    <option value="0">Select </option>
+                                    <option value="1">Acre</option>
+                                    <option value="2">Hector</option>
+                                    <option value="3">Sq. Mtr.</option>
                                 </select>
                             </div>
                             <div class="col-md-1"></div>
@@ -820,11 +760,11 @@
                                 <table class="table ">
                                     <thead>
                                         <tr>
-                                            <th>Sl#</th>
+                                            <th width="5%">Sl#</th>
                                             <th>District</th>
                                             <th>Block</th>
                                             <th>Area</th>
-                                            <th>GP/Nagar Nigam/Nagar Palika/Nagar Panchayat</th>
+                                            <th>Nagar Nigam / Nagar Palika / Nagar Panchayat</th>
                                             <th>Khasra Number</th>
                                             <th>Land Mark</th>
                                             <th>Land Area</th>
@@ -839,7 +779,7 @@
                                             <td>Durg</td>
                                             <td>Rural</td>
                                             <td>GP Name</td>
-                                            <td>7554/984</td>
+                                            <td>7554 / 984</td>
                                             <td>Near Durga Temple</td>
                                             <td>120</td>
                                             <td>Hector</td>
@@ -853,7 +793,7 @@
                                             <td>Durg</td>
                                             <td>Urban</td>
                                             <td>Mahasmund</td>
-                                            <td>112/78</td>
+                                            <td>112 / 78</td>
                                             <td>Near Railway station</td>
                                             <td>15.6</td>
                                             <td>Sq. Mt</td>
@@ -870,31 +810,31 @@
                         <h6 class="form-sub-heading mt-4">Loan approval information</h6>
                         <div class="row ">
                             <div class="col-md-5 mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Sources of loans</label>
+                                <label for="exampleFormControlInput1" class="form-label">Sources of Loans</label>
                                 <select class="form-select" aria-label="Default select example">
-                                    <option value="india">Select Land Unit</option>
-                                    <option value="Bakavand">100</option>
-                                    <option value="Bastanar">234</option>
+                                    <option value="0">Sources of loans</option>
+                                    <!-- <option value="Bakavand">100</option>
+                                    <option value="Bastanar">234</option> -->
                                 </select>
                             </div>
                             <div class="col-md-1"></div>
                             <div class="col-md-5 mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Name of the funding
-                                    institution /
-                                    bank </label>
+                                <label for="exampleFormControlInput1" class="form-label">Name of the Funding
+                                    Institution /
+                                    Bank </label>
                                 <input type="text" class="form-control" id="exampleFormControlInput1">
                             </div>
                             <div class="col-md-1"></div>
                             <div class="col-md-5 mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Area/Branch Name </label>
+                                <label for="exampleFormControlInput1" class="form-label">Area / Branch Name </label>
                                 <input type="text" class="form-control" id="exampleFormControlInput1">
                             </div>
                             <div class="col-md-1"></div>
                         </div>
-                        <h6 class="form-sub-heading mt-4">Sanctioned Loan Amount (Amount in Lakh)</h6>
+                        <h6 class="form-sub-heading mt-4">Sanctioned Loan Amount (₹ in Lakh)</h6>
                         <div class="row ">
                             <div class="col-md-5 mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Term loan </label>
+                                <label for="exampleFormControlInput1" class="form-label">Term Loan </label>
                                 <input type="text" class="form-control" id="exampleFormControlInput1">
                             </div>
                             <div class="col-md-1"></div>
@@ -910,30 +850,32 @@
                             </div>
                             <div class="col-md-1"></div>
                             <div class="col-md-5 mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Loan sanction order no. of
+                                <label for="exampleFormControlInput1" class="form-label">Loan Sanction Order No. of
                                     the
-                                    financial institution / bank </label>
+                                    Financial Institution / Bank </label>
                                 <input type="text" class="form-control" id="exampleFormControlInput1">
                             </div>
                             <div class="col-md-1"></div>
                             <div class="col-md-5 mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Loan sanction order date of
+                                <label for="exampleFormControlInput1" class="form-label">Loan Sanction Order Date of
                                     the
-                                    financial institution / bank </label>
-                                <input type='date' class="form-control datepicker" name="startDate" />
+                                    Financial Institution / Bank </label>
+                                <input type="text" class="form-control" id="datePicker" placeholder="dd-mmm-yyyy">
                             </div>
                             <div class="col-md-1"></div>
                             <div class="col-md-5 mb-3">
-                                <label for="formFile" class="form-label">Loan sanction order documents </label>
+                                <label for="formFile" class="form-label">Loan Sanction Order Documents </label>
                                 <input class="form-control" type="file" id="formFile">
+                                <small class="text-danger"> <i>(File type allowed is pdf, .jpg,.png , Max Size 2
+                                        MB)</i></small>
                             </div>
                             <div class="col-md-1"></div>
                         </div>
                         <h5 class="form-heading mt-4">Document Details</h5>
                         <div class="row">
-                            <div class="col-md-11"><label for="exampleFormControlInput1" class="form-label pr-2">If
+                            <div class="col-md-11 mb-3"><label for="exampleFormControlInput1" class="form-label pr-2">If
                                     MOU has
-                                    been signed with the Government for the applied industry,the provide its details
+                                    been Signed With the Government for the applied industry, the provide its details
                                 </label>
                                 <div class="">
                                     <div class="form-check form-check-inline">
@@ -978,7 +920,7 @@
                             <div class="col-md-1"></div>
 
                             <div class="col-md-5 mb-3">
-                                <label for="formFile" class="form-label">NCTL/SARFAESI/IBC Documents <span
+                                <label for="formFile" class="form-label">NCTL / SARFAESI / IBC Documents <span
                                         class="text-danger">*</span></label>
                                 <input class="form-control" type="file" id="formFile">
                             </div>
@@ -990,9 +932,9 @@
                             </div>
                             <div class="col-md-1"></div>
                             <div class="col-md-5 mb-3">
-                                <label for="formFile" class="form-label">Certificate w.r.t. closed/sick Industry(all
+                                <label for="formFile" class="form-label">Certificate w.r.t. closed / sick Industry (all
                                     doc
-                                    releted to close/sick industry) <span class="text-danger">*</span></label>
+                                    releted to close / sick industry) <span class="text-danger">*</span></label>
                                 <input class="form-control" type="file" id="formFile">
                             </div>
                             <div class="col-md-1"></div>
@@ -1014,10 +956,32 @@
     </div>
 
     <footer>
-        Copyright © 2025 Invest Odisha, All Rights Reserved.
+        Copyright © 2025 SWP Chhattisgarh, All Rights Reserved.
     </footer>
 
     <script src="js/bootstrap-5.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+        // Initialize Flatpickr on the input field
+        flatpickr("#datePicker", {
+            dateFormat: "d-M-Y", // Format: dd-MMM-yyyy
+            altInput: true, // Shows an alternative input with formatted value
+            altFormat: "d-M-Y", // Display format in the input field
+            allowInput: true, // Allows manual input
+        });
+    </script>
+    <!-- <script src="./js/bootstrap-datepicker.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.date-picker').datepicker({
+                autoclose: true,
+                todayHighlight: true
+            });
+        });
+ 
+    </script> -->
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

@@ -17,92 +17,18 @@
         integrity="sha512-34s5cpvaNG3BknEWSuOncX28vz97bRI59UnVtEEpFX536A7BtZSJHsDyFoCl8S7Dt2TPzcrCEoHBGeM4SUBDBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Invest Chhhattisgar</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+        });
+    </script>
 </head>
 
 <body>
     <!-- header-start -->
-    <header>
-        <div class="container-fluid px-md-5 ">
-            <nav class="navbar navbar-expand-xl">
-                <h1 class="mb-0">
-                    <a class="navbar-brand" href="landing.html">
-                        <img src="images/logo.png" alt="Logo">
-                        <h6>Single Window Portal<span>Departments of Commerce & Industries</span></h6>
-                    </a>
-                </h1>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end" id="navbarOffcanvas" tabindex="-1"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h1 class="mb-0">
-                            <a class="navbar-brand" routerLink="/">
-                                <img src="images/logo.jpg">
-                            </a>
-                        </h1>
-                        <button type="button" class="btn-close btn-close-dark text-reset" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <div class="navbar-nav justify-content-end flex-grow-1 pe-3 navbar-expand">
-                            <ul class="navbar-nav gap-3 align-items-center">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <i class="bi bi-gear"></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="tile-appears.html">Tile Appears</a></li>
-                                        <li><a class="dropdown-item" href="industrial-registration.html">Industrial
-                                                Registration</a></li>
-                                        <li><a class="dropdown-item" href="company-information.html">Aakanksha
-                                                Registration</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <i class="bi bi-bell-fill  position-relative">
-
-                                            <span
-                                                class="notofication position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
-                                                3
-                                            </span>
-                                        </i>
-                                    </a>
-
-                                </li>
-
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <div class="user-profile">
-                                            <div> <img class="user-icon rounded-circle" src="./images/user.png"
-                                                    alt="User Icon" width="30">
-                                            </div>
-                                            <div>
-                                                <span class="user-title">Sushant Rajprakash</span>
-                                                <span class="user-msg">Hello, Welcome Back!</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="profile.html">Profile</a></li>
-                                        <li><a class="dropdown-item" href="change_password.html">Change Password</a>
-                                        </li>
-                                        <li><a class="dropdown-item" href="user-login.html">Logout</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
+    <div id="header"></div>
 
 
     <!-- header-end -->
@@ -137,7 +63,11 @@
                     </ul>
                 </div>
                 <div class="col-md-9">
-                    <h3 class="page-heading mb-3">Udyam Aakanksha / Unit Registration</h3>
+                    <div class="d-flex justify-content-between mb-3 align-items-center">
+                        <h3 class="page-heading">Udyam Aakanksha / Unit Registration</h3>
+                        <p class="m-0 mandatory-text">(<span class="text-danger">*</span>) <i>Indicated fields are
+                                mandatory</i></p>
+                    </div>
 
                     <div class="steps-indicator">
                         <div class="navigation_menu" id="navigation_menu">
@@ -158,16 +88,25 @@
                     </div>
 
                     <div class="left-content" id="land" role="tabpanel" aria-labelledby="land-tab">
-                        <h5 class="form-heading">Proposed location of land</h5>
-                        <div class="row">
-                            <div class="col-md-5  mb-3">
-                                <label for="landRequired" class="form-label">Land required from government <span
+                        <h5 class="form-heading">Proposed Location of Land</h5>
+                        <div class="row mb-3">
+                            <div class="col-md-5  ">
+                                <label for="landRequired" class="form-label">Land Required from Government <span
                                         class="text-danger">*</span></label>
-                                <select class="form-select" id="landRequired" aria-label="Default select example">
-                                    <option value="ro">Select</option>
-                                    <option value="Yes" id="Yes">Yes</option>
-                                    <option value="No">No</option>
-                                </select>
+
+                                <div class="">
+                                    <div class="form-check  form-check-inline">
+                                        <input class="form-check-input" type="radio" name="landRequired" id="landYes"
+                                            value="Yes">
+                                        <label class="form-check-label" for="landYes">Yes</label>
+                                    </div>
+                                    <div class="form-check  form-check-inline">
+                                        <input class="form-check-input" type="radio" name="landRequired" id="landNo"
+                                            value="No">
+                                        <label class="form-check-label" for="landNo">No</label>
+                                    </div>
+                                </div>
+
                             </div>
                             <div class="col-md-1"></div>
                         </div>
@@ -200,8 +139,8 @@
                                             <label class="form-check-label" for="inlineRadio1">Rural</label>
                                         </div>
                                         <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                id="inlineRadio2" value="option2">
+                                            <input class="form-check-input" type="radio" checked
+                                                name="inlineRadioOptions" id="inlineRadio2" value="option2">
                                             <label class="form-check-label" for="inlineRadio2">Urban</label>
                                         </div>
                                     </div>
@@ -426,7 +365,7 @@
                                         <option value="meghalaya">Meghalaya</option>
                                         <option value="mizoram">Mizoram</option>
                                         <option value="nagaland">Nagaland</option>
-                                        <option value="odisha">Odisha</option>
+                                        <option value="Chhattisgarh">Chhattisgarh</option>
                                         <option value="punjab">Punjab</option>
                                         <option value="rajasthan">Rajasthan</option>
                                         <option value="sikkim">Sikkim</option>
@@ -496,7 +435,7 @@
                                 </div>
                                 <div class="col-md-1"></div>
                                 <div class="col-md-5  mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Block/Tehsil <span
+                                    <label for="exampleFormControlInput1" class="form-label">Block / Tehsil <span
                                             class="text-danger">*</span></label>
                                     <select class="form-select" aria-label="Default select example">
                                         <option value="india">Select Block / Tehsil</option>
@@ -636,30 +575,17 @@
                                     </select>
                                 </div>
                                 <div class="col-md-1"></div>
+
                                 <div class="col-md-5  mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Gram Panchayat
-                                        <span class="text-danger">*</span></label>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>Select Panchayat</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </div>
-                                <div class="col-md-1"></div>
-                                <div class="col-md-5  mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Nagar Nigam <span
+                                    <label for="exampleFormControlInput1" class="form-label">Nagar Nigam / Nagar Palika / Nagar Panchayat <span
                                             class="text-danger">*</span></label>
                                     <select class="form-select" aria-label="Default select example">
-                                        <option selected>Select Nagar</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
+                                        <option selected>Select</option>
                                     </select>
                                 </div>
                                 <div class="col-md-1"></div>
                                 <div class="col-md-5  mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Village/Town <span
+                                    <label for="exampleFormControlInput1" class="form-label">Village / Town <span
                                             class="text-danger">*</span></label>
                                     <input type="text" class="form-control" id="exampleFormControlInput1">
                                 </div>
@@ -671,7 +597,7 @@
                                 </div>
                                 <div class="col-md-1"></div>
                                 <div class="col-md-5  mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Khasra/Plot Number
+                                    <label for="exampleFormControlInput1" class="form-label">Khasra / Plot Number
                                         <span class="text-danger">*</span> </label>
                                     <input type="text" class="form-control" id="exampleFormControlInput1">
                                 </div>
@@ -690,7 +616,12 @@
                                 <div class="col-md-5  mb-3">
                                     <label for="exampleFormControlInput1" class="form-label">Area Unit <span
                                             class="text-danger">*</span></label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1">
+                                    <select name="" id="" class="form-select">
+                                        <option value="india">Select </option>
+                                        <option value="1">Acre</option>
+                                        <option value="2">Hector</option>
+                                        <option value="2">Sq. Mtr.</option>
+                                    </select>
                                 </div>
                                 <div class="col-md-1"></div>
 
@@ -704,15 +635,15 @@
                                     <table class="table   ">
                                         <thead class="">
                                             <tr>
-                                                <th>Sl#</th>
+                                                <th width="5%">Sl#</th>
                                                 <th>District</th>
                                                 <th>Block</th>
                                                 <th>Area</th>
-                                                <th>GP/Nagar Nigam/Nagar Palika/Nagar Panchayat</th>
+                                                <th>Nagar Nigam / Nagar Palika / Nagar Panchayat</th>
                                                 <th>Khasra Number</th>
                                                 <th>Land Mark</th>
                                                 <th>Land Area</th>
-                                                <th>Land Unit</th>
+                                                <th>Area Unit</th>
                                                 <th>Action</th>
                                             </tr>
                                         </thead>
@@ -723,7 +654,7 @@
                                                 <td>Durg</td>
                                                 <td>Rural</td>
                                                 <td>GP Name</td>
-                                                <td>7554/984</td>
+                                                <td>7554 / 984</td>
                                                 <td>Near Durga Temple</td>
                                                 <td>120</td>
                                                 <td>Hector</td>
@@ -737,7 +668,7 @@
                                                 <td>Bhilai</td>
                                                 <td>Urban</td>
                                                 <td>Mahasmund</td>
-                                                <td>112/78</td>
+                                                <td>112 / 78</td>
                                                 <td>Near Railway station</td>
                                                 <td>15.6</td>
                                                 <td>Sq. Mt</td>
@@ -949,24 +880,36 @@
                                 </div>
                                 <div class="col-md-1"></div>
                                 <div class="col-md-5  mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Land Unit </label>
-                                    <input type="text" class="form-control" id="exampleFormControlInput1">
-                                </div>
-                                <div class="col-md-1"></div>
-                                <div class="col-md-5  mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Whether land is
-                                        required in
-                                        CSIDC industrial estate </label>
-                                    <select name="" id="" class="form-control">
+                                    <label for="exampleFormControlInput1" class="form-label">Area Unit </label>
+                                    <select name="" id="" class="form-select">
                                         <option value="india">Select </option>
-                                        <option value="1">Yes</option>
-                                        <option value="2">No</option>
+                                        <option value="1">Acre</option>
+                                        <option value="2">Hector</option>
+                                        <option value="2">Sq. Mtr.</option>
                                     </select>
                                 </div>
                                 <div class="col-md-1"></div>
                                 <div class="col-md-5  mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Whether land is
+                                        Required in
+                                        CSIDC Industrial Estate </label>
+                                    <div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="options" id="optionYes"
+                                                value="1">
+                                            <label class="form-check-label" for="optionYes">Yes</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="options" id="optionNo"
+                                                value="2">
+                                            <label class="form-check-label" for="optionNo">No</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-1"></div>
+                                <div class="col-md-5  mb-3">
                                     <label for="exampleFormControlInput1" class="form-label">Name of the CSIDC
-                                        industrial estate </label>
+                                        Industrial Estate </label>
                                     <select class="form-select" aria-label="Default select example">
                                         <option value="india">Select Industrial Estate</option>
                                         <option value="balod">Balod</option>
@@ -1013,14 +956,21 @@
                                 </div>
                                 <div class="col-md-1"></div>
                                 <div class="col-md-5  mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Whether land to be
-                                        acquired
+                                    <label for="exampleFormControlInput1" class="form-label">Whether Land to be
+                                        Acquired
                                         by CSIDC</label>
-                                    <select name="" id="" class="form-control">
-                                        <option value="india">Select </option>
-                                        <option value="1">Yes</option>
-                                        <option value="2">No</option>
-                                    </select>
+                                    <div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="options" id="optionYes"
+                                                value="1">
+                                            <label class="form-check-label" for="optionYes">Yes</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="options" id="optionNo"
+                                                value="2">
+                                            <label class="form-check-label" for="optionNo">No</label>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="col-md-1"></div>
                             </div>
@@ -1255,7 +1205,7 @@
                                     <option value="meghalaya">Meghalaya</option>
                                     <option value="mizoram">Mizoram</option>
                                     <option value="nagaland">Nagaland</option>
-                                    <option value="odisha">Odisha</option>
+                                    <option value="Chhattisgarh">Chhattisgarh</option>
                                     <option value="punjab">Punjab</option>
                                     <option value="rajasthan">Rajasthan</option>
                                     <option value="sikkim">Sikkim</option>
@@ -1597,7 +1547,7 @@
                             </div>
                             <div class="col-md-1"></div>
                             <div class="col-md-5  mb-3 ">
-                                <label for="exampleFormControlInput1" class="form-label">Email Id <span
+                                <label for="exampleFormControlInput1" class="form-label">Email ID <span
                                         class="text-danger">*</span></label>
                                 <input type="text" class="form-control" id="exampleFormControlInput1">
                             </div>
@@ -1840,7 +1790,7 @@
                                                         <div class="col-md-1"></div>
                 
                                                         <div class="col-md-5  mb-3">
-                                                            <label for="exampleFormControlInput1" class="form-label">Land Unit
+                                                            <label for="exampleFormControlInput1" class="form-label">Area Unit
                                                             </label>
                                                             <select class="form-select" aria-label="Default select example">
                                                                 <option selected>Select Unit</option>
@@ -1903,7 +1853,7 @@
                                                             <table class="table   ">
                                                                 <thead class="">
                                                                     <tr>
-                                                                        <th>Sl#</th>
+                                                                        <th width="5%">Sl#</th>
                                                                         <th>Product Name</th>
                                                                         <th>Activity Code</th>
                                                                         <th>Annual Capacity</th>
@@ -1959,7 +1909,7 @@
     <!-- <button class="btn btn-primary save-draft-btn">Save Draft</button>
     <a href="#" class="btn btn-primary save-draft-btn1"><i class="bi bi-chevron-double-up"></i></a> -->
     <footer>
-        Copyright © 2025 Invest Odisha, All Rights Reserved.
+        Copyright © 2025 SWP Chhattisgarh, All Rights Reserved.
     </footer>
 
     <script src="js/bootstrap-5.js"></script>
@@ -1967,21 +1917,37 @@
 
     <script src="./js/script.js"></script>
     <script>
-        document.getElementById("landRequired").addEventListener("change", function () {
-            const selectedValue = this.value;
-            const firstDiv = document.getElementById("firstDiv");
-            const secondDiv = document.getElementById("secondDiv");
+        // document.getElementById("landRequired").addEventListener("change", function () {
+        //     const selectedValue = this.value;
+        //     const firstDiv = document.getElementById("firstDiv");
+        //     const secondDiv = document.getElementById("secondDiv");
 
-            if (selectedValue === "Yes") {
-                secondDiv.style.display = "block";
-                firstDiv.style.display = "none";
-            } else if (selectedValue === "No") {
-                firstDiv.style.display = "block";
-                secondDiv.style.display = "none";
-            } else {
-                firstDiv.style.display = "none";
-                secondDiv.style.display = "none";
-            }
+        //     if (selectedValue === "Yes") {
+        //         secondDiv.style.display = "block";
+        //         firstDiv.style.display = "none";
+        //     } else if (selectedValue === "No") {
+        //         firstDiv.style.display = "block";
+        //         secondDiv.style.display = "none";
+        //     } else {
+        //         firstDiv.style.display = "none";
+        //         secondDiv.style.display = "none";
+        //     }
+        // });
+        // Add event listeners to the radio buttons
+        document.querySelectorAll('input[name="landRequired"]').forEach((radio) => {
+            radio.addEventListener("change", function () {
+                const selectedValue = this.value;
+                const firstDiv = document.getElementById("firstDiv");
+                const secondDiv = document.getElementById("secondDiv");
+
+                if (selectedValue === "Yes") {
+                    secondDiv.style.display = "block";
+                    firstDiv.style.display = "none";
+                } else if (selectedValue === "No") {
+                    firstDiv.style.display = "block";
+                    secondDiv.style.display = "none";
+                }
+            });
         });
 
 

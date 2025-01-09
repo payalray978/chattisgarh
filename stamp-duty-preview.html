@@ -12,91 +12,18 @@
     <link rel="stylesheet" href="./css/bootstrap-min.css">
     <link rel="stylesheet" href="./css/dashboard.css">
     <title>Invest Chhhattisgar</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+        });
+    </script>
 </head>
 
 <body>
     <!-- header-start -->
-    <header>
-        <div class="container-fluid px-md-5 ">
-            <nav class="navbar navbar-expand-xl">
-                <h1 class="mb-0">
-                    <a class="navbar-brand" href="landing.html">
-                        <img src="images/logo.png" alt="Logo">
-                        <h6>Single Window Portal<span>Departments of Commerce & Industries</span></h6>
-                    </a>
-                </h1>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end" id="navbarOffcanvas" tabindex="-1"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h1 class="mb-0">
-                            <a class="navbar-brand" routerLink="/">
-                                <img src="images/logo.jpg">
-                            </a>
-                        </h1>
-                        <button type="button" class="btn-close btn-close-dark text-reset" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <div class="navbar-nav justify-content-end flex-grow-1 pe-3 navbar-expand">
-                            <ul class="navbar-nav gap-3 align-items-center">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <i class="bi bi-gear"></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="tile-appears.html">Tile Appears</a></li>
-                                        <li><a class="dropdown-item" href="industrial-registration.html">Industrial
-                                                Registration</a></li>
-                                        <li><a class="dropdown-item" href="company-information.html">Aakanksha
-                                                Registration</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <i class="bi bi-bell-fill  position-relative">
-
-                                            <span
-                                                class="notofication position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
-                                                3
-                                            </span>
-                                        </i>
-                                    </a>
-
-                                </li>
-
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <div class="user-profile">
-                                            <div> <img class="user-icon rounded-circle" src="./images/user.png"
-                                                    alt="User Icon" width="30"></div>
-                                            <div>
-                                                <span class="user-title">Sushant Rajprakash</span>
-                                                <span class="user-msg">Hello, Welcome Back!</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="profile.html">Profile</a></li>
-                                        <li><a class="dropdown-item" href="change_password.html">Change Password</a>
-                                        </li>
-                                        <li><a class="dropdown-item" href="user-login.html">Logout</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
+    <div id="header"></div>
 
 
     <!-- header-end -->
@@ -131,7 +58,7 @@
                     </ul>
                 </div>
                 <div class="col-md-9">
-                    <h3 class="page-heading">Application for Stamp Duty Exemption</h3>
+                    <h3 class="page-heading mb-3">Application for Stamp Duty Exemption</h3>
                     <div class="accordion" id="accordionExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
@@ -172,8 +99,8 @@
                                                 </div>
                                                 <div class="col-md-6">
                                                     <div><label for="exampleFormControlInput1"
-                                                            class="form-label mb-0">Purchased/lease through
-                                                            NCLT/SARFAESI/IBC </label></div>
+                                                            class="form-label mb-0">Purchased / lease through
+                                                            NCLT / SARFAESI / IBC </label></div>
                                                     <span class="fw-bold d-block">Yes</span>
 
                                                 </div>
@@ -218,7 +145,7 @@
                                                 <table class="table  ">
                                                     <thead>
                                                         <tr>
-                                                            <th>Sl#</th>
+                                                            <th width="5%">Sl#</th>
                                                             <th>District</th>
                                                             <th>Block</th>
                                                             <th>Area</th>
@@ -233,7 +160,7 @@
                                                             <td>Balod</td>
                                                             <td>Durg</td>
                                                             <td>Rural</td>
-                                                            <td>7554/984</td>
+                                                            <td>7554 / 984</td>
                                                             <td>Near Durga Temple</td>
                                                             <td>120</td>
                                                         </tr>
@@ -242,7 +169,7 @@
                                                             <td>Raipur</td>
                                                             <td>Bhilai</td>
                                                             <td>Urban</td>
-                                                            <td>112/78</td>
+                                                            <td>112 / 78</td>
                                                             <td>Near Railway station</td>
                                                             <td>15.6</td>
                                                         </tr>
@@ -251,7 +178,7 @@
                                                             <td>Raipur</td>
                                                             <td>Bhilai</td>
                                                             <td>Urban</td>
-                                                            <td>112/78</td>
+                                                            <td>112 / 78</td>
                                                             <td>Pandri</td>
                                                             <td>20.6</td>
                                                         </tr>
@@ -275,16 +202,17 @@
                                                 </div>
                                             </div>
 
-                                            <h5 class="form-heading mt-4">Product/Service Information</h5>
-                                            <h6 class="form-sub-heading mt-4">Product Details (As per National
-                                                Industrial
-                                                Classification- 2008
-                                                defined by Ministry Of Statistics and Program Implementation )</h6>
+                                            <h5 class="form-heading mt-4">Product / Service Information</h5>
+                                            <h6 class="form-sub-heading mt-4">Product Details <small><i>(As per National
+                                                        Industrial
+                                                        Classification- 2008
+                                                        defined by Ministry of Statistics and Program
+                                                        Implementation)</i></small></h6>
                                             <div class="row g-3 mb-2">
                                                 <table class="table  ">
                                                     <thead>
                                                         <tr>
-                                                            <th>Sl#</th>
+                                                            <th width="5%">Sl#</th>
                                                             <th>Nature Of Activity</th>
                                                             <th>Product Name</th>
                                                             <th>NIC 2008 Code</th>
@@ -307,15 +235,17 @@
                                                     </tbody>
                                                 </table>
                                             </div>
-                                            <h6 class="form-sub-heading mt-4"> Product Details (As per National Product
-                                                Classification- 2011
-                                                defined by Ministry Of Statistics and Program Implementation )</h6>
+                                            <h6 class="form-sub-heading mt-4"> Product Details <small><i>(As per
+                                                        National Product
+                                                        Classification- 2011
+                                                        defined by Ministry of Statistics and Program
+                                                        Implementation)</i></small></h6>
                                             <div class="row g-3 mb-2">
                                                 <table class="table ">
                                                     <thead>
                                                         <tr>
-                                                            <th>Sl#</th>
-                                                            <th>Nature Of Activity</th>
+                                                            <th width="5%">Sl#</th>
+                                                            <!-- <th>Nature of Activity</th> -->
                                                             <th>Product Name</th>
                                                             <th>Activity Code</th>
                                                             <th>Annual Capacity</th>
@@ -327,8 +257,8 @@
                                                     <tbody>
                                                         <tr>
                                                             <td>1</td>
-                                                            <td>Manufacturing</td>
-                                                            <td>Rice, seed</td>
+                                                            <!-- <td>Manufacturing</td> -->
+                                                            <td>Rice</td>
                                                             <td>113100</td>
                                                             <td>400</td>
                                                             <td>Kilogram</td>
@@ -337,7 +267,7 @@
                                                         </tr>
                                                         <tr>
                                                             <td>2</td>
-                                                            <td>Servicing</td>
+                                                            <!-- <td>Servicing</td> -->
                                                             <td>Dog Food</td>
                                                             <td>2331102</td>
                                                             <td>756</td>
@@ -361,13 +291,13 @@
                                                     </thead>
                                                     <tbody>
                                                         <tr>
-                                                            <td>XYZ Industry</td>
+                                                            <td>Sushant Pratap</td>
                                                             <td>Male</td>
                                                             <td>SC</td>
                                                             <td>10%</td>
                                                         </tr>
                                                         <tr>
-                                                            <td>Text Industry</td>
+                                                            <td>Subhalaxmi Mehta</td>
                                                             <td>Female</td>
                                                             <td>General</td>
                                                             <td>18.25%</td>
@@ -376,7 +306,7 @@
                                                     </tbody>
                                                 </table>
                                             </div>
-                                            <div class="row g-3 mb-4">
+                                            <!-- <div class="row g-3 mb-4">
                                                 <div class="col-md-6">
                                                     <label for="formFile" class="form-label mb-0">EM-II Number</label>
                                                     <span class="fw-bold d-block">EM-0988786</span>
@@ -384,7 +314,7 @@
                                                 <div class="col-md-6">
                                                     <label for="formFile" class="form-label mb-0">EM-II Issuance
                                                         Date</label>
-                                                    <span class="fw-bold d-block">12/8/2024</span>
+                                                    <span class="fw-bold d-block">12-Nov-2024</span>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <label for="formFile" class="form-label mb-0">EM-II Document</label>
@@ -399,7 +329,7 @@
                                                 <div class="col-md-6">
                                                     <label for="formFile" class="form-label mb-0">PC Issuance
                                                         Date</label>
-                                                    <span class="fw-bold d-block">23/2/2024</span>
+                                                    <span class="fw-bold d-block">12-Dec-2024</span>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <label for="formFile" class="form-label mb-0">PC Document</label>
@@ -415,7 +345,7 @@
                                                 <div class="col-md-6">
                                                     <label for="formFile" class="form-label mb-0">IEM Issuance
                                                         Date</label>
-                                                    <span class="fw-bold d-block">23/2/2024</span>
+                                                    <span class="fw-bold d-block">11-Nov-2024</span>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <label for="formFile" class="form-label mb-0">IEM Document</label>
@@ -424,7 +354,7 @@
                                                         Document.pdf
                                                     </span>
                                                 </div>
-                                            </div>
+                                            </div> -->
 
                                         </div>
 
@@ -436,7 +366,7 @@
                             <h2 class="accordion-header">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Fixed Capital Investment in Existing Industry/service Unit
+                                    Fixed Capital Investment in Existing Industry / Service Unit
                                 </button>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse"
@@ -445,54 +375,54 @@
                                     <div class="card border-0">
                                         <div class="card-body p-0">
                                             <h5 class="form-heading">Fixed Capital Investment in Existing
-                                                Industry/service Unit
+                                                Industry / Service Unit
                                             </h5>
                                             <div class="row g-3 mb-3">
                                                 <div class="col-md-6">
                                                     <label for="exampleFormControlInput1" class="form-label mb-0">Land
                                                         including land
                                                         development</label>
-                                                    <span class="fw-bold d-block">₹ 50,00,000</span>
+                                                    <span class="fw-bold d-block">₹ 5,000,000</span>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <label for="exampleFormControlInput1"
-                                                        class="form-label mb-0">Shed/Building</label>
-                                                    <span class="fw-bold d-block">₹ 20,00,000</span>
+                                                    <label for="exampleFormControlInput1" class="form-label mb-0">Shed /
+                                                        Building</label>
+                                                    <span class="fw-bold d-block">₹ 2,000,000</span>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <label for="exampleFormControlInput1"
                                                         class="form-label mb-0">Building &
                                                         Civil
                                                         Construction</label>
-                                                    <span class="fw-bold d-block">₹ 15,00,000</span>
+                                                    <span class="fw-bold d-block">₹ 1,500,000</span>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <label for="exampleFormControlInput1" class="form-label mb-0">Plant
                                                         &
                                                         Machinery</label>
-                                                    <span class="fw-bold d-block">₹ 30,00,000</span>
+                                                    <span class="fw-bold d-block">₹ 3,000,000</span>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <label for="exampleFormControlInput1"
                                                         class="form-label mb-0">Electricity
                                                         Installation</label>
-                                                    <span class="fw-bold d-block">₹ 5,00,000</span>
+                                                    <span class="fw-bold d-block">₹ 500,000</span>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <label for="exampleFormControlInput1" class="form-label mb-0">Water
                                                         Supply</label>
-                                                    <span class="fw-bold d-block">₹ 2,00,000</span>
+                                                    <span class="fw-bold d-block">₹ 200,000</span>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <label for="exampleFormControlInput1"
                                                         class="form-label mb-0">Others</label>
-                                                    <span class="fw-bold d-block">₹ 10,00,000</span>
+                                                    <span class="fw-bold d-block">₹ 1,000,000</span>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <label for="exampleFormControlInput1" class="form-label mb-0">Total
                                                         capital
                                                         investment</label>
-                                                    <span class="fw-bold d-block">₹ 1,32,00,000</span>
+                                                    <span class="fw-bold d-block">₹ 13,200,000</span>
                                                 </div>
                                             </div>
                                             <h5 class="form-heading">Source of Finance</h5>
@@ -501,43 +431,43 @@
                                                     <label for="exampleFormControlInput1" class="form-label mb-0">Equity
                                                         contribution
                                                     </label>
-                                                    <span class="fw-bold d-block">₹ 50,00,000</span>
+                                                    <span class="fw-bold d-block">₹ 5,000,000</span>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <label for="exampleFormControlInput1" class="form-label mb-0">Share
                                                         Capital <span class="text-danger">*</span></label>
-                                                    <span class="fw-bold d-block">₹ 30,00,000</span>
+                                                    <span class="fw-bold d-block">₹ 3,000,000</span>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <label for="exampleFormControlInput1" class="form-label mb-0">Loan
                                                         from
                                                         financial
                                                         institution </label>
-                                                    <span class="fw-bold d-block">₹ 25,00,000</span>
+                                                    <span class="fw-bold d-block">₹ 2,500,000</span>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <label for="exampleFormControlInput1" class="form-label mb-0">Name
                                                         of
                                                         financial
                                                         institution</label>
-                                                    <span class="fw-bold d-block">ABC Bank</span>
+                                                    <span class="fw-bold d-block">HDFC Bank</span>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <label for="exampleFormControlInput1" class="form-label mb-0">Loan
                                                         from
                                                         Bank</label>
-                                                    <span class="fw-bold d-block">₹ 15,00,000</span>
+                                                    <span class="fw-bold d-block">₹ 1,500,000</span>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <label for="exampleFormControlInput1" class="form-label mb-0">Name
                                                         of the
                                                         Bank</label>
-                                                    <span class="fw-bold d-block">XYZ Bank</span>
+                                                    <span class="fw-bold d-block">Axis Bank</span>
                                                 </div>
                                                 <div class="col-md-6">
                                                     <label for="exampleFormControlInput1" class="form-label mb-0">Total
                                                         <span class="text-danger">*</span></label>
-                                                    <span class="fw-bold d-block">₹ 1,20,00,000</span>
+                                                    <span class="fw-bold d-block">₹ 12,000,000</span>
                                                 </div>
                                             </div>
                                             <h5 class="form-heading">Employment in Existing Unit/Services Unit</h5>
@@ -552,11 +482,11 @@
                                                                 production date</th>
                                                             <th rowspan="2" class="text-center" width="15%">Proposed
                                                                 Employment
-                                                                in expansion/diversification
+                                                                in expansion / diversification
                                                                 of existing unit</th>
                                                             <th rowspan="2" class="text-center" width="15%">Total
                                                                 Employment in
-                                                                expansion/diversification of
+                                                                expansion / diversification of
                                                                 existing unit</th>
                                                             <th rowspan="2" class="text-center">Increment in employment
                                                                 (In %)
@@ -760,11 +690,11 @@
                                                 <table class="table  ">
                                                     <thead>
                                                         <tr>
-                                                            <th>Sl#</th>
+                                                            <th width="5%">Sl#</th>
                                                             <th>District</th>
                                                             <th>Block</th>
                                                             <th>Area</th>
-                                                            <th>GP/Nagar Nigam/Nagar Palika/Nagar Panchayat</th>
+                                                            <th>GP/Nagar Nigam / Nagar Palika / Nagar Panchayat</th>
                                                             <th>Khasra Number</th>
                                                             <th>Land Mark</th>
                                                             <th>Land Area</th>
@@ -819,8 +749,8 @@
                                                     <span class="fw-bold d-block">State Bank of India</span>
                                                 </div>
                                                 <div class="col-md-6">
-                                                    <label for="exampleFormControlInput1"
-                                                        class="form-label mb-0">Area/Branch
+                                                    <label for="exampleFormControlInput1" class="form-label mb-0">Area /
+                                                        Branch
                                                         Name
                                                     </label>
                                                     <span class="fw-bold d-block">Bhubaneswar Main Branch</span>
@@ -881,6 +811,7 @@
                         <!-- <a class="btn btn-outline-primary" href="industrial-registration.html">Back</a> -->
                         <a class="btn btn-primary" href="#exampleModal" data-bs-toggle="modal"
                             data-bs-target="#exampleModal">Submit</a>
+                        <a class="btn btn-outline-primary" href="stamp-duty.html">Edit</a>
                         <a class="btn btn-blue" href="stamp-duty.html">Cancel</a>
                         <!-- <a class="btn btn-outline-primary" href="#">Reset</a> -->
                     </div>
@@ -892,7 +823,7 @@
 
 
     <footer>
-        Copyright © 2025 Invest Odisha, All Rights Reserved.
+        Copyright © 2025 SWP Chhattisgarh, All Rights Reserved.
     </footer>
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -903,15 +834,15 @@
                 </div>
                 <div class="modal-body text-center px-4 ">
 
-                    <div class="border-bottom  pb-3"><i class="bi bi-check-circle-fill success-text-color fs-1"></i></i>
+                    <div class="  pb-3"><i class="bi bi-check-circle-fill success-text-color fs-1"></i></i>
                         <h4 class="mt-2  ">Successfully submitted! !</h4>
                     </div>
-                    <p class="mt-3">Unit Registration Id has been sent to your email Address.</span>
+                    <!-- <p class="mt-3">Unit Registration Id has been sent to your email Address.</span> -->
 
                     <div class="">
 
-                        <a href="make_payment.html" class="btn btn-light-blue">Make Payment</a>
-                        <span class="d-block mt-2"> <a href="index.html" class="">Back to home</a></span>
+                        <!-- <a href="make_payment.html" class="btn btn-light-blue">Make Payment</a>
+                        <span class="d-block mt-2"> <a href="index.html" class="">Back to home</a></span> -->
                     </div>
 
                 </div>

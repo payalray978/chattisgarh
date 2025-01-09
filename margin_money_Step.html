@@ -12,92 +12,20 @@
     <link rel="stylesheet" href="./css/bootstrap-min.css">
     <!-- <link rel="stylesheet" href="./css/style.css"> -->
     <link rel="stylesheet" href="./css/dashboard.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
     <title>Invest Chhhattisgar</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+        });
+    </script>
 </head>
 
 <body>
     <!-- header-start -->
-    <header>
-        <div class="container-fluid px-md-5 ">
-            <nav class="navbar navbar-expand-xl">
-                <h1 class="mb-0">
-                    <a class="navbar-brand" href="landing.html">
-                        <img src="images/logo.png" alt="Logo">
-                        <h6>Single Window Portal<span>Departments of Commerce & Industries</span></h6>
-                    </a>
-                </h1>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end" id="navbarOffcanvas" tabindex="-1"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h1 class="mb-0">
-                            <a class="navbar-brand" routerLink="/">
-                                <img src="images/logo.jpg">
-                            </a>
-                        </h1>
-                        <button type="button" class="btn-close btn-close-dark text-reset" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <div class="navbar-nav justify-content-end flex-grow-1 pe-3 navbar-expand">
-                            <ul class="navbar-nav gap-3 align-items-center">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <i class="bi bi-gear"></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="tile-appears.html">Tile Appears</a></li>
-                                        <li><a class="dropdown-item" href="industrial-registration.html">Industrial
-                                                Registration</a></li>
-                                        <li><a class="dropdown-item" href="company-information.html">Aakanksha
-                                                Registration</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <i class="bi bi-bell-fill  position-relative">
-
-                                            <span
-                                                class="notofication position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
-                                                3
-                                            </span>
-                                        </i>
-                                    </a>
-
-                                </li>
-
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <div class="user-profile">
-                                            <div> <img class="user-icon rounded-circle" src="./images/user.png"
-                                                    alt="User Icon" width="30"></div>
-                                            <div>
-                                                <span class="user-title">Sushant Rajprakash</span>
-                                                <span class="user-msg">Hello, Welcome Back!</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="profile.html">Profile</a></li>
-                                        <li><a class="dropdown-item" href="change_password.html">Change Password</a>
-                                        </li>
-                                        <li><a class="dropdown-item" href="user-login.html">Logout</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
+    <div id="header"></div>
 
 
     <!-- header-end -->
@@ -132,7 +60,11 @@
                     </ul>
                 </div>
                 <div class="col-md-9">
-                    <h3 class="page-heading">Application for Margin Money Subsidy</h3>
+                    <div class="d-flex justify-content-between mb-3 align-items-center">
+                        <h3 class="page-heading">Application for Margin Money Subsidy</h3>
+                        <p class="m-0 mandatory-text">(<span class="text-danger">*</span>) <i>Indicated fields are
+                                mandatory</i></p>
+                    </div>
 
                     <div class="left-content">
                         <h5 class="form-heading">Unit Details</h5>
@@ -141,8 +73,9 @@
                                 <label for="exampleFormControlInput1" class="form-label">
                                     Udyam Aakanksha Number <span class="text-danger">*</span></label>
                                 <div class="d-flex">
-                                    <input type="text" class="form-control me-3" id="exampleFormControlInput1"><a
-                                        class="btn btn-primary" href="javascript:void(0);">Check</a>
+                                    <input type="text" placeholder="865490654367" disabled class="form-control me-3"
+                                        id="exampleFormControlInput1"><a class="btn btn-primary"
+                                        href="javascript:void(0);">Check</a>
                                 </div>
                             </div>
                         </div>
@@ -274,7 +207,7 @@
                                 <table class="table ">
                                     <thead class="">
                                         <tr>
-                                            <th>Sl#</th>
+                                            <th width="5%">Sl#</th>
                                             <th>District</th>
                                             <th>Block</th>
                                             <th>Area</th>
@@ -337,7 +270,7 @@
                                 <table class="table   ">
                                     <thead class="">
                                         <tr>
-                                            <th>Sl#</th>
+                                            <th width="5%">Sl#</th>
                                             <th>Nature Of Activity</th>
                                             <th>Product Name</th>
                                             <th>NIC 2008 Code</th>
@@ -377,7 +310,7 @@
                                 <table class="table   ">
                                     <thead class="">
                                         <tr>
-                                            <th>Sl#</th>
+                                            <th width="5%">Sl#</th>
                                             <th>Nature Of Activity</th>
                                             <th>Product Name</th>
                                             <th>Activity Code</th>
@@ -435,7 +368,7 @@
                                 <table class="table   ">
                                     <thead class="">
                                         <tr>
-                                            <th>Sl#</th>
+                                            <th width="5%">Sl#</th>
                                             <th>Entrepreneur Name</th>
                                             <th>Gender</th>
                                             <th>Category</th>
@@ -490,7 +423,8 @@
                                             <td>E.M. Part-I</td>
                                             <td><input type="checkbox"></td>
                                             <td><input type="text" class="form-control"></td>
-                                            <td><input type="date" class="form-control"></td>
+                                            <td> <input type="text" class="form-control" id="datePicker"
+                                                    placeholder="dd-mmm-yyyy"></td>
                                         </tr>
                                         <tr>
                                             <td>2</td>
@@ -498,35 +432,40 @@
                                                 Government of India</td>
                                             <td><input type="checkbox"></td>
                                             <td><input type="text" class="form-control"></td>
-                                            <td><input type="date" class="form-control"></td>
+                                            <td> <input type="text" class="form-control" id="datePicker"
+                                                    placeholder="dd-mmm-yyyy"></td>
                                         </tr>
                                         <tr>
                                             <td>3</td>
                                             <td>Letter of Intent (if Applicable)</td>
                                             <td><input type="checkbox"></td>
                                             <td><input type="text" class="form-control"></td>
-                                            <td><input type="date" class="form-control"></td>
+                                            <td> <input type="text" class="form-control" id="datePicker"
+                                                    placeholder="dd-mmm-yyyy"></td>
                                         </tr>
                                         <tr>
                                             <td>4</td>
                                             <td>Industrial License (if Applicable)</td>
                                             <td><input type="checkbox"></td>
                                             <td><input type="text" class="form-control"></td>
-                                            <td><input type="date" class="form-control"></td>
+                                            <td> <input type="text" class="form-control" id="datePicker"
+                                                    placeholder="dd-mmm-yyyy"></td>
                                         </tr>
                                         <tr>
                                             <td>5</td>
                                             <td>M.O.U (if Applicable)</td>
                                             <td><input type="checkbox"></td>
                                             <td><input type="text" class="form-control"></td>
-                                            <td><input type="date" class="form-control"></td>
+                                            <td> <input type="text" class="form-control" id="datePicker"
+                                                    placeholder="dd-mmm-yyyy"></td>
                                         </tr>
                                         <tr>
                                             <td>6</td>
                                             <td>Enterprise Aspiration Number</td>
                                             <td><input type="checkbox"></td>
                                             <td><input type="text" class="form-control"></td>
-                                            <td><input type="date" class="form-control"></td>
+                                            <td> <input type="text" class="form-control" id="datePicker"
+                                                    placeholder="dd-mmm-yyyy"></td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -720,7 +659,7 @@
 
                                     <thead class="table-light">
                                         <tr>
-                                            <th>Sl#</th>
+                                            <th width="5%">Sl#</th>
                                             <th>Name</th>
                                             <th>Amount (In Lakhs.)</th>
                                         </tr>
@@ -917,7 +856,7 @@
                             </div>
                         </div>
                         <div class="form-button-box ">
-                            <a class="btn btn-blue" href="javascript:void(0);">Save</a>
+                            <a class="btn btn-blue me-3" href="javascript:void(0);">Save</a>
                             <a class="btn btn-primary" href="margin_money_preview.html">Preview</a>
 
                         </div>
@@ -931,12 +870,22 @@
     </div>
 
     <footer>
-        Copyright © 2025, All Rights Reserved.
+        Copyright © 2025 SWP Chhattisgarh, All Rights Reserved.
     </footer>
 
 
     <script src="js/bootstrap-5.js"></script>
     <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+        // Initialize Flatpickr on the input field
+        flatpickr("#datePicker", {
+            dateFormat: "d-M-Y", // Format: dd-MMM-yyyy
+            altInput: true, // Shows an alternative input with formatted value
+            altFormat: "d-M-Y", // Display format in the input field
+            allowInput: true, // Allows manual input
+        });
+    </script>
 </body>
 
 </html>

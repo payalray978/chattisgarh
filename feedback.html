@@ -12,91 +12,18 @@
     <link rel="stylesheet" href="./css/bootstrap-min.css">
     <link rel="stylesheet" href="./css/dashboard.css">
     <title>Invest Chhhattisgar</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+        });
+    </script>
 </head>
 
 <body>
     <!-- header-start -->
-    <header>
-        <div class="container-fluid px-md-5 ">
-            <nav class="navbar navbar-expand-xl">
-                <h1 class="mb-0">
-                    <a class="navbar-brand" href="landing.html">
-                        <img src="images/logo.png" alt="Logo">
-                        <h6>Single Window Portal<span>Departments of Commerce & Industries</span></h6>
-                    </a>
-                </h1>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end" id="navbarOffcanvas" tabindex="-1"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h1 class="mb-0">
-                            <a class="navbar-brand" routerLink="/">
-                                <img src="images/logo.jpg">
-                            </a>
-                        </h1>
-                        <button type="button" class="btn-close btn-close-dark text-reset" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <div class="navbar-nav justify-content-end flex-grow-1 pe-3 navbar-expand">
-                            <ul class="navbar-nav gap-3 align-items-center">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <i class="bi bi-gear"></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="tile-appears.html">Tile Appears</a></li>
-                                        <li><a class="dropdown-item" href="industrial-registration.html">Industrial
-                                                Registration</a></li>
-                                        <li><a class="dropdown-item" href="company-information.html">Aakanksha
-                                                Registration</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <i class="bi bi-bell-fill  position-relative">
-
-                                            <span
-                                                class="notofication position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
-                                                3
-                                            </span>
-                                        </i>
-                                    </a>
-
-                                </li>
-
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <div class="user-profile">
-                                            <div> <img class="user-icon rounded-circle" src="./images/user.png"
-                                                    alt="User Icon" width="30"></div>
-                                            <div>
-                                                <span class="user-title">Sushant Rajprakash</span>
-                                                <span class="user-msg">Hello, Welcome Back!</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="profile.html">Profile</a></li>
-                                        <li><a class="dropdown-item" href="change_password.html">Change Password</a>
-                                        </li>
-                                        <li><a class="dropdown-item" href="user-login.html">Logout</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
+    <div id="header"></div>
 
 
     <!-- header-end -->
@@ -140,71 +67,7 @@
                         <div class="row g-3 mb-3 mt-1">
                             <div class="col-md-7">
                                 <div class="feedback-box">
-                                    <p class="">Overall Payment Experience</p>
-                                        <div class="star-rating">
-                                            <span class="star active" data-value="1"></span>
-                                            <span class="star" data-value="2"></span>
-                                            <span class="star" data-value="3"></span>
-                                            <span class="star" data-value="4"></span>
-                                            <span class="star" data-value="5"></span>
-                                        </div>
-                                </div>
-                                <div class="feedback-box">
-                                    <p class="">Ease of Slot Selection and Booking </p>
-                                        <div class="star-rating">
-                                            <span class="star active" data-value="1"></span>
-                                            <span class="star active" data-value="2"></span>
-                                            <span class="star" data-value="3"></span>
-                                            <span class="star" data-value="4"></span>
-                                            <span class="star" data-value="5"></span>
-                                        </div>
-                                </div>
-                                <div class="feedback-box">
-                                    <p class="">Quality of Infrastructure at the Venue</p>
-                                        <div class="star-rating">
-                                            <span class="star active" data-value="1"></span>
-                                            <span class="star active" data-value="2"></span>
-                                            <span class="star active" data-value="3"></span>
-                                            <span class="star" data-value="4"></span>
-                                            <span class="star" data-value="5"></span>
-                                        </div>
-                                </div>
-                                <div class="feedback-box">
-                                    <p class="">Quality of Training or Service Provided</p>
-                                        <div class="star-rating">
-                                            <span class="star active" data-value="1"></span>
-                                            <span class="star active" data-value="2"></span>
-                                            <span class="star active" data-value="3"></span>
-                                            <span class="star active" data-value="4"></span>
-                                            <span class="star" data-value="5"></span>
-                                        </div>
-                                </div>
-                                <div class="feedback-box">
-                                    <p class="">Quality of cleanliness and hygiene at the venue</p>
-                                        <div class="star-rating">
-                                            <span class="star active" data-value="1"></span>
-                                            <span class="star active" data-value="2"></span>
-                                            <span class="star active" data-value="3"></span>
-                                            <span class="star active" data-value="4"></span>
-                                            <span class="star active" data-value="5"></span>
-                                        </div>
-                                </div>
-                                <div class="feedback-box">
-                                    <p class="">Overall Satisfaction with Our Services</p>
-                                        <div class="star-rating">
-                                            <span class="star active" data-value="1"></span>
-                                            <span class="star active" data-value="2"></span>
-                                            <span class="star active" data-value="3"></span>
-                                            <span class="star active" data-value="4"></span>
-                                            <span class="star" data-value="5"></span>
-                                        </div>
-                                </div>
-                                
-
-                                <!-- Question 1 -->
-                                <!-- <div class="mb-3">
-                                    <p class="">1. How smooth was the application
-                                        process?</p>
+                                    <span class="d-block mb-2">Overall Payment Experience</span>
                                     <div class="star-rating">
                                         <span class="star" data-value="1"></span>
                                         <span class="star" data-value="2"></span>
@@ -212,77 +75,86 @@
                                         <span class="star" data-value="4"></span>
                                         <span class="star" data-value="5"></span>
                                     </div>
-                                </div> -->
-                                <!-- Question 2 -->
-                                <!-- <div class="mb-3">
-                                    <p class="">2. How was the overall SWP - CG
-                                        Experience?</p>
-                                    <div class="star-rating">
-                                        <span class="star1" data-value="1"></span>
-                                        <span class="star1" data-value="2"></span>
-                                        <span class="star1" data-value="3"></span>
-                                        <span class="star1" data-value="4"></span>
-                                        <span class="star1" data-value="5"></span>
-                                    </div>
-                                </div> -->
-                                <!-- Question 3 -->
-                                <!-- <div class="mb-3">
-                                    <p class="">3. Have you used the other features of GO
-                                        SWIFT?</p>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="feature1">
-                                        <label class="form-check-label" for="feature1">State Project
-                                            Monitoring Group (SPMG) portal for grievance
-                                            redressal</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="feature2">
-                                        <label class="form-check-label" for="feature2">Automated Post
-                                            Allotment Application (APAA) for IDCO land
-                                            allottees</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="feature3">
-                                        <label class="form-check-label" for="feature3">Govt. of Odisha CSR
-                                            Administration and Responsive Engagement
-                                            (GO CARE)</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="feature4">
-                                        <label class="form-check-label" for="feature4">Govt. of Odisha
-                                            Synchronized Mechanism for Inspections of
-                                            Licensed Enterprises (GO SMILE)</label>
-                                    </div>
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="feature5">
-                                        <label class="form-check-label" for="feature5">Info wizard for
-                                            details on incentives and approvals</label>
-                                    </div>
+                                    <!-- <div class="rating-average"><i class="bi bi-emoji-frown-fill"></i><span>Poor</span></div> -->
+
                                 </div>
-                           
-                                <div class="mb-3">
-                                    <p class="">4. Would you recommend GO – SWIFT to another
-                                        investor/friend?</p>
+                                <div class="feedback-box">
                                     <div>
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="recommend"
-                                                id="recommendYes" value="yes">
-                                            <label class="form-check-label" for="recommendYes">Yes</label>
-                                        </div>
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="recommend"
-                                                id="recommendNo" value="no">
-                                            <label class="form-check-label" for="recommendNo">No</label>
+                                        <span class="d-block mb-2">Ease of Slot Selection and Booking</span>
+                                        <div class="star-rating">
+                                            <span class="star1" data-value="1"></span>
+                                            <span class="star1" data-value="2"></span>
+                                            <span class="star1" data-value="3"></span>
+                                            <span class="star1" data-value="4"></span>
+                                            <span class="star1" data-value="5"></span>
                                         </div>
                                     </div>
-                                </div> -->
+                                    <!-- <div class="rating-average"><i class="bi bi-emoji-neutral-fill"></i><span>Good</span></div> -->
+                                </div>
+
+                                <div class="feedback-box">
+                                    <div>
+                                        <span class="d-block mb-2">Quality of Infrastructure at the Venue</span>
+                                        <div class="star-rating">
+                                            <span class="star2" data-value="1"></span>
+                                            <span class="star2" data-value="2"></span>
+                                            <span class="star2" data-value="3"></span>
+                                            <span class="star2" data-value="4"></span>
+                                            <span class="star2" data-value="5"></span>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="rating-average"><i class="bi bi-emoji-neutral-fill"></i><span>Good</span></div> -->
+                                </div>
+                                <div class="feedback-box">
+                                    <div>
+                                        <span class="d-block mb-2">Quality of Training or Service Provided</span>
+                                        <div class="star-rating">
+                                            <span class="star3" data-value="1"></span>
+                                            <span class="star3" data-value="2"></span>
+                                            <span class="star3" data-value="3"></span>
+                                            <span class="star3" data-value="4"></span>
+                                            <span class="star3" data-value="5"></span>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="rating-average"><i class="bi bi-emoji-smile-fill"></i><span>Very Good</span></div> -->
+                                </div>
+                                <div class="feedback-box">
+                                    <div>
+                                        <span class="d-block mb-2">Quality of cleanliness and hygiene at the
+                                            venue</span>
+                                        <div class="star-rating">
+                                            <span class="star4" data-value="1"></span>
+                                            <span class="star4" data-value="2"></span>
+                                            <span class="star4" data-value="3"></span>
+                                            <span class="star4" data-value="4"></span>
+                                            <span class="star4" data-value="5"></span>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="rating-average"><i class="bi bi-emoji-grin-fill"></i><span>Excellent</span></div> -->
+                                </div>
+                                <div class="feedback-box">
+                                    <div>
+                                        <span class="d-block mb-2">Overall Satisfaction with Our Services</span>
+                                        <div class="star-rating">
+                                            <span class="star5" data-value="1"></span>
+                                            <span class="star5" data-value="2"></span>
+                                            <span class="star5" data-value="3"></span>
+                                            <span class="star5" data-value="4"></span>
+                                            <span class="star5" data-value="5"></span>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="rating-average"><i class="bi bi-emoji-neutral-fill"></i><span>VeryGood</span></div> -->
+                                </div>
+
+
+
                                 <!-- Question 5 -->
-                                <div class="mb-3 feedback-box">
-                                    <p class="">Additional Comments, Suggestions or Feedback</p>
+                                <div class="mb-3 feedback-box2">
+                                    <p class="mb-2">Additional Comments, Suggestions or Feedback</p>
                                     <textarea class="form-control" rows="3"></textarea>
                                 </div>
                                 <!-- Submit Button -->
-                                <a href="#exampleModal" class="btn btn-light-blue" data-bs-toggle="modal"
+                                <a href="#exampleModal" class="btn btn-light-blue me-3" data-bs-toggle="modal"
                                     data-bs-target="#exampleModal">Submit</a>
                                 <a href="index.html" class="btn btn-outline-primary">Skip</a>
 
@@ -297,7 +169,7 @@
     </div>
 
     <footer>
-        Copyright © 2025 Invest Odisha, All Rights Reserved.
+        Copyright © 2025 SWP Chhattisgarh, All Rights Reserved.
     </footer>
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -354,6 +226,146 @@
         });
         document.addEventListener('DOMContentLoaded', () => {
             const stars = document.querySelectorAll('.star1');
+            const ratingValue = document.getElementById('rating-value');
+            let selectedRating = 0;
+
+            // Highlight stars on hover
+            stars.forEach((star, index) => {
+                star.addEventListener('mouseover', () => {
+                    highlightStars(index + 1);
+                });
+
+                star.addEventListener('mouseout', () => {
+                    highlightStars(selectedRating);
+                });
+
+                star.addEventListener('click', () => {
+                    selectedRating = index + 1;
+                    ratingValue.textContent = selectedRating;
+                });
+            });
+
+            function highlightStars(rating) {
+                stars.forEach((star, index) => {
+                    if (index + 1 <= rating) {
+                        star.classList.add('active');
+                        star.classList.remove('half');
+                    } else if (index + 0.5 === rating) {
+                        star.classList.add('half');
+                        star.classList.remove('active');
+                    } else {
+                        star.classList.remove('active', 'half');
+                    }
+                });
+            }
+        });
+        document.addEventListener('DOMContentLoaded', () => {
+            const stars = document.querySelectorAll('.star2');
+            const ratingValue = document.getElementById('rating-value');
+            let selectedRating = 0;
+
+            // Highlight stars on hover
+            stars.forEach((star, index) => {
+                star.addEventListener('mouseover', () => {
+                    highlightStars(index + 1);
+                });
+
+                star.addEventListener('mouseout', () => {
+                    highlightStars(selectedRating);
+                });
+
+                star.addEventListener('click', () => {
+                    selectedRating = index + 1;
+                    ratingValue.textContent = selectedRating;
+                });
+            });
+
+            function highlightStars(rating) {
+                stars.forEach((star, index) => {
+                    if (index + 1 <= rating) {
+                        star.classList.add('active');
+                        star.classList.remove('half');
+                    } else if (index + 0.5 === rating) {
+                        star.classList.add('half');
+                        star.classList.remove('active');
+                    } else {
+                        star.classList.remove('active', 'half');
+                    }
+                });
+            }
+        });
+        document.addEventListener('DOMContentLoaded', () => {
+            const stars = document.querySelectorAll('.star3');
+            const ratingValue = document.getElementById('rating-value');
+            let selectedRating = 0;
+
+            // Highlight stars on hover
+            stars.forEach((star, index) => {
+                star.addEventListener('mouseover', () => {
+                    highlightStars(index + 1);
+                });
+
+                star.addEventListener('mouseout', () => {
+                    highlightStars(selectedRating);
+                });
+
+                star.addEventListener('click', () => {
+                    selectedRating = index + 1;
+                    ratingValue.textContent = selectedRating;
+                });
+            });
+
+            function highlightStars(rating) {
+                stars.forEach((star, index) => {
+                    if (index + 1 <= rating) {
+                        star.classList.add('active');
+                        star.classList.remove('half');
+                    } else if (index + 0.5 === rating) {
+                        star.classList.add('half');
+                        star.classList.remove('active');
+                    } else {
+                        star.classList.remove('active', 'half');
+                    }
+                });
+            }
+        });
+        document.addEventListener('DOMContentLoaded', () => {
+            const stars = document.querySelectorAll('.star4');
+            const ratingValue = document.getElementById('rating-value');
+            let selectedRating = 0;
+
+            // Highlight stars on hover
+            stars.forEach((star, index) => {
+                star.addEventListener('mouseover', () => {
+                    highlightStars(index + 1);
+                });
+
+                star.addEventListener('mouseout', () => {
+                    highlightStars(selectedRating);
+                });
+
+                star.addEventListener('click', () => {
+                    selectedRating = index + 1;
+                    ratingValue.textContent = selectedRating;
+                });
+            });
+
+            function highlightStars(rating) {
+                stars.forEach((star, index) => {
+                    if (index + 1 <= rating) {
+                        star.classList.add('active');
+                        star.classList.remove('half');
+                    } else if (index + 0.5 === rating) {
+                        star.classList.add('half');
+                        star.classList.remove('active');
+                    } else {
+                        star.classList.remove('active', 'half');
+                    }
+                });
+            }
+        });
+        document.addEventListener('DOMContentLoaded', () => {
+            const stars = document.querySelectorAll('.star5');
             const ratingValue = document.getElementById('rating-value');
             let selectedRating = 0;
 

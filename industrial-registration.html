@@ -11,8 +11,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./css/bootstrap-min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <!-- <link rel="stylesheet" href="./css/main_landing.css"> -->
-    <title>Invest Chhhattisgar</title>
+    <title>Single Window Portal</title>
+
 </head>
 
 <body>
@@ -22,7 +26,7 @@
             <div class="container">
                 <a class="navbar-brand" href="landing.html">
                     <img src="images/logo.png" alt="Logo">
-                    <h6>Single Window Portal<span>Departments of Commerce & Industries</span></h6>
+                    <h6>Single Window Portal<span>Department of Commerce & Industries</span></h6>
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
@@ -96,10 +100,12 @@
             <h3 class="page-title">Industrial User Registration</h3>
             <ol class="breadcrumb ">
                 <li class="breadcrumb-item text-light"><a><i class="bi bi-house pe-1 text-light"></i> </a></li>
-                <li aria-current="page" class="breadcrumb-item active text-light">CSDIC</li>
+                <li aria-current="page" class="breadcrumb-item active text-light">User Registration</li>
             </ol>
         </div>
     </div>
+
+
     <div class="page-content-wrapper ">
         <div class="container">
             <!-- <h3 class="page-heading text-center">Industrial User Registration</h3> -->
@@ -122,6 +128,12 @@
             </div> -->
             <div class="card border-0">
                 <div class="card-body">
+                    <div class="d-flex justify-content-end  my-3 align-items-center">
+
+                        <p class="m-0 mandatory-text text-danger">(<span class="text-danger">*</span>) <i>Indicated
+                                fields are
+                                mandatory</i></p>
+                    </div>
                     <h5 class="form-heading">PAN Details</h5>
                     <div class="row g-3 mb-3">
                         <div class="col-md-4">
@@ -137,14 +149,14 @@
                         <div class="col-md-4">
                             <label for="exampleFormControlInput1" class="form-label">
                                 DOB / DOI <span class="text-danger">*</span></label>
-                            <input type="date" class="form-control" id="exampleFormControlInput1">
+                            <input type="date" class="form-control" placeholder="dd-mm-yyyy">
                         </div>
                         <div class="col-md-12 text-end">
                             <a class="btn btn-primary" href="javascript:void(0);" data-bs-toggle="modal"
-                                data-bs-target="#validate">Validate</a>
+                                data-bs-target="#validate">Validate PAN</a>
                         </div>
                     </div>
-                    <h5 class="form-heading mt-4">Investors Details</h5>
+                    <h5 class="form-heading mt-4">Investor's Details</h5>
                     <div class="row g-3 mb-3">
                         <div class="col-md-4">
                             <label for="exampleFormControlInput1" class="form-label">Name of Applicant  <span
@@ -157,7 +169,7 @@
                             <input type="text" class="form-control" id="exampleFormControlInput1">
                         </div>
                         <div class="col-md-4">
-                            <label for="exampleFormControlInput1" class="form-label">Email Id <span
+                            <label for="exampleFormControlInput1" class="form-label">Email ID <span
                                     class="text-danger">*</span></label>
                             <input type="text" class="form-control" id="exampleFormControlInput1">
                         </div>
@@ -383,7 +395,7 @@
                                 <option value="meghalaya">Meghalaya</option>
                                 <option value="mizoram">Mizoram</option>
                                 <option value="nagaland">Nagaland</option>
-                                <option value="odisha">Odisha</option>
+                                <option value="Chhattisgarh">Chhattisgarh</option>
                                 <option value="punjab">Punjab</option>
                                 <option value="rajasthan">Rajasthan</option>
                                 <option value="sikkim">Sikkim</option>
@@ -450,7 +462,7 @@
                         </div>
 
                     </div>
-                    <h5 class="form-heading mt-4">Unit Details</h5>
+                    <!-- <h5 class="form-heading mt-4">Unit Details</h5>
                     <div class="row g-3 mb-3">
                         <div class="col-md-4">
                             <label for="exampleFormControlInput1" class="form-label">Industry Type <span
@@ -463,7 +475,7 @@
                         <div class="col-md-4">
                             <label for="exampleFormControlInput1" class="form-label">EM-II / PC / IEM Type</label>
                             <select class="form-select" aria-label="Default select example">
-                                <!-- <option selected></option> -->
+                            
                                 <option value="1">EM-II</option>
                                 <option value="2">PC</option>
                                 <option value="3">IEM</option>
@@ -478,12 +490,13 @@
                             <input class="form-control" type="text">
                         </div>
 
-                    </div>
+                    </div> -->
                     <h5 class="form-heading mt-4">Login Details</h5>
                     <div class="row g-3 mb-2">
 
                         <div class="col-md-4">
-                            <label for="formFile" class="form-label">User ID <span class="text-danger">*</span></label>
+                            <label for="formFile" class="form-label">User Name <span
+                                    class="text-danger">*</span></label>
                             <input class="form-control" type="text">
                         </div>
                         <div class="col-md-4">
@@ -502,7 +515,7 @@
                                     class="text-danger">*</span></label>
                             <select class="form-select" aria-label="Default select example">
                                 <option selected>Select</option>
-                                <option value="1">What is the middle name of your youngest child? ...
+                                <option value="1">What is the middle name of your youngest child?
                                 </option>
                                 <option value="2">What was the name of your first stuffed animal?</option>
 
@@ -528,7 +541,7 @@
     <!-- <button class="btn btn-primary save-draft-btn">Save Draft</button>
     <a href="#" class="btn btn-primary save-draft-btn1"><i class="bi bi-chevron-double-up"></i></a> -->
     <footer>
-        Copyright © 2025 Invest Odisha, All Rights Reserved.
+        Copyright © 2025 SWP Chhattisgarh, All Rights Reserved.
     </footer>
     <div class="modal fade" id="validate" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
@@ -546,6 +559,29 @@
     </div>
 
     <script src="js/bootstrap-5.js"></script>
+
+
+    <!-- <script src="./js/bootstrap-datepicker.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.date-picker').datepicker({
+                autoclose: true,
+                todayHighlight: true
+            });
+        });
+ 
+    </script> -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+        // Initialize Flatpickr on the input field
+        flatpickr("#datePicker", {
+            dateFormat: "d-M-Y", // Format: dd-MMM-yyyy
+            altInput: true, // Shows an alternative input with formatted value
+            altFormat: "d-M-Y", // Display format in the input field
+            allowInput: true, // Allows manual input
+        });
+    </script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

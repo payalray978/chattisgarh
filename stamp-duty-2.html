@@ -12,91 +12,18 @@
     <link rel="stylesheet" href="./css/bootstrap-min.css">
     <link rel="stylesheet" href="./css/dashboard.css">
     <title>Invest Chhhattisgar</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+        });
+    </script>
 </head>
 
 <body>
     <!-- header-start -->
-    <header>
-        <div class="container-fluid px-md-5 ">
-            <nav class="navbar navbar-expand-xl">
-                <h1 class="mb-0">
-                    <a class="navbar-brand" href="landing.html">
-                        <img src="images/logo.png" alt="Logo">
-                        <h6>Single Window Portal<span>Departments of Commerce & Industries</span></h6>
-                    </a>
-                </h1>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end" id="navbarOffcanvas" tabindex="-1"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h1 class="mb-0">
-                            <a class="navbar-brand" routerLink="/">
-                                <img src="images/logo.jpg">
-                            </a>
-                        </h1>
-                        <button type="button" class="btn-close btn-close-dark text-reset" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <div class="navbar-nav justify-content-end flex-grow-1 pe-3 navbar-expand">
-                            <ul class="navbar-nav gap-3 align-items-center">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <i class="bi bi-gear"></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="tile-appears.html">Tile Appears</a></li>
-                                        <li><a class="dropdown-item" href="industrial-registration.html">Industrial
-                                                Registration</a></li>
-                                        <li><a class="dropdown-item" href="company-information.html">Aakanksha
-                                                Registration</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <i class="bi bi-bell-fill  position-relative">
-
-                                            <span
-                                                class="notofication position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
-                                                3
-                                            </span>
-                                        </i>
-                                    </a>
-
-                                </li>
-
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <div class="user-profile">
-                                            <div> <img class="user-icon rounded-circle" src="./images/user.png"
-                                                    alt="User Icon" width="30"></div>
-                                            <div>
-                                                <span class="user-title">Sushant Rajprakash</span>
-                                                <span class="user-msg">Hello, Welcome Back!</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="profile.html">Profile</a></li>
-                                        <li><a class="dropdown-item" href="change_password.html">Change Password</a>
-                                        </li>
-                                        <li><a class="dropdown-item" href="user-login.html">Logout</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
+    <div id="header"></div>
 
 
     <!-- header-end -->
@@ -131,56 +58,68 @@
                     </ul>
                 </div>
                 <div class="col-md-9">
-                    <h3 class="page-heading">Application for Stamp Duty Exemption</h3>
-
+                    <div class="d-flex justify-content-between mb-3 align-items-center">
+                        <h3 class="page-heading">Application for Stamp Duty Exemption</h3>
+                        <p class="m-0 mandatory-text">(<span class="text-danger">*</span>) <i>Indicated fields are
+                                mandatory</i></p>
+                    </div>
 
                     <div class="left-content">
-                        <h5 class="form-heading">Fixed Capital Investment in Existing Industry/service Unit</h5>
+                        <h5 class="form-heading">Fixed Capital Investment in Existing Industry / Service Unit (₹ in
+                            Lakh)</h5>
                         <div class="row">
                             <div class="col-md-5 mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Land including land
-                                    development
+                                <label for="exampleFormControlInput1" class="form-label">Land Including Land
+                                    Development
                                 </label>
-                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="₹ 5,000,000" disabled>
                             </div>
                             <div class="col-md-1"></div>
                             <div class="col-md-5 mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Shed/Building </label>
-                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                <label for="exampleFormControlInput1" class="form-label">Shed / Building </label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="₹ 2,000,000" disabled>
                             </div>
                             <div class="col-md-1"></div>
                             <div class="col-md-5 mb-3">
                                 <label for="exampleFormControlInput1" class="form-label">Building & Civil
                                     Construction
                                 </label>
-                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="₹ 1,500,000" disabled>
                             </div>
                             <div class="col-md-1"></div>
                             <div class="col-md-5 mb-3">
                                 <label for="exampleFormControlInput1" class="form-label">Plant & Machinery </label>
-                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="₹ 3,000,000" disabled>
                             </div>
                             <div class="col-md-1"></div>
                             <div class="col-md-5 mb-3">
                                 <label for="exampleFormControlInput1" class="form-label">Electricity Installation
                                 </label>
-                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="₹ 500,000" disabled>
                             </div>
                             <div class="col-md-1"></div>
                             <div class="col-md-5 mb-3">
                                 <label for="exampleFormControlInput1" class="form-label">Water Supply </label>
-                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="₹ 200,000" disabled>
                             </div>
                             <div class="col-md-1"></div>
                             <div class="col-md-5 mb-3">
                                 <label for="exampleFormControlInput1" class="form-label">Others </label>
-                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="₹ 1,000,000" disabled>
                             </div>
                             <div class="col-md-1"></div>
                             <div class="col-md-5 mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Total capital investment
+                                <label for="exampleFormControlInput1" class="form-label">Total Capital Investment
                                 </label>
-                                <input type="text" class="form-control" id="exampleFormControlInput1">
+                                <input type="text" class="form-control" id="exampleFormControlInput1"
+                                    placeholder="₹ 13,200,000" disabled>
                             </div>
                             <div class="col-md-1"></div>
 
@@ -188,7 +127,7 @@
                         <h5 class="form-heading">Source of Finance</h5>
                         <div class="row">
                             <div class="col-md-5 mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Equity contribution <span
+                                <label for="exampleFormControlInput1" class="form-label">Equity Contribution <span
                                         class="text-danger">*</span></label>
                                 <input type="text" class="form-control" id="exampleFormControlInput1">
                             </div>
@@ -200,14 +139,14 @@
                             </div>
                             <div class="col-md-1"></div>
                             <div class="col-md-5 mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Loan from financial
+                                <label for="exampleFormControlInput1" class="form-label">Loan from Financial
                                     institution
                                     <span class="text-danger">*</span></label>
                                 <input type="text" class="form-control" id="exampleFormControlInput1">
                             </div>
                             <div class="col-md-1"></div>
                             <div class="col-md-5 mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Name of financial
+                                <label for="exampleFormControlInput1" class="form-label">Name of Financial
                                     institution
                                 </label>
                                 <input type="text" class="form-control" id="exampleFormControlInput1">
@@ -230,22 +169,26 @@
                             </div>
                             <div class="col-md-1"></div>
                         </div>
-                        <h5 class="form-heading mb-3">Employment in Exisiting unit/Services unit </h5>
+                        <h5 class="form-heading mt-4 mb-5">Employment in Exisiting Unit / Services Unit </h5>
                         <div class="row">
                             <div class="table-responsive col-md-11">
-                                <table class="table ">
+                                <table class="table text-start">
                                     <thead>
                                         <tr>
-                                            <th rowspan="2" class="text-center">Sl#</th>
-                                            <th rowspan="2" class="text-center">Labour category</th>
-                                            <th colspan="3" class="text-center">Employment in existing unit till
-                                                production date
+                                            <th rowspan="2" width="5%" class="text-center">Sl#</th>
+                                            <th rowspan="2" width="15%" class="text-center">Labour category</th>
+                                            <th colspan="3" width="30%" class="text-center">Employment in Existing Unit
+                                                till
+                                                Production Date
                                             </th>
-                                            <th rowspan="2" class="text-center" width="15%">Proposed Employment in
-                                                expansion/diversification of existing unit</th>
-                                            <th rowspan="2" class="text-center" width="15%">Total Employment in
-                                                expansion/diversification of existing unit</th>
-                                            <th rowspan="2" class="text-center">Increment in employment (In %)</th>
+                                            <th rowspan="2" width="16%" class="text-center" width="15%">Proposed
+                                                Employment in
+                                                Expansion / Diversification of Existing Unit</th>
+                                            <th rowspan="2" width="16%" class="text-center" width="15%">Total Employment
+                                                in
+                                                Expansion / Diversification of Existing Unit</th>
+                                            <th rowspan="2" width="16%" class="text-center">Increment in Employment (In
+                                                %)</th>
 
                                         </tr>
                                         <tr>
@@ -385,7 +328,7 @@
     <!-- <button class="btn btn-primary save-draft-btn">Save Draft</button>
     <a href="#" class="btn btn-primary save-draft-btn1"><i class="bi bi-chevron-double-up"></i></a> -->
     <footer>
-        Copyright © 2025 Invest Odisha, All Rights Reserved.
+        Copyright © 2025 SWP Chhattisgarh, All Rights Reserved.
     </footer>
 
     <script src="js/bootstrap-5.js"></script>

@@ -17,6 +17,10 @@
   --light-blue100:#3C69A8;
   --grey:#D5D5D5;
 }
+.mandatory-text {
+    color: red;
+    font-size: .85rem;
+}
 body  {
   font-family: "DM Sans", serif;
 }
@@ -66,8 +70,8 @@ body  {
   background-color: var(--bglight);
 }
 input[type="text"], input[type="email"], input[type="tel"], input[type="file"], .form-select {
-  /* background-color: #f2f2f2;
-  border: #f2f2f2 solid 1px; */
+  /* background-color: #f2f2f2;*/
+  border: #b9bcbf solid 1px; 
 }
 input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus, input[type="file"]:focus, .form-select:focus {
   background-color: #FFF;
@@ -86,8 +90,7 @@ table tr td {
   font-size: .85rem;
 }
 .form-label {
-  font-size: .85rem;
-  color: #838383;
+  font-size: 0.9rem;
 }
 /* header-start */
 header {

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +8,18 @@
     <link rel="stylesheet" href="./css/dashboard.css">
     <title>Invest Chhhattisgar</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-<script> 
-$(function(){
-  $("#header").load("header.html"); 
-});
-</script> 
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+        });
+    </script>
 </head>
 
 <body>
     <div id="header"></div>
-   
+
     <div class="page-content-wrapper">
         <div class="container-fluid px-md-5">
             <div class="row">
@@ -54,55 +56,66 @@ $(function(){
                 <div class="col-lg-9">
                     <h4>Dashboard</h4>
                     <a class="add-unit mt-4" href="company-information.html" data-bs-toggle="modal"
-                    data-bs-target="#exampleModal"><i class="bi bi-plus-circle fs-2"></i>
+                        data-bs-target="#exampleModal"><i class="bi bi-plus-circle fs-2"></i>
                         <span>Add a New Unit</span>
                     </a>
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                        aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-lg">
                             <div class="modal-content">
-                
+
                                 <div class="modal-body pt-0">
                                     <div class="row g-3 mb-3 mt-2">
                                         <div class="instructions mt-4 shadow-none">
-                                            <h5>Instruction for add new unit</h5>
+                                            <h5>Instruction to add new unit</h5>
                                             <ol class="mt-3">
-                                                <li>Udyam Akanksha (UA) / Unit Registration (UR) is applicable only for Micro, Small, Medium,
-                                                    Large, Mega,
-                                                    Ultra Mega Enterprises.</li>
-                                                <li>There is no fee for processing the application.</li>
-                                                <li>Mandatory fields are marked with an asterisk (*).</li>
-                                                <li>UA/UR is computer-generated acknowledgment and does not require a signature.</li>
-                                                <li>Udyam Akanksha is issued as per notification Number F20-4 / 2016 / (1) / 6 dated 06 / 02 / 2016.
+                                                <li>Udyam Akanksha (UA) / Unit Registration (UR) is applicable only for
+                                                    Micro, Small,
+                                                    Medium,
+                                                    Large, Mega and
+                                                    Ultra Mega enterprises.</li>
+
+                                                <li>Mandatory fields are marked with an asterisk (<span
+                                                        class="text-danger">*</span>).</li>
+                                                <li>UA/UR is computer-generated acknowledgement and does not require a
+                                                    signature.</li>
+                                                <li>Udyam Akanksha is issued as per notification number F20-4 / 2016 /
+                                                    (1) / 6 dated 06 / 02 / 2016.
                                                 </li>
                                             </ol>
                                             <div class="d-flex align-items-center instruct-radio mt-4">
                                                 <div class="form-check me-3">
-                                                    <input class="form-check-input" type="radio" name="agreement" id="agree">
+                                                    <input class="form-check-input" type="radio" name="agreement"
+                                                        id="agree">
                                                     <label class="form-check-label" for="agree">I Agree</label>
                                                 </div>
                                                 <div class="form-check me-3">
-                                                    <input class="form-check-input" type="radio" name="agreement" id="disagree">
+                                                    <input class="form-check-input" type="radio" name="agreement"
+                                                        id="disagree">
                                                     <label class="form-check-label" for="disagree">I Don't Agree</label>
                                                 </div>
-                                                <a href="company-information.html" class="btn btn-light-blue ms-auto">Proceed</a>
+                                                <a href="company-information.html"
+                                                    class="btn btn-light-blue ms-auto">Proceed</a>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                
+
                             </div>
                         </div>
                     </div>
                     <div class="instructions mt-4">
-                        <h5>Instruction for add new unit</h5>
+                        <h5>Instruction to add new unit</h5>
                         <ol class="mt-3">
-                            <li>Udyam Akanksha (UA) / Unit Registration (UR) is applicable only for Micro, Small, Medium,
-                                Large, Mega,
-                                Ultra Mega Enterprises.</li>
-                            <li>There is no fee for processing the application.</li>
-                            <li>Mandatory fields are marked with an asterisk (*).</li>
-                            <li>UA/UR is computer-generated acknowledgment and does not require a signature.</li>
-                            <li>Udyam Akanksha is issued as per notification Number F20-4 / 2016 / (1) / 6 dated 06 / 02 / 2016.
+                            <li>Udyam Akanksha (UA) / Unit Registration (UR) is applicable only for Micro, Small,
+                                Medium,
+                                Large, Mega and
+                                Ultra Mega enterprises.</li>
+
+                            <li>Mandatory fields are marked with an asterisk (<span class="text-danger">*</span>).</li>
+                            <li>UA/UR is computer-generated acknowledgement and does not require a signature.</li>
+                            <li>Udyam Akanksha is issued as per notification number F20-4 / 2016 / (1) / 6 dated 06 / 02
+                                / 2016.
                             </li>
                         </ol>
                         <!-- <div class="d-flex align-items-center instruct-radio mt-4">
@@ -123,7 +136,7 @@ $(function(){
         </div>
     </div>
     <footer>
-        Copyright © 2025, All Rights Reserved.
+        Copyright © 2025 SWP Chhattisgarh, All Rights Reserved.
     </footer>
     <script src="js/bootstrap-5.js"></script>
 </body>

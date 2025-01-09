@@ -12,91 +12,18 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./css/dashboard.css">
     <title>Invest Chhhattisgar</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+        });
+    </script>
 </head>
 
 <body>
     <!-- header-start -->
-    <header>
-        <div class="container-fluid px-md-5 ">
-            <nav class="navbar navbar-expand-xl">
-                <h1 class="mb-0">
-                    <a class="navbar-brand" href="landing.html">
-                        <img src="images/logo.png" alt="Logo">
-                        <h6>Single Window Portal<span>Departments of Commerce & Industries</span></h6>
-                    </a>
-                </h1>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
-                    data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end" id="navbarOffcanvas" tabindex="-1"
-                    aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <h1 class="mb-0">
-                            <a class="navbar-brand" routerLink="/">
-                                <img src="images/logo.jpg">
-                            </a>
-                        </h1>
-                        <button type="button" class="btn-close btn-close-dark text-reset" data-bs-dismiss="offcanvas"
-                            aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <div class="navbar-nav justify-content-end flex-grow-1 pe-3 navbar-expand">
-                            <ul class="navbar-nav gap-3 align-items-center">
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <i class="bi bi-gear"></i>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="tile-appears.html">Tile Appears</a></li>
-                                        <li><a class="dropdown-item" href="industrial-registration.html">Industrial
-                                                Registration</a></li>
-                                        <li><a class="dropdown-item" href="company-information.html">Aakanksha
-                                                Registration</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <i class="bi bi-bell-fill  position-relative">
-
-                                            <span
-                                                class="notofication position-absolute top-0 start-100 translate-middle badge rounded-pill bg-primary">
-                                                3
-                                            </span>
-                                        </i>
-                                    </a>
-
-                                </li>
-
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        <div class="user-profile">
-                                            <div> <img class="user-icon rounded-circle" src="./images/user.png"
-                                                    alt="User Icon" width="30"></div>
-                                            <div>
-                                                <span class="user-title">Sushant Rajprakash</span>
-                                                <span class="user-msg">Hello, Welcome Back!</span>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="profile.html">Profile</a></li>
-                                        <li><a class="dropdown-item" href="change_password.html">Change Password</a>
-                                        </li>
-                                        <li><a class="dropdown-item" href="user-login.html">Logout</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
+    <div id="header"></div>
 
 
     <!-- header-end -->
@@ -110,7 +37,7 @@
                             <img src="./images/Group.png" class="" alt="...">
                         </span>
                         <span>
-                            <h3 class="page-heading mb-0">Apextrade </h3><span class="unit-code">Unit Id:
+                            <h3 class="page-heading mb-0">Apextrade </h3><span class="unit-code">
                                 11101136770197</span>
                         </span>
                     </div>
@@ -139,70 +66,72 @@
                                     <!-- <i class="bi bi-clipboard-x"></i> -->
                                     Grivance</a>
                             </div>
-                            <div class="table-responsive">
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">CSR No. </th>
-                                            <th scope="col">Name of the Company/Enterprise </th>
-                                            <th scope="col">Industry Type </th>
-                                            <th scope="col">Status</th>
-                                            <th scope="col">Action Taking Authority </th>
-                                            <th scope="col">Inspection Date</th>
-                                            <th scope="col">Download </th>
-                                            <th scope="col">View
-                                                Query Detail </th>
-                                            <th scope="col">Make Payment</th>
+                            <div class="left-content">
+                                <div class="table-responsive">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">CSR No. </th>
+                                                <th scope="col">Name of the Company/Enterprise </th>
+                                                <th scope="col">Industry Type </th>
+                                                <th scope="col">Status</th>
+                                                <th scope="col">Action Taking Authority </th>
+                                                <th scope="col">Inspection Date</th>
+                                                <th scope="col">Download </th>
+                                                <th scope="col">View
+                                                    Query Detail </th>
+                                                <th scope="col">Make Payment</th>
 
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>2024086516 </td>
-                                            <td>Manipal Biscuit Pvt. Ltd. </td>
-                                            <td>Large </td>
-                                            <td>Not Paid </td>
-                                            <td>-</td>
-                                            <td>01 Aug, 2024 </td>
-                                            <td><i class="bi bi-download"></i></td>
-                                            <td>-</td>
-                                            <td><a href="" class="btn btn-green">Make&nbsp;Payment </a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>2024086516 </td>
-                                            <td>Manipal Biscuit Pvt. Ltd. </td>
-                                            <td>Large </td>
-                                            <td>Not Paid </td>
-                                            <td>-</td>
-                                            <td>01 Aug, 2024 </td>
-                                            <td><i class="bi bi-download"></i></td>
-                                            <td>-</td>
-                                            <td><a href="" class="btn btn-green">Make&nbsp;Payment </a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>2024086516 </td>
-                                            <td>Manipal Biscuit Pvt. Ltd. </td>
-                                            <td>Large </td>
-                                            <td>Applied </td>
-                                            <td>Administrator</td>
-                                            <td>01 Aug, 2024 </td>
-                                            <td><i class="bi bi-download"></i></td>
-                                            <td>-</td>
-                                            <td><a href="" class="payment-made">Payment Made </a></td>
-                                        </tr>
-                                        <tr>
-                                            <td>2024086516 </td>
-                                            <td>Manipal Biscuit Pvt. Ltd. </td>
-                                            <td>MSME </td>
-                                            <td>Not Paid </td>
-                                            <td> Administrator</td>
-                                            <td>01 Aug, 2024 </td>
-                                            <td><i class="bi bi-download"></i></td>
-                                            <td>-</td>
-                                            <td><a href="" class="payment-made">Payment Made</a></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>2024086516 </td>
+                                                <td>Manipal Biscuit Pvt. Ltd. </td>
+                                                <td>Large </td>
+                                                <td>Not Paid </td>
+                                                <td>-</td>
+                                                <td>01-Aug-2024 </td>
+                                                <td><i class="bi bi-download"></i></td>
+                                                <td>-</td>
+                                                <td><a href="" class="btn btn-green">Make&nbsp;Payment </a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2024086516 </td>
+                                                <td>Manipal Biscuit Pvt. Ltd. </td>
+                                                <td>Large </td>
+                                                <td>Not Paid </td>
+                                                <td>-</td>
+                                                <td>01-Sep-2024 </td>
+                                                <td><i class="bi bi-download"></i></td>
+                                                <td>-</td>
+                                                <td><a href="" class="btn btn-green">Make&nbsp;Payment </a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2024086516 </td>
+                                                <td>Manipal Biscuit Pvt. Ltd. </td>
+                                                <td>Large </td>
+                                                <td>Applied </td>
+                                                <td>Administrator</td>
+                                                <td>01-Jun-2024 </td>
+                                                <td><i class="bi bi-download"></i></td>
+                                                <td>-</td>
+                                                <td><a href="" class="payment-made">Payment Made </a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>2024086516 </td>
+                                                <td>Manipal Biscuit Pvt. Ltd. </td>
+                                                <td>MSME </td>
+                                                <td>Not Paid </td>
+                                                <td> Administrator</td>
+                                                <td>01-Oct-2024 </td>
+                                                <td><i class="bi bi-download"></i></td>
+                                                <td>-</td>
+                                                <td><a href="" class="payment-made">Payment Made</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="pills-profile" role="tabpanel"
@@ -220,14 +149,14 @@
                             <span class="card-img">
                                 <img src="./images/Group.png" class="" alt="...">
                             </span>
-                            <span> Apextrade <small class="d-block unit-code">Unit Id: 11101136770197</small></span>
+                            <span> Apextrade <small class="d-block unit-code"> 11101136770197</small></span>
                         </a>
                         <a href="#" class="btn btn-white  mb-3 d-flex gap-2 text-start align-items-center"
                             onclick="openModal('invoin_incentives.html')">
                             <span class="card-img">
                                 <img src="./images/Group.png" class="" alt="...">
                             </span>
-                            <span> Innovindustrie <small class="d-block unit-code">Unit Id:
+                            <span> Innovindustrie <small class="d-block unit-code">
                                     11503606935108</small></span>
                         </a>
                         <a href="#" class="btn btn-white d-flex gap-2 text-start align-items-center mb-3"
@@ -235,14 +164,14 @@
                             <span class="card-img">
                                 <img src="./images/Group.png" class="" alt="...">
                             </span>
-                            <span> CSM 1 <small class="d-block unit-code">Unit Id: 12503666935106</small></span>
+                            <span> Adani Power <small class="d-block unit-code"> 12503666935106</small></span>
                         </a>
                         <a href="#" class="btn btn-white d-flex gap-2 text-start align-items-center mb-3"
                             onclick="openModal('incentives.html')">
                             <span class="card-img">
                                 <img src="./images/Group.png" class="" alt="...">
                             </span>
-                            <span> Angel One <small class="d-block unit-code">Unit Id: 11503606937708</small></span>
+                            <span> Angel One <small class="d-block unit-code"> 11503606937708</small></span>
                         </a>
                     </div><a href="#"
                         class="mt-4 text-decoration-none justify-content-center  fs-5 go-back d-flex gap-2 text-start align-items-center align-items-center"
@@ -257,7 +186,7 @@
     </div>
 
     <footer>
-        Copyright © 2025 Invest Odisha, All Rights Reserved.
+        Copyright © 2025 SWP Chhattisgarh, All Rights Reserved.
     </footer>
 
     <div class="modal fade" id="confirmationModal" tabindex="-1" aria-labelledby="confirmationModalLabel"
