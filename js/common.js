@@ -3,18 +3,18 @@
 
     // Function to toggle the filter section visibility and icon
     function toggleFilterSection() {
-      if (filterSection.style.display === 'none' || filterSection.style.display === '') {
+      if (filterSection.style.display === 'block' || filterSection.style.display === '') {
         // Show filter section
-        filterSection.style.display = 'block';
-        // Change icon to upward chevron
-        toggleIcon.classList.remove('bi-chevron-double-down');
-        toggleIcon.classList.add('bi-chevron-double-up');
-      } else {
-        // Hide filter section
         filterSection.style.display = 'none';
-        // Change icon to downward chevron
+        // Change icon to upward chevron
         toggleIcon.classList.remove('bi-chevron-double-up');
         toggleIcon.classList.add('bi-chevron-double-down');
+      } else {
+        // Hide filter section
+        filterSection.style.display = 'block';
+        // Change icon to downward chevron
+        toggleIcon.classList.remove('bi-chevron-double-down');
+        toggleIcon.classList.add('bi-chevron-double-up');
       }
     }
 

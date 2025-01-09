@@ -171,6 +171,7 @@ color: #a2b8d5;
     padding: 1px 12px;
     border-radius: 0 0 4px 4px;
     display: inline-block;
+    cursor: pointer;
 }
 header .navbar-expand .navbar-nav .dropdown-menu {
     position: absolute;
