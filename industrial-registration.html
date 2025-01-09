@@ -15,7 +15,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.js"
         integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <!-- <link rel="stylesheet" href="./css/main_landing.css"> -->
-    <title>Single Window Portal</title>
+    <title>SWP Chhattisgarh</title>
 
 </head>
 
@@ -128,7 +128,7 @@
             </div> -->
             <div class="card border-0">
                 <div class="card-body">
-                    <div class="d-flex justify-content-end  my-3 align-items-center">
+                    <div class="d-flex justify-content-end   align-items-center">
 
                         <p class="m-0 mandatory-text text-danger">(<span class="text-danger">*</span>) <i>Indicated
                                 fields are
@@ -149,7 +149,8 @@
                         <div class="col-md-4">
                             <label for="exampleFormControlInput1" class="form-label">
                                 DOB / DOI <span class="text-danger">*</span></label>
-                            <input type="date" class="form-control" placeholder="dd-mm-yyyy">
+                            <!-- <input type="date" class="form-control" placeholder="dd-mm-yyyy"> -->
+                            <input type="text" id="dateInput" class="form-control" placeholder="dd/mm/yyyy">
                         </div>
                         <div class="col-md-12 text-end">
                             <a class="btn btn-primary" href="javascript:void(0);" data-bs-toggle="modal"
@@ -572,7 +573,14 @@
  
     </script> -->
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
     <script>
+
+        flatpickr("#dateInput", {
+            dateFormat: "d/m/Y", // Format for dd/mm/yyyy
+            allowInput: true,    // Allow manual input
+        });
+
         // Initialize Flatpickr on the input field
         // flatpickr("#datePicker", {
         //     dateFormat: "d-M-Y", // Format: dd-MMM-yyyy
@@ -582,45 +590,46 @@
         // });
 
 
-        $("#custom-input-date").datepicker({ dateFormat:'dd/mm/yy'});
+        $("#custom-input-date").datepicker({ dateFormat: 'dd/mm/yy' });
 
-// ACTIONS
-$("input").on("change", function(e) {
-  $(this).siblings(".label-error").text("");
-  $(this).removeClass("error");
-})
+        // ACTIONS
+        $("input").on("change", function (e) {
+            $(this).siblings(".label-error").text("");
+            $(this).removeClass("error");
+        })
 
-$("#custom-input-date").on("focusout", function(e) {
-  if($(this).val() != '') {
-    dateValidation($(this));
-  }
-})
+        $("#custom-input-date").on("focusout", function (e) {
+            if ($(this).val() != '') {
+                dateValidation($(this));
+            }
+        })
 
-// CHECK
-function dateValidation(input) {
-  var errorLabel = input.siblings(".label-error");
-  var date = input.val();
+        // CHECK
+        function dateValidation(input) {
+            var errorLabel = input.siblings(".label-error");
+            var date = input.val();
 
-  input.removeClass("error");
-  errorLabel.text("");
+            input.removeClass("error");
+            errorLabel.text("");
 
-  var matches = /^(\d{1,2})[/\/](\d{1,2})[/\/](\d{4})$/.exec(date);
-  if (matches == null) {
-    input.addClass("error");
-    errorLabel.text("Date not valid.");
-  };
+            var matches = /^(\d{1,2})[/\/](\d{1,2})[/\/](\d{4})$/.exec(date);
+            if (matches == null) {
+                input.addClass("error");
+                errorLabel.text("Date not valid.");
+            };
 
-  var d = matches[1];
-  var m = matches[2] - 1;
-  var y = matches[3];
-  var composedDate = new Date(y, m, d);
+            var d = matches[1];
+            var m = matches[2] - 1;
+            var y = matches[3];
+            var composedDate = new Date(y, m, d);
 
-  if(composedDate.getDate() == d && composedDate.getMonth() == m && composedDate.getFullYear() == y) {} else {
-    input.addClass("error");
-    errorLabel.text("Date not valid.");
-  }
-}
+            if (composedDate.getDate() == d && composedDate.getMonth() == m && composedDate.getFullYear() == y) { } else {
+                input.addClass("error");
+                errorLabel.text("Date not valid.");
+            }
+        }
     </script>
+
     <script src="./js/script.js"></script>
 </body>
 
