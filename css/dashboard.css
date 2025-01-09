@@ -166,6 +166,12 @@ color: #a2b8d5;
     width: 50px;
     border-radius: 50%;
 }
+.arrow-box {
+    background: #b9d1f3;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: inline-block;
+}
 header .navbar-expand .navbar-nav .dropdown-menu {
     position: absolute;
     left: -70px;
