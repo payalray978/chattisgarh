@@ -24,6 +24,10 @@ ul, ol{
     color: var(--orange);
     text-decoration: none;
 }
+  .custom-tooltip .tooltip-inner {
+        max-width: 400px; /* Adjust the width as needed */
+        text-align: left; /* Align the content for better readability */
+    }
 .card-img {
 border: 1px solid #3C69A8;
 border-radius: 50%;
