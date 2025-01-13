@@ -499,7 +499,7 @@ left: 50%;
     font-weight: 600;
 }
 .instructions ol li {
-    margin-bottom: 1rem;
+    margin-bottom: 0.7rem;
 }
 .instruct-radio .form-check-label {
     color: #2d2d50;
