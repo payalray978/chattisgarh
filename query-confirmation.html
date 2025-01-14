@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Single Window Portal</title>
+
+    </script>
+</head>
+
+<body>
+    <!-- header-start -->
+    <header>
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container">
+                <a class="navbar-brand" href="landing.html">
+                    <img src="images/logo.png" alt="Logo">
+                    <h6>Single Window Portal<span>Department of Commerce & Industries</span></h6>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <ul class="navbar-nav gap-2 align-items-center">
+                        <li class="nav-item ">
+                            <a class="nav-link " href="#" role="button" aria-expanded="false">
+                                Home
+                            </a>
+
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                About Us <i class="bi bi-chevron-down form-sub-heading"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="javascript:void(0);">Tile Appears</a></li>
+                                <li><a class="dropdown-item" href="#">Industrial
+                                        Registration</a></li>
+                                <li><a class="dropdown-item" href="#">Aakanksha
+                                        Registration</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item ">
+                            <a class="nav-link " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                            </a>
+
+                        </li>
+
+                        <li class="nav-item ">
+                            <a class="nav-link " href="#" role="button" aria-expanded="false">
+                                Incentives & Policies
+                            </a>
+
+                        </li>
+                        <!-- <li class="nav-item ">
+                                <a class="nav-link " href="#" role="button" aria-expanded="false">
+                                    <i class="bi bi-text-left fs-4"></i>
+                                </a>
+    
+                            </li> -->
+                        <li class="nav-item ">
+                            <a class="nav-link " href="#" role="button" aria-expanded="false">
+                                <i class="bi bi-search"></i>
+                            </a>
+
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-red Login" href="user-login.html"> Login</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="btn btn-border-red Register" href="industrial-registration.html">
+                                Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="card inner-page-layout__breadcrumb pt-5 ">
+        <div class="container">
+            <h3 class="page-title">Online Query Registration</h3>
+            <ol class="breadcrumb ">
+                <li class="breadcrumb-item text-light"><a><i class="bi bi-house pe-1 text-light"></i> </a></li>
+                <li aria-current="page" class="breadcrumb-item active text-light"> Query </li>
+            </ol>
+        </div>
+    </div>
+    <!-- header-end -->
+    <div class="page-content-wrapper formbg">
+        <div class="container">
+
+            <div class="card border-0">
+                <div class="card-body otp-confirmation">
+                    <div class="row g-3 mb-3 text-center mt-2">
+                        <h6 class="form-sub-heading mt-3 mb-0">Please enter the OTP sent to your registered mobile
+                            number</h6>
+                        <!-- <span class="otpsent">Your OTP has been sent to your registered mobile number.</span> -->
+                        <p class="fw-bold">******3166 </p>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="otp-box  justify-content-center">
+                            <input type="text" class="form-control">
+                            <input type="text" class="form-control">
+                            <input type="text" class="form-control">
+                            <input type="text" class="form-control">
+                            <input type="text" class="form-control">
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="col-md-12 mt-2  text-center">
+                            <a href="#" class="resendotp"><em>Resend OTP after </em><small>30
+                                    sec</small></a>
+                        </div>
+                    </div>
+                    <div class="row  form-button-box mb-4 mt-3">
+                        <div class="col-md-12 text-center">
+                            <a class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                href="#exampleModal">Confirm</a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- <div class="form-button-box">
+                <a class="btn btn-outline-primary" href="industrial-registration.html">Back</a>
+                <a class="btn btn-primary" href="otp-success.html">Next</a>
+            </div> -->
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- <div class="modal-header border-0 pb-0 ">
+                 
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div> -->
+                <div class="modal-body">
+                    <div class="row  mb-3 text-center "><i class=" success-text-color fs-1 bi bi-check-circle"></i>
+                        <h4 class="success-text-color  mt-2 ">Successfully</h4>
+
+                        <p class="">Your query has been successfully submitted.<br /> Your ticket number is
+                            <strong>4654754654</strong>.
+                        </p>
+                        <div>
+
+                            <a href="landing.html" class="btn btn-primary">Close</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/bootstrap-5.js"></script>
+</body>
+
+</html>
